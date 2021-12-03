@@ -59,3 +59,4 @@ Made with [contributors-img](https://contrib.rocks).
 ## Other Resources
 
 * [Important advice](https://www.youtube.com/watch?v=WA4iX5D9Z64)
+* Other stuff

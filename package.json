@@ -24,6 +24,7 @@
     "release": "bump --prompt --tag --all --push"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.16.3",
     "@vuepress/plugin-google-analytics": "^1.0.0-rc.1",
     "eslint": "^6.1.0",
     "eslint-config-google": "^0.9.1",

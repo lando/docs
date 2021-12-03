@@ -1,31 +1,20 @@
 {
-  "env": {
-    "node": true,
-    "mocha": true
-  },
-  "parser": "@babel/eslint-parser",
   "parserOptions": {
     "sourceType": "module",
-    "ecmaVersion": 8,
-    "requireConfigFile": false
+    "ecmaVersion": 6
   },
-  "extends": "google",
+  "extends": [
+    "plugin:vue/recommended",
+    "google"
+  ],
   "rules": {
+    "linebreak-style": 0,
     "arrow-parens": ["error",
       "as-needed"
     ],
     "max-len": ["error", {
-      "code": 120,
+      "code": 12000,
       "ignoreComments": true
-    }],
-    "require-jsdoc": ["error", {
-      "require": {
-        "FunctionDeclaration": true,
-        "MethodDefinition": false,
-        "ClassDeclaration": false,
-        "ArrowFunctionExpression": false,
-        "FunctionExpression": false
-      }
     }]
   }
 }

@@ -1,6 +1,6 @@
 [build]
   base = "./"
-  publish = "_site"
+  publish = "_docs3"
   command = "yarn build:3.x"
   # This sort of lets us build only on tagged commits to prod
   # [context.production]

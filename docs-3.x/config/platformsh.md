@@ -15,7 +15,7 @@ This integration is currently in development and as such it has the following _s
 
 However, if you'd like to try it out and give your feedback on what worked and what didn't then please continue. You can also read about some more caveats [here](#caveats-and-known-issues).
 
-You can report any issues or feedback [over here](https://github.com/lando/lando/issues/new/choose) or check out
+You can report any issues or feedback [over here](https://github.com/lando/platformsh/issues/new/choose) or check out
 
 [[toc]]
 
@@ -23,9 +23,9 @@ You can report any issues or feedback [over here](https://github.com/lando/lando
 
 Before you get started with this recipe we assume that you have:
 
-1. [Installed Lando](./../basics/installation.md) and gotten familiar with [its basics](./../basics/)
-2. [Initialized](./../basics/init.md) a [Landofile](./../config/lando.md) for your codebase for use with this recipe
-3. Read about the various [services](./../config/services.md), [tooling](./../config/tooling.md), [events](./../config/events.md) and [routing](./../config/proxy.md) Lando offers.
+1. [Installed Lando](https://docs.lando.dev/basics/installation.html) and gotten familiar with [its basics](https://docs.lando.dev/basics/)
+2. [Initialized](https://docs.lando.dev/basics/init.html) a [Landofile](https://docs.lando.dev/config/lando.html) for your codebase for use with this recipe
+3. Read about the various [services](https://docs.lando.dev/config/services.html), [tooling](https://docs.lando.dev/config/tooling.html), [events](https://docs.lando.dev/config/events.html) and [routing](https://docs.lando.dev/config/proxy.html) Lando offers.
 
 However, because you are a developer and developers never ever [RTFM](https://en.wikipedia.org/wiki/RTFM), you can also run the following commands to try out this recipe on one of your Platform.sh sites.
 
@@ -65,9 +65,9 @@ lando info
 
 ## Configuration
 
-While Lando [recipes](./../config/recipes.md) sets sane defaults so they work out of the box, they are also [configurable](./../config/recipes.md#config).
+While Lando [recipes](https://docs.lando.dev/config/recipes.html) sets sane defaults so they work out of the box, they are also [configurable](https://docs.lando.dev/config/recipes.html#config).
 
-Here are the configuration options, set to the default values, for this recipe's [Landofile](./../config/lando.md). If you are unsure about where this goes or what this means we *highly recommend* scanning the [recipes documentation](./../config/recipes.md) to get a good handle on how the magicks work.
+Here are the configuration options, set to the default values, for this recipe's [Landofile](https://docs.lando.dev/config/lando.html). If you are unsure about where this goes or what this means we *highly recommend* scanning the [recipes documentation](https://docs.lando.dev/config/recipes.html) to get a good handle on how the magicks work.
 
 ```yaml
 recipe: platformsh
@@ -80,13 +80,13 @@ You will immediately notice that the default `platformsh` recipe Landofile does 
 
 This means that instead of modifying your Landofile to add, edit or remove the services, dependencies, build steps, etc you need to run your application you will want to modify your Platform.sh configuration according to their documentation and then do the usual `lando rebuild` for those changes to be applied.
 
-Of course, since this is still a Lando recipe you can continue to [extend and override](./../config/recipes.md#extending-and-overriding-recipes) your Landofile in the usual way for any additional power you require locally.
+Of course, since this is still a Lando recipe you can continue to [extend and override](https://docs.lando.dev/config/recipes.html#extending-and-overriding-recipes) your Landofile in the usual way for any additional power you require locally.
 
 Here are some details on how Lando interprets the various Platform.sh configuration files:
 
 ### routes.yaml
 
-Lando will load your [routes.yaml](https://docs.platform.sh/configuration/routes.html) and use for its own [proxy](./proxy.md) configuration.
+Lando will load your [routes.yaml](https://docs.platform.sh/configuration/routes.html) and use for its own [proxy](https://docs.lando.dev/config/proxy.html) configuration.
 
 ```yaml
 # routes.yaml
@@ -113,7 +113,7 @@ http://www.my-app.lndo.site
 https://www.my-app.lndo.site
 ```
 
-Note, however, that Lando will **only** use routes that contain the `{default}` placeholder. FQDN routes will not be used since these generally will be pointing at your production site and not Lando. If you would still like to use these routes then we recommend you review our [proxy](./proxy.md) docs on how to add them back into the mix.
+Note, however, that Lando will **only** use routes that contain the `{default}` placeholder. FQDN routes will not be used since these generally will be pointing at your production site and not Lando. If you would still like to use these routes then we recommend you review our [proxy](https://docs.lando.dev/config/proxy.html) docs on how to add them back into the mix.
 
 ### services.yaml
 
@@ -250,7 +250,7 @@ config:
 
 Perhaps more importantly, Lando **will not** automatically pull and set up environment variables that have been set in the [Platform Management Console](https://docs.platform.sh/administration/web/configure-environment.html#variables). This means that if your build hook requires these environment variables then it will likely fail.
 
-To remediate we recommend you manually add these variables into a local [environment file](./../config/env.html#environment-files) that is also in your `.gitignore` and then `lando rebuild`. Here are some steps on how to do that.
+To remediate we recommend you manually add these variables into a local [environment file](https://docs.lando.dev/config/env.html#environment-files) that is also in your `.gitignore` and then `lando rebuild`. Here are some steps on how to do that.
 
 1. Update your Landofile so it knows to load an environment file.
 
@@ -304,7 +304,7 @@ lando rebuild -y
 
 ## Application Tooling
 
-Lando will also setup useful [tooling commands](./tooling.md) based on the `type` of your application container.
+Lando will also setup useful [tooling commands](https://docs.lando.dev/config/tooling.html) based on the `type` of your application container.
 
 These can be used to both relevant tooling and utilities that exist _inside_ the application container. Here are the defaults we provide for the `php` application container.
 
@@ -391,8 +391,7 @@ If you are not sure whether something exists inside your application container o
 lando ssh -c "yarn"
 ```
 
-Also note that Lando tooling is hyper-powerful so you might want to [check out](./tooling.md) some of its more advanced features.
-
+Also note that Lando tooling is hyper-powerful so you might want to [check out](https://docs.lando.dev/config/tooling.html) some of its more advanced features.
 
 ## Accessing relationships
 
@@ -427,7 +426,7 @@ Note that some services eg `solr` provide `web` based interfaces. In these cases
 
 ## External access
 
-If you would instead like to connect to your database, or some other service, from your host using a GUI client like SequelPro, instead of via the Lando CLI you can run [`lando info`](./../cli/info.md) and use the `external_connection` information and any relevant `creds` for the service you want to connect to.
+If you would instead like to connect to your database, or some other service, from your host using a GUI client like SequelPro, instead of via the Lando CLI you can run [`lando info`](https://docs.lando.dev/cli/info.html) and use the `external_connection` information and any relevant `creds` for the service you want to connect to.
 
 Here is example connection info for a multi-endpoint `mariadb` service called `db` below:
 
@@ -738,7 +737,7 @@ There are a few things that are currently unsupported at this time, athough we h
 
 If you are interested in working on the development of this recipe we recommend you check out:
 
-* The Lando [contrib docs](./../contrib/contributing.md)
+* The Lando [contrib docs](https://docs.lando.dev/contrib/contributing.html)
 * The [Dev Docs](https://github.com/lando/lando/tree/master/integrations/lando-platformsh) for this recipe
 
-<RelatedGuides tag="Platformsh"/>
+<!-- <RelatedGuides tag="Platform.sh"/> -->

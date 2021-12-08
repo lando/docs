@@ -19,9 +19,9 @@ However, in order to profit, **you must** have an account and a site on Acquia t
 
 Before you get started with this recipe, we assume that you have:
 
-1. [Installed Lando](./../basics/installation.md) and gotten familiar with [its basics](./../basics/).
-2. [Initialized](./../basics/init.md) a [Landofile](./../config/lando.md) for your codebase for use with this recipe.
-3. Read about the various [services](./../config/services.md), [tooling](./../config/tooling.md), [events](./../config/events.md) and [routing](./../config/proxy.md) Lando offers.
+1. [Installed Lando](https://docs.lando.dev/basics/installation.html) and gotten familiar with [its basics](https://docs.lando.dev/basics/).
+2. [Initialized](https://docs.lando.dev/basics/init.html) a [Landofile](https://docs.lando.dev/config/lando.html) for your codebase for use with this recipe.
+3. Read about the various [services](https://docs.lando.dev/config/services.html), [tooling](https://docs.lando.dev/config/tooling.html), [events](https://docs.lando.dev/config/events.html) and [routing](https://docs.lando.dev/config/proxy.html) Lando offers.
 
 However, because you are a developer and developers never ever [RTFM](https://en.wikipedia.org/wiki/RTFM), you can also try out this recipe with an extant Acquia project or start a brand new project on Acquia with the commands as follows:
 
@@ -47,9 +47,9 @@ lando info
 
 ## Configuration
 
-While Lando [recipes](./../config/recipes.md) set sane defaults so they work out of the box, they are also [configurable](./../config/recipes.md#config).
+While Lando [recipes](https://docs.lando.dev/config/recipes.html) set sane defaults so they work out of the box, they are also [configurable](https://docs.lando.dev/config/recipes.html#config).
 
-Here are the configuration options, set to the default values, for this recipe. If you are unsure about where this goes or what this means we *highly recommend* scanning the [recipes documentation](./../config/recipes.md) to get a good handle on how the magicks work.
+Here are the configuration options, set to the default values, for this recipe. If you are unsure about where this goes or what this means we *highly recommend* scanning the [recipes documentation](https://docs.lando.dev/config/recipes.html) to get a good handle on how the magicks work.
 
 ```yaml
 recipe: acquia
@@ -66,13 +66,13 @@ config:
   xdebug: false
 ```
 
-If you do not already have a [Landofile](./../config/lando.md) for your Acquia site, we highly recommend you use [`lando init`](./../basics/init.md) to get one as that will automatically populate the `ah_application_uuid`, `ah_site_group` and `php` version for you. Manually creating a Landofile with these things set correctly can be difficult and is *highly discouraged.*
+If you do not already have a [Landofile](https://docs.lando.dev/config/lando.html) for your Acquia site, we highly recommend you use [`lando init`](https://docs.lando.dev/basics/init.html) to get one as that will automatically populate the `ah_application_uuid`, `ah_site_group` and `php` version for you. Manually creating a Landofile with these things set correctly can be difficult and is *highly discouraged.*
 
-Note that if the above config options are not enough, all Lando recipes can be further [extended and overridden](./../config/recipes.md#extending-and-overriding-recipes).
+Note that if the above config options are not enough, all Lando recipes can be further [extended and overridden](https://docs.lando.dev/config/recipes.html#extending-and-overriding-recipes).
 
 ### Choosing a composer version
 
-By default the `acquia` recipe will default to the latest stable release of `composer` 2. If your application depends on a different version of composer you can set `composer_version` to any version that is available in our [php service](./php.md#installing-composer).
+By default the `acquia` recipe will default to the latest stable release of `composer` 2. If your application depends on a different version of composer you can set `composer_version` to any version that is available in our [php service](https://docs.lando.dev/config/php.html#configuration).
 
 ```yaml
 recipe: acquia
@@ -144,7 +144,7 @@ config:
 
 ### Using xdebug
 
-This is just a passthrough option to the [xdebug setting](./php.md#toggling-xdebug) that exists on all our [php services](./php.md). The `tl;dr` is `xdebug: true` enables and configures the php xdebug extension and `xdebug: false` disables it.
+This is just a passthrough option to the [xdebug setting](https://docs.lando.dev/config/php.html#toggling-xdebug) that exists on all our [php services](https://docs.lando.dev/config/php.html). The `tl;dr` is `xdebug: true` enables and configures the php xdebug extension and `xdebug: false` disables it.
 
 ```yaml
 recipe: acquia
@@ -152,7 +152,7 @@ config:
   xdebug: true|false
 ```
 
-However, for more information, we recommend you consult the [php service documentation](./php.md).
+However, for more information, we recommend you consult the [php service documentation](https://docs.lando.dev/config/php.html).
 
 ## Connecting to your database
 
@@ -175,7 +175,7 @@ host: cache
 port: 11211
 ```
 
-You can get also get the above information, and more, by using the [`lando info`](./../cli/info.md) command or you can check out the environment variable called [`LANDO INFO`](./../guides/lando-info.md) as it contains useful information about how your application can access other Lando services.
+You can get also get the above information, and more, by using the [`lando info`](https://docs.lando.dev/cli/info.html) command or you can check out the environment variable called [`LANDO INFO`](https://docs.lando.dev/guides/lando-info.html) as it contains useful information about how your application can access other Lando services.
 
 ## Importing Your Database and Files
 
@@ -230,7 +230,7 @@ lando acli pull:db
 lando db-import database.sql.gz
 ```
 
-You can learn more about the `db-import` command [over here](./../guides/db-import.md).
+You can learn more about the `db-import` command [over here](https://docs.lando.dev/guides/db-import.html).
 
 #### Files
 

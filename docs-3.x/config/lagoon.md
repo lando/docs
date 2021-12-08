@@ -13,7 +13,7 @@ This is currently an _beta_ level integration that has the following _serious ca
 
 However, if you'd like to try it out and give your feedback on what worked and what didn't then please continue.
 
-You can report any issues or feedback [over here](https://github.com/lando/lando/issues/new/choose).
+You can report any issues or feedback [over here](https://github.com/lando/lagoon/issues/new/choose).
 
 [[toc]]
 
@@ -21,9 +21,9 @@ You can report any issues or feedback [over here](https://github.com/lando/lando
 
 Before you get started with this recipe we assume that you have:
 
-1. [Installed Lando](./../basics/installation.md) and gotten familiar with [its basics](./../basics/)
-2. [Initialized](./../basics/init.md) a [Landofile](./../config/lando.md) for your codebase for use with this recipe
-3. Read about the various [services](./../config/services.md), [tooling](./../config/tooling.md), [events](./../config/events.md) and [routing](./../config/proxy.md) Lando offers.
+1. [Installed Lando](https://docs.lando.dev/basics/installation.md) and gotten familiar with [its basics](https://docs.lando.dev/basics/)
+2. [Initialized](https://docs.lando.dev/basics/init.md) a [Landofile](https://docs.lando.dev/config/lando.md) for your codebase for use with this recipe
+3. Read about the various [services](https://docs.lando.dev/config/services.md), [tooling](https://docs.lando.dev/config/tooling.md), [events](https://docs.lando.dev/config/events.md) and [routing](https://docs.lando.dev/config/proxy.md) Lando offers.
 4. Temporarily stopped (`pygmy stop`) the [Pygmy](https://pygmy.readthedocs.io/en/master/) tool to avoid any port conflicts
 
 To get started quickly, you can also run the following commands to try out this recipe against the amazee.io [Drupal Example](https://github.com/amazeeio/drupal-example-simple).
@@ -44,9 +44,9 @@ lando info
 
 ## Configuration
 
-While Lando [recipes](./../config/recipes.md) set sane defaults so they work out of the box, they are also [configurable](./../config/recipes.md#config).
+While Lando [recipes](https://docs.lando.dev/config/recipes.md) set sane defaults so they work out of the box, they are also [configurable](https://docs.lando.dev/config/recipes.md#config).
 
-Here are the configuration options, set to the default values, for this recipe's [Landofile](./../config/lando.md). If you are unsure about where this goes or what this means we *highly recommend* scanning the [recipes documentation](./../config/recipes.md) to get a good handle on how the magicks work.
+Here are the configuration options, set to the default values, for this recipe's [Landofile](https://docs.lando.dev/config/lando.md). If you are unsure about where this goes or what this means we *highly recommend* scanning the [recipes documentation](https://docs.lando.dev/config/recipes.md) to get a good handle on how the magicks work.
 
 ```yaml
 recipe: lagoon
@@ -55,9 +55,9 @@ config:
     - composer install
 ```
 
-If you do not already have a [Landofile](./../config/lando.md) for your Lagoon site, we highly recommend you use [`lando init`](./../basics/init.md) to get one as that will automatically populate the above defaults for you. Manually creating a Landofile with these things set correctly can be difficult and is *highly discouraged.*
+If you do not already have a [Landofile](https://docs.lando.dev/config/lando.md) for your Lagoon site, we highly recommend you use [`lando init`](https://docs.lando.dev/basics/init.md) to get one as that will automatically populate the above defaults for you. Manually creating a Landofile with these things set correctly can be difficult and is *highly discouraged.*
 
-Note that if the above config options are not enough, all Lando recipes can be further [extended and overriden](./../config/recipes.md#extending-and-overriding-recipes).
+Note that if the above config options are not enough, all Lando recipes can be further [extended and overriden](https://docs.lando.dev/config/recipes.md#extending-and-overriding-recipes).
 
 ### Setting Lagoon labels
 
@@ -96,7 +96,7 @@ services:
       << : *default-environment
 ```
 
-For the most up to date list of supported labels, check out [this](https://github.com/lando/cli/blob/main/integrations/lando-lagoon/lib/services.js#L15). To see labels in action check out the official [Amazee.io Drupal 9 Lagoon example](https://github.com/amazeeio/drupal-example-simple/blob/9.x/docker-compose.yml#L40).
+For the most up to date list of supported labels, check out [this](https://github.com/lando/lagoon/blob/main/lib/services.js#L15). To see labels in action check out the official [Amazee.io Drupal 9 Lagoon example](https://github.com/amazeeio/drupal-example-simple/blob/9.x/docker-compose.yml#L40).
 
 Also note that Lando additionally supports `lagoon.type === none` as documented over [here](https://docs.lagoon.sh/lagoon/using-lagoon-the-basics/docker-compose-yml#skip-ignore-containers).
 
@@ -120,7 +120,7 @@ Note that these will run the _first time_ you run `lando start`. You will need t
 ### Customizing the stack
 
 :::warning Customizations not fully tested
-We _think_ most of the customizations below _should_ work but they have been very minimally tested. If you try one and it doesn't work, please [report an issue](https://github.com/lando/lando/issues/new/choose).
+We _think_ most of the customizations below _should_ work but they have been very minimally tested. If you try one and it doesn't work, please [report an issue](https://github.com/lando/lagoon/issues/new/choose).
 :::
 
 Lando will read and interpret your normal `.lagoon.yml` and its associated Docker Compose files. This means that you should be able to do the customizations Lagoon has documented, run a `lando rebuild` and see the changes.  Lando reads the `lando.type` labels from the docker-compose file to ensure that the correct image is used for a service.
@@ -141,9 +141,9 @@ Note that we are testing against the "Drupal" variants of the above but it's _po
 
 ## External access
 
-If you would like to connect to your database, or some other service, from your host using a GUI client like SequelPro, you can run [`lando info`](./../cli/info.md) and use the `external_connection` information and any relevant `creds` for the service you want to connect to.
+If you would like to connect to your database, or some other service, from your host using a GUI client like SequelPro, you can run [`lando info`](https://docs.lando.dev/cli/info.md) and use the `external_connection` information and any relevant `creds` for the service you want to connect to.
 
-You can also check out the environment variable [`LANDO INFO`](./../guides/lando-info.md), which is available in every Lando container, as it contains useful information about how your application can access other Lando services.
+You can also check out the environment variable [`LANDO INFO`](https://docs.lando.dev/guides/lando-info.md), which is available in every Lando container, as it contains useful information about how your application can access other Lando services.
 
 Some example connection info for the `mariadb` service is shown below:
 
@@ -182,9 +182,9 @@ lando php               Runs php commands
 lando yarn              Runs yarn commands
 ```
 
-Note that you can define your own commands by using out [tooling framework](tooling.md). Also check out the guides for the powerful [DB Export](./../guides/db-export.md) and [DB Import](./../guides/db-import.md) commands.
+Note that you can define your own commands by using out [tooling framework](https://docs.lando.dev/config/tooling.md). Also check out the guides for the powerful [DB Export](https://docs.lando.dev/guides/db-export.md) and [DB Import](https://docs.lando.dev/guides/db-import.md) commands.
 
-Also, check out the [Lagoon CLI Docs](https://amazeeio.github.io/lagoon-cli/commands/lagoon/) for more information on using `lando lagoon`.
+Also, check out the [Lagoon CLI Docs](https://uselagoon.github.io/lagoon-cli/commands/lagoon/) for more information on using `lando lagoon`.
 
 ### Mailhog
 
@@ -251,5 +251,19 @@ lando push -d main -f main
 # Effectively "do nothing"
 lando push --database none --files none
 ```
+
+## Customizing your domain or using a non `lndo.site` domain
+
+As per the general Lando [Proxy](https://docs.lando.dev/config/proxy.html) instructions, it is possible to configure custom domains (i.e. `myapp.lndo.site` or `foo.bar.xyz`) for your site.  However, as the default Lagoon base images are built slightly differently to the default Lando ones, you need to specify the port  to route the request to (usually 8080 for nginx):
+
+Add the following lines to your .lando.yml file
+
+```yaml
+proxy:
+  nginx:
+    - myapp.lndo.site:8080
+    - foo.bar.xyz:8080
+```
+Your app can then be accessed via the `myapp.lndo.site` or `foo.bar.xyz` URL.  Note that this will override any autogenerated URLs.
 
 <RelatedGuides tag="Lagoon"/>

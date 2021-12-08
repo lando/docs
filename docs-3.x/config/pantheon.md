@@ -1,5 +1,5 @@
 ---
-description: The best local development option for Drupal 7, Drupal 8 or WordPress sites running on Pantheon. Get Terminus and all the usual power tools plus awesome workflow automation.
+description: The best local development option for Drupal 7, Drupal 8/9 or WordPress sites running on Pantheon. Get Terminus and all the usual power tools plus awesome workflow automation.
 ---
 
 # Pantheon
@@ -23,9 +23,9 @@ You should also check out Pantheon's [local dev](https://pantheon.io/docs/local-
 
 Before you get started with this recipe, we assume that you have:
 
-1. [Installed Lando](./../basics/installation.md) and gotten familiar with [its basics](./../basics/).
-2. [Initialized](./../basics/init.md) a [Landofile](./../config/lando.md) for your codebase for use with this recipe.
-3. Read about the various [services](./../config/services.md), [tooling](./../config/tooling.md), [events](./../config/events.md) and [routing](./../config/proxy.md) Lando offers.
+1. [Installed Lando](https://docs.lando.dev/basics/installation.html) and gotten familiar with [its basics](https://docs.lando.dev/basics/).
+2. [Initialized](https://docs.lando.dev/basics/init.html) a [Landofile](https://docs.lando.dev/config/lando.html) for your codebase for use with this recipe.
+3. Read about the various [services](https://docs.lando.dev/config/services.html), [tooling](https://docs.lando.dev/config/tooling.html), [events](https://docs.lando.dev/config/events.html) and [routing](https://docs.lando.dev/config/proxy.html) Lando offers.
 
 However, because you are a developer and developers never ever [RTFM](https://en.wikipedia.org/wiki/RTFM), you can also try out this recipe with a vanilla install of WordPress with the commands as follows:
 
@@ -51,9 +51,9 @@ lando info
 
 ## Configuration
 
-While Lando [recipes](./../config/recipes.md) set sane defaults so they work out of the box, they are also [configurable](./../config/recipes.md#config).
+While Lando [recipes](https://docs.lando.dev/config/recipes.html) set sane defaults so they work out of the box, they are also [configurable](https://docs.lando.dev/config/recipes.html#config).
 
-Here are the configuration options, set to the default values, for this recipe. If you are unsure about where this goes or what this means we *highly recommend* scanning the [recipes documentation](./../config/recipes.md) to get a good handle on how the magicks work.
+Here are the configuration options, set to the default values, for this recipe. If you are unsure about where this goes or what this means we *highly recommend* scanning the [recipes documentation](https://docs.lando.dev/config/recipes.html) to get a good handle on how the magicks work.
 
 ```yaml
 recipe: pantheon
@@ -68,9 +68,9 @@ config:
   composer_version: "2.0.7"
 ```
 
-If you do not already have a [Landofile](./../config/lando.md) for your Pantheon site, we highly recommend you use [`lando init`](./../basics/init.md) to get one as that will automatically populate the `framework`, `id` and `site` for you. Manually creating a Landofile with these things set correctly can be difficult and is *highly discouraged.*
+If you do not already have a [Landofile](https://docs.lando.dev/config/lando.html) for your Pantheon site, we highly recommend you use [`lando init`](https://docs.lando.dev/basics/init.html) to get one as that will automatically populate the `framework`, `id` and `site` for you. Manually creating a Landofile with these things set correctly can be difficult and is *highly discouraged.*
 
-Note that if the above config options are not enough, all Lando recipes can be further [extended and overriden](./../config/recipes.md#extending-and-overriding-recipes).
+Note that if the above config options are not enough, all Lando recipes can be further [extended and overriden](https://docs.lando.dev/config/recipes.html#extending-and-overriding-recipes).
 
 ### Choosing a php version
 
@@ -78,7 +78,7 @@ Lando will look for a [`pantheon.yml`](https://pantheon.io/docs/pantheon-yml/) (
 
 This means that **you can not configure the php version directly in your Landofile for this recipe.**
 
-If you change this version, make sure you [`lando rebuild`](./../cli/rebuild.md) for the changes to apply.
+If you change this version, make sure you [`lando rebuild`](https://docs.lando.dev/cli/rebuild.html) for the changes to apply.
 
 **Example pantheon.yml**
 
@@ -93,7 +93,7 @@ Lando will look for a [`pantheon.yml`](https://pantheon.io/docs/pantheon-yml/) (
 
 This means that **you cannot configure the webroot directly in your Landofile for this recipe.**
 
-If you change this version, make sure you [`lando rebuild`](./../cli/rebuild.md) for the changes to apply.
+If you change this version, make sure you [`lando rebuild`](https://docs.lando.dev/cli/rebuild.html) for the changes to apply.
 
 **Example pantheon.yml**
 
@@ -140,7 +140,7 @@ Note that if your application code depends on one of these services and you disa
 
 ### Using xdebug
 
-This is just a passthrough option to the [xdebug setting](./php.md#toggling-xdebug) that exists on all our [php services](./php.md). The `tl;dr` is `xdebug: true` enables and configures the php xdebug extension and `xdebug: false` disables it.
+This is just a passthrough option to the [xdebug setting](https://docs.lando.dev/config/php.html#toggling-xdebug) that exists on all our [php services](https://docs.lando.dev/config/php.html). The `tl;dr` is `xdebug: true` enables and configures the php xdebug extension and `xdebug: false` disables it.
 
 ```yaml
 recipe: lamp
@@ -148,13 +148,13 @@ config:
   xdebug: true|false
 ```
 
-However, for more information, we recommend you consult the [php service documentation](./php.md).
+However, for more information, we recommend you consult the [php service documentation](https://docs.lando.dev/config/php.html).
 
 ## Connecting to your database
 
 Just like Pantheon, Lando will automatically configure your application to connect to its local database.
 
-You can also check out the environment variable called [`LANDO INFO`](./../guides/lando-info.md) as it contains useful information about how your application can access other Lando services.
+You can also check out the environment variable called [`LANDO INFO`](https://docs.lando.dev/guides/lando-info.html) as it contains useful information about how your application can access other Lando services.
 
 If you find that you still cannot connect to your database, which can happen if a local `wp-config.php` or `settings.local.php` is hijacking our automation, the default credentials are below:
 
@@ -168,7 +168,7 @@ host: database
 port: 3306
 ```
 
-You can get also get the above information, and more, by using the [`lando info`](./../cli/info.md) command.
+You can get also get the above information, and more, by using the [`lando info`](https://docs.lando.dev/cli/info.html) command.
 
 ## Importing Your Database and Files
 
@@ -241,7 +241,7 @@ lando terminus backup:get MYSITE.MYENV --element=db --to=/app/database.sql.gz
 lando db-import database.sql.gz
 ```
 
-You can learn more about the `db-import` command [over here](./../guides/db-import.md).
+You can learn more about the `db-import` command [over here](https://docs.lando.dev/guides/db-import.html).
 
 #### Files
 
@@ -326,7 +326,7 @@ Pantheon [multidev](https://pantheon.io/docs/multidev/) is a great (and easy) wa
 lando switch feature-1
 
 # Switch to the env called "feature-1" but ignore grabbing that env's files and database
-# Note that this is basically a glorified `get fetch --all && git checkout BRANCH`
+# Note that this is basically a glorified `git fetch --all && git checkout BRANCH`
 lando switch feature-1 --no-db --no-files
 ```
 
@@ -389,7 +389,7 @@ PRESSFLOW_SETTINGS: JSON object of Drupal config and settings.
 DRUPAL_HASH_SALT: Needed for Drupal8. We set this automatically.
 ```
 
-These are in addition to the [default variables](./../config/env.md#default-environment-variables) that we inject into every container.
+These are in addition to the [default variables](https://docs.lando.dev/config/env.html#default-environment-variables) that we inject into every container.
 
 **NOTE:** These can vary based on the choices you make in your recipe config.
 
@@ -397,7 +397,7 @@ These are in addition to the [default variables](./../config/env.md#default-envi
 
 Lando also supports the same [external libraries](https://pantheon.io/docs/external-libraries/) as Pantheon so you can use Lando to test code that uses `phantomjs`, `wkhtmltopdf`, `tika` and more.
 
-If you'd like to utilize these libraries as [tooling commands](./../config/tooling.md), add to the `tooling` section of your Landofile as shown below:
+If you'd like to utilize these libraries as [tooling commands](https://docs.lando.dev/config/tooling.html), add to the `tooling` section of your Landofile as shown below:
 
 ```yaml
 phantomjs:
@@ -425,7 +425,7 @@ If you decide to list `drush` as a dependency in your project's `composer.json` 
 
 If you are using `web_docroot` in your `pantheon.yml`, you will need to remember to `cd` into that directory and run `lando drush` from there. This is because many site-specific `drush` commands will only run correctly if you run `drush` from a directory that also contains a Drupal site.
 
-If you are annoyed by having to `cd` into that directory every time you run a `drush` command, you can get around it by [overriding](./../config/tooling.md#overriding) the `drush` tooling command in your [Landofile](./../config/lando.md) so that Drush always runs from your `webroot`.
+If you are annoyed by having to `cd` into that directory every time you run a `drush` command, you can get around it by [overriding](https://docs.lando.dev/config/tooling.html#overriding) the `drush` tooling command in your [Landofile](https://docs.lando.dev/config/lando.html) so that Drush always runs from your `webroot`.
 
 **Note that hard coding the `root` like this may have unforeseen and bad consequences for some `drush` commands such as `drush scr`.**
 
@@ -459,7 +459,7 @@ You should be able to use `terminus` commands in the exact same way by prefixing
 
 ### Terminus Plugins
 
-By default, Lando will only install `terminus` proper but you can add [Terminus Plugins](https://pantheon.io/docs/terminus/plugins/directory/) to your Landofile with a [build step](./../config/services.md#build-steps).
+By default, Lando will only install `terminus` proper but you can add [Terminus Plugins](https://pantheon.io/docs/terminus/plugins/directory/) to your Landofile with a [build step](https://docs.lando.dev/config/services.html#build-steps).
 
 You will want to consult the relevant install instructions for each plugin but an example that installs the [Terminus Build Tools](https://github.com/pantheon-systems/terminus-build-tools-plugin) plugin is shown below:
 
@@ -513,7 +513,7 @@ lando drush dl webform
 
 ## Customizing Pantheon tooling
 
-If you would like to customize `lando pull`, `lando push` or `lando switch` you can do so using [tooling](./tooling.md#tooling) or [tooling overrides](./tooling.md#overriding) directly to achieve your specific use case. This should allow you to:
+If you would like to customize `lando pull`, `lando push` or `lando switch` you can do so using [tooling](https://docs.lando.dev/config/tooling.html#tooling) or [tooling overrides](https://docs.lando.dev/config/tooling.html#overriding) directly to achieve your specific use case. This should allow you to:
 
 * Disable Pantheon tooling
 * Provide additional `pull`, `push` or `switch` use cases

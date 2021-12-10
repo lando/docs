@@ -21,7 +21,7 @@ Lando is **free** and **open source** software that relies on contributions from
 
 * Updated to `@lando/pantheon` version [`0.5.5`](https://github.com/lando/pantheon/releases/tag/v0.5.5)
 * Updated to `@lando/lagoon` version [`0.5.2`](https://github.com/lando/lagoon/releases/tag/v0.5.2)
-* Updated to `@lando/acquia` version [`0.5.2`](https://github.com/lando/acquia/releases/tag/v0.5.1)
+* Updated to `@lando/acquia` version [`0.5.1`](https://github.com/lando/acquia/releases/tag/v0.5.1)
 
 ## v3.5.1 - [October 29, 2021](https://github.com/lando/lando/releases/tag/v3.5.1)
 

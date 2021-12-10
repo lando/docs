@@ -23,7 +23,6 @@
                 <li><a href="https://docs.lando.dev/guides/lando-info.html" target="_blank">Guides</a></li>
                 <li><a href="https://docs.lando.dev/help/logs.html" target="_blank">Help</a></li>
                 <li><a href="https://docs.lando.dev/contrib/contributing.html" target="_blank">Contributing</a></li>
-                <li><a href="https://docs.lando.dev/api/app.html" target="_blank">API</a></li>
               </ul>
             </div>
             <div class="footer-column-third">

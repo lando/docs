@@ -48,7 +48,7 @@ services:
 
 ### Using custom Apache config files
 
-The default `config` files depend on how you have set `ssl` but are all available [here](https://github.com/lando/lando/tree/master/plugins/lando-services/services/apache).
+The default `config` files depend on how you have set `ssl` but are all available [here](https://github.com/lando/cli/tree/master/plugins/lando-services/services/apache).
 
 Note that if you set `config` to use your own files then those files should exist inside your application and be expressed relative to your project root as shown below:
 

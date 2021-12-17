@@ -50,7 +50,7 @@ Here are the configuration options, set to the default values, for this recipe's
 ```yaml
 recipe: drupal9
 config:
-  php: '7.3'
+  php: '8.0'
   composer_version: '2.0.7'
   via: apache:2.4
   webroot: .

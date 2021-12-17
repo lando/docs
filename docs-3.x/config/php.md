@@ -41,6 +41,11 @@ Because we use our own custom images for `php`, specifying a patch version is no
 If you **really** need to lock down to a patch version, you could consider using either a [custom compose service](./compose.md) or a service [overrides](./../config/services.md#overrides).
 
 ## Configuration
+The simplest way is adding something like this in your recipe, and then rebuild Lando:
+```yaml
+config:
+  php: "8.1"
+```
 
 Here are the configuration options, set to the default values, for this service. If you are unsure about where this goes or what this means, we *highly recommend* scanning the [services documentation](./../config/services.md) to get a good handle on how the magicks work.
 

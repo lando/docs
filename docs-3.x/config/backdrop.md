@@ -45,7 +45,7 @@ Here are the configuration options, set to the default values, for this recipe's
 ```yaml
 recipe: backdrop
 config:
-  php: '7.2'
+  php: '7.4'
   composer_version: '2.0.7'
   via: apache:2.4
   webroot: .

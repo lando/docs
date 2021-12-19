@@ -28,7 +28,7 @@ If you’ve got a local php installation (for example php 7.1 installed with hom
 With Xdebug 3.x, the setting `xdebug.remote_port` has been deprecated, and the setting `xdebug.client_port` should be used instead.
 Also, the default xdebug port changed from `9000` to `9003`. Xdebug 3 is now the default version for PHP 7.3 and above.
 
-https://xdebug.org/docs/upgrade_guide#changed-xdebug.remote_port
+<https://xdebug.org/docs/upgrade_guide#changed-xdebug.remote_port>
 
 ## Debugging CLI Commands
 

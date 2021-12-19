@@ -60,3 +60,40 @@ You'll want to do all of your shell activity from within the WSL system, and you
 ## Some caveats
 
 Performance is generally very good with this approach, however, stability can at times leave something to be be desired. Occassional freezes under heavy load are fairly commonplace, and seem to be resolved by rebooting the system. All things considered, the reduction in CPU load, battery drain, and the accompanied increase in the speed of every single action you take (accessing site pages, running any CLI commands) more than outweighs the disruption of these occasional issues for most users. Hopefully stability will continue to increase with time.
+            
+## Configure host IP
+
+If you are running Lando inside WSL you have to override the `LANDO_HOST_IP` to use Xdebug because by default Lando uses the WSL IP which can switch between reboots of WSL.
+Also, you have to differentiate between running your IDE (e.g. PHPStorm) in Windows or inside WSL.
+
+### 1. Add this lines to `~/.bashrc` inside WSL2 :
+a) For IDE in Windows:
+```bash
+# Set correct dev host IP to Windows
+export LANDO_HOST_IP_DEV=host.wsl.internal
+sudo sed -i "/$LANDO_HOST_IP_DEV/d" /etc/hosts && sudo sh -c "echo $(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}') $LANDO_HOST_IP_DEV >> /etc/hosts"
+```
+The name `host.wsl.internal` can be chosen individually, as it should only be used inside Lando. On every bash restart the current IP of the `nameserver` should be updated in your WSL hosts.
+Even on `lando restart` the current IP should be set inside the lando docker container because of step 3!
+
+b) For IDE inside WSL:
+```bash
+# Set correct dev host IP to WSL
+export LANDO_HOST_IP_DEV=host.docker.internal
+```
+
+### 2. Edit `~/.lando/config.yml` inside WSL2
+```yml
+appEnv:
+  LANDO_HOST_IP: $LANDO_HOST_IP_DEV
+```
+
+### 3. Add the following to your `.lando.yml`:
+```yml
+services:
+    appserver:
+        overrides:
+            extra_hosts:
+                - ${LANDO_HOST_IP_DEV:-host}:host-gateway
+```
+This setting is very useful for team members, which are not using WSL. There the fallback `host` is used, because `LANDO_HOST_IP_DEV` is not set, and you don't need to have different project settings. 

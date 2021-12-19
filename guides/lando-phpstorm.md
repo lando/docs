@@ -61,26 +61,47 @@ export XDEBUG_SESSION="PHPSTORM"
 
 ## Toggling Xdebug
 For performance reasons, it can be a negative to always have Xdebug enabled. Best option is to install/build
-Xdebug extension but leave Xdebug disabled (as is the case with `pantheon` framework with `config: xdebug: false`.
+Xdebug extension but leave Xdebug disabled (as is the case with `pantheon` framework with `config: xdebug: false`).
 One option to do so is to use tooling such as:
 
+### Toggling for Apache
 ```yaml
+services:
+  appserver:
+    xdebug: true
+    build_as_root:
+      - rm -f /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && /etc/init.d/apache2 reload
+tooling:
+  xdebug-on:
+    service: appserver
+    description: Enable xdebug for Apache.
+    cmd: rm -f /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && docker-php-ext-enable xdebug && /etc/init.d/apache2 reload && echo "Xdebug enabled"
+    user: root
+
+  xdebug-off:
+    service: appserver
+    description: Disable xdebug for Apache.
+    cmd: rm -f /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && /etc/init.d/apache2 reload && echo "Xdebug disabled"
+    user: root
+```
+                                             
+### Toggling for nginx
+```yaml   
+services:
+  appserver:     
+        xdebug: true
+    build_as_root:
+      - rm -f /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && pkill -o -USR2 php-fpm
 tooling:
   xdebug-on:
     service: appserver
     description: Enable xdebug for nginx.
-    cmd:
-      - rm /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini -f
-      - docker-php-ext-enable xdebug
-      - pkill -o -USR2 php-fpm
-      - echo "Xdebug enabled"
+    cmd: rm -f /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && docker-php-ext-enable xdebug && pkill -o -USR2 php-fpm && echo "Xdebug enabled"
     user: root
+
   xdebug-off:
     service: appserver
     description: Disable xdebug for nginx.
-    cmd:
-      - rm /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini -f
-      - pkill -o -USR2 php-fpm
-      - echo "Xdebug disabled"
+    cmd: rm -f /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && pkill -o -USR2 php-fpm && echo "Xdebug disabled"
     user: root
   ```

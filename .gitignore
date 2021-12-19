@@ -24,10 +24,12 @@ node_modules
 env.yaml
 env.yml
 lando.env
+.lando.local.yml
 
 # Build dirs
 build
 dist
+_docs3
 
 # coverage reporting
 .nyc_output

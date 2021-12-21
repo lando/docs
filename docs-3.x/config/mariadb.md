@@ -21,7 +21,7 @@ You can easily add it to your Lando app by adding an entry to the [services](./.
 
 ## Legacy versions
 
-::: warning Using Unsupported PHP Versions!
+::: warning Using Unsupported MariaDB Versions!
 While you can currently use some [EOL MariaDB version](https://endoflife.date/mariadb) with Lando, it's worth noting that we also do not support such versions, so your mileage may vary. If you are having issues with unsupported versions and open a ticket about it, the most likely response you will get is "upgrade to a supported version".
 :::
 

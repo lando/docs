@@ -95,9 +95,10 @@ See: <https://github.com/Homebrew/homebrew-cask/blob/master/Casks/lando.rb>
 ### Install package via direct download (recommended)
 
 1. Install the [Docker Community Edition](https://docs.docker.com/engine/installation/) for your Linux version. Visit [https://get.docker.com](https://get.docker.com/) for the "quick & easy install" script. **(at least version 19.03.1-ce)**
-2. Download the latest `.deb`, `.pacman` or `.rpm` package from [GitHub](https://github.com/lando/lando/releases)
-3. Double click on the package and install via your distributions "Software Center" or equivalent.
-4. Make sure you look at the caveats below and follow them appropriately
+2. Install [Docker Compose](https://docs.docker.com/compose/install/).
+3. Download the latest `.deb`, `.pacman` or `.rpm` package from [GitHub](https://github.com/lando/lando/releases)
+4. Double click on the package and install via your distributions "Software Center" or equivalent.
+5. Make sure you look at the caveats below and follow them appropriately
 
 ::: tip Install from source for other Linux distros
 If your Linux distro does not support our `.deb`, `.pacman` or `.rpm` packages you can [install from source](#from-source)

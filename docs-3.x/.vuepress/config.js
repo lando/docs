@@ -62,10 +62,9 @@ module.exports = {
       // uncomment the below to make styling inspection easier
       // debug: true,
     },
-    docsDir: 'docs',
-    docsBranch: 'master',
-    logo: '/images/logo-pink-small.png',
+    docsDir: 'docs-3.x',
     docsBranch: 'main',
+    logo: '/images/logo-pink-small.png',
     editLinks: true,
     editLinkText: 'Is this doc out of date? Suggest a change!',
     lastUpdated: 'Last Updated',
@@ -78,7 +77,7 @@ module.exports = {
       {text: 'Blog', link: 'https://blog.lando.dev'},
       {text: 'Events & Meetups', link: 'https://events.lando.dev'},
     ],
-    repo: 'lando/lando',
+    repo: 'lando/docs',
     sidebar: {
       '/basics/': [
         {

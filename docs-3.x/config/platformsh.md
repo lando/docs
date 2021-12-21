@@ -578,8 +578,7 @@ lando database main < dump.sql
 
 ## Caveats and known issues
 
-Since this is a currently an `beta` release there are a few known issues, and workarounds, to be aware of. We also recommend you consult GitHub for other [Platform.sh tagged issues](https://github.com/lando/lando/issues?q=is%3Aopen+is%3Aissue+label%3Aplatformsh
-).
+Since this is a currently an `beta` release there are a few known issues, and workarounds, to be aware of. We also recommend you consult GitHub for other [Platform.sh tagged issues](https://github.com/lando/platformsh/issues).
 
 We also _highly encourage_ you to [post an issue](https://github.com/lando/lando/issues/new/choose) if you see a problem that doesn't already have an issue.
 

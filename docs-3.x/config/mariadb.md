@@ -12,12 +12,22 @@ You can easily add it to your Lando app by adding an entry to the [services](./.
 
 ## Supported versions
 
+*   [10.6](https://hub.docker.com/r/bitnami/mariadb)
 *   [10.5](https://hub.docker.com/r/bitnami/mariadb)
 *   [10.4](https://hub.docker.com/r/bitnami/mariadb)
 *   **[10.3](https://hub.docker.com/r/bitnami/mariadb)** **(default)**
 *   [10.2](https://hub.docker.com/r/bitnami/mariadb)
-*   [10.1](https://hub.docker.com/r/bitnami/mariadb)
 *   [custom](./../config/services.md#advanced)
+
+## Legacy versions
+
+::: warning Using Unsupported PHP Versions!
+While you can currently use some [EOL MariaDB version](https://endoflife.date/mariadb) with Lando, it's worth noting that we also do not support such versions, so your mileage may vary. If you are having issues with unsupported versions and open a ticket about it, the most likely response you will get is "upgrade to a supported version".
+:::
+
+You can still run these versions with Lando but for all intents and purposes they should be considered deprecated (e.g. YMMV and do not expect a ton of support if you have an issue).
+
+*   [10.1](https://hub.docker.com/r/bitnami/mariadb)
 
 ## Patch versions
 
@@ -30,7 +40,7 @@ To use a patch version, you can do something as shown below:
 ```yaml
 services:
   myservice:
-    type: mariadb:10.2.21
+    type: mariadb:10.3.32
 ```
 
 But make sure you use one of the available [patch tags](https://hub.docker.com/r/bitnami/mariadb/tags) for the underlying image we are using.
@@ -53,7 +63,7 @@ In the case of type and version, the underlying database files between these thi
 ```yaml
 services:
   myservice:
-    type: mariadb:10.1
+    type: mariadb:10.3
     portforward: false
     creds:
       user: mariadb

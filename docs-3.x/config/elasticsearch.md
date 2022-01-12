@@ -13,6 +13,10 @@ You can easily add it to your Lando app by adding an entry to the [services](./.
 ## Supported versions
 
 *   [7](https://hub.docker.com/r/bitnami/elasticsearch)
+*   [7.16.x](https://hub.docker.com/r/bitnami/elasticsearch)
+*   [7.15.x](https://hub.docker.com/r/bitnami/elasticsearch)
+*   [7.14.x](https://hub.docker.com/r/bitnami/elasticsearch)
+*   [7.13.x](https://hub.docker.com/r/bitnami/elasticsearch)
 *   [7.12.x](https://hub.docker.com/r/bitnami/elasticsearch)
 *   [7.11.x](https://hub.docker.com/r/bitnami/elasticsearch)
 *   [7.10.x](https://hub.docker.com/r/bitnami/elasticsearch)

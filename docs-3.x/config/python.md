@@ -13,6 +13,10 @@ You can easily add it to your Lando app by adding an entry to the [services](./.
 ## Supported versions
 
 *   [3](https://hub.docker.com/r/_/python/)
+*   [3.11](https://hub.docker.com/r/_/python/)
+*   [3.10](https://hub.docker.com/r/_/python/)
+*   [3.9](https://hub.docker.com/r/_/python/)
+*   [3.8](https://hub.docker.com/r/_/python/)
 *   **[3.7](https://hub.docker.com/r/_/python/)** **(default)**
 *   [3.6](https://hub.docker.com/r/_/python/)
 *   [3.5](https://hub.docker.com/r/_/python/)

@@ -69,7 +69,8 @@ Also, you have to differentiate between running your IDE (e.g. PHPStorm) in Wind
 ### 1. Add this lines to `~/.bashrc` inside WSL2 :
 a) For IDE in Windows:
 ```bash
-# Set correct dev host IP to Windows
+// ~/.bashrc
+# Set correct dev host to Windows
 export LANDO_HOST_NAME_DEV=host.wsl.internal
 export LANDO_HOST_GATEWAY_DEV=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}')
 #optional: sudo sed -i "/$LANDO_HOST_NAME_DEV/d" /etc/hosts && sudo sh -c "echo $LANDO_HOST_GATEWAY_DEV $LANDO_HOST_NAME_DEV >> /etc/hosts"
@@ -78,11 +79,12 @@ The name `host.wsl.internal` can be chosen individually, as it should only be us
 On every bash restart you can optionally update the current IP of the `nameserver` in your WSL hosts, if you want to use it outside docker, too.
 
 **Attention:**
-Unfortunately the `LANDO_HOST_GATEWAY_DEV` won't be static, so if the IP address of wsl has changed you need to do a `lando rebuild`, so update the config for `extra_hosts` of step 3!
+Unfortunately the `LANDO_HOST_GATEWAY_DEV` won't be static, so if the IP address of wsl has changed you need to do a `lando rebuild`, to update the config for `extra_hosts` of step 3!
 
 b) For IDE inside WSL:
-```bash
-# Set correct dev host IP to WSL
+```bash              
+// ~/.bashrc
+# Set correct dev host to WSL
 export LANDO_HOST_NAME_DEV=host.docker.internal
 # optional: export LANDO_HOST_GATEWAY_DEV=host-gateway
 ```
@@ -90,12 +92,14 @@ The definition of `LANDO_HOST_GATEWAY_DEV` should not be necessary because in st
 
 ### 2. Edit `~/.lando/config.yml` inside WSL2
 ```yml
+// ~/.lando/config.yml
 appEnv:
   LANDO_HOST_IP: $LANDO_HOST_NAME_DEV
 ```
 
 ### 3. Add the following to your `.lando.yml`:
 ```yml
+// .lando.yml
 services:
     appserver:
         overrides:

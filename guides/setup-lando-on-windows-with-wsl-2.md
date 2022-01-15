@@ -70,22 +70,28 @@ Also, you have to differentiate between running your IDE (e.g. PHPStorm) in Wind
 a) For IDE in Windows:
 ```bash
 # Set correct dev host IP to Windows
-export LANDO_HOST_IP_DEV=host.wsl.internal
-sudo sed -i "/$LANDO_HOST_IP_DEV/d" /etc/hosts && sudo sh -c "echo $(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}') $LANDO_HOST_IP_DEV >> /etc/hosts"
+export LANDO_HOST_NAME_DEV=host.wsl.internal
+export LANDO_HOST_GATEWAY_DEV=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}')
+#optional: sudo sed -i "/$LANDO_HOST_NAME_DEV/d" /etc/hosts && sudo sh -c "echo $LANDO_HOST_GATEWAY_DEV $LANDO_HOST_NAME_DEV >> /etc/hosts"
 ```
-The name `host.wsl.internal` can be chosen individually, as it should only be used inside Lando. On every bash restart the current IP of the `nameserver` should be updated in your WSL hosts.
-Even on `lando restart` the current IP should be set inside the lando docker container because of step 3!
+The name `host.wsl.internal` can be chosen individually, as it should only be used inside Lando. 
+On every bash restart you can optionally update the current IP of the `nameserver` in your WSL hosts, if you want to use it outside docker, too.
+
+**Attention:**
+Unfortunately the `LANDO_HOST_GATEWAY_DEV` won't be static, so if the IP address of wsl has changed you need to do a `lando rebuild`, so update the config for `extra_hosts` of step 3!
 
 b) For IDE inside WSL:
 ```bash
 # Set correct dev host IP to WSL
-export LANDO_HOST_IP_DEV=host.docker.internal
+export LANDO_HOST_NAME_DEV=host.docker.internal
+# optional: export LANDO_HOST_GATEWAY_DEV=host-gateway
 ```
+The definition of `LANDO_HOST_GATEWAY_DEV` should not be necessary because in step 3 the fallback `host-gateway` is defined for `extra_hosts`!
 
 ### 2. Edit `~/.lando/config.yml` inside WSL2
 ```yml
 appEnv:
-  LANDO_HOST_IP: $LANDO_HOST_IP_DEV
+  LANDO_HOST_IP: $LANDO_HOST_NAME_DEV
 ```
 
 ### 3. Add the following to your `.lando.yml`:
@@ -94,6 +100,7 @@ services:
     appserver:
         overrides:
             extra_hosts:
-                - ${LANDO_HOST_IP_DEV:-host}:host-gateway
+                - ${LANDO_HOST_NAME_DEV:-host}:${LANDO_HOST_GATEWAY_DEV:-host-gateway}
 ```
-This setting is very useful for team members, which are not using WSL. There the fallback `host` is used, because `LANDO_HOST_IP_DEV` is not set, and you don't need to have different project settings. 
+This setting is very useful for team members, which are not using WSL. 
+There the fallbacks `host` and `host-gateway` are used, because `LANDO_HOST_NAME_DEV` and `LANDO_HOST_GATEWAY_DEV` are not set, and you don't need to have different project settings. 

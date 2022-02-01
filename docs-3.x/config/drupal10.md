@@ -70,17 +70,17 @@ Note that if the above config options are not enough all Lando recipes can be fu
 
 You can set PHP to any version that is available in our [PHP service](./php.md). However, you should consult the [PHP requirements](https://www.drupal.org/docs/system-requirements/php-requirements) to make sure that version is actually supported by Drupal 10 itself.
 
-Here is the [recipe config](./../config/recipes.md#config) to set the Drupal 10 recipe to use PHP version `7.4`
+Here is the [recipe config](./../config/recipes.md#config) to set the Drupal 10 recipe to use PHP version `8.0`
 
 ```yaml
 recipe: drupal10
 config:
-  php: '7.4'
+  php: '8.0'
 ```
 
-### Choosing a composer version
+### Choosing a Composer version
 
-You can set `composer_version` to any version that is available in our [PHP service](./php.md#installing-composer).
+You can set Composer to any version that is available in our [PHP service](./php.md#installing-composer).
 
 ```yaml
 recipe: drupal10

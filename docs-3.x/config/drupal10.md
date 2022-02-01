@@ -25,6 +25,8 @@ Before you get started with this recipe we assume that you have:
 However, because you are a developer and developers never ever [RTFM](https://en.wikipedia.org/wiki/RTFM) you can also run the following commands to try out this recipe with a vanilla install of Drupal 10.
 
 ```bash
+# Create folder and enter it
+mkdir drupal10 && cd drupal10
 # Initialize a drupal10 recipe using the latest Drupal 10 version
 lando init \
   --source remote \

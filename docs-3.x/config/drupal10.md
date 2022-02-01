@@ -117,7 +117,7 @@ By default this recipe will use the default version of our [mysql](./mysql.md) s
 
 If you are unsure about how to configure the `database` we *highly recommend* you check out the [mysql](./mysql.md), [mariadb](./mariadb.md)and ['postgres'](./postgres.md) services before you change the default.
 
-Also note that like the configuration of the PHP version you should consult the [Database server requirements](https://www.drupal.org/docs/system-requirements/database-server-requirements) to make sure the `database` and `version` you select is actually supported by Drupal 10 itself.
+Also note that like the configuration of the PHP version you should consult the [database server requirements](https://www.drupal.org/docs/system-requirements/database-server-requirements) to make sure the `database` and `version` you select is actually supported by Drupal 10 itself.
 
 #### Using MySQL (default)
 

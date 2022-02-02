@@ -51,6 +51,7 @@ The following recipes are currently offered. Please check out each one to learn 
 * [Drupal 7](./drupal7.md)
 * [Drupal 8](./drupal8.md)
 * [Drupal 9](./drupal9.md)
+* [Drupal 10](./drupal10.md)
 * [Joomla](./joomla.md)
 * [Lagoon](./lagoon.md) **(BETA)**
 * [Laravel](./laravel.md)

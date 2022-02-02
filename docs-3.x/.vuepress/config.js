@@ -147,6 +147,7 @@ module.exports = {
             'drupal7',
             'drupal8',
             'drupal9',
+            'drupal10',
             'joomla',
             'lagoon',
             'laravel',

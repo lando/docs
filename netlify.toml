@@ -71,3 +71,11 @@
   from = "https://docs.lando.dev/config/config.html"
   to = "https://docs.lando.dev/config/global.html"
   status = 301
+  
+  # Test internal rewrite
+  [[redirects]]
+  from = "/pirog/*"
+  to = "https://lando-platformsh.netlify.app/:splat"
+  status = 200
+
+  

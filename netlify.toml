@@ -72,10 +72,14 @@
   to = "https://docs.lando.dev/config/global.html"
   status = 301
   
-  # Test internal rewrite
-  [[redirects]]
-  from = "/pirog/*"
+# Stitch together the various plugin subsites
+[[redirects]]
+  from = "/platformsh/*"
   to = "https://lando-platformsh.netlify.app/:splat"
   status = 200
-
+# Redirect the legacy page
+# [[redirects]]
+#   from = "https://docs.lando.dev/config/platformsh.html"
+#   to = "https://docs.lando.dev/platformsh"
+#   status = 301
   

@@ -74,12 +74,21 @@
   
 # Stitch together the various plugin subsites
 [[redirects]]
+  from = "/php/*"
+  to = "https://lando-php.netlify.app/:splat"
+  status = 200
+[[redirects]]
   from = "/platformsh/*"
   to = "https://lando-platformsh.netlify.app/:splat"
   status = 200
-# Redirect the legacy page
+
+# Redirect the legacy pages
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/platformsh.html"
 #   to = "https://docs.lando.dev/platformsh"
+#   status = 301
+# [[redirects]]
+#   from = "https://docs.lando.dev/config/php.html"
+#   to = "https://docs.lando.dev/php"
 #   status = 301
   

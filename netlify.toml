@@ -78,6 +78,10 @@
   to = "https://lando-acquia.netlify.app/:splat"
   status = 200
 [[redirects]]
+  from = "/lagoon/*"
+  to = "https://lando-lagoon.netlify.app/:splat"
+  status = 200
+[[redirects]]
   from = "/pantheon/*"
   to = "https://lando-pantheon.netlify.app/:splat"
   status = 200
@@ -95,6 +99,10 @@
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/acquia.html"
 #   to = "https://docs.lando.dev/acquia"
+#   status = 301
+# [[redirects]]
+#   from = "https://docs.lando.dev/config/lagoon.html"
+#   to = "https://docs.lando.dev/lagoon"
 #   status = 301
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/pantheon.html"

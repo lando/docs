@@ -90,6 +90,10 @@
   to = "https://lando-lagoon.netlify.app/:splat"
   status = 200
 [[redirects]]
+  from = "/node/*"
+  to = "https://lando-node.netlify.app/:splat"
+  status = 200
+[[redirects]]
   from = "/pantheon/*"
   to = "https://lando-pantheon.netlify.app/:splat"
   status = 200
@@ -121,6 +125,10 @@
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/lagoon.html"
 #   to = "https://docs.lando.dev/lagoon"
+#   status = 301
+# [[redirects]]
+#   from = "https://docs.lando.dev/config/node.html"
+#   to = "https://docs.lando.dev/node"
 #   status = 301
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/pantheon.html"

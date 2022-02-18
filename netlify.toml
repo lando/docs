@@ -90,6 +90,10 @@
   to = "https://lando-lagoon.netlify.app/:splat"
   status = 200
 [[redirects]]
+  from = "/mssql/*"
+  to = "https://lando-mssql.netlify.app/:splat"
+  status = 200
+[[redirects]]
   from = "/node/*"
   to = "https://lando-node.netlify.app/:splat"
   status = 200
@@ -129,6 +133,10 @@
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/lagoon.html"
 #   to = "https://docs.lando.dev/lagoon"
+#   status = 301
+# [[redirects]]
+#   from = "https://docs.lando.dev/config/mssql.html"
+#   to = "https://docs.lando.dev/mssql"
 #   status = 301
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/node.html"

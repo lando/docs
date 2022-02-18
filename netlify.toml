@@ -101,7 +101,10 @@
   from = "/platformsh/*"
   to = "https://lando-platformsh.netlify.app/:splat"
   status = 200
-
+[[redirects]]
+  from = "/python/*"
+  to = "https://lando-python.netlify.app/:splat"
+  status = 200
 
 # Redirect the legacy pages
 # [[redirects]]
@@ -131,5 +134,8 @@
 #   from = "https://docs.lando.dev/config/php.html"
 #   to = "https://docs.lando.dev/php"
 #   status = 301
-
+# [[redirects]]
+#   from = "https://docs.lando.dev/config/python.html"
+#   to = "https://docs.lando.dev/python"
+#   status = 301
   

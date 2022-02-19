@@ -80,6 +80,9 @@
 [[redirects]]
   from = "/dotnet/*"
   to = "https://lando-dotnet.netlify.app/:splat"
+[[redirects]]
+  from = "/drupal/*"
+  to = "https://lando-drupal.netlify.app/:splat"
   status = 200
 [[redirects]]
   from = "/go/*"
@@ -130,6 +133,21 @@
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/dotnet.html"
 #   to = "https://docs.lando.dev/dotnet"
+# [[redirects]]
+#   from = "https://docs.lando.dev/config/drupal6.html"
+#   to = "https://docs.lando.dev/drupal"
+# [[redirects]]
+#   from = "https://docs.lando.dev/config/drupal7.html"
+#   to = "https://docs.lando.dev/drupal"
+# [[redirects]]
+#   from = "https://docs.lando.dev/config/drupal8.html"
+#   to = "https://docs.lando.dev/drupal"
+# [[redirects]]
+#   from = "https://docs.lando.dev/config/drupal9.html"
+#   to = "https://docs.lando.dev/drupal"
+# [[redirects]]
+#   from = "https://docs.lando.dev/config/drupal10.html"
+#   to = "https://docs.lando.dev/drupal"
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/go.html"
 #   to = "https://docs.lando.dev/go"

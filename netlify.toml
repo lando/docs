@@ -97,6 +97,10 @@
   to = "https://lando-mariadb.netlify.app/:splat"
   status = 200
 [[redirects]]
+  from = "/mongo/*"
+  to = "https://lando-mongo.netlify.app/:splat"
+  status = 200
+[[redirects]]
   from = "/mssql/*"
   to = "https://lando-mssql.netlify.app/:splat"
   status = 200
@@ -163,6 +167,10 @@
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/mariadb.html"
 #   to = "https://docs.lando.dev/mariadb"
+#   status = 301
+# [[redirects]]
+#   from = "https://docs.lando.dev/config/mongo.html"
+#   to = "https://docs.lando.dev/mongo"
 #   status = 301
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/mssql.html"

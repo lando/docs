@@ -141,6 +141,10 @@
   to = "https://lando-php.netlify.app/:splat"
   status = 200
 [[redirects]]
+  from = "/phpmyadmin/*"
+  to = "https://lando-phpmyadmin.netlify.app/:splat"
+  status = 200
+[[redirects]]
   from = "/platformsh/*"
   to = "https://lando-platformsh.netlify.app/:splat"
   status = 200
@@ -255,12 +259,16 @@
 #   to = "https://docs.lando.dev/pantheon"
 #   status = 301
 # [[redirects]]
-#   from = "https://docs.lando.dev/config/platformsh.html"
-#   to = "https://docs.lando.dev/platformsh"
-#   status = 301
-# [[redirects]]
 #   from = "https://docs.lando.dev/config/php.html"
 #   to = "https://docs.lando.dev/php"
+#   status = 301
+# [[redirects]]
+#   from = "https://docs.lando.dev/config/phpmyadmin.html"
+#   to = "https://docs.lando.dev/phpmyadmin"
+#   status = 301
+# [[redirects]]
+#   from = "https://docs.lando.dev/config/platformsh.html"
+#   to = "https://docs.lando.dev/platformsh"
 #   status = 301
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/postgres.html"

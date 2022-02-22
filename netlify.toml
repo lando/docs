@@ -137,6 +137,10 @@
   to = "https://lando-python.netlify.app/:splat"
   status = 200
 [[redirects]]
+  from = "/redis/*"
+  to = "https://lando-redis.netlify.app/:splat"
+  status = 200
+[[redirects]]
   from = "/ruby/*"
   to = "https://lando-ruby.netlify.app/:splat"
   status = 200
@@ -215,6 +219,10 @@
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/python.html"
 #   to = "https://docs.lando.dev/python"
+#   status = 301
+# [[redirects]]
+#   from = "https://docs.lando.dev/config/redis.html"
+#   to = "https://docs.lando.dev/redis"
 #   status = 301
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/ruby.html"

@@ -121,6 +121,10 @@
   to = "https://lando-mysql.netlify.app/:splat"
   status = 200
 [[redirects]]
+  from = "/nginx/*"
+  to = "https://lando-nginx.netlify.app/:splat"
+  status = 200
+[[redirects]]
   from = "/node/*"
   to = "https://lando-node.netlify.app/:splat"
   status = 200
@@ -225,6 +229,10 @@
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/mysql.html"
 #   to = "https://docs.lando.dev/mysql"
+#   status = 301
+# [[redirects]]
+#   from = "https://docs.lando.dev/config/nginx.html"
+#   to = "https://docs.lando.dev/nginx"
 #   status = 301
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/node.html"

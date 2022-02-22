@@ -149,6 +149,10 @@
   to = "https://lando-ruby.netlify.app/:splat"
   status = 200
 [[redirects]]
+  from = "/solr/*"
+  to = "https://lando-solr.netlify.app/:splat"
+  status = 200
+[[redirects]]
   from = "/varnish/*"
   to = "https://lando-varnish.netlify.app/:splat"
   status = 200
@@ -245,6 +249,10 @@
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/ruby.html"
 #   to = "https://docs.lando.dev/ruby"
+#   status = 301
+# [[redirects]]
+#   from = "https://docs.lando.dev/config/solr.html"
+#   to = "https://docs.lando.dev/solr"
 #   status = 301
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/varnish.html"

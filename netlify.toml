@@ -125,6 +125,10 @@
   to = "https://lando-platformsh.netlify.app/:splat"
   status = 200
 [[redirects]]
+  from = "/postgres/*"
+  to = "https://lando-postgres.netlify.app/:splat"
+  status = 200
+[[redirects]]
   from = "/python/*"
   to = "https://lando-python.netlify.app/:splat"
   status = 200
@@ -195,6 +199,10 @@
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/php.html"
 #   to = "https://docs.lando.dev/php"
+#   status = 301
+# [[redirects]]
+#   from = "https://docs.lando.dev/config/postgres.html"
+#   to = "https://docs.lando.dev/postgres"
 #   status = 301
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/python.html"

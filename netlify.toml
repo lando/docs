@@ -101,6 +101,10 @@
   to = "https://lando-lagoon.netlify.app/:splat"
   status = 200
 [[redirects]]
+  from = "/mailhog/*"
+  to = "https://lando-mailhog.netlify.app/:splat"
+  status = 200
+[[redirects]]
   from = "/mariadb/*"
   to = "https://lando-mariadb.netlify.app/:splat"
   status = 200
@@ -213,6 +217,10 @@
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/lagoon.html"
 #   to = "https://docs.lando.dev/lagoon"
+#   status = 301
+# [[redirects]]
+#   from = "https://docs.lando.dev/config/mailhog.html"
+#   to = "https://docs.lando.dev/mailhog"
 #   status = 301
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/mariadb.html"

@@ -86,7 +86,7 @@
   status = 200
 [[redirects]]
   from = "/elasticsearch/*"
-  to = "https://lando-drupal.elasticsearch.app/:splat"
+  to = "https://lando-elasticsearch.netlify.app/:splat"
   status = 200
 [[redirects]]
   from = "/go/*"

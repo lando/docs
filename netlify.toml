@@ -85,6 +85,10 @@
   to = "https://lando-drupal.netlify.app/:splat"
   status = 200
 [[redirects]]
+  from = "/elasticsearch/*"
+  to = "https://lando-drupal.elasticsearch.app/:splat"
+  status = 200
+[[redirects]]
   from = "/go/*"
   to = "https://lando-go.netlify.app/:splat"
   status = 200
@@ -157,21 +161,31 @@
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/dotnet.html"
 #   to = "https://docs.lando.dev/dotnet"
+#   status = 301
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/drupal6.html"
 #   to = "https://docs.lando.dev/drupal"
+#   status = 301
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/drupal7.html"
 #   to = "https://docs.lando.dev/drupal"
+#   status = 301
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/drupal8.html"
 #   to = "https://docs.lando.dev/drupal"
+#   status = 301
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/drupal9.html"
 #   to = "https://docs.lando.dev/drupal"
+#   status = 301
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/drupal10.html"
 #   to = "https://docs.lando.dev/drupal"
+#   status = 301
+# [[redirects]]
+#   from = "https://docs.lando.dev/config/elasticsearch.html"
+#   to = "https://docs.lando.dev/elasticsearch"
+#   status = 301
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/go.html"
 #   to = "https://docs.lando.dev/go"

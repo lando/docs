@@ -109,8 +109,7 @@ services:
 
 ### Using a custom elasticsearch.yml
 
-You may need to override the default config with your own [elasticsearch config file](https://www.elastic.co/guide/en/elasticsearch/reference/current/settings.html#settings). Note that [according to the underlying upstream image](https://github.com/bitnami/bitnami-docker-elasticsearch#configuration-file) this will _completely_ replace the default config. Further note that by default our elasticsearch services start as `data` nodes. If you want to activate your node to also be an `ingest` node then check out [this example](https://github.com/lando/cli/tree/main/examples/elasticsearch).
-
+You may need to override the default config with your own [elasticsearch config file](https://www.elastic.co/guide/en/elasticsearch/reference/current/settings.html#settings). Note that [according to the underlying upstream image](https://github.com/bitnami/bitnami-docker-elasticsearch#configuration-file) this will _completely_ replace the default config. Further note that by default our elasticsearch services start as `data` nodes. If you want to activate your node to also be an `ingest` node then check out [this example](https://github.com/lando/elasticsearch/blob/main/examples/custom/config/custom.yml).
 If you do this, you must use a file that exists inside your application and express it relative to your project root as shown below:
 
 **A hypothetical project**
@@ -150,6 +149,6 @@ services:
   kibana:
     type: compose
     services:
-      image: bitnami/kibana:7.12.0
+      image: bitnami/kibana:6.8.23
       command: '/opt/bitnami/scripts/kibana/entrypoint.sh /opt/bitnami/scripts/kibana/run.sh'
 ```

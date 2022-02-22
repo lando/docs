@@ -78,6 +78,10 @@
   to = "https://lando-acquia.netlify.app/:splat"
   status = 200
 [[redirects]]
+  from = "/apache/*"
+  to = "https://lando-apache.netlify.app/:splat"
+  status = 200
+[[redirects]]
   from = "/dotnet/*"
   to = "https://lando-dotnet.netlify.app/:splat"
 [[redirects]]
@@ -161,6 +165,10 @@
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/acquia.html"
 #   to = "https://docs.lando.dev/acquia"
+#   status = 301
+# [[redirects]]
+#   from = "https://docs.lando.dev/config/apache.html"
+#   to = "https://docs.lando.dev/apache"
 #   status = 301
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/dotnet.html"

@@ -82,8 +82,13 @@
   to = "https://lando-apache.netlify.app/:splat"
   status = 200
 [[redirects]]
+  from = "/backdrop/*"
+  to = "https://lando-backdrop.netlify.app/:splat"
+  status = 200
+[[redirects]]
   from = "/dotnet/*"
   to = "https://lando-dotnet.netlify.app/:splat"
+  status = 200
 [[redirects]]
   from = "/drupal/*"
   to = "https://lando-drupal.netlify.app/:splat"
@@ -185,6 +190,10 @@
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/apache.html"
 #   to = "https://docs.lando.dev/apache"
+#   status = 301
+# [[redirects]]
+#   from = "https://docs.lando.dev/config/backdrop.html"
+#   to = "https://docs.lando.dev/backdrop"
 #   status = 301
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/dotnet.html"

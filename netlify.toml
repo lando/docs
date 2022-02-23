@@ -102,6 +102,10 @@
   to = "https://lando-go.netlify.app/:splat"
   status = 200
 [[redirects]]
+  from = "/joomla/*"
+  to = "https://lando-joomla.netlify.app/:splat"
+  status = 200
+[[redirects]]
   from = "/lagoon/*"
   to = "https://lando-lagoon.netlify.app/:splat"
   status = 200
@@ -226,6 +230,10 @@
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/go.html"
 #   to = "https://docs.lando.dev/go"
+#   status = 301
+# [[redirects]]
+#   from = "https://docs.lando.dev/config/joomla.html"
+#   to = "https://docs.lando.dev/joomla"
 #   status = 301
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/lagoon.html"

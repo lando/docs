@@ -185,6 +185,10 @@
   from = "/varnish/*"
   to = "https://lando-varnish.netlify.app/:splat"
   status = 200
+[[redirects]]
+  from = "/wordpress/*"
+  to = "https://lando-wordpress.netlify.app/:splat"
+  status = 200
 
 # Redirect the legacy pages
 # [[redirects]]
@@ -314,4 +318,8 @@
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/varnish.html"
 #   to = "https://docs.lando.dev/varnish"
+#   status = 301
+# [[redirects]]
+#   from = "https://docs.lando.dev/config/wordpress.html"
+#   to = "https://docs.lando.dev/wordpress"
 #   status = 301

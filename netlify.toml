@@ -110,8 +110,16 @@
   to = "https://lando-lagoon.netlify.app/:splat"
   status = 200
 [[redirects]]
+  from = "/lamp/*"
+  to = "https://lando-lamp.netlify.app/:splat"
+  status = 200
+[[redirects]]
   from = "/laravel/*"
   to = "https://lando-laravel.netlify.app/:splat"
+  status = 200
+[[redirects]]
+  from = "/lemp/*"
+  to = "https://lando-lemp.netlify.app/:splat"
   status = 200
 [[redirects]]
   from = "/mailhog/*"
@@ -256,8 +264,16 @@
 #   to = "https://docs.lando.dev/lagoon"
 #   status = 301
 # [[redirects]]
+#   from = "https://docs.lando.dev/config/lamp.html"
+#   to = "https://docs.lando.dev/lamp"
+#   status = 301
+# [[redirects]]
 #   from = "https://docs.lando.dev/config/laravel.html"
 #   to = "https://docs.lando.dev/laravel"
+#   status = 301
+# [[redirects]]
+#   from = "https://docs.lando.dev/config/lemp.html"
+#   to = "https://docs.lando.dev/lemp"
 #   status = 301
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/mailhog.html"

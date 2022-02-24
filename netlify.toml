@@ -182,6 +182,10 @@
   to = "https://lando-solr.netlify.app/:splat"
   status = 200
 [[redirects]]
+  from = "/symfony/*"
+  to = "https://lando-symfony.netlify.app/:splat"
+  status = 200
+[[redirects]]
   from = "/tomcat/*"
   to = "https://lando-tomcat.netlify.app/:splat"
   status = 200
@@ -318,6 +322,10 @@
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/solr.html"
 #   to = "https://docs.lando.dev/solr"
+#   status = 301
+# [[redirects]]
+#   from = "https://docs.lando.dev/config/symfony.html"
+#   to = "https://docs.lando.dev/symfony"
 #   status = 301
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/tomcat.html"

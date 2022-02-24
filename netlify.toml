@@ -122,6 +122,10 @@
   to = "https://lando-mariadb.netlify.app/:splat"
   status = 200
 [[redirects]]
+  from = "/mean/*"
+  to = "https://lando-mean.netlify.app/:splat"
+  status = 200
+[[redirects]]
   from = "/memcached/*"
   to = "https://lando-memcached.netlify.app/:splat"
   status = 200
@@ -262,6 +266,10 @@
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/mariadb.html"
 #   to = "https://docs.lando.dev/mariadb"
+#   status = 301
+# [[redirects]]
+#   from = "https://docs.lando.dev/config/mean.html"
+#   to = "https://docs.lando.dev/mean"
 #   status = 301
 # [[redirects]]
 #   from = "https://docs.lando.dev/config/memcached.html"

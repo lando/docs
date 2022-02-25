@@ -370,6 +370,10 @@
 #   to = "https://docs.lando.dev/drupal/landoify-d7.html"
 #   status = 301
 # [[redirects]]
+#   from = "https://docs.lando.dev/guides/how-can-i-pull-sync-my-database-on-lamp-y-recipes.html"
+#   to = "https://docs.lando.dev/laravel/import-remote-db-laravel-envoy.html"
+#   status = 301
+# [[redirects]]
 #   from = "https://docs.lando.dev/guides/how-to-wire-up-browsersync-and-gulp-in-my-lando-app.html"
 #   to = "https://docs.lando.dev/node/using-browsersync.html"
 #   status = 301

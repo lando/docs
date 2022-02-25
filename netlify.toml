@@ -369,3 +369,15 @@
 #   from = "https://docs.lando.dev/guides/drupal-7-landoize-an-extant-app.html"
 #   to = "https://docs.lando.dev/drupal/landoify-d7.html"
 #   status = 301
+# [[redirects]]
+#   from = "https://docs.lando.dev/guides/installing-node-in-your-lando-php-service.html"
+#   to = "https://docs.lando.dev/php/installing-node.html"
+#   status = 301
+# [[redirects]]
+#   from = "https://docs.lando.dev/guides/installing-php-extensions-on-lando.html"
+#   to = "https://docs.lando.dev/php/installing-extensions.html"
+#   status = 301
+# [[redirects]]
+#   from = "https://docs.lando.dev/guides/accessing-php-logs.html"
+#   to = "https://docs.lando.dev/php/accessing-logs.html"
+#   status = 301

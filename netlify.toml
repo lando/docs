@@ -381,3 +381,11 @@
 #   from = "https://docs.lando.dev/guides/accessing-php-logs.html"
 #   to = "https://docs.lando.dev/php/accessing-logs.html"
 #   status = 301
+# [[redirects]]
+#   from = "https://docs.lando.dev/guides/updating-local-pantheon-environments.html"
+#   to = "https://docs.lando.dev/pantheon/updating-local-pantheon-environments.html"
+#   status = 301
+# [[redirects]]
+#   from = "https://docs.lando.dev/guides/phpmyadmin-themes.html"
+#   to = "https://docs.lando.dev/phpmyadmin/phpmyadmin-themes.html"
+#   status = 301

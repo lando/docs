@@ -363,3 +363,9 @@
 #   from = "https://docs.lando.dev/config/wordpress.html"
 #   to = "https://docs.lando.dev/wordpress"
 #   status = 301
+
+# Redirect the guide pages
+# [[redirects]]
+#   from = "https://docs.lando.dev/guides/drupal-7-landoize-an-extant-app.html"
+#   to = "https://docs.lando.dev/drupal/landoify-d7.html"
+#   status = 301

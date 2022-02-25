@@ -86,6 +86,14 @@
   to = "https://lando-backdrop.netlify.app/:splat"
   status = 200
 [[redirects]]
+  from = "/cli/*"
+  to = "https://lando-cli.netlify.app/:splat"
+  status = 200
+[[redirects]]
+  from = "/config/*"
+  to = "https://lando-config.netlify.app/:splat"
+  status = 200
+[[redirects]]
   from = "/dotnet/*"
   to = "https://lando-dotnet.netlify.app/:splat"
   status = 200

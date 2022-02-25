@@ -370,6 +370,18 @@
 #   to = "https://docs.lando.dev/drupal/landoify-d7.html"
 #   status = 301
 # [[redirects]]
+#   from = "https://docs.lando.dev/guides/how-to-wire-up-browsersync-and-gulp-in-my-lando-app.html"
+#   to = "https://docs.lando.dev/node/using-browsersync.html"
+#   status = 301
+# [[redirects]]
+#   from = "https://docs.lando.dev/guides/using-compass-on-a-lando-node-service.html"
+#   to = "https://docs.lando.dev/node/using-compass.html"
+#   status = 301
+# [[redirects]]
+#   from = "https://docs.lando.dev/guides/frontend.html"
+#   to = "https://docs.lando.dev/node/frontend-tooling.html"
+#   status = 301
+# [[redirects]]
 #   from = "https://docs.lando.dev/guides/installing-node-in-your-lando-php-service.html"
 #   to = "https://docs.lando.dev/php/installing-node.html"
 #   status = 301

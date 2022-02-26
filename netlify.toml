@@ -86,6 +86,10 @@
   to = "https://lando-backdrop.netlify.app/:splat"
   status = 200
 [[redirects]]
+  from = "/config/*"
+  to = "https://lando-config.netlify.app/:splat"
+  status = 200
+[[redirects]]
   from = "/dotnet/*"
   to = "https://lando-dotnet.netlify.app/:splat"
   status = 200
@@ -304,6 +308,10 @@
 #   to = "https://docs.lando.dev/mysql"
 #   status = 301
 # [[redirects]]
+#   from = "https://docs.lando.dev/config/lando.html"
+#   to = "https://docs.lando.dev/config"
+#   status = 301
+# [[redirects]]
 #   from = "https://docs.lando.dev/config/nginx.html"
 #   to = "https://docs.lando.dev/nginx"
 #   status = 301
@@ -406,8 +414,3 @@
 #   to = "https://docs.lando.dev/phpmyadmin/phpmyadmin-themes.html"
 #   status = 301
 
-# Redirect Config Pages
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/lando.html"
-#   to = "https://docs.lando.dev/config/"
-#   status = 301

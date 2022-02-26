@@ -405,3 +405,9 @@
 #   from = "https://docs.lando.dev/guides/phpmyadmin-themes.html"
 #   to = "https://docs.lando.dev/phpmyadmin/phpmyadmin-themes.html"
 #   status = 301
+
+# Redirect Config Pages
+# [[redirects]]
+#   from = "https://docs.lando.dev/config/lando.html"
+#   to = "https://docs.lando.dev/config/"
+#   status = 301

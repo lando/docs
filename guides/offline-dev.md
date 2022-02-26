@@ -1,11 +1,25 @@
 ---
+title: Developing offline
 description: Learn how to use Lando for offline local development.
-date: 2019-11-05
+guide: true
+
+authors:
+  - name: Team Lando
+    pic: https://gravatar.com/avatar/c335f31e62b453f747f39a84240b3bbd
+    link: https://twitter.com/devwithlando
+updated:
+  timestamp: 1594391902000
+
+mailchimp:
+  # action is required
+  action: https://dev.us12.list-manage.com/subscribe/post?u=59874b4d6910fa65e724a4648&amp;id=613837077f
+  # everything else is optional
+  title: Want similar content?
+  byline: Signup and we will send you a weekly blog digest of similar content to keep you satiated.
+  button: Sign me up!
 ---
 
 # Developing offline
-
-<GuideHeader />
 
 Out of the box Lando uses an actual on-the-internet wildcard domain at `*.lndo.site` to route your domain names back to your localhost to provide convenient proxying. This method is minimally invasive and doesn't require Lando to alter your machine's DNS routing. This has the downside of requiring an internet connection to access your sites.
 
@@ -70,6 +84,3 @@ Here are some vitals:
 13. Load it up in the browser and confirm everything is happy and working.
 
 Enjoy your signature domain while you hack away in complete wifi-less splendor.
-
-<GuideFooter />
-<Newsletter />

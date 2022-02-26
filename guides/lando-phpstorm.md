@@ -1,12 +1,23 @@
 ---
+title: Lando + PhpStorm + Xdebug
 description: Learn how to configure xdebug in Lando using PhpStorm.
-date: 2021-10-31
+guide: true
+
+authors:
+  - name: Team Lando
+    pic: https://gravatar.com/avatar/c335f31e62b453f747f39a84240b3bbd
+    link: https://twitter.com/devwithlando
+updated:
+  timestamp: 1594391902000
+
+mailchimp:
+  # action is required
+  action: https://dev.us12.list-manage.com/subscribe/post?u=59874b4d6910fa65e724a4648&amp;id=613837077f
+  # everything else is optional
+  title: Want similar content?
+  byline: Signup and we will send you a weekly blog digest of similar content to keep you satiated.
+  button: Sign me up!
 ---
-
-# Lando + PhpStorm + Xdebug
-
-<GuideHeader />
-<YouTube url="https://www.youtube.com/embed/sHNJxx0L9r0" />
 
 [PhpStorm](https://www.jetbrains.com/phpstorm/) is a popular code IDE for PHP
 and Drupal development. This video tutorial shows you how to set up PhpStorm with Xdebug.
@@ -39,7 +50,7 @@ In the example above we set the variable to `appserver` and created a path mappi
 
 ![screenshot](/images/drush-xdebug-phpstorm.png)
 
-Depending on how you have configured Xdebug to be triggered (xdebug.start_with_request is off by default) 
+Depending on how you have configured Xdebug to be triggered (xdebug.start_with_request is off by default)
 you will need to tell Xdebug to start debugging the request. You can do this by either setting that global
 option or by setting the following environment variable before running your request:
 
@@ -72,6 +83,3 @@ tooling:
       - echo "Xdebug disabled"
     user: root
   ```
-
-<GuideFooter />
-<Newsletter />

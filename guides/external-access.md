@@ -1,11 +1,23 @@
 ---
+title: Accessing Your Services Externally
 description: Learn how to access your Lando services externally from your host machine.
-date: 2019-11-05
+guide: true
+
+authors:
+  - name: Team Lando
+    pic: https://gravatar.com/avatar/c335f31e62b453f747f39a84240b3bbd
+    link: https://twitter.com/devwithlando
+updated:
+  timestamp: 1594391902000
+
+mailchimp:
+  # action is required
+  action: https://dev.us12.list-manage.com/subscribe/post?u=59874b4d6910fa65e724a4648&amp;id=613837077f
+  # everything else is optional
+  title: Want similar content?
+  byline: Signup and we will send you a weekly blog digest of similar content to keep you satiated.
+  button: Sign me up!
 ---
-
-# Accessing Your Services Externally
-
-<GuideHeader />
 
 It is often desirable to interact with your services on the host machine level. Common examples of this are accessing a SQL database through a GUI client like SequelPro, or running unit tests through an IDE like PhpStorm.
 
@@ -133,6 +145,3 @@ Next, ensure your framework (PHP) interpreter is configured to use a Docker cont
 Finally, when configuring your framework, edit the Docker Container settings and change the Network Mode to the name of your Lando docker network.
 
 Now your IDE should be able to communicate with Lando.
-
-<GuideFooter />
-<Newsletter />

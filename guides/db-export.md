@@ -1,12 +1,23 @@
 ---
-metaTitle: Exporting SQL Databases | Lando
+title: SQL Export
 description: Learn how to export your MySQL, MariaDB or Postgres databases from Lando.
-date: 2019-11-05
+guide: true
+
+authors:
+  - name: Team Lando
+    pic: https://gravatar.com/avatar/c335f31e62b453f747f39a84240b3bbd
+    link: https://twitter.com/devwithlando
+updated:
+  timestamp: 1594391902000
+
+mailchimp:
+  # action is required
+  action: https://dev.us12.list-manage.com/subscribe/post?u=59874b4d6910fa65e724a4648&amp;id=613837077f
+  # everything else is optional
+  title: Want similar content?
+  byline: Signup and we will send you a weekly blog digest of similar content to keep you satiated.
+  button: Sign me up!
 ---
-
-# SQL Export
-
-<GuideHeader test="https://circleci.com/gh/lando/lando/tree/master"/>
 
 Lando ships with a helper `db-export` script that is available in all our `LAMP` and `LEMP` based recipes. Used in the recipe context it should export a database dump `DATABASE.TIMESTAMP.gz` into the `/app` directory.
 
@@ -68,6 +79,3 @@ tooling:
       stdout:
         description: Dump database to stdout
 ```
-
-<GuideFooter test="https://circleci.com/gh/lando/lando/tree/master" repo="https://github.com/lando/cli/tree/main/examples/sql-export" />
-<Newsletter />

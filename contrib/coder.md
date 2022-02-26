@@ -1,8 +1,90 @@
 ---
-description: Learn about Lando's amazing plugin structure.
+description: Learn about how to get started contributing code to Lando.
 ---
 
-# Plugins
+# Coding
+
+This section is designed for people who want to contribute `code things` to Lando. Specifically, that might mean working on some of the following:
+
+* Lando itself and its plugins
+* Lando's DevOps pipeline e.g. build, test and deploy
+* Lando's tests and testing infrastructure
+* Lando's documentation and Vuepress documentation site
+* Lando's express API
+* Lando's marketing website
+* Lando's metrics server
+* Lando's Vuepress marketing site
+* Lando's Vuepress events listing
+* Lando's Vuepress blog
+
+[[toc]]
+
+## Choosing a project
+
+Lando has a distributed model and is powered by over [50 repos](https://github.com/lando) so the first step is to find a repo you are interested in and check out the contribution guidelines there.
+
+## Good First Issues
+
+Once you are set up and ready to contribute, a good place to start is with issues tagged as [good first issue](https://github.com/lando/lando/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22). Peruse the list and see if one or more of those issues is a good fit for you.
+
+If you are having issues with any of the above or need some guidance from one of our guide pros, make sure you [join our Slack org](https://launchpass.com/devwithlando) and check out the **#community** and/or **#contributors** channels.
+
+## Triaging issues
+
+Welcome intrepid Lando contributor! Thank you for joining the alliance and jumping on the front lines to triage issues!
+
+Issue triage is incredibly important to the project. Good handling of issue reports from our users leads to folks sticking around and getting all the benefits that Lando has to offer, becoming contributors themselves, and improving the overall health and sustainability of the project.
+
+When a user files an issue, they're probably either filled with hope and energy about improving the project, or frustration caused by their expectations not lining up with their experience. Both of these energies are valuable when channeled correctly, and damaging when mismanaged.
+
+Behind every issue is a person taking the time to fill out the report when they could have simply remained silent. They could have left their good ideas on the shelf, thrown Lando in the trash, or needlessly struggled in silence.
+
+With all this in mind, treat issue reporters with respect, assume good will, and ask for clarification when needed. The extra energy you put in here to show kindness and compassion can be the difference between steering the project towards growth and sustainability or stagnation and burnout.
+
+Now that you're equipped with the laser sword of empathy and the armor of respect, this is the standard procedure you should go through to triage an issue.
+
+### Requirements
+
+1. A Github account
+2. [Install Lando](/basics/installation.html) (So you can reproduce issues)
+
+### Classify the Issue
+
+The first step in triaging an issue is to decide if the issue is a _bug report_, _feature request_, _documentation request_, or a _guide request_.
+
+Our issue templates will hopefully help to pre-categorize issues for us, but use your discretion to recategorize issues that may have come in under the wrong label. It's not uncommon for a user to assume that their issue is a bug when it is really a need to improve documentation, or even for a user to assume they've done something wrong when they've actually just discovered a bug for us!
+
+Review the issue and recategorize as necessary.
+
+### Bug Reports
+
+If the user is reporting that something isn't working as documented, or something generally appears to be broken, it should be classified as a bug report.
+
+The first thing you want to do is to check the report against our [bug reporting template](https://github.com/lando/lando/blob/master/.github/ISSUE_TEMPLATE/bug_report.md).
+
+The most important thing we need for a good bug report are reliable steps to reproduce the issue. If the user has included steps to replicate, you should first try to replicate the bug.
+
+If you do nothing else, this is the most valuable thing you can do for Lando maintainers. It can sometimes be time consuming, but making sure we can replicate a bug saves massive amounts of time for the intrepid developer who attempts to fix the bug. It helps us to write clear functional tests and spend less time fixing the bug.
+
+Once steps to reproduce have been ironed out, the issue should be tagged as `triaged`.
+
+If you can't reproduce the issue, tag it with `can not replicate` and let the user know that you are unable to replicate the issue. If you can think of additional information that might be helpful, request it in your comment. Non-reproducable issues will remain unscheduled until they are closed by a maintainer or stalebot.
+
+### Feature Requests
+
+If the user is asking for something that Lando currently doesn't do, this is a feature request. If the user wants Lando to add a new command to our API, a new service, recipe, tooling command, or support a new operating system we don't currently support, this is a feature request.
+
+Refer to the [feature request template](https://github.com/lando/lando/blob/master/.github/ISSUE_TEMPLATE/feature_request.md) to see what kind of data we want from the user. If their report is missing one of these areas, it might be helpful to ask them questions about the areas that need clarification.
+
+New feature requests will be regularly reviewed by the maintainers and scheduled, iceboxed, or closed as appropriate, as long as the request is something you can understand, it can be reviewed by a maintainer at a later date. If it seems unclear, it would be helpful to ask clarifying questions from the requester so that the issue is fully fleshed out when a maintainer is able to review it.
+
+### Documentation Requests
+
+Documentation requests should be tagged with `documentation` and checked against the [documentation issue template](https://github.com/lando/lando/blob/master/.github/ISSUE_TEMPLATE/documentation.md).
+
+If a reference page isn't included, try to find the right page in the documentation that addresses the topic at hand and add a link to the page in the issue. If there is no suitable page, a new one will need to be created.
+
+## Writing Plugins
 
 Lando has an advanced plugin system that allows developers to add and extend Lando's core functionality. A few examples of things you can do with plugins are shown below:
 
@@ -19,7 +101,7 @@ In fact, almost all of Lando's core functionality is provided via plugins. This 
 
 [[toc]]
 
-## Plugin Loading
+### Plugin Loading
 
 Lando will search in the `plugins` directory for any path listed in `lando.config.pluginDirs` and automatically load in any plugins that it finds. By default, these directories are the Lando source directory and `~/.lando` but note that they are configurable via the Lando [global config](./../config/config.md). In order for Lando to successfully identify and automatically load your plugin, you need to have a directory named after your plugin, e.g. `my-plugin`, in one of the directories mentioned above and it needs to include an `index.js`.
 
@@ -31,7 +113,7 @@ If there are multiple occurrences of the same-named plugin, Lando will use the l
 As of `3.0.0-rc.2`, Lando will no longer look for plugins in your app's root directory by default. We intend to eventually provide better scaffolding around grabbing and loading plugins directly from your Landofile but for now this is left to the user.
 :::
 
-## Plugin Anatomy
+### Plugin Anatomy
 
 At the bare minimum, your plugin needs to have the following structure to be recognized and autoloaded by Lando.
 
@@ -59,7 +141,7 @@ However, Lando will also look for other folders and files and automatically load
 
 Let's go into more depth about each special file below:
 
-### index.js
+#### index.js
 
 This file is required to exist in every Lando plugin, even if it doesn't do anything. **If you do not have this file, then your plugin will not be detected and loaded.**
 
@@ -89,7 +171,7 @@ module.exports = (app, lando) => {
 };
 ```
 
-### app.js
+#### app.js
 
 `app.js` will get loaded when a Lando app is initialized, e.g. `app.init()` is invoked. Generally, you will use this file to hook into the app's event layer and to modify the app object itself.
 
@@ -123,11 +205,11 @@ module.exports = (app, lando) => {
 };
 ```
 
-### scripts
+#### scripts
 
 Nothing too fancy here. Drop a bunch of scripts ending in `.sh`, e.g. `myscript.sh`, into this directory and they will get mounted at `/helpers` in every Lando service.
 
-### tasks
+#### tasks
 
 Lando will try to load any `.js` file dropped into this directory as a "task" which in the CLI is manifested as a command. Generally, you will want to name the file the same as the task that should be invoked, e.g. `env.js` will give you a `lando env` command.
 
@@ -179,7 +261,7 @@ More details about each key are listed as follows:
 
 **run** - This is the function that will run when the task is invoked. Note that you have access to both `options` and `lando` here.
 
-### compose, types, services
+#### compose, types, services
 
 Lando services can now be automatically detected and loaded using our new `builder` interface and system. All you need for this to happen is have a structure similar to below:
 
@@ -266,7 +348,7 @@ Some more details about each key are shown below:
 
 **builder** - This is **THE MAIN EVENT**, e.g. the actual `class` definition for your builder. It is a function that gets whatever you defined above in `config` and should only contain a `constructor`. `id` and `options` generally come from the user's Landofile. The contents of the `constructor` are up to you but it ultimately needs to call `super` with arguments that make sense to the `parent`.
 
-### recipes
+#### recipes
 
 As in the section above, `recipes` implements a similar autoload structure with one exception: you can specify an optional `init.js` file.
 
@@ -360,7 +442,7 @@ module.exports = {
 
 **build** - This is a function that will run after your source steps are executed and allows you to make any last changes before a Landofile is output. Generally, this is used to augment and modify the Lando config.
 
-### sources
+#### sources
 
 Lando will try to load any `.js` file dropped into this directory as a "source" which is a place Lando can get code from when running `lando init`.
 
@@ -414,6 +496,6 @@ Some more details about each key are shown below:
 **build** - This is what will allow your new source to actually **DO STUFF**. It's an array of command metadata. If you specify a `cmd`, it will run inside of a special `init` service. If you specify a `func`, it will simply invoke that function.
 
 
-## Plugin Examples
+### Plugin Examples
 
 Check out some of our [core plugins](https://github.com/lando/cli/tree/main/plugins) for motivation in creating your own.

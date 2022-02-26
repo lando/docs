@@ -1,33 +1,23 @@
 ---
 title: Setup Lando on Windows with WSL2
-metaTitle: Setup Lando on Windows with WSL2 | Lando
 description: Configure Lando to run on your Windows WSL2 system for better performance when developing on Windows.
-summary: Configure Lando to run on your Windows WSL2 system for better performance when developing on Windows.
-date: 2021-01-19T14:21:27.061Z
-original: 
-repo: 
+guide: true
 
-author:
-  name: Dustin LeBlanc
-  pic: https://www.gravatar.com/avatar/e61caccbbfd817bc8b52c0395ba888a6
-  link: https://twitter.com/DustinLeblanc
+authors:
+  - name: Team Lando
+    pic: https://gravatar.com/avatar/c335f31e62b453f747f39a84240b3bbd
+    link: https://twitter.com/devwithlando
+updated:
+  timestamp: 1594391902000
 
-feed:
-  enable: true
-  author:
-    - name: Dustin LeBlanc
-      email: dustin@dustinleblanc.com
-      link: https://twitter.com/DustinLeblanc
-  contributor:
-    - name: Dustin LeBlanc
-      email: alliance@lando.dev
-      link: https://twitter.com/DustinLeblanc
+mailchimp:
+  # action is required
+  action: https://dev.us12.list-manage.com/subscribe/post?u=59874b4d6910fa65e724a4648&amp;id=613837077f
+  # everything else is optional
+  title: Want similar content?
+  byline: Signup and we will send you a weekly blog digest of similar content to keep you satiated.
+  button: Sign me up!
 ---
-
-# Setup Lando on Windows with WSL2
-
-<GuideHeader test="" name="Dustin LeBlanc" pic="https://www.gravatar.com/avatar/e61caccbbfd817bc8b52c0395ba888a6" link="https://twitter.com/DustinLeblanc" />
-<YouTube url="" />
 
 Developing on Windows used to cause web developers agony and pain, but with the introduction of WSL, this is no longer quite so. WSL2 provides a near-native Linux experience for developing web applications on Windows computers.
 
@@ -70,6 +60,3 @@ You'll want to do all of your shell activity from within the WSL system, and you
 ## Some caveats
 
 Performance is generally very good with this approach, however, stability can at times leave something to be be desired. Occassional freezes under heavy load are fairly commonplace, and seem to be resolved by rebooting the system. All things considered, the reduction in CPU load, battery drain, and the accompanied increase in the speed of every single action you take (accessing site pages, running any CLI commands) more than outweighs the disruption of these occasional issues for most users. Hopefully stability will continue to increase with time.
-
-<GuideFooter test="" original="" repo=""/>
-<Newsletter />

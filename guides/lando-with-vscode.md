@@ -1,11 +1,23 @@
 ---
+title: Using Lando with VSCode
 description: Learn how to configure xdebug in Lando using VSCode.
-date: 2019-11-05
+guide: true
+
+authors:
+  - name: Team Lando
+    pic: https://gravatar.com/avatar/c335f31e62b453f747f39a84240b3bbd
+    link: https://twitter.com/devwithlando
+updated:
+  timestamp: 1594391902000
+
+mailchimp:
+  # action is required
+  action: https://dev.us12.list-manage.com/subscribe/post?u=59874b4d6910fa65e724a4648&amp;id=613837077f
+  # everything else is optional
+  title: Want similar content?
+  byline: Signup and we will send you a weekly blog digest of similar content to keep you satiated.
+  button: Sign me up!
 ---
-
-# Using Lando with VSCode
-
-<GuideHeader />
 
 [Visual Studio Code](https://github.com/Microsoft/vscode/) is a great open source editor for programming. Debugging PHP applications with it can be easy too.
 
@@ -272,6 +284,3 @@ This is how you can open a specific port on a Debian/Ubuntu:
 
 *   [Original Gist with settings for XDebug in VSCode](https://gist.github.com/MatthieuScarset/0c3860def9ff1f0b84e32f618c740655)
 *   [PHP programming in VSCode](https://code.visualstudio.com/docs/languages/php)
-
-<GuideFooter />
-<Newsletter />

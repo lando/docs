@@ -1,34 +1,23 @@
 ---
 title: How do I set the timezone of a Lando service?
-metaTitle: How do I set the timezone of a Lando service? | Lando
 description: Set the timezone of a Lando service for testing time sensitive operations
-summary: Set the timezone of a Lando service for testing time sensitive operations
-date: 2020-03-27T22:30:09.777Z
-original:
-repo:
+guide: true
 
-author:
-  name: Team Lando
-  pic: https://gravatar.com/avatar/c335f31e62b453f747f39a84240b3bbd
-  link: https://twitter.com/devwithlando
+authors:
+  - name: Team Lando
+    pic: https://gravatar.com/avatar/c335f31e62b453f747f39a84240b3bbd
+    link: https://twitter.com/devwithlando
+updated:
+  timestamp: 1594391902000
 
-feed:
-  enable: true
-  author:
-    - name: Team Lando
-      email: alliance@lando.dev
-      link: https://twitter.com/devwithlando
-  contributor:
-    - name: Team Lando
-      email: alliance@lando.dev
-      link: https://twitter.com/devwithlando
+mailchimp:
+  # action is required
+  action: https://dev.us12.list-manage.com/subscribe/post?u=59874b4d6910fa65e724a4648&amp;id=613837077f
+  # everything else is optional
+  title: Want similar content?
+  byline: Signup and we will send you a weekly blog digest of similar content to keep you satiated.
+  button: Sign me up!
 ---
-
-# How do I set the timezone of a Lando service?
-
-<GuideHeader test="https://github.com/lando/cli/tree/main/examples/services" name="Team Lando" pic="https://gravatar.com/avatar/c335f31e62b453f747f39a84240b3bbd" link="https://twitter.com/devwithlando" />
-
-<YouTube url="https://www.youtube.com/embed/P8n2z4m0_s0" />
 
 If you need to set the timezone of a Lando service here is how! Just symlink the appropriate timezone you need in a `run_as_root` build step. Here is an example `.lando.yml` file.
 
@@ -58,6 +47,3 @@ lando rebuild -y
 ```
 
 and you'll have the timezone set in those services.
-
-<GuideFooter original="" repo=""/>
-<Newsletter />

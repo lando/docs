@@ -1,31 +1,23 @@
 ---
 title: How do I configure a Lando Recipe?
-metaTitle: How do I configure a Lando Recipe? | Lando
 description: Using the lando config key to configure your recipe.
-date: 2020-02-04T18:00:18.702Z
-original: 
-repo: 
+guide: true
 
-author:
-  name: Team Lando
-  pic: https://gravatar.com/avatar/c335f31e62b453f747f39a84240b3bbd
-  link: https://twitter.com/devwithlando
+authors:
+  - name: Team Lando
+    pic: https://gravatar.com/avatar/c335f31e62b453f747f39a84240b3bbd
+    link: https://twitter.com/devwithlando
+updated:
+  timestamp: 1594391902000
 
-feed:
-  enable: true
-  author:
-    - name: Team Lando
-      email: alliance@lando.dev
-      link: https://twitter.com/devwithlando
-  contributor:
-    - name: Team Lando
-      email: alliance@lando.dev
-      link: https://twitter.com/devwithlando
+mailchimp:
+  # action is required
+  action: https://dev.us12.list-manage.com/subscribe/post?u=59874b4d6910fa65e724a4648&amp;id=613837077f
+  # everything else is optional
+  title: Want similar content?
+  byline: Signup and we will send you a weekly blog digest of similar content to keep you satiated.
+  button: Sign me up!
 ---
-
-# How do I configure a Lando Recipe?
-
-<GuideHeader name="Team Lando" pic="https://gravatar.com/avatar/c335f31e62b453f747f39a84240b3bbd" link="https://twitter.com/devwithlando" test="https://github.com/lando/cli/tree/main/examples/lamp"/>
 
 When you first initialize a lando app (`lando init`) you get a very simple `.lando.yml` configuration file. Here is the `.lando.yml` file for the LAMP recipe.
 
@@ -57,7 +49,7 @@ You can check that the change took by using `lando php -v`:
 
 ```bash
 └─ $ ∴ lando php -v
-PHP 5.6.40 (cli) (built: Jan 23 2019 00:10:05) 
+PHP 5.6.40 (cli) (built: Jan 23 2019 00:10:05)
 Copyright (c) 1997-2016 The PHP Group
 Zend Engine v2.6.0, Copyright (c) 1998-2016 Zend Technologies
     with Zend OPcache v7.0.6-dev, Copyright (c) 1999-2016, by Zend Technologies
@@ -75,6 +67,3 @@ config:
 ```
 
 Again rebuild for the changes: `lando rebuild -y` and 💥 you now have PHP 5.6 and MariaDB 10.3!
-
-<GuideFooter original="" repo=""/>
-<Newsletter />

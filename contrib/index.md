@@ -12,12 +12,12 @@ If you are interested in helping out with the Lando project, then you've come to
 
 We are looking for people to help out in any of the capacities as follows:
 
-::: half EVANGELIST
-Present, train or speak about Lando at various meetups, camps and conferences and generally spread the good word across the galaxy
+::: half CODER
+Work on making and supporting Lando by touching code, docs, issues, DevOps or helping out in our Slack community channel
 :::
 
-::: half CONTRIBUTOR
-Work on making and supporting Lando by touching code, docs, issues, DevOps or helping out in our Slack community channel
+::: half EVANGELIST
+Present, train or speak about Lando at various meetups, camps and conferences and generally spread the good word across the galaxy
 :::
 
 ::: half SPONSOR
@@ -29,7 +29,6 @@ Take ownership over one of our repos
 :::
 
 **If any of the above sound up your alley, then join us on the comms below and start engaging!**
-
 
 ## GitHub
 

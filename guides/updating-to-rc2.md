@@ -1,11 +1,25 @@
 ---
+title: Updating to 3.0.0-rc.2+
 description: Learn how to update Lando from beta to rc and beyond.
-date: 2019-11-05
+guide: true
+
+authors:
+  - name: Team Lando
+    pic: https://gravatar.com/avatar/c335f31e62b453f747f39a84240b3bbd
+    link: https://twitter.com/devwithlando
+updated:
+  timestamp: 1594391902000
+
+mailchimp:
+  # action is required
+  action: https://dev.us12.list-manage.com/subscribe/post?u=59874b4d6910fa65e724a4648&amp;id=613837077f
+  # everything else is optional
+  title: Want similar content?
+  byline: Signup and we will send you a weekly blog digest of similar content to keep you satiated.
+  button: Sign me up!
 ---
 
 # Updating to 3.0.0-rc.2+
-
-<GuideHeader />
 
 Before you begin here we *highly recommend* you check out the [RC2 Release Blog Post](https://thinktandem.io/blog/2019/02/01/lando-is-ready-for-the-masses-with-rc2-release/) to get a higher level understanding on whats changed and why its changed in `3.0.0-rc.2`. After that you should be ready to get into the nitty gritty of what has changed.
 
@@ -633,6 +647,3 @@ If you have written your own custom plugins
 2. Once you see the new format you'll feel better :)
 
 We've finally locked down a [Plugin System](https://docs.lando.dev/contrib/contrib-plugins.html) that uses the [Lando](./../api/lando.md) and [App](./../api/app.md) APIs and while we still don't have a great way to manage the installation and management of these plugins it is going to be the defining feature of `3.1.0`.
-
-<GuideFooter />
-<Newsletter />

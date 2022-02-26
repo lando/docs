@@ -23,7 +23,6 @@
 
 # REDIRECTS
 # NOTE THAT REDIRECTS ARE EXECUTED FIRST COME FIRST SERVE
-
 # Domain redirects
 [[redirects]]
   from = "https://docs.lndo.io/*"
@@ -34,47 +33,160 @@
   to = "https://docs.lando.dev/:splat"
   status = 301
 
-# Legacy redirects from cloudflare
+# Redirect legacy 3.x content
 [[redirects]]
-  from = "https://docs.lando.dev/contrib/how.html"
-  to = "https://docs.lando.dev/contrib/contributing.html"
+  from = "https://docs.lando.dev/basics/usage.html"
+  to = "https://docs.lando.dev/cli"
   status = 301
 [[redirects]]
-  from = "https://docs.lando.dev/issues/*"
-  to = "https://docs.lando.dev/help/:splat"
+  from = "https://docs.lando.dev/basics/config.html"
+  to = "https://docs.lando.dev/cli/config.html"
   status = 301
 [[redirects]]
-  from = "https://docs.lando.dev/tutorials/*"
-  to = "https://docs.lando.dev/config/:splat"
+  from = "https://docs.lando.dev/basics/destroy.html"
+  to = "https://docs.lando.dev/cli/destroy.html"
   status = 301
 [[redirects]]
-  from = "https://docs.lando.dev/dev/*"
-  to = "https://docs.lando.dev/contrib/:splat"
+  from = "https://docs.lando.dev/basics/init.html"
+  to = "https://docs.lando.dev/cli/init.html"
   status = 301
 [[redirects]]
-  from = "https://docs.lando.dev/started.html"
-  to = "https://docs.lando.dev/basics/"
+  from = "https://docs.lando.dev/basics/info.html"
+  to = "https://docs.lando.dev/cli/info.html"
   status = 301
 [[redirects]]
-  from = "https://docs.lando.dev/installation/*"
-  to = "https://docs.lando.dev/basics/installation.html"
+  from = "https://docs.lando.dev/basics/list.html"
+  to = "https://docs.lando.dev/cli/list.html"
   status = 301
 [[redirects]]
-  from = "https://docs.lando.dev/cli/*"
-  to = "https://docs.lando.dev/basics/:splat"
+  from = "https://docs.lando.dev/basics/logs.html"
+  to = "https://docs.lando.dev/cli/logs.html"
   status = 301
 [[redirects]]
-  from = "https://docs.lando.dev/troubleshooting/*"
-  to = "https://docs.devwithlando.io/help/:splat"
+  from = "https://docs.lando.dev/basics/poweroff.html"
+  to = "https://docs.lando.dev/cli/poweroff.html"
   status = 301
 [[redirects]]
-  from = "https://docs.lando.dev/config/config.html"
-  to = "https://docs.lando.dev/config/global.html"
+  from = "https://docs.lando.dev/basics/rebuild.html"
+  to = "https://docs.lando.dev/cli/rebuild.html"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/basics/restart.html"
+  to = "https://docs.lando.dev/cli/restart.html"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/basics/share.html"
+  to = "https://docs.lando.dev/cli/share.html"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/basics/start.html"
+  to = "https://docs.lando.dev/cli/start.html"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/basics/stop.html"
+  to = "https://docs.lando.dev/cli/stop.html"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/basics/version.html"
+  to = "https://docs.lando.dev/cli/version.html"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/basics/ssh.html"
+  to = "https://docs.lando.dev/cli/ssh.html"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/basics/basics.html"
+  to = "https://docs.lando.dev/getting-started/what-it-do.html"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/basics/*"
+  to = "https://docs.lando.dev/getting-started/:splat"
+  status = 301
+
+[[redirects]]
+  from = "https://docs.lando.dev/contrib/contributing.html"
+  to = "https://docs.lando.dev/contrib"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/contrib/talking-points.html"
+  to = "https://docs.lando.dev/contrib/evangelist.html#talking-points"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/contrib/triage-getting-started.html"
+  to = "https://docs.lando.dev/contrib/coder.html#triaging-issues"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/contrib/contrib-*"
+  to = "https://docs.lando.dev/contrib/coder.html"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/contrib/evangelist-*"
+  to = "https://docs.lando.dev/contrib/evangelist.html"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/contrib/sponsor-*"
+  to = "https://docs.lando.dev/contrib/sponsoring.html"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/contrib/*"
+  to = "https://docs.lando.dev/contrib"
   status = 301
 
 
-# Redirect legacy content
-#
+[[redirects]]
+  from = "https://docs.lando.dev/guides/drupal-7-landoize-an-extant-app.html"
+  to = "https://docs.lando.dev/drupal/landoify-d7.html"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/guides/drupal-multisite-on-lando.html"
+  to = "https://docs.lando.dev/drupal/drupal-multisite.html"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/guides/frontend.html"
+  to = "https://docs.lando.dev/node/frontend-tooling.html"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/guides/how-to-wire-up-browsersync-and-gulp-in-my-lando-app.html"
+  to = "https://docs.lando.dev/node/using-browsersync.html"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/guides/using-compass-on-a-lando-node-service.html"
+  to = "https://docs.lando.dev/node/using-compass.html"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/guides/how-can-i-pull-sync-my-database-on-lamp-y-recipes.html"
+  to = "https://docs.lando.dev/laravel/import-remote-db-laravel-envoy.html"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/guides/installing-node-in-your-lando-php-service.html"
+  to = "https://docs.lando.dev/php/installing-node.html"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/guides/installing-php-extensions-on-lando.html"
+  to = "https://docs.lando.dev/php/installing-extensions.html"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/guides/accessing-php-logs.html"
+  to = "https://docs.lando.dev/php/accessing-logs.html"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/guides/updating-local-pantheon-environments.html"
+  to = "https://docs.lando.dev/pantheon/updating-local-pantheon-environments.html"
+  status = 301
+
+[[redirects]]
+  from = "https://docs.lando.dev/guides/phpmyadmin-themes.html"
+  to = "https://docs.lando.dev/phpmyadmin/phpmyadmin-themes.html"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/guides/lando-101/*"
+  to = "https://docs.lando.dev/lando-101/:splat"
+  status = 301
+
+
+
+
+# Redirect legacy recipes/services
 [[redirects]]
   from = "https://docs.lando.dev/config/acquia.html"
   to = "https://docs.lando.dev/acquia"
@@ -228,6 +340,39 @@
   to = "https://docs.lando.dev/wordpress"
   status = 301
 
+# Legacy redirects from cloudflare
+[[redirects]]
+  from = "https://docs.lando.dev/contrib/how.html"
+  to = "https://docs.lando.dev/contrib/contributing.html"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/issues/*"
+  to = "https://docs.lando.dev/help/:splat"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/tutorials/*"
+  to = "https://docs.lando.dev/config/:splat"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/dev/*"
+  to = "https://docs.lando.dev/contrib/:splat"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/started.html"
+  to = "https://docs.lando.dev/basics/"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/installation/*"
+  to = "https://docs.lando.dev/basics/installation.html"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/troubleshooting/*"
+  to = "https://docs.devwithlando.io/help/:splat"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/config.html"
+  to = "https://docs.lando.dev/config/global.html"
+  status = 301
 
 # REWRITES
 # Stitch together the various plugin subsites

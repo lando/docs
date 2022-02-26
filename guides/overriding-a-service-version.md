@@ -1,32 +1,23 @@
 ---
 title: Overriding a Service Version or Image
-metaTitle: Overriding a Service Version | Lando
 description: Modify the underlying Docker images used by your Lando services so that you can custom tailor the container environment for your apps!
-summary: Modify the underling Docker images used by your Lando services so that you can custom tailor the container environment for your apps!
-date: 2020-03-19T19:59:04.806Z
-original:
-repo:
+guide: true
 
-author:
-  name: Dustin LeBlanc
-  pic: https://www.gravatar.com/avatar/e61caccbbfd817bc8b52c0395ba888a6
-  link: https://twitter.com/DustinLeblanc
+authors:
+  - name: Team Lando
+    pic: https://gravatar.com/avatar/c335f31e62b453f747f39a84240b3bbd
+    link: https://twitter.com/devwithlando
+updated:
+  timestamp: 1594391902000
 
-feed:
-  enable: true
-  author:
-    - name: Dustin LeBlanc
-      email: alliance@lando.dev
-      link: https://twitter.com/DustinLeblanc
-  contributor:
-    - name: Dustin LeBlanc
-      email: alliance@lando.dev
-      link: https://twitter.com/DustinLeblanc
+mailchimp:
+  # action is required
+  action: https://dev.us12.list-manage.com/subscribe/post?u=59874b4d6910fa65e724a4648&amp;id=613837077f
+  # everything else is optional
+  title: Want similar content?
+  byline: Signup and we will send you a weekly blog digest of similar content to keep you satiated.
+  button: Sign me up!
 ---
-
-# Overriding a Service Version
-
-<GuideHeader test="" name="Dustin LeBlanc" pic="https://www.gravatar.com/avatar/e61caccbbfd817bc8b52c0395ba888a6" link="https://twitter.com/DustinLeblanc" />
 
 The Docker images Lando uses for services are well optimized for local development, but occasionally you need to
 override those images with some of your own secret sauce. Lando makes this easy to do through the services `overrides`
@@ -70,5 +61,3 @@ services:
     overrides:
       image: myamazingorg/fancyappserver:latest
 ```
-<GuideFooter test="" original="" repo=""/>
-<Newsletter />

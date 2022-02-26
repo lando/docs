@@ -2,9 +2,6 @@
   base = "./"
   publish = ".vuepress/dist"
   command = "yarn build"
-  # This sort of lets us build only on tagged commits to prod
-  # [context.production]
-  #   ignore = "if git diff $CACHED_COMMIT_REF $COMMIT_REF ./package.json | grep - | grep version && git diff $CACHED_COMMIT_REF $COMMIT_REF ./package.json | grep + | grep version; then exit 1; else exit 0; fi"
 
 # Sets our asset optimization
 [build.processing.css]
@@ -245,6 +242,14 @@
 [[redirects]]
   from = "/backdrop/*"
   to = "https://lando-backdrop.netlify.app/:splat"
+  status = 200
+[[redirects]]
+ from = "/cli/*"
+ to = "https://lando-cli.netlify.app/:splat"
+ status = 200
+[[redirects]]
+  from = "/config/*"
+  to = "https://lando-config.netlify.app/:splat"
   status = 200
 [[redirects]]
   from = "/dotnet/*"

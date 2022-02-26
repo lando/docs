@@ -80,6 +80,19 @@ module.exports = {
           '/lando-101/lando-tooling.md',
         ],
       },
+      {
+        text: 'Contributing',
+        collapsible: true,
+        children: [
+          '/contrib',
+          '/contrib/evangelist.md',
+          '/contrib/sponsoring.md',
+          '/lando-101/lando-config.md',
+          '/lando-101/lando-services.md',
+          '/lando-101/lando-proxy.md',
+          '/lando-101/lando-tooling.md',
+        ],
+      },
     ],
   },
 };

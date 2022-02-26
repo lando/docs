@@ -1,19 +1,41 @@
 ---
-description: Learn how to communicate with Lando contributors.
-metaTitle: Communicating with contributors | Lando
+description: Learn how to contribute to Lando.
 ---
 
-# 2. Join
+# Getting Involved
 
-We recommend you join the mechanisms below.
+If you are interested in helping out with the Lando project, then you've come to the _**right place!**_
+
+::: center
+![Lando Alliance](https://lando.dev/images/lando-alliance.png)
+:::
+
+We are looking for people to help out in any of the capacities as follows:
+
+::: half EVANGELIST
+Present, train or speak about Lando at various meetups, camps and conferences and generally spread the good word across the galaxy
+:::
+
+::: half CONTRIBUTOR
+Work on making and supporting Lando by touching code, docs, issues, DevOps or helping out in our Slack community channel
+:::
+
+::: half SPONSOR
+Give the dollars and get exclusive benefits
+:::
+
+::: half MAINTAINER
+Take ownership over one of our repos
+:::
+
+**If any of the above sound up your alley, then join us on the comms below and start engaging!**
+
 
 ## GitHub
 
 GitHub serves as the mechanism for all Lando code, issue reporting/tracking and project management.
 
 While the [Lando Organization](https://github.com/lando) serves as the starting point for all Lando projects, most collaboration is going to occur in the core [Lando Project](https://github.com/lando/lando) and its [issue queue](https://github.com/lando/lando/issues).
-
-If you are a contributor, it is **highly recommended** you also install [ZenHub](https://www.zenhub.com/extension) to get access to a nice Kanban style board for the GitHub issues.
 
 ## Slack
 

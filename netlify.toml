@@ -24,6 +24,9 @@
   [headers.values]
 	  Cache-Control = "public, max-age=31536000"
 
+# REDIRECTS
+# NOTE THAT REDIRECTS ARE EXECUTED FIRST COME FIRST SERVE
+
 # Domain redirects
 [[redirects]]
   from = "https://docs.lndo.io/*"
@@ -72,6 +75,164 @@
   to = "https://docs.lando.dev/config/global.html"
   status = 301
 
+
+# Redirect legacy content
+#
+[[redirects]]
+  from = "https://docs.lando.dev/config/acquia.html"
+  to = "https://docs.lando.dev/acquia"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/apache.html"
+  to = "https://docs.lando.dev/apache"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/backdrop.html"
+  to = "https://docs.lando.dev/backdrop"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/dotnet.html"
+  to = "https://docs.lando.dev/dotnet"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/drupal6.html"
+  to = "https://docs.lando.dev/drupal"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/drupal7.html"
+  to = "https://docs.lando.dev/drupal"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/drupal8.html"
+  to = "https://docs.lando.dev/drupal"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/drupal9.html"
+  to = "https://docs.lando.dev/drupal"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/drupal10.html"
+  to = "https://docs.lando.dev/drupal"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/elasticsearch.html"
+  to = "https://docs.lando.dev/elasticsearch"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/go.html"
+  to = "https://docs.lando.dev/go"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/joomla.html"
+  to = "https://docs.lando.dev/joomla"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/lagoon.html"
+  to = "https://docs.lando.dev/lagoon"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/lamp.html"
+  to = "https://docs.lando.dev/lamp"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/laravel.html"
+  to = "https://docs.lando.dev/laravel"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/lemp.html"
+  to = "https://docs.lando.dev/lemp"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/mailhog.html"
+  to = "https://docs.lando.dev/mailhog"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/mariadb.html"
+  to = "https://docs.lando.dev/mariadb"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/mean.html"
+  to = "https://docs.lando.dev/mean"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/memcached.html"
+  to = "https://docs.lando.dev/memcached"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/mongo.html"
+  to = "https://docs.lando.dev/mongo"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/mssql.html"
+  to = "https://docs.lando.dev/mssql"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/mysql.html"
+  to = "https://docs.lando.dev/mysql"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/nginx.html"
+  to = "https://docs.lando.dev/nginx"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/node.html"
+  to = "https://docs.lando.dev/node"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/pantheon.html"
+  to = "https://docs.lando.dev/pantheon"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/php.html"
+  to = "https://docs.lando.dev/php"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/phpmyadmin.html"
+  to = "https://docs.lando.dev/phpmyadmin"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/platformsh.html"
+  to = "https://docs.lando.dev/platformsh"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/postgres.html"
+  to = "https://docs.lando.dev/postgres"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/python.html"
+  to = "https://docs.lando.dev/python"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/redis.html"
+  to = "https://docs.lando.dev/redis"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/ruby.html"
+  to = "https://docs.lando.dev/ruby"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/solr.html"
+  to = "https://docs.lando.dev/solr"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/symfony.html"
+  to = "https://docs.lando.dev/symfony"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/tomcat.html"
+  to = "https://docs.lando.dev/tomcat"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/varnish.html"
+  to = "https://docs.lando.dev/varnish"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/wordpress.html"
+  to = "https://docs.lando.dev/wordpress"
+  status = 301
+
+
+# REWRITES
 # Stitch together the various plugin subsites
 [[redirects]]
   from = "/acquia/*"
@@ -209,157 +370,3 @@
   from = "/wordpress/*"
   to = "https://lando-wordpress.netlify.app/:splat"
   status = 200
-
-# Redirect the legacy pages
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/acquia.html"
-#   to = "https://docs.lando.dev/acquia"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/apache.html"
-#   to = "https://docs.lando.dev/apache"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/backdrop.html"
-#   to = "https://docs.lando.dev/backdrop"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/dotnet.html"
-#   to = "https://docs.lando.dev/dotnet"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/drupal6.html"
-#   to = "https://docs.lando.dev/drupal"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/drupal7.html"
-#   to = "https://docs.lando.dev/drupal"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/drupal8.html"
-#   to = "https://docs.lando.dev/drupal"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/drupal9.html"
-#   to = "https://docs.lando.dev/drupal"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/drupal10.html"
-#   to = "https://docs.lando.dev/drupal"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/elasticsearch.html"
-#   to = "https://docs.lando.dev/elasticsearch"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/go.html"
-#   to = "https://docs.lando.dev/go"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/joomla.html"
-#   to = "https://docs.lando.dev/joomla"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/lagoon.html"
-#   to = "https://docs.lando.dev/lagoon"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/lamp.html"
-#   to = "https://docs.lando.dev/lamp"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/laravel.html"
-#   to = "https://docs.lando.dev/laravel"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/lemp.html"
-#   to = "https://docs.lando.dev/lemp"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/mailhog.html"
-#   to = "https://docs.lando.dev/mailhog"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/mariadb.html"
-#   to = "https://docs.lando.dev/mariadb"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/mean.html"
-#   to = "https://docs.lando.dev/mean"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/memcached.html"
-#   to = "https://docs.lando.dev/memcached"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/mongo.html"
-#   to = "https://docs.lando.dev/mongo"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/mssql.html"
-#   to = "https://docs.lando.dev/mssql"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/mysql.html"
-#   to = "https://docs.lando.dev/mysql"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/nginx.html"
-#   to = "https://docs.lando.dev/nginx"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/node.html"
-#   to = "https://docs.lando.dev/node"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/pantheon.html"
-#   to = "https://docs.lando.dev/pantheon"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/php.html"
-#   to = "https://docs.lando.dev/php"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/phpmyadmin.html"
-#   to = "https://docs.lando.dev/phpmyadmin"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/platformsh.html"
-#   to = "https://docs.lando.dev/platformsh"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/postgres.html"
-#   to = "https://docs.lando.dev/postgres"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/python.html"
-#   to = "https://docs.lando.dev/python"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/redis.html"
-#   to = "https://docs.lando.dev/redis"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/ruby.html"
-#   to = "https://docs.lando.dev/ruby"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/solr.html"
-#   to = "https://docs.lando.dev/solr"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/symfony.html"
-#   to = "https://docs.lando.dev/symfony"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/tomcat.html"
-#   to = "https://docs.lando.dev/tomcat"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/varnish.html"
-#   to = "https://docs.lando.dev/varnish"
-#   status = 301
-# [[redirects]]
-#   from = "https://docs.lando.dev/config/wordpress.html"
-#   to = "https://docs.lando.dev/wordpress"
-#   status = 301

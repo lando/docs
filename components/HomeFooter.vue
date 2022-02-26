@@ -136,6 +136,7 @@
                 <li><a href="https://lando.dev/blog/">Blog</a></li>
                 <li><a href="https://lando.dev/events/">Events</a></li>
                 <li><a href="https://lando.dev/contact/">Contact</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc2vkesq59BblKo8ZX-R1hKTrHphh1kmsg4FgWV1WH5BKEjHQ/viewform">Careers</a></li>
               </ul>
             </div>
           </div>

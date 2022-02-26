@@ -2,3 +2,7 @@
 .cache
 dist
 _site
+
+.vuepress/dist
+.vuepress/.cache
+.vuepress/.temp

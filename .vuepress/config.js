@@ -16,7 +16,7 @@ module.exports = {
   themeConfig: {
     landoDocs: true,
     logo: '/images/icon.svg',
-    docsDir: 'docs',
+    docsDir: '.',
     docsBranch: 'main',
     repo: 'lando/docs',
     alias: {

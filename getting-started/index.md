@@ -8,9 +8,9 @@ next: ./what-it-do.md
 
 Lando is for developers who want to:
 
-* Quickly specify and painlessly spin up the [services](./../config/services.md) and [tooling](./../config/tooling.md) needed to develop _all_ their projects.
-* Ship these local development dependencies in a per-project, lives-in-git [config file](./../config/lando.md)
-* Automate complex [build steps](./../config/services.md#build-steps), testing setups, deployments or other [repeated-more-than-once workflows](./../config/events.md)
+* Quickly specify and painlessly spin up the [services](https://docs.lando.dev/config/services.html) and [tooling](https://docs.lando.dev/config/tooling.html) needed to develop _all_ their projects.
+* Ship these local development dependencies in a per-project, lives-in-git [config file](https://docs.lando.dev/config)
+* Automate complex [build steps](https://docs.lando.dev/config/services.html#build-steps), testing setups, deployments or other [repeated-more-than-once workflows](https://docs.lando.dev/config/events.html)
 * Avoid the built-in-masochism of directly using `docker` or `docker-compose`
 
 It's a free, open source, cross-platform, **local** development environment and DevOps tool built on [Docker](http://docker.com) container technology and developed by [Tandem](http://thinktandem.io). Designed to work with most major languages, frameworks and services, Lando provides an easy way for developers of all skill levels to specify simple or complex requirements for their projects, and then quickly get to work on them.

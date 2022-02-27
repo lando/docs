@@ -1,4 +1,7 @@
-## IN DEVELOPMENT
+
+## v4.0.0  - [February 26, 2021](https://github.com/lando/docs/releases/tag/v4.0.0)
+
+* Rebased on new docs architecture
 
 ## v0.1.2 - [December 3, 2021](https://github.com/lando/docs/releases/tag/v0.1.2)
 

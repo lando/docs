@@ -44,12 +44,9 @@ module.exports = {
           },
           {
             text: 'How does it work?',
-            link: '/getting-started/what-it-do.md',
+            link: '/getting-started/what-it-do.html',
           },
-          {
-            text: 'Installation',
-            link: '/getting-started/installation.md',
-          },
+          '/getting-started/installation.md',
           {
             text: 'Starting your first app',
             link: '/getting-started/first-app.md',

@@ -38,27 +38,12 @@ module.exports = {
         text: 'Getting Started',
         collapsible: false,
         children: [
-          {
-            text: 'Introduction',
-            link: '/getting-started',
-          },
-          {
-            text: 'How does it work?',
-            link: '/getting-started/what-it-do.html',
-          },
+          '/getting-started/index.md',
+          '/getting-started/what-it-do.md',
           '/getting-started/installation.md',
-          {
-            text: 'Starting your first app',
-            link: '/getting-started/first-app.md',
-          },
-          {
-            text: 'Updating',
-            link: '/getting-started/updating.md',
-          },
-          {
-            text: 'Uninstalling',
-            link: '/getting-started/uninstalling.md',
-          },
+          '/getting-started/first-app.md',
+          '/getting-started/updating.md',
+          '/getting-started/uninstalling.md',
         ],
       },
       {

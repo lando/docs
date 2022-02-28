@@ -1,7 +1,7 @@
 ---
 description: Learn how to boot up and initialize your first project for usage with Lando with a Hello World!, Drupal 7 and Pantheon example.
-next: ./updating.md
-prev: ./installation.md
+next: ./updating.html
+prev: ./installation.html
 ---
 
 # Starting your first app

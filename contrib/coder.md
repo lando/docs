@@ -175,7 +175,7 @@ module.exports = (app, lando) => {
 
 `app.js` will get loaded when a Lando app is initialized, e.g. `app.init()` is invoked. Generally, you will use this file to hook into the app's event layer and to modify the app object itself.
 
-It takes the form of a function that gives you access to both the [App](./../api/app.md) and [Lando](./../api/lando.md) APIs. Its `return` value is mixed directly into the `app` object, however, only the `config`, `composeData`, `env`, `labels` can be modified.
+It takes the form of a function that gives you access to both the App and Lando APIs. Its `return` value is mixed directly into the `app` object, however, only the `config`, `composeData`, `env`, `labels` can be modified.
 
 A fairly basic example follows:
 
@@ -255,7 +255,7 @@ More details about each key are listed as follows:
 
 **describe** - Just a basic string to describe your command
 
-**level** - This corresponds to the needed Lando [bootstrap level](./../api/lando.md#landobootstrap). Generally, it's fine to omit this but it's *safest* to set it to `app` if you are unsure about what to do.
+**level** - This corresponds to the needed Lando bootstrap level. Generally, it's fine to omit this but it's *safest* to set it to `app` if you are unsure about what to do.
 
 **options** - Options follows the [same interface](http://yargs.js.org/docs/#api-optionskey-opt) as in [yargs](http://yargs.js.org/) with one exception: `interactive`. `interactive` follows the [inquirer interface](https://github.com/SBoudrias/Inquirer.js) and does include the [autocomplete plugin](https://github.com/mokkabonna/inquirer-autocomplete-prompt). Lando also adds a `weight` property to `interface` so you can control the order with which interactive questions are asked.
 

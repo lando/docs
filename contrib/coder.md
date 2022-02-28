@@ -147,7 +147,7 @@ This file is required to exist in every Lando plugin, even if it doesn't do anyt
 
 `index.js` will get required when your plugin is initially loaded. Generally, you will use this file to hook into Lando's event layer and modify the `lando` object itself.
 
-It takes the form of a function that gives you access to the [Lando API](./../api/lando.md). Its `return` value is merged directly into the `lando` object.
+It takes the form of a function that gives you access to the Lando API. Its `return` value is merged directly into the `lando` object.
 
 A fairly basic example follows:
 

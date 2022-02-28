@@ -89,7 +89,7 @@ There are various ways to craft your Landofile but we've found and observed a st
 2. Add in additional [services](https://docs.lando.dev/config/recipes.html) when you need more **JUICE**.
 3. Define more complex [tooling](https://docs.lando.dev/config/tooling.html) and [events](https://docs.lando.dev/config/events.html) to simplify difficult command patterns and automate common tasks.
 4. Add in some [build steps](https://docs.lando.dev/config/services.html#build-steps) to further automate setting your services up or to mix in additional project dependencies.
-5. Define [custom services](https://docs.lando.dev/config/compose) as a catch all for anything else you need.
+5. Define [custom services](https://docs.lando.dev/compose) as a catch all for anything else you need.
 6. Create [custom recipes or services](https://docs.lando.dev/contrib/contrib-plugins.html) to lock down your new power tools.
 7. Rinse and repeat.
 

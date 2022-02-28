@@ -393,6 +393,10 @@
   from = "https://docs.lando.dev/config/lando.html"
   to = "https://docs.lando.dev/config/"
   status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/compose.html"
+  to = "https://docs.lando.dev/compose/"
+  status = 301
 
 # REWRITES
 # Stitch together the various plugin subsites

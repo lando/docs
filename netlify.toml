@@ -39,11 +39,23 @@
   to = "https://docs.lando.dev/cli"
   status = 301
 [[redirects]]
+  from = "https://docs.lando.dev/basics/usage"
+  to = "https://docs.lando.dev/cli"
+  status = 301
+[[redirects]]
   from = "https://docs.lando.dev/basics/config.html"
   to = "https://docs.lando.dev/cli/config.html"
   status = 301
 [[redirects]]
+  from = "https://docs.lando.dev/basics/config"
+  to = "https://docs.lando.dev/cli/config.html"
+  status = 301
+[[redirects]]
   from = "https://docs.lando.dev/basics/destroy.html"
+  to = "https://docs.lando.dev/cli/destroy.html"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/basics/destroy"
   to = "https://docs.lando.dev/cli/destroy.html"
   status = 301
 [[redirects]]

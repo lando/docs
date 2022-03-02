@@ -48,6 +48,7 @@ touch .vscode/php.ini
 code .vscode/php.ini
 ```
 
+**PHP 7.2+ uses xdebug 3** and needs the following `php.ini` configuration settings:
 
 ```ini
 [PHP]
@@ -67,6 +68,23 @@ xdebug.remote_autostart = 1
 xdebug.remote_host = ${LANDO_HOST_IP}
 ; xdebug.remote_connect_back = 1
 ; xdebug.remote_log = /tmp/xdebug_remote.log
+```
+
+**PHP 7.1 and earlier uses xdebug 2** and needs slightly different configuration in `php.ini`:
+
+```ini
+[PHP]
+
+; Xdebug
+xdebug.max_nesting_level = 256
+xdebug.show_exception_trace = 0
+xdebug.collect_params = 0
+; Extra custom Xdebug setting for debug to work in VSCode.
+xdebug.remote_enable = 1
+xdebug.remote_autostart = 1
+xdebug.remote_host = ${LANDO_HOST_IP}
+; xdebug.remote_connect_back = 1
+xdebug.remote_log = /tmp/xdebug.log
 ```
 
 Rebuild your environment.
@@ -100,7 +118,7 @@ code .vscode/launch.json
 }
 ```
 
-**Note: PHP 7.1 and earlier uses xdebug 2** which uses port 9000, so change the port number above accordinly.
+**Note: PHP 7.1 and earlier uses xdebug 2** which uses port 9000, so change the port number above accordingly.
 
 
 Done!

@@ -1,6 +1,15 @@
 # Lando Docs
 
-This repo contains the [documentation site](https://docs.lando.dev) for [Lando](https://lando.dev).
+This repo contains the [documentation site](https://docs.lando.dev) for [Lando](https://lando.dev). That said Lando is comprised of various constituent projects that are all combined together. So while this _is_ the main site you should think about it more as the "glue" that combines various subsites together into a cohesive docs expereince. Said more plainly. if you are looking to update the docs on say the Lagoon recipe then you should do so in the [Lagoon repo](https://github.com/lando/lagoon/tree/main/docs).
+
+Here is a non-exhaustive list of some of the other docs subsites:
+
+* https://github.com/lando/cli/tree/main/docs
+* https://github.com/lando/core/tree/main/docs
+* https://github.com/lando/php/tree/main/docs
+* https://github.com/lando/pantheon/tree/main/docs
+
+However, it's best to just search for the repo you are looking for in the main [Lando org](https://github.com/lando) and consult its README on how to update its docs.
 
 ## Issues, Questions and Support
 
@@ -12,34 +21,46 @@ If you'd like to report a bug or submit a feature request then please [use the i
 
 We try to log all changes big and small in both [THE CHANGELOG](https://github.com/lando/docs/blob/main/CHANGELOG.md) and the [release notes](https://github.com/lando/docs/releases).
 
-
 ## Development
 
 * Requires [Node 14+](https://nodejs.org/dist/latest-v14.x/)
 * Prefers [Yarn](https://classic.yarnpkg.com/lang/en/docs/install)
+* Alternatively you can also use Lando
 
 ```bash
 git clone https://github.com/lando/docs.git && cd docs
-yarn install
 ```
 
-If you dont' want to install Node 14 or Yarn for whatever reason you can install [Lando](https://docs.lando.dev/basics/installation.html) and use that:
+### Using Node/Yarn
 
 ```bash
-git clone https://github.com/lando/docs.git && cd docs
-# Install deps and get node
+# Install deps
+yarn | npm install
+
+# Launch dev site
+yarn dev
+
+# Lint
+yarn lint
+
+# Build site
+yarn build
+```
+
+### Using Lando
+
+```bash
+# Install deps
 lando start
 
-# Run commands
-lando node
-lando yarn
-```
+# Launch dev site
+lando yarn dev
 
-## Testing
+# Lint
+lando yarn lint
 
-```bash
-# Lint the code
-yarn lint
+# Build site
+lando yarn build
 ```
 
 ## Releasing

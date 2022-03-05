@@ -67,7 +67,7 @@ If you are interested in using something Lando does not currently offer as a ser
 
 **[events](https://docs.lando.dev/config/events.html)** - Events allow the user to run arbitrary commands, or combinations of commands, on arbitrary services, or combinations of services before or after certain parts of the Lando runtime. A good example is clearing out an application's cache after a database is imported.
 
-**[recipe](https://docs.lando.dev/config/recipes.html)** - Recipes are combinations of [services](https://docs.lando.dev/config/services.html), [proxies](https://docs.lando.dev/config/proxy.html), and [tooling](https://docs.lando.dev/config/tooling.html) designed as a start-state-of-sane-defaults for a particular use case - e.g. `drupal7`.
+**[recipe](https://docs.lando.dev/config/recipes.html)** - Recipes are combinations of [services](https://docs.lando.dev/config/services.html), [proxies](https://docs.lando.dev/config/proxy.html), and [tooling](https://docs.lando.dev/config/tooling.html) designed as a start-state-of-sane-defaults for a particular use case - e.g. `drupal9`.
 
 **[config](https://docs.lando.dev/config/recipes.html#configuration)** - Config allows you to set some of the more important things your recipe provides. These settings are usually different depending on the recipe you select.
 
@@ -101,17 +101,17 @@ You can check out our [large repository of tested-every-build and working exampl
 
 ```yaml
 name: my-app
-recipe: drupal7
+recipe: drupal9
 ```
 
 ### Lighting the match
 
 ```yaml
 name: my-app
-recipe: drupal7
+recipe: drupal9
 config:
   database: postgres
-  php: '7.0'
+  php: '8.1'
   xdebug: true
 ```
 
@@ -119,10 +119,10 @@ config:
 
 ```yaml
 name: my-app
-recipe: drupal7
+recipe: drupal9
 config:
-  database: postgres
-  php: '7.0'
+  database: 'mysql:8.0'
+  php: '8.1'
   xdebug: true
   config:
     php: my-custom-php.ini
@@ -131,7 +131,7 @@ proxy:
    - pma-my-app.lndo.site
 services:
   node:
-    type: node:10
+    type: node:17
     globals:
       gulp: latest
   pma:
@@ -147,10 +147,10 @@ tooling:
 
 ```yaml
 name: my-app
-recipe: drupal7
+recipe: drupal9
 config:
-  database: postgres
-  php: '7.0'
+  php: '8.1'
+  database: 'mysql:8.0'
   xdebug: true
   config:
     php: my-custom-php.ini
@@ -172,11 +172,11 @@ services:
         APP_LEVEL: dev
         TAYLOR: swift
   node:
-    type: node:10
+    type: node:17
     globals:
       gulp: latest
   frontend:
-    type: node:10
+    type: node:17
     command: yarn start
     build:
       - yarn

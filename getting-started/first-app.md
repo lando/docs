@@ -1,5 +1,5 @@
 ---
-description: Learn how to boot up and initialize your first project for usage with Lando with a Hello World!, Drupal 7 and Pantheon example.
+description: Learn how to boot up and initialize your first project for usage with Lando with a Hello World!, Drupal 9 and Pantheon example.
 next: ./updating.html
 prev: ./installation.html
 ---
@@ -40,30 +40,34 @@ open https://hello-lando.lndo.site
 lando destroy -y
 ```
 
-## Vanilla Drupal 7
+## Vanilla Drupal 9
 
 You can also pull in code from an external archive (or git repo/GitHub) to seed a new project.
 
 ```bash
 # Create a new directory for this example and enter it
-mkdir drupal7 && cd drupal7
+mkdir drupal9 && cd drupal9
 
-# Initialize a new lando drupal using vanilla d7
+# Initialize a new lando drupal using vanilla Drupal 9
 lando init \
   --source remote \
-  --remote-url https://ftp.drupal.org/files/projects/drupal-7.59.tar.gz \
+  --remote-url https://www.drupal.org/download-latest/tar.gz \
   --remote-options="--strip-components 1" \
-  --recipe drupal7 --webroot . \
-  --name hello-drupal7
+  --recipe drupal9 \
+  --webroot . \
+  --name hello-drupal9
 
 # Start the site
 lando start
 
-# Use the lando-provided drush to do a site install
-lando drush si --db-url=mysql://drupal7:drupal7@database/drupal7 -y
+# Install a site local drush
+lando composer require drush/drush
+
+# Install drupal
+lando drush site:install --db-url=mysql://drupal9:drupal9@database/drupal9 -y
 
 # Check out your new site!
-open https://hello-drupal7.lndo.site
+open https://hello-drupal9.lndo.site
 
 # Destroy it
 lando destroy -y

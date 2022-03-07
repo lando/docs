@@ -1,7 +1,7 @@
 ---
 description: Learn Lando basics and how to configure your first Landofile for either simple or complex development and/or DevOps requirements.
-prev: ./index.md
-next: ./installation.md
+prev: ./index.html
+next: ./installation.html
 ---
 
 # How does it work?
@@ -18,14 +18,14 @@ We've found a useful pattern here is for the senior-est, most DevOps-y person on
 
 In order for you to get started using the awesome power of Lando, you need to have the following:
 
-* A [Landofile](./../config/lando.md), generally this is called `.lando.yml`
+* A [Landofile](https://docs.lando.dev/config), generally this is called `.lando.yml`
 * Your application's codebase
 
 If you are unclear on how to manually set this up, check out our [lando init](https://docs.lando.dev/cli/init.html) command which can help you initialize code from various sources for use with Lando.
 
 ## So, what does this Landofile look like anyway?
 
-As mentioned above, the Landofile is generally named `.lando.yml` but is both [configurable](./../config/lando.md) and [overridable](./../config/lando.md). It needs a `name`, but beyond that, it can contain any combination things, although generally it only uses a small subset as follows:
+As mentioned above, the Landofile is generally named `.lando.yml` but is both [configurable](https://docs.lando.dev/config) and [overridable](https://docs.lando.dev/config). It needs a `name`, but beyond that, it can contain any combination things, although generally it only uses a small subset as follows:
 
 ```yaml
 name: my-app
@@ -57,25 +57,25 @@ Note that the values in each key above are not particularly relevant to what we 
 
 **name** - Nothing special here. This should be a unique way for you to identify your app.
 
-**compose** - This is a list of `docker-compose` files you can tell Lando to start. The paths are relative to the root of your project. Generally, this option is not used in favor of Lando [recipes](./../config/recipes.md) and/or [services](./../config/services.md) but is an option that makes sense under some circumstances.
+**compose** - This is a list of `docker-compose` files you can tell Lando to start. The paths are relative to the root of your project. Generally, this option is not used in favor of Lando [recipes](https://docs.lando.dev/config/recipes.html) and/or [services](https://docs.lando.dev/config/services.html) but is an option that makes sense under some circumstances.
 
-Note that services located in these files will still get injected with Lando's [default environment variables](./../config/env.md#defaults) and also be [networked](./../config/networking.md) like any other Lando service but will not get any of the extra Lando *secret sauce*.
+Note that services located in these files will still get injected with Lando's [default environment variables](https://docs.lando.dev/config/env.html#defaults) and also be [networked](https://docs.lando.dev/config/networking.html) like any other Lando service but will not get any of the extra Lando *secret sauce*.
 
-If you are interested in using something Lando does not currently offer as a service or recipe, we recommend looking at the [custom compose](./../config/compose.md) service.
+If you are interested in using something Lando does not currently offer as a service or recipe, we recommend looking at the [custom compose](https://docs.lando.dev/compose) service.
 
-**[env_file](./../config/env.md#environment-files)** - A list of environment files relative to your project's root directory. Each file should contain a list of `KEY=VALUE` pairs that will then get injected into the environment of **every** service.
+**[env_file](https://docs.lando.dev/config/env.html#environment-files)** - A list of environment files relative to your project's root directory. Each file should contain a list of `KEY=VALUE` pairs that will then get injected into the environment of **every** service.
 
-**[events](./../config/events.md)** - Events allow the user to run arbitrary commands, or combinations of commands, on arbitrary services, or combinations of services before or after certain parts of the Lando runtime. A good example is clearing out an application's cache after a database is imported.
+**[events](https://docs.lando.dev/config/events.html)** - Events allow the user to run arbitrary commands, or combinations of commands, on arbitrary services, or combinations of services before or after certain parts of the Lando runtime. A good example is clearing out an application's cache after a database is imported.
 
-**[recipe](./../config/recipes.md)** - Recipes are combinations of [services](./../config/services.md), [proxies](./../config/proxy.md), and [tooling](./../config/tooling.md) designed as a start-state-of-sane-defaults for a particular use case - e.g. `drupal7`.
+**[recipe](https://docs.lando.dev/config/recipes.html)** - Recipes are combinations of [services](https://docs.lando.dev/config/services.html), [proxies](https://docs.lando.dev/config/proxy.html), and [tooling](https://docs.lando.dev/config/tooling.html) designed as a start-state-of-sane-defaults for a particular use case - e.g. `drupal7`.
 
-**[config](./../config/recipes.md#configuration)** - Config allows you to set some of the more important things your recipe provides. These settings are usually different depending on the recipe you select.
+**[config](https://docs.lando.dev/config/recipes.html#configuration)** - Config allows you to set some of the more important things your recipe provides. These settings are usually different depending on the recipe you select.
 
-**[proxy](./../config/proxy.md)** - Proxy settings allow users to map arbitrary domain names to arbitrary ports inside of arbitrary services. Think: I go to the browser and type in `myapp.lndo.site` or `millard.filmore.for.lyfe` and it loads my application.
+**[proxy](https://docs.lando.dev/config/proxy.html)** - Proxy settings allow users to map arbitrary domain names to arbitrary ports inside of arbitrary services. Think: I go to the browser and type in `myapp.lndo.site` or `millard.filmore.for.lyfe` and it loads my application.
 
-**[services](./../config/services.md)** - Services are simplified but still highly configurable Docker containers. They are able to run [build steps](./../config/services.md#build-steps) such as installing a `php-extension` or running `yarn install` and can also be [overridden](./../config/services.md#overrides) down to the `docker-compose` level. They also get some automatic [networking](./../config/networking.md) and [security](./../config/security.md) features.
+**[services](https://docs.lando.dev/config/services.html)** - Services are simplified but still highly configurable Docker containers. They are able to run [build steps](https://docs.lando.dev/config/services.html#build-steps) such as installing a `php-extension` or running `yarn install` and can also be [overridden](https://docs.lando.dev/config/services.html#overrides) down to the `docker-compose` level. They also get some automatic [networking](https://docs.lando.dev/config/networking.html) and [security](https://docs.lando.dev/config/security.html) features.
 
-**[tooling](./../config/tooling.md)** - Tooling allows users to run arbitrary commands, or combinations of commands, on arbitrary services, or combinations of services when invoked.
+**[tooling](https://docs.lando.dev/config/tooling.html)** - Tooling allows users to run arbitrary commands, or combinations of commands, on arbitrary services, or combinations of services when invoked.
 
 This is helpful so you can run `lando yarn install` instead of `docker exec -it SERVICE yarn install` or so `lando test` can run `composer test` and `yarn test` in their respective services. You can also specify options, including interactive ones, to build out more complicated commands like `lando pull-my-database-from-aws --user=me --password=***` or to have a single command run on many services - e.g. `lando db-import dump.sql -h database2`.
 
@@ -85,12 +85,12 @@ This is helpful so you can run `lando yarn install` instead of `docker exec -it 
 
 There are various ways to craft your Landofile but we've found and observed a strategy to be *generally a good approach* as follows:
 
-1. Shop around for a [recipe](./../config/recipes.md) that can serve as a good starting point. [lando init](./init.md) is helpful for this.
-2. Add in additional [services](./../config/recipes.md) when you need more **JUICE**.
-3. Define more complex [tooling](./../config/tooling.md) and [events](./../config/events.md) to simplify difficult command patterns and automate common tasks.
-4. Add in some [build steps](./../config/services.md#build-steps) to further automate setting your services up or to mix in additional project dependencies.
-5. Define [custom services](./../config/compose.md) as a catch all for anything else you need.
-6. Create [custom recipes or services](./../contrib/contrib-plugins.md) to lock down your new power tools.
+1. Shop around for a [recipe](https://docs.lando.dev/config/recipes.html) that can serve as a good starting point. [lando init](https://docs.lando.dev/cli/init.html) is helpful for this.
+2. Add in additional [services](https://docs.lando.dev/config/recipes.html) when you need more **JUICE**.
+3. Define more complex [tooling](https://docs.lando.dev/config/tooling.html) and [events](https://docs.lando.dev/config/events.html) to simplify difficult command patterns and automate common tasks.
+4. Add in some [build steps](https://docs.lando.dev/config/services.html#build-steps) to further automate setting your services up or to mix in additional project dependencies.
+5. Define [custom services](https://docs.lando.dev/compose) as a catch all for anything else you need.
+6. Create [custom recipes or services](https://docs.lando.dev/contrib/contrib-plugins.html) to lock down your new power tools.
 7. Rinse and repeat.
 
 ## You have some examples?

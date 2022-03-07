@@ -50,7 +50,7 @@ Each Lando instance is uniquely identifiable by an ID which is stored at `~/.lan
 
 We will also pseudonymize your app's name.
 
-If you would like to see what data is sent you can run either examine the [Lando logs](./logs.md), or run a Lando command with debug verbosity.
+If you would like to see what data is sent you can run either examine the [Lando logs](https://docs.lando.dev/cli/logs.html), or run a Lando command with debug verbosity.
 
 ```bash
 lando start -vvv

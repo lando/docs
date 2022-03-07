@@ -1,7 +1,7 @@
 ---
 description: Get the skinny on how to easily install Lando, a local development and DevOps tool, on macOS, Windows and Linux.
-prev: ./what-it-do.md
-next: ./first-app.md
+prev: ./what-it-do.html
+next: ./first-app.html
 ---
 
 # Installation

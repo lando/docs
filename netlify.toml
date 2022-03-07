@@ -39,11 +39,23 @@
   to = "https://docs.lando.dev/cli"
   status = 301
 [[redirects]]
+  from = "https://docs.lando.dev/basics/usage"
+  to = "https://docs.lando.dev/cli"
+  status = 301
+[[redirects]]
   from = "https://docs.lando.dev/basics/config.html"
   to = "https://docs.lando.dev/cli/config.html"
   status = 301
 [[redirects]]
+  from = "https://docs.lando.dev/basics/config"
+  to = "https://docs.lando.dev/cli/config.html"
+  status = 301
+[[redirects]]
   from = "https://docs.lando.dev/basics/destroy.html"
+  to = "https://docs.lando.dev/cli/destroy.html"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/basics/destroy"
   to = "https://docs.lando.dev/cli/destroy.html"
   status = 301
 [[redirects]]
@@ -377,6 +389,14 @@
   from = "https://docs.lando.dev/lando.html"
   to = "https://docs.lando.dev/config/"
   status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/lando.html"
+  to = "https://docs.lando.dev/config/"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/config/compose.html"
+  to = "https://docs.lando.dev/compose/"
+  status = 301
 
 # REWRITES
 # Stitch together the various plugin subsites
@@ -393,9 +413,13 @@
   to = "https://lando-backdrop.netlify.app/:splat"
   status = 200
 [[redirects]]
- from = "/cli/*"
- to = "https://lando-cli.netlify.app/:splat"
- status = 200
+  from = "/cli/*"
+  to = "https://lando-cli.netlify.app/:splat"
+  status = 200
+[[redirects]]
+  from = "/compose/*"
+  to = "https://lando-compose.netlify.app/:splat"
+  status = 200
 [[redirects]]
   from = "/config/*"
   to = "https://lando-config.netlify.app/:splat"

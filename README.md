@@ -54,7 +54,7 @@ yarn build
 lando start
 
 # Launch dev site
-lando yarn dev
+lando dev
 
 # Lint
 lando yarn lint

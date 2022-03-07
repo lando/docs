@@ -36,4 +36,5 @@ coverage/
 # Vuepress
 .temp
 .cache
+dist
 _site

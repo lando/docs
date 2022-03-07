@@ -7,8 +7,14 @@ services:
     scanner: false
     ssl: false
     sslExpose: false
+    overrides:
+      ports:
+        - 8011:8011
 tooling:
   node:
     service: node
   yarn:
     service: node
+  dev:
+    service: node
+    cmd: yarn dev --port 8011

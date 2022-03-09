@@ -88,6 +88,7 @@ module.exports = {
           '/help/logs.html',
           '/help/wkbox.html',
           '/help/updating.html',
+          '/help/purging-containers.html',
         ],
       },
       {

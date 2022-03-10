@@ -22,17 +22,9 @@ module.exports = {
     alias: {
       '@theme/Home.vue': path.resolve(__dirname, '..', 'components', 'Home.vue'),
     },
-    sidebarHeader: {
-      enabled: false,
-    },
-    pages: {
-      contributors: {
-        enabled: false,
-      },
-      versions: {
-        enabled: false,
-      },
-    },
+    sidebarHeader: false,
+    versionsPage: false,
+    contributorsPage: false,
     sidebar: [
       {
         text: 'Getting Started',

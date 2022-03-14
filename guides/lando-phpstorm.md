@@ -24,7 +24,7 @@ and Drupal development. This video tutorial shows you how to set up PhpStorm wit
 
 If you’ve got a local php installation (for example php 7.1 installed with homebrew on macOS) that listens on port 9000 you may need to change the containers php.ini port specification to another port (i.e. `xdebug.remote_port=9001`) and tell phpstorm to listen on that port. See also [Debugging Drupal 8 with PHPstorm and Lando on your Mac](https://www.austinprogressivecalendar.com/blog/debugging-drupal8-phpstorm-and-lando-your-mac).
 
-### Xdebug 3.x (PHP 7.3+)
+## Xdebug 3.x (PHP 7.3+)
 With Xdebug 3.x, the setting `xdebug.remote_port` has been deprecated, and the setting `xdebug.client_port` should be used instead.
 Also the default xdebug port changed from `9000` to `9003`. Xdebug 3 is now the default version for PHP 7.3 and above.
 

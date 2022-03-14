@@ -26,14 +26,14 @@ If you’ve got a local php installation (for example php 7.1 installed with hom
 
 ## Xdebug 3.x (PHP 7.3+)
 With Xdebug 3.x, the setting `xdebug.remote_port` has been deprecated, and the setting `xdebug.client_port` should be used instead.
-Also the default xdebug port changed from `9000` to `9003`. Xdebug 3 is now the default version for PHP 7.3 and above.
+Also, the default xdebug port changed from `9000` to `9003`. Xdebug 3 is now the default version for PHP 7.3 and above.
 
-https://xdebug.org/docs/upgrade_guide#changed-xdebug.remote_port
+<https://xdebug.org/docs/upgrade_guide#changed-xdebug.remote_port>
 
-## Debugging Drush Commands
+## Debugging CLI Commands
 
-By default our Drupal recipes come with Drush out of the box. In order to debug any Drush command using Xdebug using
-PhpStorm or a similar IDE, you will need to set an additional environment variable `PHP_IDE_CONFIG` and configure the
+By default, our Drupal recipes come with Drush out of the box and also the Symfony recipe has a console tooling, which can be debugged with the following config. In order to debug any Drush/Symfony or CLI command using Xdebug with
+PhpStorm or a similar IDE, you will need to set two additional environment variables `PHP_IDE_CONFIG` + `XDEBUG_SESSION_START` and configure the
 path mapping in your IDE accordingly.
 
 ```yaml
@@ -41,8 +41,9 @@ services:
   appserver:
     overrides:
       environment:
-        # Support debugging Drush with XDEBUG.
+        # Support debugging CLI with XDEBUG.
         PHP_IDE_CONFIG: "serverName=appserver"
+        XDEBUG_SESSION_START: lando
 ```
 
 You are free to assign any name to "serverName" as long as it matches the server you define in the IDE settings.
@@ -60,26 +61,47 @@ export XDEBUG_SESSION="PHPSTORM"
 
 ## Toggling Xdebug
 For performance reasons, it can be a negative to always have Xdebug enabled. Best option is to install/build
-Xdebug extension but leave Xdebug disabled (as is the case with `pantheon` framework with `config: xdebug: false`.
+Xdebug extension but leave Xdebug disabled (as is the case with `pantheon` framework with `config: xdebug: false`).
 One option to do so is to use tooling such as:
 
+### Toggling for Apache
 ```yaml
+services:
+  appserver:
+    xdebug: true
+    build_as_root:
+      - rm -f /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && /etc/init.d/apache2 reload
+tooling:
+  xdebug-on:
+    service: appserver
+    description: Enable xdebug for Apache.
+    cmd: rm -f /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && docker-php-ext-enable xdebug && /etc/init.d/apache2 reload && echo "Xdebug enabled"
+    user: root
+
+  xdebug-off:
+    service: appserver
+    description: Disable xdebug for Apache.
+    cmd: rm -f /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && /etc/init.d/apache2 reload && echo "Xdebug disabled"
+    user: root
+```
+                                             
+### Toggling for nginx
+```yaml   
+services:
+  appserver:     
+        xdebug: true
+    build_as_root:
+      - rm -f /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && pkill -o -USR2 php-fpm
 tooling:
   xdebug-on:
     service: appserver
     description: Enable xdebug for nginx.
-    cmd:
-      - rm /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini -f
-      - docker-php-ext-enable xdebug
-      - pkill -o -USR2 php-fpm
-      - echo "Xdebug enabled"
+    cmd: rm -f /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && docker-php-ext-enable xdebug && pkill -o -USR2 php-fpm && echo "Xdebug enabled"
     user: root
+
   xdebug-off:
     service: appserver
     description: Disable xdebug for nginx.
-    cmd:
-      - rm /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini -f
-      - pkill -o -USR2 php-fpm
-      - echo "Xdebug disabled"
+    cmd: rm -f /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && pkill -o -USR2 php-fpm && echo "Xdebug disabled"
     user: root
   ```

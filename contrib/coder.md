@@ -103,9 +103,9 @@ In fact, almost all of Lando's core functionality is provided via plugins. This 
 
 ### Plugin Loading
 
-Lando will search any directory listed in `lando.config.pluginDirs` and automatically load any plugins that it finds in those directories. By default, the directories include the Lando source directory and the `~/.lando/plugins` directory. Note that these directories are configurable via Lando [global config](./../config/config.md).
+Lando will search the directories listed in `lando.config.pluginDirs` and automatically load any plugins that it finds in those directories. By default, the directories include the Lando source directory and the `~/.lando/plugins` directory. Note that these directories are configurable via Lando [global config](./../config/config.md).
 
-In order for Lando to successfully identify and automatically load your plugin, you need to have a directory named after your plugin, e.g. `my-plugin`, in one of the directories mentioned above and your plugin needs to include an `index.js` at the root level.
+In order for Lando to successfully identify and automatically load your plugin, you need to have a directory named after your plugin, e.g. `my-plugin`, in one of the directories mentioned above, and your plugin needs to include an `index.js` at the root level.
 
 Some examples are in order:
 ```

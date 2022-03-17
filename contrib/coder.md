@@ -103,7 +103,7 @@ In fact, almost all of Lando's core functionality is provided via plugins. This 
 
 ### Plugin Loading
 
-Lando will search any path listed in `lando.config.pluginDirs` and automatically load in any plugins that it finds. By default, these directories are the Lando source directory and `~/.lando/plugins` but note that these paths are configurable via the Lando [global config](./../config/config.md).
+Lando will search any directory listed in `lando.config.pluginDirs` and automatically load any plugins that it finds in those directories. By default, the directories include the Lando source directory and the `~/.lando/plugins` directory. Note that these directories are configurable via Lando [global config](./../config/config.md).
 
 In order for Lando to successfully identify and automatically load your plugin, you need to have a directory named after your plugin, e.g. `my-plugin`, in one of the directories mentioned above and your plugin needs to include an `index.js` at the root level.
 
@@ -115,7 +115,8 @@ Some examples are in order:
 
   |-- yourplugin  Your custom plugin folder.
   |-- @lando      Are you making a fix to an existing lando plugin? Then put
-                    the cloned plugin inside the @lando namespace.
+                    the cloned plugin inside the @lando namespace. The @ prefix
+                    indicates a namespace for plugins.
     |-- landoplugin  Your forked plugin goes here. ‡
 ```
 ‡ _It is perfectly fine to symlink the directory from `~/.lando/plugins/yourplugin` to your source code, should you prefer to keep your working code elsewhere._

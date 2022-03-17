@@ -1,5 +1,10 @@
 
-## v4.0.0  - [February 26, 2021](https://github.com/lando/docs/releases/tag/v4.0.0)
+## v4.0.0  - IN PROGRESS
+
+* Removed dangling `<SocialLinks>` in home footer
+* Upgraded to [vuepress-theme-default-plus@v1.0.0-beta.29](https://github.com/lando/vuepress-theme-default-plus/releases/tag/v1.0.0-beta.29)
+
+## v4.0.0  - [February 26, 2022](https://github.com/lando/docs/releases/tag/v4.0.0)
 
 * Rebased on new docs architecture
 

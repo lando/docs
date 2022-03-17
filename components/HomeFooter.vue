@@ -106,12 +106,8 @@
           </div>
         </div>
         <div class="footer-column footer-right">
-          <h3 class="strikethrough">Engage</h3>
-          <div class="footer-column-inner">
-            <div class="footer-social">
-              <SocialLinks :icons="social.icons" />
-            </div>
-          </div>
+          <h3 class="strikethrough">Other</h3>
+
           <div class="footer-column-inner">
             <div class="footer-column-third">
               <h4>Legal</h4>
@@ -154,12 +150,8 @@
 
 <script setup>
 import {usePageFrontmatter} from '@vuepress/client';
-import {useThemeData} from '@vuepress/plugin-theme-data/lib/client';
 
-import SocialLinks from '@lando/vuepress-theme-default-plus/components/SocialLinks.vue';
 const frontmatter = usePageFrontmatter();
-const themeData = useThemeData();
-const {social} = themeData.value;
 </script>
 
 <style lang="scss">

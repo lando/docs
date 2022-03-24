@@ -25,7 +25,7 @@ Lando makes this process relatively painless.
 
 ## Checking Connection Info
 
-If you've spun up a Lando app using one of our [recipes](./../config/recipes.md) then its likely relevant services are already exposed and ready for access.
+If you've spun up a Lando app using one of our [recipes](https://docs.lando.dev/config/recipes.html) then its likely relevant services are already exposed and ready for access.
 
 ```bash
 # Get info about it

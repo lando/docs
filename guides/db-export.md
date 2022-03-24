@@ -61,7 +61,7 @@ Options:
 
 ## Adding the `db-export` command
 
-If you are not using one of our LAMPy [recipes](./../config/recipes.md) you can add the `db-export` command and default options to the ['tooling'](./../config/tooling.md) section of your [Landofile](./../config/lando.md).
+If you are not using one of our LAMPy [recipes](https://docs.lando.dev/config/recipes.html) you can add the `db-export` command and default options to the ['tooling'](https://docs.lando.dev/config/tooling.html) section of your [Landofile](https://docs.lando.dev/config/lando.html).
 
 ```yaml
 tooling:

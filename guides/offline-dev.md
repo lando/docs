@@ -23,11 +23,11 @@ mailchimp:
 
 Out of the box Lando uses an actual on-the-internet wildcard domain at `*.lndo.site` to route your domain names back to your localhost to provide convenient proxying. This method is minimally invasive and doesn't require Lando to alter your machine's DNS routing. This has the downside of requiring an internet connection to access your sites.
 
-However, you may want the freedom of hacking away on your site while scaling Everest or just to simply route your projects to a different wildcard domain, like `*.local.dev`, `*.seriously.hanshotfirst` or `*.my.test`. Note that we **DO NOT** recommend you use a _true_ top-level domain such as `*.test`. You can read more about why in our [security](./../config/security.md) documentation.
+However, you may want the freedom of hacking away on your site while scaling Everest or just to simply route your projects to a different wildcard domain, like `*.local.dev`, `*.seriously.hanshotfirst` or `*.my.test`. Note that we **DO NOT** recommend you use a _true_ top-level domain such as `*.test`. You can read more about why in our [security](https://docs.lando.dev/config/security.html) documentation.
 
 To enable offline custom domain goodness, we'll use DNSMasq to route traffic to our local system and add a single config line to our global Lando config to direct lando to use that domain for our sites.
 
-That said and before we get started we **highly recommend** you consult both the [proxy](./../config/proxy.md) and [security](./../config/security.md) documentation to get a good handle on what is possible (and not possible) here.
+That said and before we get started we **highly recommend** you consult both the [proxy](https://docs.lando.dev/config/proxy.html) and [security](https://docs.lando.dev/config/security.html) documentation to get a good handle on what is possible (and not possible) here.
 
 ## Mac Specific Instructions
 

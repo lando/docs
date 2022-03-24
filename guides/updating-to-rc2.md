@@ -25,7 +25,7 @@ Before you begin here we *highly recommend* you check out the [RC2 Release Blog 
 
 **This guide is for people upgrading from `3.0.0-rc.1` or lower**.
 
-Here are the various things that have changed to your [Landofiles](./../config/lando.md) syntax. We've tried to order them from the most common or most breaking config to the least. Note that this guide might not be an exhaustive list of all breaking changes and you are still *highly encouraged* to check out the other docs if you are running into an error running your older Landofiles on `3.0.0-rc.2` or higher.
+Here are the various things that have changed to your [Landofiles](https://docs.lando.dev/config/lando.html) syntax. We've tried to order them from the most common or most breaking config to the least. Note that this guide might not be an exhaustive list of all breaking changes and you are still *highly encouraged* to check out the other docs if you are running into an error running your older Landofiles on `3.0.0-rc.2` or higher.
 
 [[toc]]
 
@@ -58,7 +58,7 @@ If you are running into an issue that is resolved by removing `~/.lando` please 
 
 ## Overrides
 
-We've slightly changed the syntax of [service overrides](./../config/services.md#overrides) to make things more readable. All you need to do is move things up one level
+We've slightly changed the syntax of [service overrides](https://docs.lando.dev/config/services.html#overrides) to make things more readable. All you need to do is move things up one level
 
 **old**
 
@@ -135,7 +135,7 @@ Lando still manages some services internally such as an [nginx](./../tutorials/n
 
 The names of these services will be the same as before except they will now be prefixed by the service that generated them. For example if you have a `php` service using `nginx` and it is named `appserver` then Lando will spin up an internal nginx service called `appserver_nginx.`
 
-Pain for this change will likely manifest if you have custom [proxy settings](./../config/proxy.md).
+Pain for this change will likely manifest if you have custom [proxy settings](https://docs.lando.dev/config/proxy.html).
 
 **old**
 
@@ -175,7 +175,7 @@ services:
 ```
 
 
-In these situations we prefer you use an option available via our [networking](./../config/networking.md).
+In these situations we prefer you use an option available via our [networking](https://docs.lando.dev/config/networking.html).
 
 **new**
 
@@ -230,7 +230,7 @@ This does not really break anything, but you may want to update the following:
 
 ## Tooling
 
-We've altered our [tooling](./../config/tooling.md) so that it is more in line with our [events](./../config/events.md) syntax. That means you will likely want to alter two of the following scenarios.
+We've altered our [tooling](https://docs.lando.dev/config/tooling.html) so that it is more in line with our [events](https://docs.lando.dev/config/events.html) syntax. That means you will likely want to alter two of the following scenarios.
 
 ### Multi-line commands
 
@@ -261,7 +261,7 @@ Check out [this example](https://github.com/lando/cli/tree/main/examples/tooling
 
 ### Eventy commands
 
-If you were using [events](./../config/events.md) as a [tricky way](https://github.com/lando/lando/blob/v3.0.0-rc.1/docs/tutorials/setup-additional-tooling.md#multi-service-tooling-with-events) to run multiple commands on multiple services you can now do that [directly with tooling](./../config/tooling.md#multi-service-multi-command-tooling).
+If you were using [events](https://docs.lando.dev/config/events.html) as a [tricky way](https://github.com/lando/lando/blob/v3.0.0-rc.1/docs/tutorials/setup-additional-tooling.md#multi-service-tooling-with-events) to run multiple commands on multiple services you can now do that [directly with tooling](https://docs.lando.dev/config/tooling.html#multi-service-multi-command-tooling).
 
 **old**
 
@@ -294,7 +294,7 @@ Check out [this example](https://github.com/lando/cli/tree/main/examples/tooling
 
 ## Build Steps
 
-While we've maintained decent backwards compatibility with previous build step names we recommend you update to the [new syntax](./../config/services.md#build-steps) and be mindful that build steps can now run **before** and **after** your application starts.
+While we've maintained decent backwards compatibility with previous build step names we recommend you update to the [new syntax](https://docs.lando.dev/config/services.html#build-steps) and be mindful that build steps can now run **before** and **after** your application starts.
 
 **old**
 
@@ -340,7 +340,7 @@ services:
       - command8
 ```
 
-If you have been using either of the following *unsupported* syntaxes then make sure you also read about [using scripty things](./../config/services.md#using-scripty-things) in your build steps.
+If you have been using either of the following *unsupported* syntaxes then make sure you also read about [using scripty things](https://docs.lando.dev/config/services.html#using-scripty-things) in your build steps.
 
 ```yaml
 run:
@@ -360,7 +360,7 @@ Check out [this example](https://github.com/lando/cli/tree/main/examples/service
 
 ## Global Environment Variables
 
-Lando no longer sets its [default environment variables](./../config/env.md) on your host machine. They are now **service only**. While this usage has actually been deprecated for quite some time you may still be doing stuff like this.
+Lando no longer sets its [default environment variables](https://docs.lando.dev/config/env.html) on your host machine. They are now **service only**. While this usage has actually been deprecated for quite some time you may still be doing stuff like this.
 
 **old**
 
@@ -409,7 +409,7 @@ events:
     - appserver: cd /app && command-that-def-needs-to-be-run-from-here
 ```
 
-Note that in the case of something like `$LANDO_ENGINE_CONF` your application's `root` directory, the entire `~/.lando` config directory, and your user home folder are [already available inside every container](./../config/files.md) by default so you should invoke them directly instead of re-mounting them.
+Note that in the case of something like `$LANDO_ENGINE_CONF` your application's `root` directory, the entire `~/.lando` config directory, and your user home folder are [already available inside every container](https://docs.lando.dev/config/files.html) by default so you should invoke them directly instead of re-mounting them.
 
 ### Accessing Environment variables in events, build-steps, tooling etc
 
@@ -435,32 +435,32 @@ events:
 
 Most service versions have stayed the same but a few have changed. If you try to run a now-unsupported service version Lando will throw a nice red error. If this happens to you check out the supported version documented for each service and either choose the closest one to what you have **OR** remove the version completely and use the default.
 
-*   ### [apache](./../config/apache.md)
-*   ### [custom](./../config/compose.md)
-*   ### [dotnet](./../config/dotnet.md)
-*   ### [elasticsearch](./../config/elasticsearch.md)
-*   ### [go](./../config/go.md)
-*   ### [mailhog](./../config/mailhog.md)
-*   ### [mariadb](./../config/mariadb.md)
-*   ### [memcached](./../config/memcached.md)
-*   ### [mongo](./../config/mongo.md)
-*   ### [mssql](./../config/mssql.md)
-*   ### [mysql](./../config/mysql.md)
-*   ### [nginx](./../config/nginx.md)
-*   ### [node](./../config/node.md)
-*   ### [php](./../config/php.md)
-*   ### [phpmyadmin](./../config/phpmyadmin.md)
-*   ### [postgres](./../config/postgres.md)
-*   ### [python](./../config/python.md)
-*   ### [redis](./../config/redis.md)
-*   ### [ruby](./../config/ruby.md)
+*   ### [apache](https://docs.lando.dev/config/apache.html)
+*   ### [custom](https://docs.lando.dev/config/compose.html)
+*   ### [dotnet](https://docs.lando.dev/config/dotnet.html)
+*   ### [elasticsearch](https://docs.lando.dev/config/elasticsearch.html)
+*   ### [go](https://docs.lando.dev/config/go.html)
+*   ### [mailhog](https://docs.lando.dev/config/mailhog.html)
+*   ### [mariadb](https://docs.lando.dev/config/mariadb.html)
+*   ### [memcached](https://docs.lando.dev/config/memcached.html)
+*   ### [mongo](https://docs.lando.dev/config/mongo.html)
+*   ### [mssql](https://docs.lando.dev/config/mssql.html)
+*   ### [mysql](https://docs.lando.dev/config/mysql.html)
+*   ### [nginx](https://docs.lando.dev/config/nginx.html)
+*   ### [node](https://docs.lando.dev/config/node.html)
+*   ### [php](https://docs.lando.dev/config/php.html)
+*   ### [phpmyadmin](https://docs.lando.dev/config/phpmyadmin.html)
+*   ### [postgres](https://docs.lando.dev/config/postgres.html)
+*   ### [python](https://docs.lando.dev/config/python.html)
+*   ### [redis](https://docs.lando.dev/config/redis.html)
+*   ### [ruby](https://docs.lando.dev/config/ruby.html)
 *   ### [solr](./../tutorials/solr.md)
-*   ### [tomcat](./../config/tomcat.md)
-*   ### [varnish](./../config/varnish.md)
+*   ### [tomcat](https://docs.lando.dev/config/tomcat.html)
+*   ### [varnish](https://docs.lando.dev/config/varnish.html)
 
 ## Environment Files
 
-You now have to explicitly set the top level [`env_file`](./../config/env.md#environment-files) if you want to load a `env` file.
+You now have to explicitly set the top level [`env_file`](https://docs.lando.dev/config/env.html#environment-files) if you want to load a `env` file.
 
 **old**
 
@@ -608,7 +608,7 @@ lando php -r "phpinfo();"
 
 ## Global Envvars
 
-There is no longer a `containerGlobalEnv` option in the Lando [global config](./../config/config.md). But you can now use `appEnv` to the same effect. **Note that this is for the Lando `config.yml` and NOT for a Landofile**.
+There is no longer a `containerGlobalEnv` option in the Lando [global config](https://docs.lando.dev/config/config.html). But you can now use `appEnv` to the same effect. **Note that this is for the Lando `config.yml` and NOT for a Landofile**.
 
 **old**
 

@@ -27,7 +27,7 @@ The fastest way to do this is to use the [lando share](./../basics/share.html) c
 
 ## Changing the Bind
 
-If you would rather test only on your local network and not over the Internet, you first need to change the `bindAddress` to expose your services on the LAN. Note that there are security implications to this and it is not recommended. Please consult the [Security Docs](./../config/security.md).
+If you would rather test only on your local network and not over the Internet, you first need to change the `bindAddress` to expose your services on the LAN. Note that there are security implications to this and it is not recommended. Please consult the [Security Docs](https://docs.lando.dev/config/security.html).
 
 Once you've done that you can ...
 

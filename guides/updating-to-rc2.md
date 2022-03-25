@@ -224,7 +224,7 @@ This does not really break anything, but you may want to update the following:
 
 - If you have any browser tabs open on your Lando sites, then update the URLs after updating Lando.
 - If any of your projects have affected `.lando.yml` files, then update the URLs in related README files or other documentation.
-- If you are bothered by cruft, then see [Removing lingering Lando configuration](https://docs.devwithlando.io/installation/uninstalling.html#removing-lingering-lando-configuration). You can remove files and directories based on the old hyphenless names in the Lando configuration directory and its subdirectories.
+- If you are bothered by cruft, then see [Removing lingering Lando configuration](https://docs.lando.dev/getting-started/uninstalling.html#removing-lingering-lando-configuration). You can remove files and directories based on the old hyphenless names in the Lando configuration directory and its subdirectories.
 
 ## Tooling
 
@@ -259,7 +259,7 @@ Check out [this example](https://github.com/lando/cli/tree/main/examples/tooling
 
 ### Eventy commands
 
-If you were using [events](https://docs.lando.dev/config/events.html) as a [tricky way](https://github.com/lando/lando/blob/v3.0.0-rc.1/docs/tutorials/setup-additional-tooling.md#multi-service-tooling-with-events) to run multiple commands on multiple services you can now do that [directly with tooling](https://docs.lando.dev/config/tooling.html#multi-service-multi-command-tooling).
+If you were using [events](https://docs.lando.dev/config/events.html) as a tricky way to run multiple commands on multiple services you can now do that [directly with tooling](https://docs.lando.dev/config/tooling.html#multi-service-multi-command-tooling).
 
 **old**
 
@@ -491,7 +491,7 @@ Check out [this example](https://github.com/lando/cli/tree/main/examples/base) w
 
 ## Drush Handling
 
-We've vastly simplified our [Drush handling](./../tutorials/drupal8.md#using-drush). You can now only set `drush` to a particular version for global installation. If you've installed `drush` via `composer` then Lando will use that version instead of the one in your Landofile.
+We've vastly simplified our [Drush handling](https://docs.lando.dev/drupal/tooling.html#using-drush). You can now only set `drush` to a particular version for global installation. If you've installed `drush` via `composer` then Lando will use that version instead of the one in your Landofile.
 
 **old**
 
@@ -566,7 +566,7 @@ lando init --source pantheon
 
 ## Global Options
 
-Lando no longer uses [`--`](https://github.com/lando/lando/blob/v3.0.0-rc.1/docs/cli/usage.md#global-options) to differentiate between its options and tooling options.
+Lando no longer uses `--` to differentiate between its options and tooling options.
 
 **old**
 

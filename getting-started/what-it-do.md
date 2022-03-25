@@ -59,7 +59,7 @@ Note that the values in each key above are not particularly relevant to what we 
 
 **compose** - This is a list of `docker-compose` files you can tell Lando to start. The paths are relative to the root of your project. Generally, this option is not used in favor of Lando [recipes](https://docs.lando.dev/config/recipes.html) and/or [services](https://docs.lando.dev/config/services.html) but is an option that makes sense under some circumstances.
 
-Note that services located in these files will still get injected with Lando's [default environment variables](https://docs.lando.dev/config/env.html#defaults) and also be [networked](https://docs.lando.dev/config/networking.html) like any other Lando service but will not get any of the extra Lando *secret sauce*.
+Note that services located in these files will still get injected with Lando's [default environment variables](https://docs.lando.dev/config/env.html#default-environment-variables) and also be [networked](https://docs.lando.dev/config/networking.html) like any other Lando service but will not get any of the extra Lando *secret sauce*.
 
 If you are interested in using something Lando does not currently offer as a service or recipe, we recommend looking at the [custom compose](https://docs.lando.dev/compose) service.
 
@@ -69,7 +69,7 @@ If you are interested in using something Lando does not currently offer as a ser
 
 **[recipe](https://docs.lando.dev/config/recipes.html)** - Recipes are combinations of [services](https://docs.lando.dev/config/services.html), [proxies](https://docs.lando.dev/config/proxy.html), and [tooling](https://docs.lando.dev/config/tooling.html) designed as a start-state-of-sane-defaults for a particular use case - e.g. `drupal9`.
 
-**[config](https://docs.lando.dev/config/recipes.html#configuration)** - Config allows you to set some of the more important things your recipe provides. These settings are usually different depending on the recipe you select.
+**[config](https://docs.lando.dev/config/recipes.html#config)** - Config allows you to set some of the more important things your recipe provides. These settings are usually different depending on the recipe you select.
 
 **[proxy](https://docs.lando.dev/config/proxy.html)** - Proxy settings allow users to map arbitrary domain names to arbitrary ports inside of arbitrary services. Think: I go to the browser and type in `myapp.lndo.site` or `millard.filmore.for.lyfe` and it loads my application.
 

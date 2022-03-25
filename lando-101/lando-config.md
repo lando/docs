@@ -37,7 +37,7 @@ Now if we visit our Lando provide URL for the `lando-101` app `https://lando-101
 
 <img src="/images/lando-101/lando-101-index.jpg" />
 
-We can see that this reports the PHP version as `7.3`. Enter the `config` key. Say our production server for the `lando-101` app is running PHP 7.4 and we want to match that in our Lando development environment. We can do that by using the [config](/config/lamp.html#configuration) key in our `.lando.yml` file to configure how the recipe is built. In this case we want PHP 7.4. Edit your `.lando.yml` file like this:
+We can see that this reports the PHP version as `7.3`. Enter the `config` key. Say our production server for the `lando-101` app is running PHP 7.4 and we want to match that in our Lando development environment. We can do that by using the [config](https://docs.lando.dev/lamp/config.html) key in our `.lando.yml` file to configure how the recipe is built. In this case we want PHP 7.4. Edit your `.lando.yml` file like this:
 
 ```yaml
 name: lando-101

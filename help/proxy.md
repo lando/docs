@@ -15,7 +15,7 @@ curl: (7) Failed to connect to raw.githubusercontent.com port 443: Connection re
 error: Error: 7
 ```
 
-If you think you may be in this situation there is a Lando driven mechanism you can use to help alleviate the issue as well as various Docker level mechanisms you can read about [below](./proxy.md#additional-reading).
+If you think you may be in this situation there is a Lando driven mechanism you can use to help alleviate the issue as well as various Docker level mechanisms you can read about [below](./proxy.md#potential-docker-driven-solutions).
 
 ## Lando Environment Files
 

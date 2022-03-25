@@ -21,8 +21,8 @@ Lando is designed to work on a wide range of computers. Here are some basic guid
 Please also verify you meet the requirements needed to run our Docker engine backend. Note that the macOS and Windows Lando installer will install Docker for you if needed.
 
 *   Linux Docker engine [requirements](https://docs.docker.com/engine/installation/linux)
-*   Docker Desktop for Mac [requirements](https://docs.docker.com/docker-for-mac/#/what-to-know-before-you-install)
-*   Docker Desktop for Windows [requirements](https://docs.docker.com/docker-for-windows/#/what-to-know-before-you-install)
+*   Docker Desktop for Mac [requirements](https://docs.docker.com/desktop/mac/install/)
+*   Docker Desktop for Windows [requirements](https://docs.docker.com/desktop/windows/install/)
 
 ## Hardware Requirements
 

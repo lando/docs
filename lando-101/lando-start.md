@@ -19,7 +19,7 @@ mailchimp:
   button: Sign me up!
 ---
 
-This lesson is primarily about vocabulary to help us understand the Lando ecosystem. A `recipe` in Lando is a pre-configured start state for an application. Lando comes [with more than 12 recipes](/config/recipes.html) out of the box. In the Lando 101 course we are using the [LAMP](/config/lamp.html#getting-started) recipe. This tells Lando that we'll need an application container with Apache and PHP and a MySQL container.
+This lesson is primarily about vocabulary to help us understand the Lando ecosystem. A `recipe` in Lando is a pre-configured start state for an application. Lando comes [with more than 12 recipes](/config/recipes.html) out of the box. In the Lando 101 course we are using the [LAMP](https://docs.lando.dev/lamp) recipe. This tells Lando that we'll need an application container with Apache and PHP and a MySQL container.
 
 So, if we `lando start` our `Lando 101` app we'll see those corresponding containers. Here is some of the output from `lando start`:
 

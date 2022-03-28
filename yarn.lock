@@ -219,46 +219,10 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
-"@lando/vuepress-theme-default-plus@1.0.0-beta.29":
-  version "1.0.0-beta.29"
-  resolved "https://registry.yarnpkg.com/@lando/vuepress-theme-default-plus/-/vuepress-theme-default-plus-1.0.0-beta.29.tgz#d8e7189a76f2f510afc18b3f39983ff95347bf5f"
-  integrity sha512-D5+8OnGo/4FmsezrL70lLjE1rri9cS56ki5cSriuThw2D0D9Ja8i5QjcsUaQkmYFv4EWh7g+AFNduyBlaPvdrg==
-  dependencies:
-    "@octokit/core" "^3.5.1"
-    "@octokit/plugin-paginate-rest" "^2.17.0"
-    "@vuepress/client" "^2.0.0-beta.35"
-    "@vuepress/core" "^2.0.0-beta.35"
-    "@vuepress/plugin-active-header-links" "^2.0.0-beta.35"
-    "@vuepress/plugin-back-to-top" "^2.0.0-beta.35"
-    "@vuepress/plugin-container" "^2.0.0-beta.35"
-    "@vuepress/plugin-docsearch" "^2.0.0-beta.35"
-    "@vuepress/plugin-git" "^2.0.0-beta.35"
-    "@vuepress/plugin-google-analytics" "^2.0.0-beta.35"
-    "@vuepress/plugin-medium-zoom" "^2.0.0-beta.35"
-    "@vuepress/plugin-nprogress" "^2.0.0-beta.35"
-    "@vuepress/plugin-palette" "^2.0.0-beta.35"
-    "@vuepress/plugin-prismjs" "^2.0.0-beta.35"
-    "@vuepress/plugin-register-components" "^2.0.0-beta.35"
-    "@vuepress/plugin-search" "^2.0.0-beta.35"
-    "@vuepress/plugin-theme-data" "^2.0.0-beta.35"
-    "@vuepress/shared" "^2.0.0-beta.35"
-    "@vuepress/theme-default" "^2.0.0-beta.35"
-    "@vuepress/utils" "^2.0.0-beta.35"
-    "@vueuse/core" "^5.0.0"
-    blueimp-md5 "^2.19.0"
-    generate-robotstxt "^8.0.3"
-    js-yaml "^4.1.0"
-    lodash "^4.17.21"
-    sass "^1.47.0"
-    sass-loader "^12.4.0"
-    sitemap "^7.1.1"
-    timeago.js "^4.0.2"
-    vue "^3.2.20"
-    vue-router "^4.0.12"
-
-"@lando/vuepress-theme-default-plus@lando/vuepress-theme-default-plus#main":
-  version "1.0.0-beta.29"
-  resolved "https://codeload.github.com/lando/vuepress-theme-default-plus/tar.gz/43da5029fa18b103c9c179b45d28eb0b2336a1f2"
+"@lando/vuepress-theme-default-plus@1.0.0-beta.30":
+  version "1.0.0-beta.30"
+  resolved "https://registry.yarnpkg.com/@lando/vuepress-theme-default-plus/-/vuepress-theme-default-plus-1.0.0-beta.30.tgz#cb47e2d97010198905d33ce3465517e087ad9708"
+  integrity sha512-oP8xGYv65eHg71UySsp23/DeO/7Zr7fRktlxH0vVSu3pKhflLXUBtPnxNy+7YXe6ZnDUcRR4qiBDDK+HXQGZIA==
   dependencies:
     "@octokit/core" "^3.5.1"
     "@octokit/plugin-paginate-rest" "^2.17.0"

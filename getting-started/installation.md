@@ -59,7 +59,7 @@ We've found the below or better to deliver the best experience.
 
 ## MacOS
 
-<YouTube url="https://www.youtube.com/embed/W8qIutOAe-0" />
+<YouTube id="W8qIutOAe-0" />
 
 ::: tip Do not fear the package size!
 Note that our macOS installer _includes_ Docker Desktop and this accounts for its large file size in comparison to our Linux packages.

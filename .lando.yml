@@ -18,3 +18,5 @@ tooling:
   dev:
     service: node
     cmd: yarn dev --port 8011
+    env:
+      DEBUG: "@lando/*"

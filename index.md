@@ -1,5 +1,5 @@
 ---
-title: Lando Documentation
+title: Documentation
 description: Documentation for Lando; a free, open source development tool for all your projects that is fast, easy, powerful and liberating.
 image: https://raw.githubusercontent.com/lando/lando/master/docs/.vuepress/public/images/icon.svg
 home: true

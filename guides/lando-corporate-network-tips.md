@@ -150,7 +150,7 @@ Contents of `.npmrc`:
 ```
 proxy=http://host.docker.internal:9000
 https-proxy=http://host.docker.internal:9000
-cafile=/app/.lando/certs/ca-all.pem
+cafile=/app/yourcert.crt
 ```
 
 #### Adding Certs for Native cURL

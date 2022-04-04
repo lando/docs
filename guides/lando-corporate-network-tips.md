@@ -17,8 +17,8 @@ export HTTPS_PROXY=http://localhost:9000
 
 Additionally, you'll want to specify that proxy in your Docker Desktop settings (if running on Windows or Mac). Under Settings > Resources > Proxies, specify...
 
-	- Web Server: http://localhost:9000
-	- Secure Web Server: http://localhost:9000
+- Web Server: http://localhost:9000
+- Secure Web Server: http://localhost:9000
 
 ...and finally you may need to specify the proxy in the `.lando.yml` file for your project(s):
 

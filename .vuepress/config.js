@@ -71,6 +71,7 @@ module.exports = {
           '/guides/overriding-a-service-version.html',
           '/guides/setup-lando-on-windows-with-wsl-2.html',
           '/guides/updating-to-rc2.html',
+          '/guides/lando-corporate-network-tips.html',
         ],
       },
       {

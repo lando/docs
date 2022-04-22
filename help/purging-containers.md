@@ -21,3 +21,7 @@ To purge all your containers and Lando cache, run the following command in your 
 ```bash
 lando poweroff && docker system prune -a --volumes && rm -rf ~/.lando/cache
 ```
+
+**Windows Users** 
+
+The location of your store app configuration may be different than `~/.lando`.  By default the location is `C:\Users\ME\.lando` you can also use `lando config | grep userConfRoot` to locate the exact path.  Once you have the path, adjust the command above accordingly.  

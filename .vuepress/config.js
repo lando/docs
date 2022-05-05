@@ -1,4 +1,5 @@
 const {path} = require('@vuepress/utils');
+const customTheme = require('@lando/vuepress-theme-default-plus');
 
 module.exports = {
   lang: 'en-US',
@@ -12,8 +13,7 @@ module.exports = {
     ['link', {rel: 'preconnect', href: '//fonts.gstatic.com', crossorigin: true}],
     ['link', {rel: 'stylesheet', href: '//fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap'}],
   ],
-  theme: '@lando/vuepress-theme-default-plus',
-  themeConfig: {
+  theme: customTheme({
     landoDocs: true,
     logo: '/images/icon.svg',
     docsDir: '.',
@@ -107,5 +107,5 @@ module.exports = {
         ],
       },
     ],
-  },
+  }),
 };

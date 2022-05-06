@@ -35,6 +35,7 @@ That said and before we get started we **highly recommend** you consult both the
 4. Add the following line to your `/usr/local/etc/dnsmasq.conf` file:
 ```
 address=/local.host/127.0.0.1
+listen-address=127.0.0.1
 ```
 Sub in your favorite domain for 'local.host' here if you want to use something more flashy.
 
@@ -47,6 +48,8 @@ sudo nano /etc/resolver/local.host
 7. Add the following line to the local.host file resolver in /etc/resolver/.
 ```
 nameserver 127.0.0.1
+domain local.host
+search_order 1
 ```
 8. Reboot macOS to enable the new resolver.
 9. Flush your DNS, just to be sure that your browsers use the new dns
@@ -80,5 +83,7 @@ Here are some vitals:
                 https://bestappever.local.host
 ```
 13. Load it up in the browser and confirm everything is happy and working.
+14. To make your browser to trust the new CA, you should follow the instructions on https://docs.lando.dev/config/security.html, replacing lndo.site.pem to local.host.pem
+15. If you are configuring this on an already started lando project, you may need to run `lando rebuild`.
 
 Enjoy your signature domain while you hack away in complete wifi-less splendor.

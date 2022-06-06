@@ -89,19 +89,19 @@ tooling:
 ```yaml   
 services:
   appserver:     
-        xdebug: true
+    xdebug: true
     build_as_root:
-      - rm -f /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && pkill -o -USR2 php-fpm
+      - rm -f /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && pkill -USR2 -o php-fpm
 tooling:
   xdebug-on:
     service: appserver
     description: Enable xdebug for nginx.
-    cmd: rm -f /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && docker-php-ext-enable xdebug && pkill -o -USR2 php-fpm && echo "Xdebug enabled"
+    cmd: rm -f /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && docker-php-ext-enable xdebug && pkill -USR2 -o php-fpm && echo "Xdebug enabled"
     user: root
 
   xdebug-off:
     service: appserver
     description: Disable xdebug for nginx.
-    cmd: rm -f /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && pkill -o -USR2 php-fpm && echo "Xdebug disabled"
+    cmd: rm -f /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && pkill -USR2 -o php-fpm && echo "Xdebug disabled"
     user: root
   ```

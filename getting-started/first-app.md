@@ -34,7 +34,7 @@ lando start
 lando
 
 # Visit the local site
-open https://hello-lando.lndo.site
+xdg-open https://hello-lando.lndo.site
 
 # Destroy the site
 lando destroy -y
@@ -67,7 +67,7 @@ lando composer require drush/drush
 lando drush site:install --db-url=mysql://drupal9:drupal9@database/drupal9 -y
 
 # Check out your new site!
-open https://hello-drupal9.lndo.site
+xdg-open https://hello-drupal9.lndo.site
 
 # Destroy it
 lando destroy -y

@@ -69,6 +69,9 @@ lando drush site:install --db-url=mysql://drupal9:drupal9@database/drupal9 -y
 # Check out your new site!
 xdg-open https://hello-drupal9.lndo.site
 
+# Log in as admin with Drush
+lando drush uli -l https://hello-drupal9.lndo.site
+
 # Destroy it
 lando destroy -y
 ```

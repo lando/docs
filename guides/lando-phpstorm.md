@@ -43,7 +43,7 @@ services:
       environment:
         # Support debugging CLI with XDEBUG.
         PHP_IDE_CONFIG: "serverName=appserver"
-        XDEBUG_SESSION_START: lando
+        XDEBUG_TRIGGER: lando
 ```
 
 You are free to assign any name to "serverName" as long as it matches the server you define in the IDE settings.

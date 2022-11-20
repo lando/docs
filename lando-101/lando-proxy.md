@@ -53,4 +53,4 @@ After rebuilding we can now access the new `mail.lando-101.lndo.site` URL to vie
 
 <img src="/images/lando-101/mh.jpg" />
 
-Using the `proxy` key in our `.lando.yml` file we can add a URL to any `service` in a Lando app! If you need to dig deeper you can read the [full proxy documentation](/config/proxy.html). It also offers a solution, if you're using Firefox and get a 404 error, after getting redirected to the HTTPS-version.
+Using the `proxy` key in our `.lando.yml` file we can add a URL to any `service` in a Lando app! If you need to dig deeper you can read the [full proxy documentation](/config/proxy.html). It also offers a solution, if you're using Firefox and get a `404 page not found` error, after getting redirected to the HTTPS-version.

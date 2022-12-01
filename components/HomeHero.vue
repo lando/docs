@@ -61,9 +61,7 @@ const heroText = computed(() => {
   return frontmatter.value.heroText || siteLocale.value.title || 'Hello';
 });
 
-const heroAlt = computed(
-  () => frontmatter.value.heroAlt || heroText.value || 'hero'
-);
+const heroAlt = computed(() => frontmatter.value.heroAlt || heroText.value || 'hero');
 
 const tagline = computed(() => {
   if (frontmatter.value.tagline === null) {

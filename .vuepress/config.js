@@ -1,7 +1,10 @@
-const {path} = require('@vuepress/utils');
-const customTheme = require('@lando/vuepress-theme-default-plus');
+import {defineUserConfig} from '@vuepress/cli';
+import {defaultThemePlus} from '@lando/vuepress-theme-default-plus';
+import {getDirname, path} from '@vuepress/utils';
 
-module.exports = {
+const __dirname = getDirname(import.meta.url);
+
+export default defineUserConfig({
   lang: 'en-US',
   title: 'Lando',
   description: 'Documentation',
@@ -13,14 +16,14 @@ module.exports = {
     ['link', {rel: 'preconnect', href: '//fonts.gstatic.com', crossorigin: true}],
     ['link', {rel: 'stylesheet', href: '//fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap'}],
   ],
-  theme: customTheme({
+  theme: defaultThemePlus({
     landoDocs: true,
     logo: '/images/icon.svg',
     docsDir: '.',
     docsBranch: 'main',
     repo: 'lando/docs',
     alias: {
-      '@theme/Home.vue': path.resolve(__dirname, '..', 'components', 'Home.vue'),
+      '@theme/Home.vue': path.resolve(__dirname, '..', 'components', 'HomePage.vue'),
     },
     sidebarHeader: false,
     versionsPage: false,
@@ -108,4 +111,4 @@ module.exports = {
       },
     ],
   }),
-};
+});

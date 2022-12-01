@@ -41,7 +41,7 @@ import {
 } from '@vuepress/client';
 import {isArray} from '@vuepress/shared';
 import {computed, h} from 'vue';
-import {useDarkMode} from '@vuepress/theme-default/lib/client/composables';
+import {useDarkMode} from '@vuepress/theme-default/client';
 
 const frontmatter = usePageFrontmatter();
 const siteLocale = useSiteLocaleData();
@@ -61,9 +61,7 @@ const heroText = computed(() => {
   return frontmatter.value.heroText || siteLocale.value.title || 'Hello';
 });
 
-const heroAlt = computed(
-  () => frontmatter.value.heroAlt || heroText.value || 'hero'
-);
+const heroAlt = computed(() => frontmatter.value.heroAlt || heroText.value || 'hero');
 
 const tagline = computed(() => {
   if (frontmatter.value.tagline === null) {

@@ -1,6 +1,8 @@
 import {defineUserConfig} from '@vuepress/cli';
 import {defaultThemePlus} from '@lando/vuepress-theme-default-plus';
-import {path} from '@vuepress/utils';
+import {getDirname, path} from '@vuepress/utils';
+
+const __dirname = getDirname(import.meta.url);
 
 export default defineUserConfig({
   lang: 'en-US',
@@ -21,7 +23,7 @@ export default defineUserConfig({
     docsBranch: 'main',
     repo: 'lando/docs',
     alias: {
-      '@theme/Home.vue': path.resolve(__dirname, '..', 'components', 'Home.vue'),
+      '@theme/Home.vue': path.resolve(__dirname, '..', 'components', 'HomePage.vue'),
     },
     sidebarHeader: false,
     versionsPage: false,

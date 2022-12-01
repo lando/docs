@@ -1,5 +1,6 @@
 import {defineUserConfig} from '@vuepress/cli';
 import {defaultThemePlus} from '@lando/vuepress-theme-default-plus';
+import {path} from '@vuepress/utils';
 
 export default defineUserConfig({
   lang: 'en-US',

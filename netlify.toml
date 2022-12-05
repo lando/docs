@@ -421,7 +421,7 @@
   to = "https://lando-compose.netlify.app/:splat"
   status = 200
 [[redirects]]
-  from = "/config/v3/*
+  from = "/config/v3/*"
   to = "https://lando-core.netlify.app/:splat"
   status = 200
 [[redirects]]

@@ -420,6 +420,10 @@
   status = 200
 
 [[redirects]]
+  from = "/config/v3/*"
+  to = "https://lando-core.netlify.app/:splat"
+  status = 200
+[[redirects]]
   from = "/config/"
   to = "/config/v3"
   status = 301
@@ -427,10 +431,6 @@
   from = "/config/*"
   to = "/config/v3/:splat"
   status = 301
-[[redirects]]
-  from = "/config/v3*"
-  to = "https://lando-core.netlify.app/:splat"
-  status = 200
 
 [[redirects]]
   from = "/dotnet/*"

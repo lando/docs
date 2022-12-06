@@ -420,8 +420,11 @@
   status = 200
 
 [[redirects]]
+  from = "/config/"
+  to = "/core/"
+[[redirects]]
   from = "/config/*"
-  to = "/config/:splat"
+  to = "/core/:splat"
   status = 301
 [[redirects]]
   from = "/core/v3/*"

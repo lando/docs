@@ -420,20 +420,24 @@
   status = 200
 
 [[redirects]]
-  from = "/config/v3/*"
+  from = "/config/*"
+  to = "/config/:splat"
+  status = 301
+[[redirects]]
+  from = "/core/v3/*"
   to = "https://lando-core-legacy.netlify.app/:splat"
   status = 200
 [[redirects]]
-  from = "/config/v4/*"
+  from = "/core/v4/*"
   to = "https://lando-core.netlify.app/:splat"
   status = 200
 [[redirects]]
-  from = "/config/"
-  to = "/config/v3"
+  from = "/core/"
+  to = "/core/v3"
   status = 301
 [[redirects]]
-  from = "/config/*"
-  to = "/config/v3/:splat"
+  from = "/core/*"
+  to = "/core/v3/:splat"
   status = 301
 
 [[redirects]]

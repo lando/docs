@@ -421,6 +421,10 @@
 
 [[redirects]]
   from = "/config/v3/*"
+  to = "https://lando-core-legacy.netlify.app/:splat"
+  status = 200
+[[redirects]]
+  from = "/config/v4/*"
   to = "https://lando-core.netlify.app/:splat"
   status = 200
 [[redirects]]

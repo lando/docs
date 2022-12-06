@@ -33,7 +33,7 @@
   to = "https://docs.lando.dev/:splat"
   status = 301
 
-# Redirect legacy 3.x content
+# Redirect legacy monorepo doc content
 [[redirects]]
   from = "https://docs.lando.dev/basics/usage.html"
   to = "https://docs.lando.dev/cli"
@@ -194,8 +194,6 @@
   from = "https://docs.lando.dev/guides/lando-101/*"
   to = "https://docs.lando.dev/lando-101/:splat"
   status = 301
-
-
 
 
 # Redirect legacy recipes/services
@@ -399,7 +397,7 @@
   status = 301
 
 # REWRITES
-# Stitch together the various plugin subsites
+# Stitch together the various subsites
 [[redirects]]
   from = "/acquia/*"
   to = "https://lando-acquia.netlify.app/:splat"
@@ -420,10 +418,20 @@
   from = "/compose/*"
   to = "https://lando-compose.netlify.app/:splat"
   status = 200
+
+[[redirects]]
+  from = "/config/"
+  to = "/config/v3"
+  status = 301
 [[redirects]]
   from = "/config/*"
+  to = "/config/v3/:splat"
+  status = 301
+[[redirects]]
+  from = "/config/v3*"
   to = "https://lando-core.netlify.app/:splat"
   status = 200
+
 [[redirects]]
   from = "/dotnet/*"
   to = "https://lando-dotnet.netlify.app/:splat"

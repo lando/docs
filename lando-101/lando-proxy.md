@@ -53,5 +53,5 @@ After rebuilding we can now access the new `mail.lando-101.lndo.site` URL to vie
 
 <img src="/images/lando-101/mh.jpg" />
 
-Using the `proxy` key in our `.lando.yml` file we can add a URL to any `service` in a Lando app! If you need to dig deeper you can find the read the [full proxy documentatioin](/config/proxy.html).
+Using the `proxy` key in our `.lando.yml` file we can add a URL to any `service` in a Lando app! If you need to dig deeper you can find the read the [full proxy documentatioin](https://docs.lando.dev/core/v3/proxy.html).
 

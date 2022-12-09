@@ -24,7 +24,7 @@ If you encounter an error during runtime, check out the runtime logs at...
 There should be core lando logs called `lando-error.log` and a more robust `lando.log`. There should also be error and verbose logs associated with each of your applications eg `myapp.log` and `myapp-error.log`.
 
 ::: tip
-Run the failing command again in verbose mode. You can pass in `-v`, `-vv`, `-vvv` or `-vvvv` to toggle the level of verbosity. You can also [edit your global config](./../config/global.html) to set the default console log level.
+Run the failing command again in verbose mode. You can pass in `-v`, `-vv`, `-vvv` or `-vvvv` to toggle the level of verbosity. You can also [edit your global config](https://docs.lando.dev/core/v3/global.html) to set the default console log level.
 :::
 
 ## Container Logs
@@ -33,11 +33,11 @@ Run the failing command again in verbose mode. You can pass in `-v`, `-vv`, `-vv
 lando logs -s SOME_SERVICE
 ```
 
-See the [lando logs](./../cli/logs.md) command for more information.
+See the [lando logs](https://docs.lando.dev/cli/logs.html) command for more information.
 
 ## Advanced Troubleshooting
 
-One of the best ways to troubleshoot an issue is to use Docker commands directly or use the [lando ssh](./../cli/ssh.md) or [lando info --deep](./../cli/info.md) command.
+One of the best ways to troubleshoot an issue is to use Docker commands directly or use the [lando ssh](https://docs.lando.dev/cli/ssh.html) or [lando info --deep](https://docs.lando.dev/cli/info.html) command.
 
 ```bash
 # List all my containers

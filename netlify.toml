@@ -432,7 +432,7 @@
   status = 200
 [[redirects]]
   from = "/core/v4/*"
-  to = "https://lando-core.netlify.app/:splat"
+  to = "https://lando-core-next.netlify.app/:splat"
   status = 200
 [[redirects]]
   from = "/core/"

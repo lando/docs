@@ -72,7 +72,8 @@ export default defineUserConfig({
           '/guides/lando-with-vscode.html',
           '/guides/offline-dev.html',
           '/guides/overriding-a-service-version.html',
-          '/guides/setup-lando-on-windows-with-wsl-2.html',
+          // @TODO: rework teh below so its more accurate
+          // '/guides/setup-lando-on-windows-with-wsl-2.html',
           '/guides/updating-to-rc2.html',
           '/guides/lando-corporate-network-tips.html',
         ],

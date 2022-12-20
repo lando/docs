@@ -12,8 +12,8 @@ Lando is designed to work on a wide range of computers. Here are some basic guid
 
 ### Operating System
 
-*   macOS 10.13 or later
-*   Windows 10 Pro+ or equivalent (eg Windows 10 Enterprise) [**with Hyper-V running**](https://msdn.microsoft.com/en-us/virtualization/hyperv_on_windows/quick_start/walkthrough_install)
+*   macOS 11 or later
+*   Windows 10 Home or Pro version 21H2 or higher with the [WSL 2 feature enabled](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 *   Linux with kernel version 4.x or higher
 
 ### Docker Engine Requirements
@@ -169,8 +169,10 @@ Because each Linux distribution handles things differently, these considerations
 
 ## Windows
 
-::: warning YOU MUST HAVE HYPER-V ENABLED
-Make sure that [Hyper-V is enabled](https://msdn.microsoft.com/en-us/virtualization/hyperv_on_windows/quick_start/walkthrough_install) or Lando will not work!
+::: warning YOU MUST HAVE WSL2 ENABLED
+Make sure that the [WSL2 feature is enabled](https://docs.microsoft.com/en-us/windows/wsl/install-win10) or the Lando installer will fail.
+
+If you want to use the older [Hyper-V](https://msdn.microsoft.com/en-us/virtualization/hyperv_on_windows/quick_start/walkthrough_install) compatible version of Lando use version 3.6.5 or below however it is recommended to update to the new WSL based backend.
 :::
 
 ::: tip Do not fear the package size!
@@ -179,7 +181,7 @@ Note that our Windows installer _includes_ Docker Desktop and this accounts for 
 When going through the installer you can choose to _not_ install Docker Desktop, although we recommend you use the version of Docker Desktop that we ship for compatibility and support reasons!
 :::
 
-1.  Make sure you are using **at least** Windows 10 Professional with the latest updates installed.
+1.  Make sure you are using **at least** Windows 10 Home or Professional version 21H2 or higher
 2.  Download the latest Windows `.exe` installer from [GitHub](https://github.com/lando/lando/releases)
 3.  Double-click on `lando.exe`
 4.  Go through the setup workflow
@@ -192,7 +194,7 @@ To install from source you need to first make sure you've manually installed the
 * [the latest stable version of docker](https://docs.docker.com/engine/installation/) for your operating system, set to its **factory defaults**.
 * [the latest node 14](https://nodejs.org/en/download/)
 * [the latest yarn](https://yarnpkg.com/lang/en/docs/install/)
-* **(linux only)** [the latest stable docker compose binary](https://github.com/docker/compose/releases) downloaded and placed at `/usr/share/lando/bin` and make executable.
+* **(linux only)** [the latest stable docker compose version 1 binary](https://github.com/docker/compose/releases/tag/1.29.2) downloaded and placed at `/usr/share/lando/bin` and make executable.
 
 ::: tip Or take things to lightspeed
 If you are using macOS or a Debian flavored linux distro you can easily install Lando's dev requirements using [hyperdrive](https://github.com/lando/hyperdrive)

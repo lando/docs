@@ -60,7 +60,7 @@ Review the issue and recategorize as necessary.
 
 If the user is reporting that something isn't working as documented, or something generally appears to be broken, it should be classified as a bug report.
 
-The first thing you want to do is to check the report against our [bug reporting template](https://github.com/lando/lando/blob/master/.github/ISSUE_TEMPLATE/bug_report.md).
+The first thing you want to do is to check the report against our [bug reporting template](https://github.com/lando/lando/blob/main/.github/ISSUE_TEMPLATE/bug_report.md).
 
 The most important thing we need for a good bug report are reliable steps to reproduce the issue. If the user has included steps to replicate, you should first try to replicate the bug.
 
@@ -74,13 +74,13 @@ If you can't reproduce the issue, tag it with `can not replicate` and let the us
 
 If the user is asking for something that Lando currently doesn't do, this is a feature request. If the user wants Lando to add a new command to our API, a new service, recipe, tooling command, or support a new operating system we don't currently support, this is a feature request.
 
-Refer to the [feature request template](https://github.com/lando/lando/blob/master/.github/ISSUE_TEMPLATE/feature_request.md) to see what kind of data we want from the user. If their report is missing one of these areas, it might be helpful to ask them questions about the areas that need clarification.
+Refer to the [feature request template](https://github.com/lando/lando/blob/main/.github/ISSUE_TEMPLATE/feature_request.md) to see what kind of data we want from the user. If their report is missing one of these areas, it might be helpful to ask them questions about the areas that need clarification.
 
 New feature requests will be regularly reviewed by the maintainers and scheduled, iceboxed, or closed as appropriate, as long as the request is something you can understand, it can be reviewed by a maintainer at a later date. If it seems unclear, it would be helpful to ask clarifying questions from the requester so that the issue is fully fleshed out when a maintainer is able to review it.
 
 ### Documentation Requests
 
-Documentation requests should be tagged with `documentation` and checked against the [documentation issue template](https://github.com/lando/lando/blob/master/.github/ISSUE_TEMPLATE/documentation.md).
+Documentation requests should be tagged with `documentation` and checked against the [documentation issue template](https://github.com/lando/lando/blob/main/.github/ISSUE_TEMPLATE/documentation.md).
 
 If a reference page isn't included, try to find the right page in the documentation that addresses the topic at hand and add a link to the page in the issue. If there is no suitable page, a new one will need to be created.
 
@@ -97,9 +97,7 @@ Lando has an advanced plugin system that allows developers to add and extend Lan
 7.  Augment or alter the `lando` object and its configuration
 3.  Hook into various `lando` and `app` runtime events to provide additional functionality.
 
-In fact, almost all of Lando's core functionality is provided via plugins. This includes its [core tasks](https://github.com/lando/cli/tree/main/plugins/lando-core/tasks), [proxy](https://github.com/lando/cli/tree/main/plugins/lando-proxy), [events system](https://github.com/lando/cli/tree/main/plugins/lando-events), [services](https://github.com/lando/cli/tree/main/plugins/lando-services), [recipes](https://github.com/lando/cli/tree/main/plugins/lando-recipes), [tooling layer](https://github.com/lando/cli/tree/main/plugins/lando-tooling) and [container networking](https://github.com/lando/cli/tree/main/plugins/lando-networking).
-
-[[toc]]
+In fact, almost all of Lando's core functionality is provided via plugins. This includes its [core tasks](https://github.com/lando/core/tree/main/plugins/lando-core), [proxy](https://github.com/lando/core/tree/main/plugins/lando-proxy), [events system](https://github.com/lando/core/tree/main/plugins/lando-events), [services](https://github.com/lando/core/tree/main/plugins/lando-services), [recipes](https://github.com/lando/core/tree/main/plugins/lando-recipes), [tooling layer](https://github.com/lando/core/tree/main/plugins/lando-tooling) and [container networking](https://github.com/lando/core/tree/main/plugins/lando-networking).
 
 ### Plugin Loading
 
@@ -498,4 +496,4 @@ Some more details about each key are shown below:
 
 ### Plugin Examples
 
-Check out some of our [core plugins](https://github.com/lando/cli/tree/main/plugins) for motivation in creating your own.
+Check out some of our [core plugins](https://github.com/lando/lando/tree/main/plugins) for motivation in creating your own.

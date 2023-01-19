@@ -15,7 +15,7 @@ A common reason for a failed sync is that the docker filesharing daemon has cras
 Your app needs to live inside of a shared drive or folder. Here are the following default shared drive/folder locations:
 
 | OS | Shared Drives/Folders |
-| -- | -- | -- |
+| ----------- | ----------- |
 | `Windows` | `C:\`  |
 | `macOS` | `/Users`, `/Volumes`, `/tmp`, `/private` |
 | `Linux` | `All the folders` |

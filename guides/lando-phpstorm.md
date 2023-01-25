@@ -68,7 +68,7 @@ One option to do so is to use tooling such as:
 ```yaml
 services:
   appserver:
-    xdebug: true
+    xdebug: debug
     build_as_root:
       - rm -f /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && /etc/init.d/apache2 reload
 tooling:
@@ -89,7 +89,7 @@ tooling:
 ```yaml   
 services:
   appserver:     
-        xdebug: true
+        xdebug: debug
     build_as_root:
       - rm -f /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && pkill -o -USR2 php-fpm
 tooling:

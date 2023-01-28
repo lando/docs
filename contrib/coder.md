@@ -498,4 +498,4 @@ Some more details about each key are shown below:
 
 ### Plugin Examples
 
-Check out some of our [core plugins](https://github.com/lando/cli/tree/main/plugins) for motivation in creating your own.
+Check out some of our [core plugins](https://github.com/lando/core/tree/main/plugins) for motivation in creating your own.

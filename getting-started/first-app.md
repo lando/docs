@@ -33,8 +33,7 @@ lando start
 # Check out the commands you can run
 lando
 
-# Visit the local site
-xdg-open https://hello-lando.lndo.site
+# Visit the site in your browser: https://hello-lando.lndo.site
 
 # Destroy the site
 lando destroy -y
@@ -66,8 +65,7 @@ lando composer require drush/drush
 # Install drupal
 lando drush site:install --db-url=mysql://drupal9:drupal9@database/drupal9 -y
 
-# Check out your new site!
-xdg-open https://hello-drupal9.lndo.site
+# Check out your new site! https://hello-drupal9.lndo.site
 
 # Log in as admin with Drush
 lando drush uli -l https://hello-drupal9.lndo.site

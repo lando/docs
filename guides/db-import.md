@@ -43,7 +43,7 @@ lando db-import dump.sql
 
 # Import a file into an auxiliary second database called 'db2'
 # with a db called `dataz`
-lando db-import dump.zip --host db2
+lando db-import dump.zip --host=db2
 
 # Import without destroying the target database
 lando db-import dump.zip --no-wipe

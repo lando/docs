@@ -8,7 +8,7 @@ authors:
     pic: https://gravatar.com/avatar/c335f31e62b453f747f39a84240b3bbd
     link: https://twitter.com/devwithlando
 updated:
-  timestamp: 1594391902000
+  timestamp: 1684248136000
 
 mailchimp:
   # action is required
@@ -27,65 +27,23 @@ This is a basic setup to help you in this task.
 
 ## Getting Started
 
-Enable Xdebug by adding some lines to your Lando recipe.
+Enable Xdebug by adding the `xdebug: true` line to your `.lando.yml`.
 
+When using a recipe, add it under the `config` key:
 ```yaml
 name: mywebsite
-recipe: drupal9
+recipe: drupal10
+config:
+  xdebug: true
+```
+
+Otherwise, override your php service, usually named `appserver`:
+```yaml
+name: mywebsite
 services:
   appserver:
     webroot: web
-    xdebug: debug
-    config:
-      php: .vscode/php.ini
-```
-
-Create a custom `php.ini` file (place it wherever you want - we use `.vscode` folder because we find it convenient).
-
-
-```bash
-touch .vscode/php.ini
-code .vscode/php.ini
-```
-
-**PHP 7.2+ uses xdebug 3** and needs the following `php.ini` configuration settings:
-
-```ini
-[PHP]
-
-; Xdebug
-xdebug.max_nesting_level = 256
-xdebug.show_exception_trace = 0
-xdebug.collect_params = 0
-xdebug.mode = debug
-xdebug.start_with_request = yes
-xdebug.client_host = ${LANDO_HOST_IP}
-; xdebug.log = /tmp/xdebug.log
-
-; Remote settings
-xdebug.remote_enable = 1
-xdebug.remote_autostart = 1
-xdebug.remote_host = ${LANDO_HOST_IP}
-; xdebug.remote_connect_back = 1
-; xdebug.remote_log = /tmp/xdebug_remote.log
-```
-
-**PHP 7.1 and earlier uses xdebug 2** and needs slightly different configuration in `php.ini`:
-
-```ini
-[PHP]
-
-; Xdebug
-xdebug.max_nesting_level = 256
-xdebug.show_exception_trace = 0
-xdebug.collect_params = 0
-; xdebug.log = /tmp/xdebug.log
-; Extra custom Xdebug setting for debug to work in VSCode.
-xdebug.remote_enable = 1
-xdebug.remote_autostart = 1
-xdebug.remote_host = ${LANDO_HOST_IP}
-; xdebug.remote_connect_back = 1
-; xdebug.remote_log = /tmp/xdebug_remote.log
+    xdebug: true
 ```
 
 Rebuild your environment.
@@ -110,7 +68,6 @@ code .vscode/launch.json
       "type": "php",
       "request": "launch",
       "port": 9003,
-      "log": false,
       "pathMappings": {
         "/app/": "${workspaceFolder}/",
       }
@@ -120,7 +77,6 @@ code .vscode/launch.json
 ```
 
 **Note: PHP 7.1 and earlier uses xdebug 2** which uses port 9000, so change the port number above accordingly.
-
 
 Done!
 
@@ -133,59 +89,35 @@ Optionally for better performance you can easily toggle Xdebug on and off with s
 If you're using Apache, add this to your `.lando.yml`:
 
 ```yaml
+config:
+  # Set Xdebug off by default. We use the tooling below to turn it on as needed.
+  xdebug: false
+
 services:
   appserver:
     overrides:
       environment:
-        XDEBUG_MODE:
+        XDEBUG_MODE: 'debug,develop'
+
 tooling:
   xdebug-on:
     service: appserver
-    description: Enable xdebug for Apache.
-    cmd: rm -f /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && docker-php-ext-enable xdebug && /etc/init.d/apache2 reload && echo "Xdebug enabled"
+    description: Enable Xdebug.
     user: root
+    cmd:
+      - docker-php-ext-enable xdebug && kill -USR2 $(pgrep -o php-fpm) > /dev/null || /etc/init.d/apache2 reload
+      - tput setaf 2 && echo "Xdebug On" && tput sgr 0 && echo
 
   xdebug-off:
     service: appserver
-    description: Disable xdebug for Apache.
-    cmd: rm -f /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && /etc/init.d/apache2 reload && echo "Xdebug disabled"
+    description: Disable Xdebug.
     user: root
+    cmd:
+      - rm /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && kill -USR2 $(pgrep -o php-fpm) > /dev/null || /etc/init.d/apache2 reload
+      - tput setaf 1 && echo "Xdebug Off" && tput sgr 0 && echo
 ```
 
-If you're using Nginx, add this to your `.lando.yml`:
-
-```yaml
-services:
-  appserver:
-    overrides:
-      environment:
-        XDEBUG_MODE:
-tooling:
-  xdebug-on:
-    service: appserver
-    description: Enable xdebug for nginx.
-    cmd: docker-php-ext-enable xdebug && pkill -o -USR2 php-fpm && echo "Enabling xdebug enabled"
-    user: root
-
-  xdebug-off:
-    service: appserver
-    description: Disable xdebug for nginx.
-    cmd: rm -f /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && pkill -o -USR2 php-fpm && echo "Xdebug disabled"
-    user: root
-```
-
-Now you can turn Xdebug on or off with `lando xdebug-on` and `lando xdebug-off`. If you want Xdebug off by default, set `xdebug:false` in your appserver config:
-
-```yaml
-name: mywebsite
-recipe: drupal8
-services:
-  appserver:
-    webroot: web
-    xdebug: false
-    config:
-      php: .vscode/php.ini
-```
+Now you can turn Xdebug on or off with `lando xdebug-on` and `lando xdebug-off`.
 
 ## Debugging PhpUnit
 
@@ -246,17 +178,6 @@ Now to run debug a PhpUnit test, do the following:
 **Xdebug session doesn't start**
 
 If Xdebug session doesn't start, dig into the log file inside the application.
-
-Uncomment some lines in your `php.ini` file:
-```ini
-xdebug.log = /tmp/xdebug.log
-xdebug.remote_log = /tmp/xdebug_remote.log
-```
-
-Rebuild your app:
-```bash
-lando rebuild -y
-```
 
 Enter the app with `lando ssh` and open the debug file (`/tmp/xdebug.log`). 
 

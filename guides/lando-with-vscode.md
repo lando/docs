@@ -23,6 +23,9 @@ mailchimp:
 
 This is a basic setup to help you in this task.
 
+For a complete explaination of the Xdebug features and configuration options available to you in Lando see the
+[Using Xdebug](https://docs.lando.dev/php/config.html#using-xdebug) section of Lando's PHP plugin documentation.
+
 [[toc]]
 
 ## Getting Started

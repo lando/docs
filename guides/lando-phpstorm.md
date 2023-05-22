@@ -20,7 +20,11 @@ mailchimp:
 ---
 
 [PhpStorm](https://www.jetbrains.com/phpstorm/) is a popular code IDE for PHP
-and Drupal development. This video tutorial shows you how to set up PhpStorm with Xdebug.
+and Drupal development.
+
+This tutorial shows you the basics to get set up with PhpStorm and Xdebug.
+For a complete explaination of the Xdebug features and configuration options available to you in Lando see the
+[Using Xdebug](https://docs.lando.dev/php/config.html#using-xdebug) section of Lando's PHP plugin documentation.
 
 ## Getting Started
 
@@ -31,7 +35,7 @@ When using a recipe, add it under the `config` key:
 name: mywebsite
 recipe: drupal10
 config:
-  xdebug: true
+  xdebug: 'develop,debug'
 ```
 
 Otherwise, override your php service, usually named `appserver`:
@@ -40,7 +44,7 @@ name: mywebsite
 services:
   appserver:
     webroot: web
-    xdebug: true
+    xdebug: 'develop,debug'
 ```
 
 Out of the box, PhpStorm is already configured to connect to Xdebug. You shouldn't need to change anything, though you may refine settings to meet your needs in PhpStorm's Settings under Languages and frameworks >> PHP >> Debug.

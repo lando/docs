@@ -23,7 +23,7 @@ You may want to use another device (e.g., a smartphone or tablet) to test your L
 
 ## lando share (Testing over the Internet)
 
-The fastest way to do this is to use the [lando share](./../basics/share.html) command.  This will provide you with a URL that you can use to access your app via the Internet.  You can close the connection at any time by pressing a key in the terminal on your local machine.
+The fastest way to do this is to use the [lando share](./../cli/share) command.  This will provide you with a URL that you can use to access your app via the Internet.  You can close the connection at any time by pressing a key in the terminal on your local machine.
 
 ## Changing the Bind
 

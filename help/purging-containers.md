@@ -5,7 +5,7 @@ description: If all else fails, try purging all your containers.
 # Purging Containers
 
 ::: warning May Cause Other Issues
-if all else fails you can try this but note that this might cause other unexpected behvaior.
+if all else fails you can try this but note that this might cause other unexpected behavior.
 :::
 
 Sometimes you may get errors that do not make sense.  Your docker containers may have been "corrupted" or just confused.  This is sort of a nuclear option, but can fix most issues we have seen.

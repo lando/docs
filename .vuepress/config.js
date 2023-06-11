@@ -1,6 +1,10 @@
-const {path} = require('@vuepress/utils');
+import {defineUserConfig} from '@vuepress/cli';
+import {defaultThemePlus} from '@lando/vuepress-theme-default-plus';
+import {getDirname, path} from '@vuepress/utils';
 
-module.exports = {
+const __dirname = getDirname(import.meta.url);
+
+export default defineUserConfig({
   lang: 'en-US',
   title: 'Lando',
   description: 'Documentation',
@@ -12,15 +16,14 @@ module.exports = {
     ['link', {rel: 'preconnect', href: '//fonts.gstatic.com', crossorigin: true}],
     ['link', {rel: 'stylesheet', href: '//fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap'}],
   ],
-  theme: '@lando/vuepress-theme-default-plus',
-  themeConfig: {
+  theme: defaultThemePlus({
     landoDocs: true,
     logo: '/images/icon.svg',
     docsDir: '.',
     docsBranch: 'main',
     repo: 'lando/docs',
     alias: {
-      '@theme/Home.vue': path.resolve(__dirname, '..', 'components', 'Home.vue'),
+      '@theme/Home.vue': path.resolve(__dirname, '..', 'components', 'HomePage.vue'),
     },
     sidebarHeader: false,
     versionsPage: false,
@@ -69,7 +72,8 @@ module.exports = {
           '/guides/lando-with-vscode.html',
           '/guides/offline-dev.html',
           '/guides/overriding-a-service-version.html',
-          '/guides/setup-lando-on-windows-with-wsl-2.html',
+          // @TODO: rework teh below so its more accurate
+          // '/guides/setup-lando-on-windows-with-wsl-2.html',
           '/guides/updating-to-rc2.html',
           '/guides/lando-corporate-network-tips.html',
         ],
@@ -107,5 +111,5 @@ module.exports = {
         ],
       },
     ],
-  },
-};
+  }),
+});

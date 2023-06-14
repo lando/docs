@@ -30,10 +30,6 @@ features:
     details: Free yourself from the mind-forged manacles of lesser dev tools. Save time, headaches, frustration and do more real work
 
 sponsors:
-  - name: Lullabot
-    type: ally
-    logo: https://www.drupal.org/files/Lullabot_Logo_Vertical-svg.png
-    url: https://www.lullabot.com/
   - name: "@pirog"
     type: herald
     url: https://twitter.com/pirogcommamike
@@ -88,10 +84,6 @@ sponsors:
   - name: Dustin LeBlanc
     type: herald
     url: https://twitter.com/dustinleblanc
-  - name: Last Call Media
-    type: ally
-    url: https://twitter.com/LastCallMedia
-    logo: https://www.drupal.org/files/styles/grid-3/public/LCM.Log_.Red_.RGB_.Hi-Res.png?itok=E39WpGSK
   - name: amazee.io
     type: patriot
     url: https://www.amazee.io/
@@ -167,10 +159,14 @@ sponsors:
     type: patriot
     url: https://pantheon.io/
     logo: https://lando.dev/images/pantheon_logo.png
-  - name: Blackmesh by Contegix
-    type: patriot
-    url: https://www.blackmesh.com/
-    logo: https://lando.dev/images/blackmesh_logo.png
+  - name: BairesDev
+    type: ally
+    url: https://www.bairesdev.com/sponsoring-open-source-projects
+    logo: https://lando.dev/images/bairesdev_logo.png
+  - name: Acro Media
+    type: ally
+    url: https://www.acromedia.com
+    logo: https://lando.dev/images/acromedia_logo.png 
 
 footer: Copyright ©2022 Lando System
 ---

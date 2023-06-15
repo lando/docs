@@ -32,7 +32,7 @@ That said and before we get started we **highly recommend** you consult both the
 1. Ensure you've installed [Homebrew](https://brew.sh/).
 2. Install DNSMasq: `brew install dnsmasq`
 3. Follow the instructions in the output of `brew info dnsmasq`
-4. Add the following line to your `/usr/local/etc/dnsmasq.conf` (on Apple Silicon it is '/opt/homebrew/etc/dnsmasq.conf') file:
+4. Add the following line to your `/usr/local/etc/dnsmasq.conf` (on Apple Silicon it is `/opt/homebrew/etc/dnsmasq.conf`) file:
 ```
 address=/local.host/127.0.0.1
 ```

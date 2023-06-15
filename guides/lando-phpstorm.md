@@ -67,7 +67,7 @@ services:
   appserver:
     overrides:
       environment:
-        # Support debugging CLI with XDEBUG.
+        # Support debugging CLI with Xdebug.
         PHP_IDE_CONFIG: "serverName=appserver"
         XDEBUG_SESSION_START: lando
 ```

@@ -192,9 +192,9 @@ When going through the installer you can choose to _not_ install Docker Desktop,
 To install from source you need to first make sure you've manually installed the below dependencies:
 
 * [the latest stable version of docker](https://docs.docker.com/engine/installation/) for your operating system, set to its **factory defaults**.
-* [the latest node 14](https://nodejs.org/en/download/)
+* [the latest node 16](https://nodejs.org/en/download/)
 * [the latest yarn](https://yarnpkg.com/lang/en/docs/install/)
-* **(linux only)** [the latest stable docker compose version 1 binary](https://github.com/docker/compose/releases/tag/1.29.2) downloaded and placed at `/usr/share/lando/bin` and make executable.
+* **(linux only)** [the latest stable docker compose version 1 binary](https://github.com/docker/compose/releases/tag/1.29.2) downloaded and placed at `/usr/share/lando/bin` and make executable. You **must** use Docker Compose v1; the latest Lando release is NOT compatible with docker-compose 2.x in Linux environments.
 
 ::: tip Or take things to lightspeed
 If you are using macOS or a Debian flavored linux distro you can easily install Lando's dev requirements using [hyperdrive](https://github.com/lando/hyperdrive)

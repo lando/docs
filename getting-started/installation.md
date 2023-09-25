@@ -20,9 +20,9 @@ Lando is designed to work on a wide range of computers. Here are some basic guid
 
 Please also verify you meet the requirements needed to run our Docker engine backend. Note that the macOS and Windows Lando installer will install Docker for you if needed.
 
-*   Linux Docker engine [requirements](https://docs.docker.com/engine/installation/linux)
-*   Docker Desktop for Mac [requirements](https://docs.docker.com/desktop/mac/install/)
-*   Docker Desktop for Windows [requirements](https://docs.docker.com/desktop/windows/install/)
+*   Docker Engine for Linux [requirements](https://docs.docker.com/engine/install/)
+*   Docker Desktop for Mac [requirements](https://docs.docker.com/desktop/install/mac-install/#system-requirements)
+*   Docker Desktop for Windows [requirements](https://docs.docker.com/desktop/install/windows-install/#system-requirements/)
 
 ## Hardware Requirements
 
@@ -97,10 +97,9 @@ See: <https://github.com/Homebrew/homebrew-cask/blob/master/Casks/lando.rb>
 ### Install package via direct download (recommended)
 
 1. Install the [Docker Community Edition](https://docs.docker.com/engine/installation/) for your Linux version. Visit [https://get.docker.com](https://get.docker.com/) for the "quick & easy install" script. **(at least version 19.03.1-ce)**
-2. Install [Docker Compose](https://docs.docker.com/compose/install/).
-3. Download the latest `.deb`, `.pacman` or `.rpm` package from [GitHub](https://github.com/lando/lando/releases)
-4. Double click on the package and install via your distributions "Software Center" or equivalent.
-5. Make sure you look at the caveats below and follow them appropriately
+2. Download the latest `.deb`, `.pacman` or `.rpm` package from [GitHub](https://github.com/lando/lando/releases)
+3. Double click on the package and install via your distributions "Software Center" or equivalent.
+4. Make sure you look at the caveats below and follow them appropriately
 
 ::: tip Install from source for other Linux distros
 If your Linux distro does not support our `.deb`, `.pacman` or `.rpm` packages you can [install from source](#from-source)
@@ -194,11 +193,6 @@ To install from source you need to first make sure you've manually installed the
 * [the latest stable version of docker](https://docs.docker.com/engine/installation/) for your operating system, set to its **factory defaults**.
 * [the latest node 16](https://nodejs.org/en/download/)
 * [the latest yarn](https://yarnpkg.com/lang/en/docs/install/)
-* **(linux only)** [the latest stable docker compose version 1 binary](https://github.com/docker/compose/releases/tag/1.29.2) downloaded and placed at `/usr/share/lando/bin` and make executable. You **must** use Docker Compose v1; the latest Lando release is NOT compatible with docker-compose 2.x in Linux environments.
-
-::: tip Or take things to lightspeed
-If you are using macOS or a Debian flavored linux distro you can easily install Lando's dev requirements using [hyperdrive](https://github.com/lando/hyperdrive)
-:::
 
 Once you've completed the above then do the following:
 

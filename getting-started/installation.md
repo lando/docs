@@ -86,7 +86,7 @@ If you have a new Apple Silicon based Mac then choose the `arm64`. Use the `x64`
 ::: warning We do not maintain this!
 Please note that the versions of Lando and Docker installed via Homebrew are community-maintained and may not be the latest version as provided by the `.dmg` package from [GitHub](https://github.com/lando/lando/releases). **This also means that `brew` may install an unsupported version of Docker for you.**
 
-See: <https://github.com/Homebrew/homebrew-cask/blob/master/Casks/lando.rb>
+See: <https://github.com/Homebrew/homebrew-cask/blob/master/Casks/l/lando.rb>
 :::
 
 1. Ensure homebrew is installed and up-to-date.

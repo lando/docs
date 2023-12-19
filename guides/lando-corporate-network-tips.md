@@ -88,8 +88,22 @@ update-ca-certificates
 
 Note the location of the certs may change depending on your Linux distribution.
 
+### Add Cert to Lando
 
-### Add Cert to Lando Containers
+Lando creates a CA cert on your host environment at `~/.lando/certs/.lndo.site.pem` that is added into all Lando containers. If you replace this cert with your decryptor's CA cert (or whatever chain of certs you think is necessary for your environment), that should resolve ALL downstream certificate issues.
+
+Follow these steps:
+
+1. Uninstall Lando and Docker (if already installed).
+2. Remove the ~/.lando folder: `rm -rf ~/.lando`
+3. Reinstall Lando
+4. Before running any Lando commands, move your cert to `~/.lando/certs/.lndo.site.pem`: `mv /path/to/your/cert.pem ~/.lando/certs/.lndo.site.pem`
+5. Try starting a new application.
+
+It's important to wipe out all exisitng Lando containers (hence the uninstall) and make sure to add your cert **BEFORE running any Lando commands** to ensure that your cert is populated into the containers.
+
+
+### Add Cert to Individual Lando Containers
 
 Once Lando is running, there are a number of cases where code running inside Lando's containers may need to have the certs installed as well. To do this, first **store the certificates somewhere in your Lando project directory.** We just put them in our project's root directory, so within the container the cert is available at `/app/yourcert.crt`.
   

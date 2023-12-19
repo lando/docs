@@ -76,6 +76,7 @@ export default defineUserConfig({
           // '/guides/setup-lando-on-windows-with-wsl-2.html',
           '/guides/updating-to-rc2.html',
           '/guides/lando-corporate-network-tips.html',
+          '/guides/accessibility.html',
         ],
       },
       {

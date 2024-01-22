@@ -16,8 +16,8 @@ If this check fails we recommend you consult your router documentation or system
 
 If you can't or don't want to remove this protection, you can alternatively:
 
-1.  Use the steps in [Working Offline](./../config/proxy.html#working-offline-or-using-custom-domains) to bypass the external DNS lookup altogether
-2.  [Disable proxying](./../config/proxy.html#configuration) and rely on the Lando produced `localhost` address
+1.  Use the steps in [Working Offline](/core/v3/proxy.html#working-offline-or-using-custom-domains) to bypass the external DNS lookup altogether
+2.  [Disable proxying](/core/v3/proxy.html##configuration) and rely on the Lando produced `localhost` address
 
 That said, the ideal scenario is to make sure your network is set up to not block `*.lndo.site` addresses.
 

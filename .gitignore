@@ -40,3 +40,9 @@ coverage/
 .cache
 dist
 _site
+
+# vitepress thangs
+.vitepress/.temp
+.vitepress/cache
+.vitepress/dist
+.vitepress/config.*.timestamp-*-*.*

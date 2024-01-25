@@ -21,10 +21,6 @@ mailchimp:
 
 You may want to use another device (e.g., a smartphone or tablet) to test your Lando app.  You can access your lando app easily from another device as follows.
 
-## lando share (Testing over the Internet)
-
-The fastest way to do this is to use the [lando share](./../cli/share) command.  This will provide you with a URL that you can use to access your app via the Internet.  You can close the connection at any time by pressing a key in the terminal on your local machine.
-
 ## Changing the Bind
 
 If you would rather test only on your local network and not over the Internet, you first need to change the `bindAddress` to expose your services on the LAN. Note that there are security implications to this and it is not recommended. Please consult the [Security Docs](https://docs.lando.dev/config/security.html).

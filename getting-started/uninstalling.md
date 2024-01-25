@@ -46,7 +46,7 @@ sudo dnf remove lando
 
 If you've uninstalled Lando but want to remove **ALL TRACES OF IT** you will also want to remove its configuration directory.
 
-Unless you've edited Lando's [global config](./../config/global.md) Lando will store app configuration inside your home folder. You can use `lando config | grep userConfRoot` to locate the precise location on your machine. By default these locations will be:
+Unless you've edited Lando's [global config](/config/global.md) Lando will store app configuration inside your home folder. You can use `lando config | grep userConfRoot` to locate the precise location on your machine. By default these locations will be:
 
 | Operating System | Default Location |
 | -- | -- |

@@ -1,7 +1,33 @@
 ---
 title: Documentation
 description: Documentation for Lando; a free, open source development tool for all your projects that is fast, easy, powerful and liberating.
-image: https://raw.githubusercontent.com/lando/lando/master/docs/.vuepress/public/images/icon.svg
+layout: home
+hero:
+  name: Lando Docs
+  tagline: Everything you need to know to dance the Lando.
+  image:
+    src: /images/logo.svg
+    alt: Lando logo
+  actions:
+    - text: Get Started
+      link: /getting-started/index
+      theme: brand
+    - text: Learn More
+      link: https://lando.dev
+      theme: alt
+    - text: Sponsor
+      link: https://lando.dev/sponsor
+      theme: alt
+features:
+  - icon: 😃
+    title: Easy
+    details: One click installer, cross-platform, simple config file, sane defaults and reduced complexity for power features
+  - icon: 🔥
+    title: Powerful
+    details: A single dev tool for all your projects. Lock down services, tools, dependencies and automation on a per-repo basis
+  - icon: 🕊️
+    title: Liberating
+    details: Free yourself from the mind-forged manacles of lesser dev tools. Save time, headaches, frustration and do more real work
 home: true
 navbar: true
 sidebar: false
@@ -9,25 +35,6 @@ rightbar: false
 pageClass: lando-home
 heroImage: /images/logo.svg
 # darkHero?
-
-actions:
-  - text: Get Started
-    link: /getting-started/
-    type: primary
-  - text: Learn More
-    link: https://lando.dev
-    type: secondary
-  - text: Sponsor
-    link: https://lando.dev/sponsor
-    type: secondary
-
-features:
-  - title: Easy
-    details: One click installer, cross-platform, simple config file, sane defaults and reduced complexity for power features
-  - title: Powerful
-    details: A single dev tool for all your projects. Lock down services, tools, dependencies and automation on a per-repo basis
-  - title: Liberating
-    details: Free yourself from the mind-forged manacles of lesser dev tools. Save time, headaches, frustration and do more real work
 
 sponsors:
   - name: "@pirog"
@@ -168,5 +175,5 @@ sponsors:
     url: https://www.acromedia.com
     logo: https://lando.dev/images/acromedia_logo.png 
 
-footer: Copyright ©2022 Lando System
+footer: Copyright ©2024 Kalabox Inc.
 ---

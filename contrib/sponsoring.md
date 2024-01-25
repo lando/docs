@@ -55,7 +55,7 @@ If you are interested in sponsoring at one of our higher tiers, then definitely 
 
 ## Helping others sponsors
 
-The Lando revolution relies upon new converts. You've probably already told some of your co-workers and friends to try Lando. Maybe you've [written some guides](./guides-intro.md) and [sponsored Lando yourself](./sponsor-intro.md). What's the next step? Getting someone else to sponsor Lando!
+The Lando revolution relies upon new converts. You've probably already told some of your co-workers and friends to try Lando. Maybe you've [written some guides](https://docs.lando.dev/guides) and [sponsored Lando yourself](https://github.com/sponsors/lando). What's the next step? Getting someone else to sponsor Lando!
 
 Chances are you know another individual or a business that would be willing to sponsor Lando. All they need is someone they trust (read: YOU) to tell them about it. Do you know any of the following people who might be interested in sponsoring?
 
@@ -81,7 +81,7 @@ Asking your boss to sponsor Lando might seem tough. Why should they pay for some
 
 Most organizations will want to sponsor directly through our [Github sponsors page](https://github.com/sponsors/lando). If Lando saves your organization at least a couple hours each month, we highly encourage you making a recurring contribution, but for one-time contributions [Open Collective](https://opencollective.com/lando#category-CONTRIBUTE) can be more convenient.
 
-To take full advantage of sponsorship benefits your organization will want to reach out to <sponsorships@lando.dev>. Checkout the [guide on sponsorships](sponsor-intro.md) for more details on benefits and how sponsors can take advantage of them.
+To take full advantage of sponsorship benefits your organization will want to reach out to <sponsorships@lando.dev>.
 
 ## FAQ
 
@@ -115,4 +115,4 @@ We rely on third party sponsorship platforms to manage your sponsorship so you w
 
 ### How can I convince my boss or org to sponsor?
 
-We have some ideas for that [over here](sponsor-upsell.md)!
+We have some ideas for that [over here](https://lando.dev/blog/2020/02/08/why-your-agency-should-sponsor-lando.html)!

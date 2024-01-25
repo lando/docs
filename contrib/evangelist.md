@@ -16,7 +16,7 @@ While you should _do you_ and evangelize in the way that best suits you, here ar
 * Retweet Lando content, tweet directly at [@devwithlando](https://twitter.com/devwithlando) or engage in local dev or DevOps related Twitter threads.
 * Troll local development blog content and mention Lando in the comments, if applicable.
 * Get friends, colleagues, spouses, partners, pets, grandparents, former roommates, etc. to follow us [@devwithlando](https://twitter.com/devwithlando) and [star our project on GitHub](https://github.com/lando/lando).
-* Buy a Vagrant or MAMP user a :beer: and hit them with some sweet, sweet [talking points](./talking-points.md).
+* Buy a Vagrant or MAMP user a :beer: and hit them with some sweet, sweet [talking points](#talking-points).
 
 ::: tip Evangelism need not be directly Lando related!
 It's important to note that content, presentations and other forms of evangelism need not be directly Lando focused. Presenting on something like automated testing but using Lando to do it is great too!
@@ -46,7 +46,7 @@ While you certainly can create content from scratch, we recommend you request ac
 
 We also highly encourage you to contribute your finished presentation materials back to the same Google folder. This both aids future evangelists and also serves as a record for posterity.
 
-Before crafting your content, definitely check out the [talking points](./talking-points.md) so you hit on all the Lando goodness. If you want to see Lando keep winning, please insert a slide reminding people to [sponsor Lando](sponsor-intro.md)!
+Before crafting your content, definitely check out the [talking points](#talking-points) so you hit on all the Lando goodness. If you want to see Lando keep winning, please insert a slide reminding people to [sponsor Lando](sponsoring.md)!
 
 ### Promotion
 
@@ -90,7 +90,7 @@ If you are interested in helping, make sure you [join our Slack org](https://lau
 
 Some talking points you can use in your presentations or next dinner date are shown below:
 
-These are intended to try and convince a more-technical audience to adopt Lando. If you are interested in more business focused talking points, particularly if you are trying to convince an org to sponsor Lando, then check [these out](./sponsor-upsell.md) instead.
+These are intended to try and convince a more-technical audience to adopt Lando. If you are interested in more business focused talking points, particularly if you are trying to convince an org to sponsor Lando, then check [these out](./https://lando.dev/blog/2020/02/08/why-your-agency-should-sponsor-lando.html) instead.
 
 ### High Level
 

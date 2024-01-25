@@ -89,7 +89,7 @@ services:
         - ./mythings:/tmp/mythings
 ```
 
-A consequence of this is that you can no longer overrides top level `volumes` and `networks`. If you need to edit those things we recommend you look at using our [custom compose service](./../tutorials/compose.md) instead. Note the below distinction between *top level* `volumes` and `networks` and service level ones These are docker compose files not Landofiles.
+A consequence of this is that you can no longer overrides top level `volumes` and `networks`. If you need to edit those things we recommend you look at using our [custom compose service](/tutorials/compose.md) instead. Note the below distinction between *top level* `volumes` and `networks` and service level ones These are docker compose files not Landofiles.
 
 **top level - not supported, use a compose service**
 
@@ -129,7 +129,7 @@ Check out [this example](https://github.com/lando/cli/tree/main/examples/service
 
 ## Internal Service Name Changes
 
-Lando still manages some services internally such as an [nginx](./../tutorials/nginx.md) service when you use `ssl` with [varnish](./../tutorials/varnish.md) or set `via: nginx` with [php](./../tutorials/php.md) however we've changed the default names of these services so they are namespaced better.
+Lando still manages some services internally such as an [nginx](/tutorials/nginx.md) service when you use `ssl` with [varnish](/tutorials/varnish.md) or set `via: nginx` with [php](/tutorials/php.md) however we've changed the default names of these services so they are namespaced better.
 
 The names of these services will be the same as before except they will now be prefixed by the service that generated them. For example if you have a `php` service using `nginx` and it is named `appserver` then Lando will spin up an internal nginx service called `appserver_nginx.`
 
@@ -452,7 +452,7 @@ Most service versions have stayed the same but a few have changed. If you try to
 *   ### [python](https://docs.lando.dev/config/python.html)
 *   ### [redis](https://docs.lando.dev/config/redis.html)
 *   ### [ruby](https://docs.lando.dev/config/ruby.html)
-*   ### [solr](./../tutorials/solr.md)
+*   ### [solr](/tutorials/solr.md)
 *   ### [tomcat](https://docs.lando.dev/config/tomcat.html)
 *   ### [varnish](https://docs.lando.dev/config/varnish.html)
 
@@ -527,7 +527,7 @@ config:
 
 ## Rebuild vs. Restart
 
-If you change your Landofiles you now need to explicitly [`lando rebuild`](./../cli/rebuild.md) instead of running [`lando restart`](./../cli/rebuild.md). This helps to provide stability between restarts until you explicitly ask for things to change and vastly speeds up stops and starts.
+If you change your Landofiles you now need to explicitly [`lando rebuild`](/cli/rebuild.md) instead of running [`lando restart`](/cli/rebuild.md). This helps to provide stability between restarts until you explicitly ask for things to change and vastly speeds up stops and starts.
 
 **old**
 
@@ -547,7 +547,7 @@ lando rebuild -y
 
 ## Lando Init
 
-We've completely reworked [`lando init`](./../cli/init.md) to be more modular and intuitive. This means if you've got scripts relying on `lando init` you will likely need to make some changes. While there are many changes the biggest are the removal of the "init method" in favor of the `--source` option.
+We've completely reworked [`lando init`](/cli/init.md) to be more modular and intuitive. This means if you've got scripts relying on `lando init` you will likely need to make some changes. While there are many changes the biggest are the removal of the "init method" in favor of the `--source` option.
 
 
 **old**

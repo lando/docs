@@ -1,35 +1,31 @@
-name: Documentation tests
+name: Run Docs Tests
 
 on:
   pull_request:
 
 jobs:
-  docs-tests:
+  unit-tests:
     runs-on: ${{ matrix.os }}
-    env:
-      TERM: xterm
     strategy:
       matrix:
         os:
-          - ubuntu-20.04
+          - ubuntu-22.04
         node-version:
-          - '16'
+          - '18'
     steps:
       # Install deps and cache
-      # Eventually it would be great if these steps could live in a separate YAML file
-      # that could be included in line to avoid code duplication
       - name: Checkout code
         uses: actions/checkout@v3
       - name: Install node ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: yarn
-      - name: Install Yarn dependencies
-        run: yarn install --prefer-offline --frozen-lockfile
+          cache: npm
+      - name: Install dependencies
+        run: npm clean-install --prefer-offline --frozen-lockfile
 
-      # Run doc tests
-      - name: Lint docs code
-        run: yarn lint
-      - name: Build Docs
-        run: yarn build
+      # Run tests
+      - name: Run linter
+        run: npm run lint
+      - name: Test build
+        run: npm run build

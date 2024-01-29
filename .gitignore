@@ -26,23 +26,21 @@ env.yml
 lando.env
 .lando.local.yml
 
-# Build dirs
-build
-dist
-_docs3
-
 # coverage reporting
 .nyc_output
 coverage/
 
-# Vuepress
+# docs
+build
+dist
+_docs3
 .temp
 .cache
-dist
 _site
+dist
+cache
+temp
+config.*.timestamp-*-*.*
 
-# vitepress thangs
-.vitepress/.temp
-.vitepress/cache
-.vitepress/dist
-.vitepress/config.*.timestamp-*-*.*
+# yarn
+yarn.lock

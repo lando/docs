@@ -2,7 +2,7 @@
   "name": "@lando/docs",
   "description": "Lando Docs Repo.",
   "version": "4.0.1",
-  "author": "John Ouellet @labboy0276",
+  "author": "Mike Pirog @pirog",
   "license": "GPL-3.0",
   "repository": "lando/docs",
   "bugs": "https://github.com/lando/docs/issues/new/choose",
@@ -17,22 +17,20 @@
   },
   "main": "index.js",
   "scripts": {
-    "dev": "vitepress dev .",
     "build": "vitepress build .",
-    "preview": "vitepress preview .",
-    "lint": "eslint .",
-    "release": "bump --prompt --tag --all --push"
+    "dev": "vitepress dev .",
+    "lint": "eslint . --ext .js --ext .mjs ",
+    "preview": "vitepress preview ."
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.16.0",
+    "@lando/vitepress-theme-default-plus": "^1.0.0-beta.20",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
     "eslint-config-google": "^0.9.1",
-    "eslint-plugin-vue": "^8.0.3",
-    "version-bump-prompt": "^4.2.1"
+    "eslint-plugin-vue": "^8.0.3"
   },
   "dependencies": {
-    "@lando/vitepress-theme-default-plus": "^1.0.0-beta.19",
     "vitepress": "^1.0.0-rc.40"
   }
 }

@@ -1,7 +1,7 @@
 [build]
   base = "./"
-  publish = "dist"
-  command = "yarn build"
+  publish = "docs/.vitepress/dist"
+  command = "npm run build"
 
 # Sets our asset optimization
 [build.processing.css]

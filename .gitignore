@@ -31,9 +31,6 @@ lando.env
 coverage/
 
 # docs
-build
-dist
-_docs3
 .temp
 .cache
 _site
@@ -42,5 +39,5 @@ cache
 temp
 config.*.timestamp-*-*.*
 
-# yarn
+# YARN
 yarn.lock

@@ -24,13 +24,11 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.16.0",
-    "@lando/vitepress-theme-default-plus": "^1.0.0-beta.22",
+    "@lando/vitepress-theme-default-plus": "^1.0.0-beta.24",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
     "eslint-config-google": "^0.9.1",
-    "eslint-plugin-vue": "^8.0.3"
-  },
-  "dependencies": {
-    "vitepress": "^1.0.0-rc.40"
+    "eslint-plugin-vue": "^8.0.3",
+    "vitepress": "^1.0.0-rc.41"
   }
 }

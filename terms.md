@@ -1,8 +1,14 @@
 ---
 description: Lando Documentation's Terms and Conditions
 editLink: false
+jobs: false
 sidebar: false
-rightbar: false
+sponsors: false
+carbonAds: false
+next: false
+prev:
+  text: 'Back'
+  link: '/'
 ---
 
 # Terms and Conditions

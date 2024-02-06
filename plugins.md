@@ -19,6 +19,9 @@ title: Team
 <script setup>
 import {VPLTeamPage, VPLTeamPageTitle, VPLTeamMembers} from '@lando/vitepress-theme-default-plus'
 import {useTeam} from '@lando/vitepress-theme-default-plus';
+import {data} from './plugins.data.mjs';
+
+console.log(data);
 
 const members = useTeam();
 

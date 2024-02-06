@@ -1,8 +1,14 @@
 ---
 description: Learn how to handle file syncing issue when using Lando for local development.
 editLink: false
+jobs: false
 sidebar: false
-rightbar: false
+sponsors: false
+carbonAds: false
+next: false
+prev:
+  text: 'Back'
+  link: '/'
 ---
 
 # Privacy Policy for Humans

@@ -71,7 +71,7 @@ Because each Linux distribution handles things differently, these considerations
   sudo usermod -aG docker $USER
   ```
 
-  You will need to log out for this change to take effect. Sometimes a reboot is necessary. See [this](https://docs.docker.com/install/linux/linux-postinstall/) for more details.
+  You will need to log out for this change to take effect. Sometimes a reboot is necessary. See [this](https://docs.docker.com/engine/install/linux-postinstall/) for more details.
 
 * If your distro uses SystemD, make sure that both `docker.service` and `docker.socket` daemons are running.
 

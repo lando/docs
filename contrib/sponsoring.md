@@ -48,7 +48,7 @@ By sponsoring Lando with your hard earned American dollars, the Lando team can d
 If you'd like to read more about why you should sponsor Lando, we encourage you to check out the posts as follows:
 
 * [Why you should sponsor Lando](https://lando.dev/blog/2020/02/07/why-you-should-sponsor-lando.html)
-* [Why your agency or org should sponsor Lando](https://blog.lando.dev/2020/02/08/why-your-agency-should-sponsor-lando/)
+* [Why your agency or org should sponsor Lando](https://lando.dev/blog/2020/02/08/why-your-agency-should-sponsor-lando.html)
 * [Why your PaaS or dev tool should sponsor Lando](https://lando.dev/blog/2020/02/08/why-your-pass-should-sponsor-lando.html)
 
 If you are interested in sponsoring at one of our higher tiers, then definitely [contact us](https://lando.dev/contact/) so we can figure out the terms of your sponsorship.
@@ -74,7 +74,7 @@ If you and your team are saving development time using Lando, your organization 
 Asking your boss to sponsor Lando might seem tough. Why should they pay for something they're already getting for free? There are _many_ reasons and we've prepared them all in the easily distributable blog content below:
 
 * [Why you should sponsor Lando](https://lando.dev/blog/2020/02/07/why-you-should-sponsor-lando.html)
-* [Why your agency or org should sponsor Lando](https://blog.lando.dev/2020/02/08/why-your-agency-should-sponsor-lando/)
+* [Why your agency or org should sponsor Lando](https://lando.dev/blog/2020/02/08/why-your-agency-should-sponsor-lando.html)
 * [Why your PaaS or dev tool should sponsor Lando](https://lando.dev/blog/2020/02/08/why-your-pass-should-sponsor-lando.html)
 
 ### They're Ready to Sponsor. Now What?

@@ -33,7 +33,7 @@ WSL2 manages to bypass the majority of this performance penalty by never mountin
 You will want to make sure that, if you have an existing Docker or WSL setup, you are **not** using the Docker + WSL2 backend. If you have this setup, [you're going to have a bad time](https://www.youtube.com/watch?v=ynxPshq8ERo). It is very sad, very frustrating, so if you are here, do yourself a favor and uninstall the Docker Desktop WSL2 backend.
 
 **2. Make Sure Your Machine Supports Virtualization**
-You also need to ensure your machine supports virtualization (Vt-d, etc.). If you're not sure, you can [check this in Task Manager](https://www.shaileshjha.com/how-to-find-out-if-intel-vt-x-or-amd-v-virtualization-technology-is-supported-in-windows-10-windows-8-windows-vista-or-windows-7-machine). You don't need to have Windows 10 Pro like the traditional Lando on Windows setup, as WSL doesn't require it.
+You also need to ensure your machine supports virtualization (Vt-d, etc.). If you're not sure, you can [check this in Task Manager](https://shaileshjha.com/how-to-find-out-if-intel-vt-x-or-amd-v-virtualization-technology-is-supported-in-windows-10-windows-8-windows-vista-or-windows-7-machine/). You don't need to have Windows 10 Pro like the traditional Lando on Windows setup, as WSL doesn't require it.
 
 ## Get WSL2 rolling
 
@@ -43,7 +43,7 @@ The first thing we need to do is enable WSL2. To do so...
 2. In the resulting window, check 'Windows Subsystem for Linux' and 'Virtual Machine Platform' and then click 'ok'. This starts the system installed for WSL and will ask us to restart after it downloads the stuff it needs. This really only gives you the WSL1 setup. To get WSL2...
 3. Download a kernel update to get WSL2 going. see the [Microsoft docs on installing the kernel update](https://docs.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package).
 4. After you install the kernel update, launch a powershell and run `wsl --set-default-version 2` to default to WSL 2.
-5. Head to the Microsoft store and install a Linux distro. I am going to choose [Ubuntu 18.04 LTS](https://www.microsoft.com/en-us/p/ubuntu-1804-lts/9n9tngvndl3q), since it is the most common distro for Lando users and our handy [Hyperdrive](https://github.com/lando/hyperdrive) supports it.
+5. Head to the Microsoft store and install a Linux distro. I am going to choose [Ubuntu 18.04 LTS](https://apps.microsoft.com/detail/9N9TNGVNDL3Q?hl=en-us&gl=US), since it is the most common distro for Lando users and our handy [Hyperdrive](https://github.com/lando/hyperdrive) supports it.
 
 ## Jump into Hyperspace
 

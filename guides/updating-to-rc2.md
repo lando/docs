@@ -489,7 +489,7 @@ WP_HOME=http://wpb4.test
 WP_SITEURL=http://wpb4.test/wp
 ```
 
-Check out [this example](https://github.com/lando/cli/tree/main/examples/base) which is tested on every build for some examples of the new environment file syntax.
+Check out [this example](https://github.com/lando/core/tree/main/examples/base) which is tested on every build for some examples of the new environment file syntax.
 
 ## Drush Handling
 

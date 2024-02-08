@@ -26,7 +26,7 @@ export default defineConfig({
           collection: 'lando101',
         },
         icon: hat,
-        iconLink: '/lando101',
+        iconLink: '/lando-101',
         patterns: ['lando-101/**/*.md'],
       },
       post: {
@@ -93,75 +93,42 @@ export default defineConfig({
           text: 'Contributing',
           collapsed: true,
           items: [
-            {text: 'Getting Involved', link: '/contrib/index.html'},
-            {text: 'Coding', link: '/contrib/coder.html'},
-            {text: 'Evangelizing', link: '/contrib/evangelist.html'},
-            {text: 'Sponsoring', link: '/contrib/sponsoring.html'},
+            {text: 'Getting Involved', link: '/contrib/index'},
+            {text: 'Coding', link: '/contrib/coder'},
+            {text: 'Evangelizing', link: '/contrib/evangelist'},
+            {text: 'Sponsoring', link: '/contrib/sponsoring'},
+            {text: 'Security', link: '/security'},
+            {text: 'Team', link: '/team'},
           ],
         },
         {
-          text: 'Lando 101',
-          link: '/lando-101',
+          collapsed: false,
+          items: [
+            {
+              text: 'Lando 101',
+              link: '/lando-101',
+            },
+            {
+              text: 'Guides',
+              link: '/guides',
+            },
+            {
+              text: 'Examples',
+              link: 'https://github.com/lando/core/tree/main/examples',
+            },
+          ],
         },
         {
-          text: 'Guides',
-          link: '/guides',
+          collapsed: false,
+          items: [
+            {
+              text: 'Plugins',
+              link: '/plugins',
+            },
+          ],
         },
-        {
-          text: 'Examples',
-          link: 'https://github.com/lando/core/tree/main/examples',
-        },
+
       ],
     },
   },
 });
-
-// function configSideBar() {
-//   return [
-//     {
-//       text: 'Theme Configuration',
-//       collapsed: false,
-//       items: [
-//         {text: 'Configuration', link: '/config/config'},
-//         {text: 'Frontmatter', link: '/config/frontmatter'},
-//         {text: 'useCollection()', link: '/composables/use-collection'},
-//         {text: 'useTeam()', link: '/composables/use-team'},
-//       ],
-//     },
-//     {
-//       text: 'Pages',
-//       collapsed: false,
-//       items: [
-//         {text: 'Collections', link: '/pages/collections'},
-//         {text: 'Teams', link: '/pages/teams'},
-//       ],
-//     },
-//     {
-//       text: 'Global Components',
-//       collapsed: false,
-//       items: [
-//         {text: 'Jobs', link: '/components/jobs'},
-//         {text: 'MailChimp', link: '/components/mailchimp'},
-//         {text: 'Sponsor', link: '/components/sponsors'},
-//         {text: 'YouTube', link: '/components/youtube'},
-//       ],
-//     },
-//     {
-//       text: 'Markdown Containers',
-//       collapsed: false,
-//       items: [
-//         {text: 'Admonitions', link: '/markdown/admonitions'},
-//         {text: 'Alignments', link: '/markdown/alignments'},
-//         {text: 'Boxes', link: '/markdown/boxes'},
-//         {text: 'Cards', link: '/markdown/cards'},
-//         {text: 'Columns', link: '/markdown/columns'},
-//         {text: 'Highlights', link: '/markdown/highlights'},
-//         {text: 'Tabs', link: '/markdown/tabs'},
-//         {text: 'Thumbnails', link: '/markdown/thumbnails'},
-//         {text: 'Advanced', link: '/guides/advanced-markdown'},
-//       ],
-//     },
-//     {text: 'Blog', link: '/blog'},
-//     {text: 'Guides', link: '/guides'},
-//   ];
-// }

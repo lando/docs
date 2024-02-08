@@ -20,11 +20,11 @@ GitHub Sponsors, Patreon, and Open Collective: all three of these official Lando
 
 [Sponsor With GitHub Here](https://github.com/sponsors/lando)
 
-### [With Patreon](https://patreon.com/devwithlando)
+### [With Patreon](https://www.patreon.com/devwithlando)
 
-The gold standard of sponsoring creatives, [Patreon](https://patreon.com/devwithlando) does charge a transactional fee; hence why you'll see sponsorship rates are a little higher there. Rest assured that Lando gets the same amount, but all things being equal, you might want to use GitHub Sponsors instead.
+The gold standard of sponsoring creatives, [Patreon](https://www.patreon.com/devwithlando) does charge a transactional fee; hence why you'll see sponsorship rates are a little higher there. Rest assured that Lando gets the same amount, but all things being equal, you might want to use GitHub Sponsors instead.
 
-[Sponsor with Patreon Here](https://patreon.com/devwithlando)
+[Sponsor with Patreon Here](https://www.patreon.com/devwithlando)
 
 ### [With Open Collective](https://opencollective.com/lando)
 
@@ -65,7 +65,7 @@ Chances are you know another individual or a business that would be willing to s
 - "Enterprise" development teams.
 - Hosting companies.
 - Dev tool providers.
-- [Eccentric mallard millionares.](https://youtu.be/bEmjiCoZ6e4?t=11)
+- [Eccentric mallard millionares.](https://www.youtube.com/watch?v=bEmjiCoZ6e4&t=11s)
 
 ### Why Should Your Organization Sponsor Lando?
 

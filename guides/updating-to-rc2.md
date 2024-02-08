@@ -127,7 +127,7 @@ services:
       - '80'
 ```
 
-Check out [this example](https://github.com/lando/cli/tree/main/examples/services) which is tested on every build for some examples of new override syntax.
+Check out [this example](https://github.com/lando/core/tree/main/examples/services) which is tested on every build for some examples of new override syntax.
 
 ## Internal Service Name Changes
 
@@ -290,7 +290,7 @@ tooling:
       - appserver: cd $LANDO_WEBROOT && drush updb -y
 ```
 
-Check out [this example](https://github.com/lando/cli/tree/main/examples/tooling) which is tested on every build for some examples of new tooling syntax.
+Check out [this example](https://github.com/lando/core/tree/main/examples/tooling) which is tested on every build for some examples of new tooling syntax.
 
 ## Build Steps
 

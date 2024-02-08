@@ -62,4 +62,4 @@ Now all the developers on our team for the Lando 101 app can code sniff their co
 lando phpcs index.php
 ```
 
-Adding the `phpcs` command is simple, but just one example of the types of tooling you can add to your apps. To take a deep dive and learn more about Lando tooling read the [tooling docs page](/core/v3/tooling.html).
+Adding the `phpcs` command is simple, but just one example of the types of tooling you can add to your apps. To take a deep dive and learn more about Lando tooling read the [tooling docs page](https://docs.lando.dev/core/v3/tooling.html).

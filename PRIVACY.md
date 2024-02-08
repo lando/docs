@@ -23,7 +23,7 @@ We use your data to provide and improve the Service. By using the Service, you a
 
 ## Other Policies
 
-If you are looking for the Privacy Policy for Lando the software you should [look here](https://github.com/lando/lando/blob/master/PRIVACY.md). For more a human-readable explanation of that Privacy Policy you should check out [our documentation](/help/data.html)
+If you are looking for the Privacy Policy for Lando the software you should [look here](https://github.com/lando/lando/blob/master/PRIVACY.md). For more a human-readable explanation of that Privacy Policy you should check out [our documentation](/data)
 
 ## Definitions
 

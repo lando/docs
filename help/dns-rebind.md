@@ -4,7 +4,7 @@ description: Learn how to handle DNS Rebinding protection when using Lando for l
 
 # DNS Rebinding Protection
 
-If you are using [Lando proxying](/core/v3/proxy), which is enabled by default, some routers and firewalls may prevent Lando from properly routing `*.lndo.site` addresses to your application through [DNS Rebinding](https://en.wikipedia.org/wiki/DNS_rebinding) protection. For example the `DD-WRT` router firmware enables this protection by default.
+If you are using [Lando proxying](https://docs.lando.dev/core/v3/proxy.html), which is enabled by default, some routers and firewalls may prevent Lando from properly routing `*.lndo.site` addresses to your application through [DNS Rebinding](https://en.wikipedia.org/wiki/DNS_rebinding) protection. For example the `DD-WRT` router firmware enables this protection by default.
 
 If you are seeing red URLs after you start your app and you are unable to look up the url DNS rebinding protection may be the cause. You can test this out using `nslookup`.
 
@@ -16,8 +16,8 @@ If this check fails we recommend you consult your router documentation or system
 
 If you can't or don't want to remove this protection, you can alternatively:
 
-1.  Use the steps in [Working Offline](/core/v3/proxy.html#working-offline-or-using-custom-domains) to bypass the external DNS lookup altogether
-2.  [Disable proxying](/core/v3/proxy.html##configuration) and rely on the Lando produced `localhost` address
+1.  Use the steps in [Working Offline](https://docs.lando.dev/core/v3/proxy.html.html#working-offline-or-using-custom-domains) to bypass the external DNS lookup altogether
+2.  [Disable proxying](https://docs.lando.dev/core/v3/proxy.html.html##configuration) and rely on the Lando produced `localhost` address
 
 That said, the ideal scenario is to make sure your network is set up to not block `*.lndo.site` addresses.
 

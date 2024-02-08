@@ -64,7 +64,7 @@ lando start -vvv
 # debug: Logging metrics data"command":"lando start","context":"local","devMode":false,"instance":"bdb5354f0597b5b465e86db8255c2b6e1e742f70","nodeVersion":"v10.15.0","mode":"cli","os":{"type":"Darwin","platform":"darwin","release":"19.0.0","arch":"x64"},"product":"lando","version":"3.0.0-rc.22","app":"8e8533752bafe1499af4352e923b4d2e82396927","type":"none","services":["node:10","node:10","node:10","php:7.3"],"action":"start","created":"2019-11-26T15:24:16.468Z"} to [{"report":true,"url":"https://metrics.lando.dev"}]
 ```
 
-If you would like to opt-out you can do so by adding the following to your [Lando global config](/config/global.md)
+If you would like to opt-out you can do so by adding the following to your [Lando global config](https://docs.lando.dev/core/v3/global.html)
 
 ```yaml
 stats:

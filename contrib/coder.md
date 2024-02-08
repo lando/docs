@@ -46,7 +46,7 @@ Now that you're equipped with the laser sword of empathy and the armor of respec
 ### Requirements
 
 1. A Github account
-2. [Install Lando](/basics/installation.html) (So you can reproduce issues)
+2. [Install Lando](/install) (So you can reproduce issues)
 
 ### Classify the Issue
 
@@ -101,7 +101,7 @@ In fact, almost all of Lando's core functionality is provided via plugins. This 
 
 ### Plugin Loading
 
-Lando will search in the `plugins` directory for any path listed in `lando.config.pluginDirs` and automatically load in any plugins that it finds. By default, these directories are the Lando source directory and `~/.lando` but note that they are configurable via the Lando [global config](/config/global). In order for Lando to successfully identify and automatically load your plugin, you need to have a directory named after your plugin, e.g. `my-plugin`, in one of the directories mentioned above and it needs to include an `index.js`.
+Lando will search in the `plugins` directory for any path listed in `lando.config.pluginDirs` and automatically load in any plugins that it finds. By default, these directories are the Lando source directory and `~/.lando` but note that they are configurable via the Lando [global config](https://docs.lando.dev/core/v3/global.html). In order for Lando to successfully identify and automatically load your plugin, you need to have a directory named after your plugin, e.g. `my-plugin`, in one of the directories mentioned above and it needs to include an `index.js`.
 
 If there are multiple occurrences of the same-named plugin, Lando will use the last one it finds. This means that `lando` will prioritize user plugins over core plugins by default.
 

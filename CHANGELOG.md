@@ -1,5 +1,6 @@
-* Update node from 14 to 16 in the `From source` section of installation.md
-* Add _WARNING_ about docker-compose 2.x incompatibility in Linux environments
+## v4.1.0  - [February 8, 2023](https://github.com/lando/docs/releases/tag/v4.1.0)
+
+* VitePressed
 
 ## v4.0.1  - [December 20, 2022](https://github.com/lando/docs/releases/tag/v4.0.1)
 

@@ -1,7 +1,5 @@
 ---
 description: Learn Lando basics and how to configure your first Landofile for either simple or complex development and/or DevOps requirements.
-prev: ./index.html
-next: ./installation.html
 ---
 
 # How does it work?

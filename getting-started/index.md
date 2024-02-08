@@ -1,10 +1,8 @@
 ---
 description: Get an introduction to Lando; why it exists, what it's good for and how it differs from Docker Compose and other local development and DevOps tools.
-next: ./what-it-do.html
-
 ---
 
-# Introduction
+# What is Lando?
 
 Lando is for developers who want to:
 

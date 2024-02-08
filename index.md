@@ -33,7 +33,7 @@ footer: Copyright ©2024 Kalabox Inc.
 <VPHomeHero>
   <template #home-hero-actions-after>
     <div class="actions">
-      <VPButton href="/overview" size="medium" text="Get Started" />
+      <VPButton href="/getting-started/" size="medium" text="Get Started" />
       <a class="VPButton medium alt sponsor" href="https://lando.dev/sponsor" target="_blank" rel="noreferrer">
         <svg class="vibe" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="red" d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
         Sponsor
@@ -166,15 +166,6 @@ const heraldcompute = parseInt(heralds.length + (Date.now() - start) / 604800);
         background-image: linear-gradient(-45deg, var(--vp-c-indigo-1) 50%, var(--vp-c-indigo-1) 50%) !important;
       }
     }
-}
-}
-
-.divider {
-  .divider-line {
-    background-color: var(--vp-c-gutter);
-    height: 1px;
-    transition: background-color 0.5s;
-    margin: 25px 0;
   }
 }
 
@@ -359,6 +350,14 @@ const heraldcompute = parseInt(heralds.length + (Date.now() - start) / 604800);
     .image-bg {
       background-image: linear-gradient(-45deg, var(--vp-c-purple-1) 50%, var(--vp-c-purple-1) 50%) !important;
       opacity: .66;
+    }
+  }
+  .divider {
+    .divider-line {
+      background-color: var(--vp-c-gutter);
+      height: 1px;
+      transition: background-color 0.5s;
+      margin: 25px 0;
     }
   }
 }

@@ -1,6 +1,6 @@
 [build]
   base = "./"
-  publish = "docs/.vitepress/dist"
+  publish = ".vitepress/dist"
   command = "npm run build"
 
 # Sets our asset optimization

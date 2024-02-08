@@ -1,13 +1,13 @@
 
 # Sponsoring
 
-Sponsorship is the easiest and often-most-helpful-to-us way to contribute; just register directly with one of the supported sponsorship platforms below or [join The Lando Alliance](https://lando.dev/alliance/join/) and start helping Lando!
+Sponsorship is the easiest and often-most-helpful-to-us way to contribute; just register directly with [GitHub Sponsors](https://github.com/sponsors/lando) and start helping Lando!
 
 [[toc]]
 
 ## How to Sponsor
 
-While you can sponsor directly using any of the below platforms, we recommend you [join The Lando Alliance](https://lando.dev/alliance/join/) and sponsor through the mechanisms presented there. This way, we can better engage with you in the future.
+While you can sponsor directly using any of the below platforms, we recommend you sponsor via [GitHub](https://github.com/sponsors/lando). This way, we can better engage with you in the future.
 
 GitHub Sponsors, Patreon, and Open Collective: all three of these official Lando sponsorship methods are valid but each comes with its own transaction fees and caveats. Broadly speaking, we've adjusted the sponsorship amount to account for transaction fees.
 
@@ -47,7 +47,7 @@ By sponsoring Lando with your hard earned American dollars, the Lando team can d
 
 If you'd like to read more about why you should sponsor Lando, we encourage you to check out the posts as follows:
 
-* [Why you should sponsor Lando](https://blog.lando.dev/2020/02/09/why-you-should-sponsor-lando/)
+* [Why you should sponsor Lando](https://lando.dev/blog/2020/02/07/why-you-should-sponsor-lando.html)
 * [Why your agency or org should sponsor Lando](https://blog.lando.dev/2020/02/08/why-your-agency-should-sponsor-lando/)
 * [Why your PaaS or dev tool should sponsor Lando](https://lando.dev/blog/2020/02/08/why-your-pass-should-sponsor-lando.html)
 
@@ -73,9 +73,9 @@ If you and your team are saving development time using Lando, your organization 
 
 Asking your boss to sponsor Lando might seem tough. Why should they pay for something they're already getting for free? There are _many_ reasons and we've prepared them all in the easily distributable blog content below:
 
-* [Why you should sponsor Lando](https://blog.lando.dev/2020/02/09/why-you-should-sponsor-lando/)
+* [Why you should sponsor Lando](https://lando.dev/blog/2020/02/07/why-you-should-sponsor-lando.html)
 * [Why your agency or org should sponsor Lando](https://blog.lando.dev/2020/02/08/why-your-agency-should-sponsor-lando/)
-* [Why your PaaS or dev tool should sponsor Lando](https://blog.lando.dev/2020/02/07/why-your-pass-should-sponsor-lando/)
+* [Why your PaaS or dev tool should sponsor Lando](https://lando.dev/blog/2020/02/08/why-your-pass-should-sponsor-lando.html)
 
 ### They're Ready to Sponsor. Now What?
 
@@ -109,9 +109,9 @@ Our highest two tiers are fairly customizable based around your needs. If you wo
 
 We rely on third party sponsorship platforms to manage your sponsorship so you will want to terminate your sponsorship with them! For convenience, the relevant docs on how to do so for each of the platforms we support are shown below:
 
-* [Cancel GitHub Sponsors Sponsorship](https://help.github.com/en/github/setting-up-and-managing-billing-and-payments-on-github/downgrading-a-sponsorship)
-* [Cancel Patreon Sponsorship](https://support.patreon.com/hc/en-us/articles/360000126286-Update-my-membership-amount)
-* [Cancel OpenCollective Sponsorship](https://github.com/opencollective/opencollective/wiki/How-to-cancel-a-subscription)
+* [Cancel GitHub Sponsors Sponsorship](https://docs.github.com/en/billing/managing-billing-for-github-sponsors/downgrading-a-sponsorship)
+* [Cancel Patreon Sponsorship](https://support.patreon.com/hc/en-us/articles/360000126286-How-to-edit-your-membership)
+* [Cancel OpenCollective Sponsorship](https://docs.opencollective.com/help/financial-contributors/organizations/organization-faq#can-i-cancel-or-change-my-contribution)
 
 ### How can I convince my boss or org to sponsor?
 

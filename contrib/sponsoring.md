@@ -49,7 +49,7 @@ If you'd like to read more about why you should sponsor Lando, we encourage you 
 
 * [Why you should sponsor Lando](https://blog.lando.dev/2020/02/09/why-you-should-sponsor-lando/)
 * [Why your agency or org should sponsor Lando](https://blog.lando.dev/2020/02/08/why-your-agency-should-sponsor-lando/)
-* [Why your PaaS or dev tool should sponsor Lando](https://blog.lando.dev/2020/02/07/why-your-pass-should-sponsor-lando/)
+* [Why your PaaS or dev tool should sponsor Lando](https://lando.dev/blog/2020/02/08/why-your-pass-should-sponsor-lando.html)
 
 If you are interested in sponsoring at one of our higher tiers, then definitely [contact us](https://lando.dev/contact/) so we can figure out the terms of your sponsorship.
 

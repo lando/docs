@@ -38,7 +38,7 @@ While the [Lando Organization](https://github.com/lando) serves as the starting 
 
 ## Slack
 
-Slack serves as the mechanism for Lando support and contributor coordination. You can join the Lando slack org via [LaunchPass](https://launchpass.com/devwithlando). By default, you will be added to the **#community** channel which is our free and open community support channel. You can also join any of the additional channels as is appropriate below:
+Slack serves as the mechanism for Lando support and contributor coordination. You can join the Lando slack org via [LaunchPass](https://www.launchpass.com/devwithlando). By default, you will be added to the **#community** channel which is our free and open community support channel. You can also join any of the additional channels as is appropriate below:
 
   * **#administrators** - For those who help administer and coordinate Lando
   * **#bloggers** - For those contributing case studies, training materials and other content to the blog

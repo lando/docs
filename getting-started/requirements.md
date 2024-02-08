@@ -13,7 +13,7 @@ Lando is designed to work on a wide range of computers. Here are some basic guid
 ### Operating System
 
 *   macOS 11 or later
-*   Windows 10 Home or Pro version 21H2 or higher with the [WSL 2 feature enabled](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+*   Windows 10 Home or Pro version 21H2 or higher with the [WSL 2 feature enabled](https://learn.microsoft.com/en-us/windows/wsl/install)
 *   Linux with kernel version 4.x or higher
 
 ### Docker Engine Requirements

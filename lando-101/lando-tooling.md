@@ -1,7 +1,6 @@
 ---
 title: Lando Tooling
 description: An example of adding tooling to a Lando app.
-guide: true
 
 authors:
   - name: Team Lando
@@ -18,6 +17,8 @@ mailchimp:
   byline: Signup and we will send you a weekly blog digest of similar content to keep you satiated.
   button: Sign me up!
 ---
+
+# Lando Tooling
 
 Lando provides context specific tooling for the provided recipes, for example, the `lando-101` app is using the `lamp` recipe and out of the box provides us with tooling commands for `php` cli, `composer`, and a `mysql` shell among others. You can see the available commands for any given Lando app by typing `lando` at your command prompt.
 

@@ -19,6 +19,8 @@ mailchimp:
   button: Sign me up!
 ---
 
+# SQL Import
+
 Lando ships with a helper `db-import` script that is available in all our `LAMP` and `LEMP` based recipes. Used in the recipe context it should import a database dump into the recipe-provided database by default but can be used on additional database services as well.
 
 You can also import databases into other hosts and databases. It will currently handle uncompressed, gzipped or zipped dump files.

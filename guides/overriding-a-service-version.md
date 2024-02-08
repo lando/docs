@@ -19,6 +19,8 @@ mailchimp:
   button: Sign me up!
 ---
 
+# Overriding a Service Version or Image
+
 The Docker images Lando uses for services are well optimized for local development, but occasionally you need to
 override those images with some of your own secret sauce. Lando makes this easy to do through the services `overrides`
 key:

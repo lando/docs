@@ -19,6 +19,8 @@ mailchimp:
   button: Sign me up!
 ---
 
+# Lando + PhpStorm + Xdebug
+
 [PhpStorm](https://www.jetbrains.com/phpstorm/) is a popular code IDE for PHP
 and Drupal development.
 

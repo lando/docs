@@ -19,6 +19,8 @@ mailchimp:
   button: Sign me up!
 ---
 
+# How do I set the timezone of a Lando service?
+
 If you need to set the timezone of a Lando service here is how! Just symlink the appropriate timezone you need in a `run_as_root` build step. Here is an example `.lando.yml` file.
 
 ```yaml

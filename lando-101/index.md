@@ -1,7 +1,6 @@
 ---
 title: Lando Overview
 description: Overview of Lando ecosystem ~ install, init, configure, services, tooling, build steps, and events.
-guide: true
 
 authors:
   - name: Team Lando
@@ -17,11 +16,9 @@ mailchimp:
   title: Want similar content?
   byline: Signup and we will send you a weekly blog digest of similar content to keep you satiated.
   button: Sign me up!
-
-next: /lando-101/lando-init.md
-prev: /getting-started/uninstalling.md
-
 ---
+
+# Lando 101
 
 Lando can isolate all your dev needs on a per app basis. This course will walk you through some examples of what can be accomplished with Lando development environments. If you have not installed Lando yet head over to [installing](/getting-started/installation.html) first.
 

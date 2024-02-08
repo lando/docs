@@ -1,7 +1,6 @@
 ---
 title: Lando Configure
 description: An example using the config key to configure a Lando recipe.
-guide: true
 
 authors:
   - name: Team Lando
@@ -18,6 +17,8 @@ mailchimp:
   byline: Signup and we will send you a weekly blog digest of similar content to keep you satiated.
   button: Sign me up!
 ---
+
+# Lando Configure
 
 As we've seen Lando recipes are very useful and dead simple. So far our `.lando.yml` file for the LAMP recipe is just two lines:
 

@@ -19,6 +19,8 @@ mailchimp:
   button: Sign me up!
 ---
 
+# How do I configure a Lando Recipe?
+
 When you first initialize a lando app (`lando init`) you get a very simple `.lando.yml` configuration file. Here is the `.lando.yml` file for the LAMP recipe.
 
 ```yaml

@@ -19,6 +19,8 @@ mailchimp:
   button: Sign me up!
 ---
 
+# Using Lando with VSCode
+
 [Visual Studio Code](https://github.com/Microsoft/vscode/) is a great open source editor for programming. Debugging PHP applications with it can be easy too.
 
 This is a basic setup to help you in this task.
@@ -182,7 +184,7 @@ Now to run debug a PhpUnit test, do the following:
 
 If Xdebug session doesn't start, dig into the log file inside the application.
 
-Enter the app with `lando ssh` and open the debug file (`/tmp/xdebug.log`). 
+Enter the app with `lando ssh` and open the debug file (`/tmp/xdebug.log`).
 
 Path to the debug file is configured in your custom `php.ini`.
 

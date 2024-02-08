@@ -7,7 +7,7 @@ description: Install Lando on Linux
 
 ## Package (recommended)
 
-1. Install the [Docker Community Edition](https://docs.docker.com/engine/installation/) for your Linux version. Visit [https://get.docker.com](https://get.docker.com/) for the "quick & easy install" script. **(at least version 19.03.1-ce)**
+1. Install the [Docker Community Edition](https://docs.docker.com/engine/install/) for your Linux version. Visit [https://get.docker.com](https://get.docker.com/) for the "quick & easy install" script. **(at least version 19.03.1-ce)**
 2. Download the latest `.deb`, `.pacman` or `.rpm` package from [GitHub](https://github.com/lando/lando/releases)
 3. Double click on the package and install via your distributions "Software Center" or equivalent.
 4. Make sure you look at the caveats below and follow them appropriately

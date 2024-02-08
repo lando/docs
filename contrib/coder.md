@@ -97,7 +97,7 @@ Lando has an advanced plugin system that allows developers to add and extend Lan
 7.  Augment or alter the `lando` object and its configuration
 3.  Hook into various `lando` and `app` runtime events to provide additional functionality.
 
-In fact, almost all of Lando's core functionality is provided via plugins. This includes its [core tasks](https://github.com/lando/core/tree/main/tasks), [proxy](https://github.com/lando/core/tree/main/plugins/lando-proxy), [events system](https://github.com/lando/core/tree/main/plugins/lando-events), [services](https://github.com/lando/core/tree/main/plugins/lando-services), [recipes](https://github.com/lando/core/tree/main/plugins/lando-recipes), [tooling layer](https://github.com/lando/core/tree/main/plugins/lando-tooling) and [container networking](https://github.com/lando/core/tree/main/plugins/networking).
+You can see examples of plugins in the [plugins library](https://docs.lando.dev/plugins).
 
 ### Plugin Loading
 

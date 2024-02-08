@@ -17,8 +17,8 @@ export HTTPS_PROXY=http://localhost:9000
 
 Additionally, you'll want to specify that proxy in your Docker Desktop settings (if running on Windows or Mac). Under Settings > Resources > Proxies, specify...
 
-- Web Server: http://localhost:9000
-- Secure Web Server: http://localhost:9000
+- Web Server: `http://localhost:9000`
+- Secure Web Server: `http://localhost:9000`
 
 ...and finally you may need to specify the proxy in the `.lando.yml` file for your project(s):
 
@@ -106,7 +106,7 @@ It's important to wipe out all exisitng Lando containers (hence the uninstall) a
 ### Add Cert to Individual Lando Containers
 
 Once Lando is running, there are a number of cases where code running inside Lando's containers may need to have the certs installed as well. To do this, first **store the certificates somewhere in your Lando project directory.** We just put them in our project's root directory, so within the container the cert is available at `/app/yourcert.crt`.
-  
+
 #### Adding Certs to an Appserver Container
 
 Add this to your project's `.lando.yml`, replacing `yourcert.crt` with the name of your certificates:

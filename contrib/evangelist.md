@@ -90,7 +90,7 @@ If you are interested in helping, make sure you [join our Slack org](https://lau
 
 Some talking points you can use in your presentations or next dinner date are shown below:
 
-These are intended to try and convince a more-technical audience to adopt Lando. If you are interested in more business focused talking points, particularly if you are trying to convince an org to sponsor Lando, then check [these out](./https://lando.dev/blog/2020/02/08/why-your-agency-should-sponsor-lando.html) instead.
+These are intended to try and convince a more-technical audience to adopt Lando. If you are interested in more business focused talking points, particularly if you are trying to convince an org to sponsor Lando, then check [these out](https://lando.dev/blog/2020/02/08/why-your-agency-should-sponsor-lando.html) instead.
 
 ### High Level
 

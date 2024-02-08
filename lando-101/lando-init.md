@@ -103,4 +103,4 @@ recipe: lamp
 ```
 The `.lando.yml` file gives Lando the information it needs to spin up your application. In this case just two lines! The `name` of the app and the `recipe` to use. We recommend that you commit the `.lando.yml` file to version control so that everyone on your team can have the exact same configuration for development.
 
-You can see the full documentation for [lando init](/cli/init.html).
+You can see the full documentation for [lando init](https://docs.lando.dev/cli/init.html).

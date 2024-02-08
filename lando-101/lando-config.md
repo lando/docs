@@ -49,4 +49,4 @@ config:
 
 Now let's rebuild our app with the `lando rebuild -y` command. Now if we visit our app in a browser we will see the the PHP version is reported as `7.4`. Simple! Just like that we've configured our app to use a different version of PHP.
 
-You can read the details about the `config` key in the docs: [config](/config/recipes.html#config).
+You can read the details about the `config` key in the docs: [config](https://docs.lando.dev/core/v3/recipes.html).

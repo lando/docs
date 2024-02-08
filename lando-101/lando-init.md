@@ -1,7 +1,6 @@
 ---
 title: Lando Init
 description: Introduction to Lando ~ Using lando init command.
-guide: true
 
 authors:
   - name: Team Lando
@@ -18,6 +17,8 @@ mailchimp:
   byline: Signup and we will send you a weekly blog digest of similar content to keep you satiated.
   button: Sign me up!
 ---
+
+# Lando Init
 
 The `lando init` command follows the pattern of `git init` or `npm init`. Where `lando init` will prompt you with some questions and prepares a `.lando.yml` configuration file for you. You can run `lando init` from an empty directory or from an extant codebase.
 

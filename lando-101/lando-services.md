@@ -1,7 +1,6 @@
 ---
 title: Lando Services
 description: An example adding the mailhog service to a Lando recipe.
-guide: true
 
 authors:
   - name: Team Lando
@@ -18,6 +17,8 @@ mailchimp:
   byline: Signup and we will send you a weekly blog digest of similar content to keep you satiated.
   button: Sign me up!
 ---
+
+# Lando Services
 
 Another way you can extend Lando recipes is by adding additional [services](/config/services.html). If you need to add a second database to your app, a node container for theming, or any number of use cases you can handle them by adding the appropriate service to your app. In this example we'll add a [mailhog](/config/mailhog.html) service to our Lando 101 app!
 

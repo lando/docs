@@ -19,6 +19,8 @@ mailchimp:
   button: Sign me up!
 ---
 
+# Accessing Lando from Other Devices on Your Local Network
+
 You may want to use another device (e.g., a smartphone or tablet) to test your Lando app.  You can access your lando app easily from another device as follows.
 
 ## Changing the Bind

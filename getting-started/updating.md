@@ -1,7 +1,5 @@
 ---
 description: Get the skinny on how to easily update Lando, a local development and DevOps tool, on macOS, Windows and Linux.
-prev: ./first-app.html
-next: ./uninstalling.html
 ---
 
 # Updating

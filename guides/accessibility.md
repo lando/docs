@@ -11,6 +11,8 @@ updated:
   timestamp: 1703011953000
 ---
 
+# Accessibility and Lando
+
 ## Introduction
 
 Lando is committed to ensuring digital accessibility for people with disabilities. As a text-based CLI tool, Lando should be compatible with most screenreaders. Indeed, accessibility is primarily a challenge of having a terminal application that integrates well with your screen reader or other adaptive devices.

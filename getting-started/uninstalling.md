@@ -1,7 +1,5 @@
 ---
 description: Lando isn't for everyone; so here are some helpful instructions on how to uninstall and purge Lando from macOS, Windows and Linux.
-prev: ./updating.html
-next: /lando-101
 ---
 
 # Uninstalling

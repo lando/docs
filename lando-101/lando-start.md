@@ -1,7 +1,6 @@
 ---
 title: Lando Start
 description: Start a Lando app and some vocabulary to help us talk about Lando.
-guide: true
 
 authors:
   - name: Team Lando
@@ -18,6 +17,8 @@ mailchimp:
   byline: Signup and we will send you a weekly blog digest of similar content to keep you satiated.
   button: Sign me up!
 ---
+
+# Lando Start
 
 This lesson is primarily about vocabulary to help us understand the Lando ecosystem. A `recipe` in Lando is a pre-configured start state for an application. Lando comes [with more than 12 recipes](/config/recipes.html) out of the box. In the Lando 101 course we are using the [LAMP](https://docs.lando.dev/lamp) recipe. This tells Lando that we'll need an application container with Apache and PHP and a MySQL container.
 

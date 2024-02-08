@@ -1,7 +1,6 @@
 ---
 title: Lando Proxy
 description: An example of using the Lando proxy key.
-guide: true
 
 authors:
   - name: Team Lando
@@ -18,6 +17,8 @@ mailchimp:
   byline: Signup and we will send you a weekly blog digest of similar content to keep you satiated.
   button: Sign me up!
 ---
+
+# Lando Proxy
 
 Some `services` like `mailhog` provide an admin interface via a browser. In such cases it is convenient to assign a URL to the service container. We do so via the `proxy` key in our `.lando.yml` file.
 

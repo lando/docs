@@ -19,6 +19,8 @@ mailchimp:
   button: Sign me up!
 ---
 
+# SQL Export
+
 Lando ships with a helper `db-export` script that is available in all our `LAMP` and `LEMP` based recipes. Used in the recipe context it should export a database dump `DATABASE.TIMESTAMP.gz` into the `/app` directory.
 
 You can also export databases from other services.

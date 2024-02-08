@@ -1,6 +1,8 @@
 ---
 description: Learn how to boot up and initialize your first project for usage with Lando with a Hello World!, Drupal 9 and Pantheon example.
-next: /lando-101
+next:
+  text: Lando 101
+  link: /lando-101
 ---
 
 # Starting your first app
@@ -90,3 +92,7 @@ lando start
 # Import your database and files
 lando pull
 ```
+
+## More
+
+Continue your journey with our brief [Lando 101](/lando-101) course.

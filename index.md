@@ -131,7 +131,7 @@ const heralds = getSponsorTier(sponsors, 'herald');
 
 const all = patriots.concat(allies);
 
-const heraldcompute = parseInt(heralds.length + (Date.now() - start) / 604800);
+const heraldcompute = parseInt(heralds.length + (Date.now() - start) / 604800000);
 
 </script>
 

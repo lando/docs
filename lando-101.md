@@ -8,9 +8,7 @@ sidebar: false
 <script setup>
 import {VPLCollectionPage, VPLCollectionPageTitle, VPLCollectionItems} from '@lando/vitepress-theme-default-plus';
 import {useCollection} from '@lando/vitepress-theme-default-plus';
-
-const {pages} = useCollection('lando-101');
-
+const {pages} = useCollection('lando101');
 </script>
 
 <VPLCollectionPage>

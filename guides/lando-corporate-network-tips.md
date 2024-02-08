@@ -1,3 +1,7 @@
+---
+title: Lando in Corporate Network Environments
+---
+
 # Lando in Corporate Network Environments
 
 Many large organizations have proxy services, SSL decryption, and other network settings that can interfere with how Docker and Lando operate. In this guide we try to collect some common issues with using Lando in such contexts.

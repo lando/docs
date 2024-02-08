@@ -8,7 +8,7 @@ description: Install Lando on Windows
 ## Installer (recommended)
 
 ::: warning YOU MUST HAVE WSL2 ENABLED
-Make sure that the [WSL2 feature is enabled](https://docs.microsoft.com/en-us/windows/wsl/install-win10) or the Lando installer will fail.
+Make sure that the [WSL2 feature is enabled](https://learn.microsoft.com/en-us/windows/wsl/install) or the Lando installer will fail.
 
 If you want to use the older [Hyper-V](https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v) compatible version of Lando use version 3.6.5 or below however it is recommended to update to the new WSL based backend.
 :::

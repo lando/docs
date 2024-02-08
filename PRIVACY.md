@@ -198,7 +198,7 @@ We may use third-party Service Providers to show advertisements to you to help s
 
 *   **BuySellAds**
 
-    Read more: <https://www.buysellads.com/about/privacy>
+    Read more: <https://www.buysellads.com/privacy>
 
 ## Links to Other Sites
 

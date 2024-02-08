@@ -27,7 +27,7 @@ Lando has a distributed model and is powered by over [50 repos](https://github.c
 
 Once you are set up and ready to contribute, a good place to start is with issues tagged as [good first issue](https://github.com/lando/lando/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22). Peruse the list and see if one or more of those issues is a good fit for you.
 
-If you are having issues with any of the above or need some guidance from one of our guide pros, make sure you [join our Slack org](https://launchpass.com/devwithlando) and check out the **#community** and/or **#contributors** channels.
+If you are having issues with any of the above or need some guidance from one of our guide pros, make sure you [join our Slack org](https://www.launchpass.com/devwithlando) and check out the **#community** and/or **#contributors** channels.
 
 ## Triaging issues
 

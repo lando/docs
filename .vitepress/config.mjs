@@ -12,6 +12,9 @@ export default defineConfig({
     ['link', {rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml'}],
   ],
   themeConfig: {
+    editLink: {
+      pattern: 'https://github.com/lando/docs/edit/main/:path',
+    },
     collections: {
       guide: {
         frontmatter: {

@@ -22,7 +22,7 @@ Please also verify you meet the requirements needed to run our Docker engine bac
 
 *   Docker Engine for Linux [requirements](https://docs.docker.com/engine/install/)
 *   Docker Desktop for Mac [requirements](https://docs.docker.com/desktop/install/mac-install/#system-requirements)
-*   Docker Desktop for Windows [requirements](https://docs.docker.com/desktop/install/windows-install/#system-requirements/)
+*   Docker Desktop for Windows [requirements](https://docs.docker.com/desktop/install/windows-install/#system-requirements)
 
 ## Hardware Requirements
 

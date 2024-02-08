@@ -32,7 +32,7 @@
 [[plugins]]
   package = "netlify-plugin-checklinks"
   [plugins.inputs]
-    todoPatterns = [ "load" ]
+    todoPatterns = [ "load", "CHANGELOG.html" ]
     skipPatterns = [ ".rss", ".gif", ".jpg", 'x.com', 'twitter.com' ]
     checkExternal = true
 

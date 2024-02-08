@@ -257,7 +257,7 @@ tooling:
     cmd: drush --root=/app/PATH/TO/WEBROOT
 ```
 
-Check out [this example](https://github.com/lando/cli/tree/main/examples/tooling) which is tested on every build for some examples of new tooling syntax.
+Check out [this example](https://github.com/lando/core/tree/main/examples/tooling) which is tested on every build for some examples of new tooling syntax.
 
 ### Eventy commands
 
@@ -356,7 +356,7 @@ run:
   - if [ ! -z $LANDO_MOUNT ]; then do-stuff; fi
 ```
 
-Check out [this example](https://github.com/lando/cli/tree/main/examples/services) which is tested on every build for some examples of new build step syntax.
+Check out [this example](https://github.com/lando/core/tree/main/examples/services) which is tested on every build for some examples of new build step syntax.
 
 ## Global Environment Variables
 

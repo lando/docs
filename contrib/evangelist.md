@@ -12,7 +12,7 @@ Because Lando is a free and open source project without :unicorn: money, we rely
 
 While you should _do you_ and evangelize in the way that best suits you, here are some things our more successful advocates do:
 
-* Present, talk or train about Lando or Lando-adjacent materials at conference, camps, meetups, etc and to post those events at <https://events.lando.dev>.
+* Present, talk or train about Lando or Lando-adjacent materials at conference, camps, meetups, etc and to post those events at <https://lando.dev/events>.
 * Retweet Lando content, tweet directly at [@devwithlando](https://twitter.com/devwithlando) or engage in local dev or DevOps related Twitter threads.
 * Troll local development blog content and mention Lando in the comments, if applicable.
 * Get friends, colleagues, spouses, partners, pets, grandparents, former roommates, etc. to follow us [@devwithlando](https://twitter.com/devwithlando) and [star our project on GitHub](https://github.com/lando/lando).
@@ -30,7 +30,7 @@ Some helpful steps to get you started are shown below:
 
 ### Finding an event
 
-We recommend getting in touch with local event organizers to help you get started. It's also a good idea to [join our Slack org](https://launchpass.com/devwithlando) and check out the **#community** and/or **#evangelists** channels. There is likely another Lando evangelist who can help you out.
+We recommend getting in touch with local event organizers to help you get started. It's also a good idea to [join our Slack org](https://www.launchpass.com/devwithlando) and check out the **#community** and/or **#evangelists** channels. There is likely another Lando evangelist who can help you out.
 
 Some well known places to get you started are below:
 
@@ -57,7 +57,7 @@ Promotion of your event is obviously at your own discretion but a few recommende
 * Send to a periodical/newsletter such as [The Weekly Drop](https://www.theweeklydrop.com/).
 * Open a PR against our [events site](https://github.com/lando/events)
 
-If you would like to take advantage of Lando's marketing channels, just jump in the **#social** channel in our [Slack org](https://launchpass.com/devwithlando) and tell us what event you want us to promote!
+If you would like to take advantage of Lando's marketing channels, just jump in the **#social** channel in our [Slack org](https://www.launchpass.com/devwithlando) and tell us what event you want us to promote!
 
 We are always happy to retweet, send out in our newsletter, etc!
 
@@ -73,7 +73,7 @@ An example of the intended flow is shown below:
 
 1. Evangelist notices a blog post called _Best Dev Tools of The Year_ that omits Lando.
 2. Evangelist drops a comment with an intro and recommendation to use Lando.
-3. Evangelist hollas at the **#social** or **#evangelists** channels in the [Lando slack](https://launchpass.com/devwithlando) about the post with a call to action like "Hey all! Can you believe Lando isn't mentioned here? Can a few of you lend your voice?"
+3. Evangelist hollas at the **#social** or **#evangelists** channels in the [Lando slack](https://www.launchpass.com/devwithlando) about the post with a call to action like "Hey all! Can you believe Lando isn't mentioned here? Can a few of you lend your voice?"
 4. The word is spread.
 
 Some other obvious places rife with outreach opportunity are below:
@@ -84,7 +84,7 @@ Some other obvious places rife with outreach opportunity are below:
 * Blog content discussing dev tooling.
 *
 
-If you are interested in helping, make sure you [join our Slack org](https://launchpass.com/devwithlando) and check out the **#social** and/or **#evangelists** channels.
+If you are interested in helping, make sure you [join our Slack org](https://www.launchpass.com/devwithlando) and check out the **#social** and/or **#evangelists** channels.
 
 ## Talking Points
 

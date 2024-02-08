@@ -42,7 +42,7 @@ By sponsoring Lando with your hard earned American dollars, the Lando team can d
 * Pay for hosting/bug monitoring
 * Develop new features
 * Create guides, tutorial, video and improve Lando documentation
-* Answer developer questions on [Slack](https://launchpass.com/devwithlando)
+* Answer developer questions on [Slack](https://www.launchpass.com/devwithlando)
 * Allow [@pirog](https://github.com/pirog) to see the light of day
 
 If you'd like to read more about why you should sponsor Lando, we encourage you to check out the posts as follows:

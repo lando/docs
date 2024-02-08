@@ -86,5 +86,5 @@ lando restart || lando rebuild
 
 If you get this far and things are still not working the most likely scenario is you've found a legitimate bug which you should report. To do that either:
 
-* [Join the Lando slack](https://launchpass.com/devwithlando) and report there
+* [Join the Lando slack](https://www.launchpass.com/devwithlando) and report there
 * [Spin up an issue on GitHub](https://github.com/lando/lando/issues/new/choose)

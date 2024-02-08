@@ -30,6 +30,6 @@ It is also a good practice to `.gitignore` the `env` file so you can set `proxy`
 
 ## Potential Docker driven solutions
 
-* https://docs.docker.com/engine/admin/systemd/
-* https://blog.codeship.com/using-docker-behind-a-proxy/
+* https://docs.docker.com/config/daemon/systemd/
+* https://www.cloudbees.com/blog/using-docker-behind-a-proxy
 * https://crondev.com/running-docker-behind-proxy/

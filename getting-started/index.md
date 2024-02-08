@@ -11,7 +11,7 @@ Lando is for developers who want to:
 * Automate complex [build steps](https://docs.lando.dev/config/services.html#build-steps), testing setups, deployments or other [repeated-more-than-once workflows](https://docs.lando.dev/config/events.html)
 * Avoid the built-in-masochism of directly using `docker` or `docker-compose`
 
-It's a free, open source, cross-platform, **local** development environment and DevOps tool built on [Docker](http://docker.com) container technology and developed by [Tandem](http://thinktandem.io). Designed to work with most major languages, frameworks and services, Lando provides an easy way for developers of all skill levels to specify simple or complex requirements for their projects, and then quickly get to work on them.
+It's a free, open source, cross-platform, **local** development environment and DevOps tool built on [Docker](https://www.docker.com/) container technology and developed by [Tandem](https://thinktandem.io/). Designed to work with most major languages, frameworks and services, Lando provides an easy way for developers of all skill levels to specify simple or complex requirements for their projects, and then quickly get to work on them.
 
 ::: tip This is a development tool!
 Note that while you _can_ run Lando in production, it is _highly_ discouraged, not recommended and 100% not supported! DON'T DO IT!
@@ -23,7 +23,7 @@ Note that while you _can_ run Lando in production, it is _highly_ discouraged, n
 
 *   Mimicking your production environment locally
 *   Standardizing your team's dev environments and tooling on OSX, Windows and Linux
-*   Integrating with hosting providers like [Lagoon](https://www.amazee.io/lagoon/), [Pantheon](https://pantheon.io) and [Platform.sh](https://platform.sh)
+*   Integrating with hosting providers like [Lagoon](https://lagoon.sh), [Pantheon](https://pantheon.io) and [Acquia Cloud](https://www.acquia.com/products/acquia-cloud-platform)
 *   Customizing or extending tooling, deployment options and basically any other functionality
 *   Running CI tests locally, running local tests in CI
 *   Using a single local development environment for *all* your projects

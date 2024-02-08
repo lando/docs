@@ -87,7 +87,7 @@ footer: Copyright ©2024 Kalabox Inc.
           </ul>
         </div>
         <div class="menu-secondary">
-          <a href="/https://docs.google.com/forms/d/e/1FAIpQLSc2vkesq59BblKo8ZX-R1hKTrHphh1kmsg4FgWV1WH5BKEjHQ/viewform/">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc2vkesq59BblKo8ZX-R1hKTrHphh1kmsg4FgWV1WH5BKEjHQ/viewform">
             Careers
           </a>
           <a href="/data">
@@ -99,7 +99,7 @@ footer: Copyright ©2024 Kalabox Inc.
           <a href="/privacy">
             Privacy Policy
           </a>
-          <a href="https://kalabox.io" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.kalabox.io" target="_blank" rel="noopener noreferrer">
             Kalabox
           </a>
         </div>

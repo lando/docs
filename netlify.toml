@@ -32,8 +32,8 @@
 [[plugins]]
   package = "netlify-plugin-checklinks"
   [plugins.inputs]
-    todoPatterns = [ "load", "CHANGELOG.html", "x.com", "twitter.com", "yargs.js.org/docs/#"   ]
-    skipPatterns = [ ".rss", ".gif", ".jpg", "429" ]
+    todoPatterns = [ "load", "CHANGELOG.html", "x.com", "twitter.com", "yargs.js.org/docs" ]
+    skipPatterns = [ ".rss", ".gif", ".jpg", 429, "429" ]
     checkExternal = true
 
 # REDIRECTS

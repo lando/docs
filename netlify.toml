@@ -411,6 +411,11 @@
   to = "https://docs.lando.dev/compose/"
   status = 301
 
+[[redirects]]
+  from = "https://docs.lando.dev/getting-started/installation.html#from-source"
+  to = "https://docs.lando.dev/install/source.html"
+  status = 302
+
 # REWRITES
 # Stitch together the various subsites
 [[redirects]]

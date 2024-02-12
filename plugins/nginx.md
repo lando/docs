@@ -1,10 +1,10 @@
 
 ---
-title: dotnet Plugin
-description: This plugin provides a way to use Lando with dotnet Cloud.
-link: https://docs.lando.dev/plugins/dotnet
-sourceRepository: https://github.com/lando/dotnet
-image: https://docs.lando.dev/dotnet/images/dotneticon.png
+title: nginx Plugin
+description: This plugin provides a way to use Lando with nginx Cloud.
+link: https://docs.lando.dev/plugins/nginx
+sourceRepository: https://github.com/lando/nginx
+image: https://docs.lando.dev/nginx/images/nginxicon.png
 maintainers:
   - name: Team Lando
     avatar: https://gravatar.com/avatar/c335f31e62b453f747f39a84240b3bbd

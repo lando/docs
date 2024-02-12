@@ -1,7 +1,7 @@
 
 ---
 title: Lemp Plugin
-description: This plugin provides a way to use Lando with lemp Cloud.
+description: This recipe spins up a fully-working LEMP stack.
 link: https://docs.lando.dev/plugins/lemp
 source: https://github.com/lando/lemp
 image: https://docs.lando.dev/lemp/images/lempicon.png
@@ -13,5 +13,8 @@ maintainers:
         link: https://github.com/lando
       - icon: twitter
         link: https://twitter.com/devwithlando
+tags:
+  - recipe
+  - official
 ---
 

@@ -1,7 +1,7 @@
 
 ---
 title: Lagoon Plugin
-description: This plugin provides a way to use Lando with lagoon Cloud.
+description: This plugin provides a way to use Lando with Lagoon, an opensource hosting solution.
 link: https://docs.lando.dev/plugins/lagoon
 source: https://github.com/lando/lagoon
 image: https://docs.lando.dev/lagoon/images/lagoonicon.png
@@ -13,5 +13,9 @@ maintainers:
         link: https://github.com/lando
       - icon: twitter
         link: https://twitter.com/devwithlando
+tags:
+  - recipe
+  - hosting-integration
+  - official
 ---
 

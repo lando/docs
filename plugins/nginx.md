@@ -1,6 +1,6 @@
 
 ---
-title: nginx Plugin
+title: Nginx Plugin
 description: This plugin provides a way to use Lando with nginx Cloud.
 link: https://docs.lando.dev/plugins/nginx
 sourceRepository: https://github.com/lando/nginx

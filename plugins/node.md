@@ -1,6 +1,6 @@
 
 ---
-title: node Plugin
+title: Node Plugin
 description: This plugin provides a way to use Lando with node Cloud.
 link: https://docs.lando.dev/plugins/node
 sourceRepository: https://github.com/lando/node

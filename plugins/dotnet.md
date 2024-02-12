@@ -1,6 +1,6 @@
 
 ---
-title: dotnet Plugin
+title: Dotnet Plugin
 description: This plugin provides a way to use Lando with dotnet Cloud.
 link: https://docs.lando.dev/plugins/dotnet
 sourceRepository: https://github.com/lando/dotnet

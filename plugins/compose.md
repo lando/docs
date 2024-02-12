@@ -1,6 +1,6 @@
 
 ---
-title: compose Plugin
+title: Compose Plugin
 description: This plugin provides a way to use Lando with compose Cloud.
 link: https://docs.lando.dev/plugins/compose
 sourceRepository: https://github.com/lando/compose

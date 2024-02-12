@@ -1,6 +1,6 @@
 
 ---
-title: ruby Plugin
+title: Ruby Plugin
 description: This plugin provides a way to use Lando with ruby Cloud.
 link: https://docs.lando.dev/plugins/ruby
 sourceRepository: https://github.com/lando/ruby

@@ -1,6 +1,6 @@
 
 ---
-title: mongo Plugin
+title: Mongo Plugin
 description: This plugin provides a way to use Lando with mongo Cloud.
 link: https://docs.lando.dev/plugins/mongo
 sourceRepository: https://github.com/lando/mongo

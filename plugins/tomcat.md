@@ -1,6 +1,6 @@
 
 ---
-title: tomcat Plugin
+title: Tomcat Plugin
 description: This plugin provides a way to use Lando with tomcat Cloud.
 link: https://docs.lando.dev/plugins/tomcat
 sourceRepository: https://github.com/lando/tomcat

@@ -1,6 +1,6 @@
 
 ---
-title: acquia Plugin
+title: Acquia Plugin
 description: This plugin provides a way to use Lando with acquia Cloud.
 link: https://docs.lando.dev/plugins/acquia
 sourceRepository: https://github.com/lando/acquia

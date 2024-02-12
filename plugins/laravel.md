@@ -1,6 +1,6 @@
 
 ---
-title: laravel Plugin
+title: Laravel Plugin
 description: This plugin provides a way to use Lando with laravel Cloud.
 link: https://docs.lando.dev/plugins/laravel
 sourceRepository: https://github.com/lando/laravel

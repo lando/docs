@@ -1,6 +1,6 @@
 
 ---
-title: postgres Plugin
+title: Postgres Plugin
 description: This plugin provides a way to use Lando with postgres Cloud.
 link: https://docs.lando.dev/plugins/postgres
 sourceRepository: https://github.com/lando/postgres

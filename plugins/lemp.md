@@ -1,6 +1,6 @@
 
 ---
-title: lemp Plugin
+title: Lemp Plugin
 description: This plugin provides a way to use Lando with lemp Cloud.
 link: https://docs.lando.dev/plugins/lemp
 sourceRepository: https://github.com/lando/lemp

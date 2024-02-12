@@ -1,6 +1,6 @@
 
 ---
-title: lamp Plugin
+title: Lamp Plugin
 description: This plugin provides a way to use Lando with lamp Cloud.
 link: https://docs.lando.dev/plugins/lamp
 sourceRepository: https://github.com/lando/lamp

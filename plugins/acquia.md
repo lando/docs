@@ -1,10 +1,10 @@
 
 ---
-title: dotnet Plugin
-description: This plugin provides a way to use Lando with dotnet Cloud.
-link: https://docs.lando.dev/plugins/dotnet
-sourceRepository: https://github.com/lando/dotnet
-image: https://docs.lando.dev/dotnet/images/dotneticon.png
+title: acquia Plugin
+description: This plugin provides a way to use Lando with acquia Cloud.
+link: https://docs.lando.dev/plugins/acquia
+sourceRepository: https://github.com/lando/acquia
+image: https://docs.lando.dev/acquia/images/acquiaicon.png
 maintainers:
   - name: Team Lando
     avatar: https://gravatar.com/avatar/c335f31e62b453f747f39a84240b3bbd

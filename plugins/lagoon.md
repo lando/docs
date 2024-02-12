@@ -1,10 +1,10 @@
 
 ---
-title: dotnet Plugin
-description: This plugin provides a way to use Lando with dotnet Cloud.
-link: https://docs.lando.dev/plugins/dotnet
-sourceRepository: https://github.com/lando/dotnet
-image: https://docs.lando.dev/dotnet/images/dotneticon.png
+title: lagoon Plugin
+description: This plugin provides a way to use Lando with lagoon Cloud.
+link: https://docs.lando.dev/plugins/lagoon
+sourceRepository: https://github.com/lando/lagoon
+image: https://docs.lando.dev/lagoon/images/lagoonicon.png
 maintainers:
   - name: Team Lando
     avatar: https://gravatar.com/avatar/c335f31e62b453f747f39a84240b3bbd

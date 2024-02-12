@@ -1,10 +1,10 @@
 
 ---
-title: dotnet Plugin
-description: This plugin provides a way to use Lando with dotnet Cloud.
-link: https://docs.lando.dev/plugins/dotnet
-sourceRepository: https://github.com/lando/dotnet
-image: https://docs.lando.dev/dotnet/images/dotneticon.png
+title: ruby Plugin
+description: This plugin provides a way to use Lando with ruby Cloud.
+link: https://docs.lando.dev/plugins/ruby
+sourceRepository: https://github.com/lando/ruby
+image: https://docs.lando.dev/ruby/images/rubyicon.png
 maintainers:
   - name: Team Lando
     avatar: https://gravatar.com/avatar/c335f31e62b453f747f39a84240b3bbd

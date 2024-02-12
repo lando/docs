@@ -3,7 +3,7 @@
 title: Joomla Plugin
 description: This plugin provides a way to use Lando with joomla Cloud.
 link: https://docs.lando.dev/plugins/joomla
-sourceRepository: https://github.com/lando/joomla
+source: https://github.com/lando/joomla
 image: https://docs.lando.dev/joomla/images/joomlaicon.png
 maintainers:
   - name: Team Lando

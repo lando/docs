@@ -3,7 +3,7 @@
 title: Backdrop Plugin
 description: This plugin provides a way to use Lando with backdrop Cloud.
 link: https://docs.lando.dev/plugins/backdrop
-sourceRepository: https://github.com/lando/backdrop
+source: https://github.com/lando/backdrop
 image: https://docs.lando.dev/backdrop/images/backdropicon.png
 maintainers:
   - name: Team Lando

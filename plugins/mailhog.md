@@ -3,7 +3,7 @@
 title: Mailhog Plugin
 description: This plugin provides a way to use Lando with mailhog Cloud.
 link: https://docs.lando.dev/plugins/mailhog
-sourceRepository: https://github.com/lando/mailhog
+source: https://github.com/lando/mailhog
 image: https://docs.lando.dev/mailhog/images/mailhogicon.png
 maintainers:
   - name: Team Lando

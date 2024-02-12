@@ -3,7 +3,7 @@
 title: Mariadb Plugin
 description: This plugin provides a way to use Lando with mariadb Cloud.
 link: https://docs.lando.dev/plugins/mariadb
-sourceRepository: https://github.com/lando/mariadb
+source: https://github.com/lando/mariadb
 image: https://docs.lando.dev/mariadb/images/mariadbicon.png
 maintainers:
   - name: Team Lando

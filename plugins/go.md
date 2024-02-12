@@ -3,7 +3,7 @@
 title: Go Plugin
 description: This plugin provides a way to use Lando with go Cloud.
 link: https://docs.lando.dev/plugins/go
-sourceRepository: https://github.com/lando/go
+source: https://github.com/lando/go
 image: https://docs.lando.dev/go/images/goicon.png
 maintainers:
   - name: Team Lando

@@ -3,7 +3,7 @@
 title: Lemp Plugin
 description: This plugin provides a way to use Lando with lemp Cloud.
 link: https://docs.lando.dev/plugins/lemp
-sourceRepository: https://github.com/lando/lemp
+source: https://github.com/lando/lemp
 image: https://docs.lando.dev/lemp/images/lempicon.png
 maintainers:
   - name: Team Lando

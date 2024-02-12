@@ -3,7 +3,7 @@
 title: Elasticsearch Plugin
 description: This plugin provides a way to use Lando with elasticsearch Cloud.
 link: https://docs.lando.dev/plugins/elasticsearch
-sourceRepository: https://github.com/lando/elasticsearch
+source: https://github.com/lando/elasticsearch
 image: https://docs.lando.dev/elasticsearch/images/elasticsearchicon.png
 maintainers:
   - name: Team Lando

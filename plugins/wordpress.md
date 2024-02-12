@@ -3,7 +3,7 @@
 title: Wordpress Plugin
 description: This plugin provides a way to use Lando with wordpress Cloud.
 link: https://docs.lando.dev/plugins/wordpress
-sourceRepository: https://github.com/lando/wordpress
+source: https://github.com/lando/wordpress
 image: https://docs.lando.dev/wordpress/images/wordpressicon.png
 maintainers:
   - name: Team Lando

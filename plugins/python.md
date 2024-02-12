@@ -3,7 +3,7 @@
 title: Python Plugin
 description: This plugin provides a way to use Lando with python Cloud.
 link: https://docs.lando.dev/plugins/python
-sourceRepository: https://github.com/lando/python
+source: https://github.com/lando/python
 image: https://docs.lando.dev/python/images/pythonicon.png
 maintainers:
   - name: Team Lando

@@ -3,7 +3,7 @@
 title: Memcached Plugin
 description: This plugin provides a way to use Lando with memcached Cloud.
 link: https://docs.lando.dev/plugins/memcached
-sourceRepository: https://github.com/lando/memcached
+source: https://github.com/lando/memcached
 image: https://docs.lando.dev/memcached/images/memcachedicon.png
 maintainers:
   - name: Team Lando

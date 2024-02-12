@@ -3,7 +3,7 @@
 title: Mysql Plugin
 description: This plugin provides a way to use Lando with mysql Cloud.
 link: https://docs.lando.dev/plugins/mysql
-sourceRepository: https://github.com/lando/mysql
+source: https://github.com/lando/mysql
 image: https://docs.lando.dev/mysql/images/mysqlicon.png
 maintainers:
   - name: Team Lando

@@ -3,7 +3,7 @@
 title: Symfony Plugin
 description: This plugin provides a way to use Lando with symfony Cloud.
 link: https://docs.lando.dev/plugins/symfony
-sourceRepository: https://github.com/lando/symfony
+source: https://github.com/lando/symfony
 image: https://docs.lando.dev/symfony/images/symfonyicon.png
 maintainers:
   - name: Team Lando

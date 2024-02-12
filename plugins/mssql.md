@@ -3,7 +3,7 @@
 title: Mssql Plugin
 description: This plugin provides a way to use Lando with mssql Cloud.
 link: https://docs.lando.dev/plugins/mssql
-sourceRepository: https://github.com/lando/mssql
+source: https://github.com/lando/mssql
 image: https://docs.lando.dev/mssql/images/mssqlicon.png
 maintainers:
   - name: Team Lando

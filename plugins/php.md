@@ -3,7 +3,7 @@
 title: Php Plugin
 description: This plugin provides a way to use Lando with php Cloud.
 link: https://docs.lando.dev/plugins/php
-sourceRepository: https://github.com/lando/php
+source: https://github.com/lando/php
 image: https://docs.lando.dev/php/images/phpicon.png
 maintainers:
   - name: Team Lando

@@ -3,7 +3,7 @@
 title: Postgres Plugin
 description: This plugin provides a way to use Lando with postgres Cloud.
 link: https://docs.lando.dev/plugins/postgres
-sourceRepository: https://github.com/lando/postgres
+source: https://github.com/lando/postgres
 image: https://docs.lando.dev/postgres/images/postgresicon.png
 maintainers:
   - name: Team Lando

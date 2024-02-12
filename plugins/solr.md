@@ -3,7 +3,7 @@
 title: Solr Plugin
 description: This plugin provides a way to use Lando with solr Cloud.
 link: https://docs.lando.dev/plugins/solr
-sourceRepository: https://github.com/lando/solr
+source: https://github.com/lando/solr
 image: https://docs.lando.dev/solr/images/solricon.png
 maintainers:
   - name: Team Lando

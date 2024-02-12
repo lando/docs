@@ -3,7 +3,7 @@
 title: Tomcat Plugin
 description: This plugin provides a way to use Lando with tomcat Cloud.
 link: https://docs.lando.dev/plugins/tomcat
-sourceRepository: https://github.com/lando/tomcat
+source: https://github.com/lando/tomcat
 image: https://docs.lando.dev/tomcat/images/tomcaticon.png
 maintainers:
   - name: Team Lando

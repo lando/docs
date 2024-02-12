@@ -1,7 +1,7 @@
 
 ---
 title: Php Plugin
-description: This plugin provides a way to use Lando with php Cloud.
+description: This service plugin provides the PHP runtime for your Lando app.
 link: https://docs.lando.dev/plugins/php
 source: https://github.com/lando/php
 image: https://docs.lando.dev/php/images/phpicon.png
@@ -13,5 +13,9 @@ maintainers:
         link: https://github.com/lando
       - icon: twitter
         link: https://twitter.com/devwithlando
+tags:
+  - service
+  - official
+  - runtime
 ---
 

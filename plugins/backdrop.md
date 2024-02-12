@@ -1,7 +1,7 @@
 
 ---
 title: Backdrop Plugin
-description: This plugin provides a way to use Lando with backdrop Cloud.
+description: This recipe spins up a fully-working stack for running Backdrop CMS applications.
 link: https://docs.lando.dev/plugins/backdrop
 source: https://github.com/lando/backdrop
 image: https://docs.lando.dev/backdrop/images/backdropicon.png
@@ -13,5 +13,8 @@ maintainers:
         link: https://github.com/lando
       - icon: twitter
         link: https://twitter.com/devwithlando
+tags:
+  - recipe
+  - official
 ---
 

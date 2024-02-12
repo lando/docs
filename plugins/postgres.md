@@ -1,7 +1,7 @@
 
 ---
 title: Postgres Plugin
-description: This plugin provides a way to use Lando with postgres Cloud.
+description: This plugin provides a Postgres database for your Lando app.
 link: https://docs.lando.dev/plugins/postgres
 source: https://github.com/lando/postgres
 image: https://docs.lando.dev/postgres/images/postgresicon.png
@@ -13,5 +13,9 @@ maintainers:
         link: https://github.com/lando
       - icon: twitter
         link: https://twitter.com/devwithlando
+tags:
+  - service
+  - official
+  - database
 ---
 

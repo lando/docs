@@ -1,7 +1,7 @@
 
 ---
 title: Laravel Plugin
-description: This plugin provides a way to use Lando with laravel Cloud.
+description: This recipe spins up a fully-working stack for running Laravel applications.
 link: https://docs.lando.dev/plugins/laravel
 source: https://github.com/lando/laravel
 image: https://docs.lando.dev/laravel/images/laravelicon.png
@@ -13,5 +13,8 @@ maintainers:
         link: https://github.com/lando
       - icon: twitter
         link: https://twitter.com/devwithlando
+tags:
+  - recipe
+  - official
 ---
 

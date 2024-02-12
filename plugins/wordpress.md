@@ -13,5 +13,8 @@ maintainers:
         link: https://github.com/lando
       - icon: twitter
         link: https://twitter.com/devwithlando
+tags:
+  - recipe
+  - official
 ---
 

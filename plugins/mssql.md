@@ -1,7 +1,7 @@
 
 ---
 title: Mssql Plugin
-description: This plugin provides a way to use Lando with mssql Cloud.
+description: This plugin provides a MSSQL database for your Lando app.
 link: https://docs.lando.dev/plugins/mssql
 source: https://github.com/lando/mssql
 image: https://docs.lando.dev/mssql/images/mssqlicon.png
@@ -13,5 +13,9 @@ maintainers:
         link: https://github.com/lando
       - icon: twitter
         link: https://twitter.com/devwithlando
+tags:
+  - service
+  - official
+  - database
 ---
 

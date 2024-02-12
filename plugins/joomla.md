@@ -1,7 +1,7 @@
 
 ---
 title: Joomla Plugin
-description: This plugin provides a way to use Lando with joomla Cloud.
+description: This recipe spins up a fully-working stack for running Joomla applications.
 link: https://docs.lando.dev/plugins/joomla
 source: https://github.com/lando/joomla
 image: https://docs.lando.dev/joomla/images/joomlaicon.png
@@ -13,5 +13,8 @@ maintainers:
         link: https://github.com/lando
       - icon: twitter
         link: https://twitter.com/devwithlando
+tags:
+  - recipe
+  - official
 ---
 

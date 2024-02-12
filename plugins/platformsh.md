@@ -1,6 +1,6 @@
 
 ---
-title: platformsh Plugin
+title: Platformsh Plugin
 description: This plugin provides a way to use Lando with platformsh Cloud.
 link: https://docs.lando.dev/plugins/platformsh
 sourceRepository: https://github.com/lando/platformsh

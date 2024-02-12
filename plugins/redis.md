@@ -1,6 +1,6 @@
 
 ---
-title: redis Plugin
+title: Redis Plugin
 description: This plugin provides a way to use Lando with redis Cloud.
 link: https://docs.lando.dev/plugins/redis
 sourceRepository: https://github.com/lando/redis

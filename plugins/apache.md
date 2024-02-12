@@ -1,6 +1,6 @@
 
 ---
-title: apache Plugin
+title: Apache Plugin
 description: This plugin provides a way to use Lando with apache Cloud.
 link: https://docs.lando.dev/plugins/apache
 sourceRepository: https://github.com/lando/apache

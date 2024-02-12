@@ -1,6 +1,6 @@
 
 ---
-title: varnish Plugin
+title: Varnish Plugin
 description: This plugin provides a way to use Lando with varnish Cloud.
 link: https://docs.lando.dev/plugins/varnish
 sourceRepository: https://github.com/lando/varnish

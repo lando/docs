@@ -1,6 +1,6 @@
 
 ---
-title: mean Plugin
+title: Mean Plugin
 description: This plugin provides a way to use Lando with mean Cloud.
 link: https://docs.lando.dev/plugins/mean
 sourceRepository: https://github.com/lando/mean

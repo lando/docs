@@ -1,6 +1,6 @@
 
 ---
-title: pantheon Plugin
+title: Pantheon Plugin
 description: This plugin provides a way to use Lando with pantheon Cloud.
 link: https://docs.lando.dev/plugins/pantheon
 sourceRepository: https://github.com/lando/pantheon

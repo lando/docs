@@ -1,6 +1,6 @@
 
 ---
-title: lagoon Plugin
+title: Lagoon Plugin
 description: This plugin provides a way to use Lando with lagoon Cloud.
 link: https://docs.lando.dev/plugins/lagoon
 sourceRepository: https://github.com/lando/lagoon

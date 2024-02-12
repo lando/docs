@@ -1,6 +1,6 @@
 
 ---
-title: drupal Plugin
+title: Drupal Plugin
 description: This plugin provides a way to use Lando with drupal Cloud.
 link: https://docs.lando.dev/plugins/drupal
 sourceRepository: https://github.com/lando/drupal

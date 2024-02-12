@@ -1,6 +1,6 @@
 
 ---
-title: phpmyadmin Plugin
+title: Phpmyadmin Plugin
 description: This plugin provides a way to use Lando with phpmyadmin Cloud.
 link: https://docs.lando.dev/plugins/phpmyadmin
 sourceRepository: https://github.com/lando/phpmyadmin

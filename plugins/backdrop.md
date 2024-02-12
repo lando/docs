@@ -1,6 +1,6 @@
 
 ---
-title: backdrop Plugin
+title: Backdrop Plugin
 description: This plugin provides a way to use Lando with backdrop Cloud.
 link: https://docs.lando.dev/plugins/backdrop
 sourceRepository: https://github.com/lando/backdrop

@@ -29,12 +29,12 @@
     output_path = "reports/lighthouse.html"
 
 # https://github.com/munter/netlify-plugin-checklinks#readme
-# [[plugins]]
-#   package = "netlify-plugin-checklinks"
-#   [plugins.inputs]
-#     todoPatterns = [ "load", "CHANGELOG.html", "x.com", "twitter.com" ]
-#     skipPatterns = [ ".rss", ".gif", ".jpg" , "https://apps.microsoft.com", "https://github.com/lando/docs/edit", "https://yargs.js.org/docs", "https://support.patreon.com" ]
-#     checkExternal = true
+[[plugins]]
+  package = "netlify-plugin-checklinks"
+  [plugins.inputs]
+    todoPatterns = [ "load", "CHANGELOG.html", "x.com", "twitter.com" ]
+    skipPatterns = [ ".rss", ".gif", ".jpg" , "https://apps.microsoft.com", "https://github.com/lando/docs/edit", "https://yargs.js.org/docs", "https://support.patreon.com" ]
+    checkExternal = true
 
 # REDIRECTS
 # NOTE THAT REDIRECTS ARE EXECUTED FIRST COME FIRST SERVE

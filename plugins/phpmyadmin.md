@@ -1,7 +1,6 @@
-
 ---
 title: Phpmyadmin Plugin
-description: This plugin allows you to use PHPMyAdmin with your Lando app. 
+description: This plugin allows you to use PHPMyAdmin with your Lando app.
 link: https://docs.lando.dev/plugins/phpmyadmin
 source: https://github.com/lando/phpmyadmin
 image: https://docs.lando.dev/phpmyadmin/images/phpmyadminicon.png

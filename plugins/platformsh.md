@@ -1,4 +1,3 @@
-
 ---
 title: Platformsh Plugin
 description: This plugin provides a way to use Lando with the Platform.sh hosting service.

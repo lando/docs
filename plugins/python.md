@@ -1,4 +1,3 @@
-
 ---
 title: Python Plugin
 description: This service plugin provides the Python runtime for your Lando app.

@@ -1,4 +1,3 @@
-
 ---
 title: Redis Plugin
 description: This plugin provides the Redis cache service for your Lando app.

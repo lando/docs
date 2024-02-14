@@ -1,4 +1,3 @@
-
 ---
 title: Solr Plugin
 description: This plugin provides an Apache Solr datastore for your Lando app.

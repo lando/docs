@@ -1,4 +1,3 @@
-
 ---
 title: Varnish Plugin
 description: This plugin provides the Varnish cache service for your Lando app.

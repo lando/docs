@@ -1,4 +1,3 @@
-
 ---
 title: Mariadb Plugin
 description: This plugin provides a MariaDB database for your Lando app.

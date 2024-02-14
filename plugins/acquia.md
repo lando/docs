@@ -1,4 +1,3 @@
-
 ---
 title: Acquia Plugin
 description: This plugin provides a way to use Lando with Acquia Cloud.
@@ -18,4 +17,3 @@ tags:
   - hosting-integration
   - official
 ---
-

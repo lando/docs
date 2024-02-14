@@ -1,4 +1,3 @@
-
 ---
 title: Mysql Plugin
 description: This plugin provides a MySQL database for your Lando app.

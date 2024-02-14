@@ -1,4 +1,3 @@
-
 ---
 title: Nginx Plugin
 description: Allows you to use Nginx as the web server in your Lando app.

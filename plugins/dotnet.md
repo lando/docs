@@ -1,4 +1,3 @@
-
 ---
 title: Dotnet Plugin
 description: This recipe spins up a fully-working stack for running Dotnet applications.

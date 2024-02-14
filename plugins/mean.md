@@ -1,4 +1,3 @@
-
 ---
 title: Mean Plugin
 description: This recipe spins up a fully-working MEAN stack.

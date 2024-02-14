@@ -1,4 +1,3 @@
-
 ---
 title: Joomla Plugin
 description: This recipe spins up a fully-working stack for running Joomla applications.

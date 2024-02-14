@@ -1,4 +1,3 @@
-
 ---
 title: Wordpress Plugin
 description: This plugin provides a way to use Lando with wordpress Cloud.

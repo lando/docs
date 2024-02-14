@@ -1,4 +1,3 @@
-
 ---
 title: Compose Plugin
 description: This plugin provides a way to use Lando with compose Cloud.

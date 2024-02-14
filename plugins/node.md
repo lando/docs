@@ -1,4 +1,3 @@
-
 ---
 title: Node Plugin
 description: This service plugin provides the NodeJS runtime for your Lando app.

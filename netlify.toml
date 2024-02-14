@@ -424,6 +424,10 @@
   to = "https://lando-cli.netlify.app/:splat"
   status = 200
 [[redirects]]
+  from = "/install/*"
+  to = "https://lando-setup.netlify.app/:splat"
+  status = 200
+[[redirects]]
   from = "/config/"
   to = "/core/"
 [[redirects]]

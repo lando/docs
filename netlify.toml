@@ -159,7 +159,6 @@
   to = "https://docs.lando.dev/contrib"
   status = 301
 
-
 [[redirects]]
   from = "https://docs.lando.dev/guides/drupal-7-landoize-an-extant-app.html"
   to = "https://docs.lando.dev/drupal/landoify-d7.html"
@@ -200,6 +199,14 @@
   from = "https://docs.lando.dev/guides/updating-local-pantheon-environments.html"
   to = "https://docs.lando.dev/pantheon/updating-local-pantheon-environments.html"
   status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/help/security"
+  to = "https://docs.lando.dev/security"
+  status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/lando-101/"
+  to = "https://docs.lando.dev/lando-101"
+  status = 301
 
 [[redirects]]
   from = "https://docs.lando.dev/guides/phpmyadmin-themes.html"
@@ -210,159 +217,158 @@
   to = "https://docs.lando.dev/lando-101/:splat"
   status = 301
 
-
 # Redirect legacy recipes/services
 [[redirects]]
   from = "https://docs.lando.dev/config/acquia.html"
-  to = "https://docs.lando.dev/acquia"
+  to = "https://docs.lando.dev/plugins/acquia"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/apache.html"
-  to = "https://docs.lando.dev/apache"
+  to = "https://docs.lando.dev/plugins/apache"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/backdrop.html"
-  to = "https://docs.lando.dev/backdrop"
+  to = "https://docs.lando.dev/plugins/backdrop"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/dotnet.html"
-  to = "https://docs.lando.dev/dotnet"
+  to = "https://docs.lando.dev/plugins/dotnet"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/drupal6.html"
-  to = "https://docs.lando.dev/drupal"
+  to = "https://docs.lando.dev/plugins/drupal"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/drupal7.html"
-  to = "https://docs.lando.dev/drupal"
+  to = "https://docs.lando.dev/plugins/drupal"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/drupal8.html"
-  to = "https://docs.lando.dev/drupal"
+  to = "https://docs.lando.dev/plugins/drupal"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/drupal9.html"
-  to = "https://docs.lando.dev/drupal"
+  to = "https://docs.lando.dev/plugins/drupal"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/drupal10.html"
-  to = "https://docs.lando.dev/drupal"
+  to = "https://docs.lando.dev/plugins/drupal"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/elasticsearch.html"
-  to = "https://docs.lando.dev/elasticsearch"
+  to = "https://docs.lando.dev/plugins/elasticsearch"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/go.html"
-  to = "https://docs.lando.dev/go"
+  to = "https://docs.lando.dev/plugins/go"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/joomla.html"
-  to = "https://docs.lando.dev/joomla"
+  to = "https://docs.lando.dev/plugins/joomla"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/lagoon.html"
-  to = "https://docs.lando.dev/lagoon"
+  to = "https://docs.lando.dev/plugins/lagoon"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/lamp.html"
-  to = "https://docs.lando.dev/lamp"
+  to = "https://docs.lando.dev/plugins/lamp"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/laravel.html"
-  to = "https://docs.lando.dev/laravel"
+  to = "https://docs.lando.dev/plugins/laravel"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/lemp.html"
-  to = "https://docs.lando.dev/lemp"
+  to = "https://docs.lando.dev/plugins/lemp"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/mailhog.html"
-  to = "https://docs.lando.dev/mailhog"
+  to = "https://docs.lando.dev/plugins/mailhog"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/mariadb.html"
-  to = "https://docs.lando.dev/mariadb"
+  to = "https://docs.lando.dev/plugins/mariadb"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/mean.html"
-  to = "https://docs.lando.dev/mean"
+  to = "https://docs.lando.dev/plugins/mean"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/memcached.html"
-  to = "https://docs.lando.dev/memcached"
+  to = "https://docs.lando.dev/plugins/memcached"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/mongo.html"
-  to = "https://docs.lando.dev/mongo"
+  to = "https://docs.lando.dev/plugins/mongo"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/mssql.html"
-  to = "https://docs.lando.dev/mssql"
+  to = "https://docs.lando.dev/plugins/mssql"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/mysql.html"
-  to = "https://docs.lando.dev/mysql"
+  to = "https://docs.lando.dev/plugins/mysql"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/nginx.html"
-  to = "https://docs.lando.dev/nginx"
+  to = "https://docs.lando.dev/plugins/nginx"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/node.html"
-  to = "https://docs.lando.dev/node"
+  to = "https://docs.lando.dev/plugins/node"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/pantheon.html"
-  to = "https://docs.lando.dev/pantheon"
+  to = "https://docs.lando.dev/plugins/pantheon"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/php.html"
-  to = "https://docs.lando.dev/php"
+  to = "https://docs.lando.dev/plugins/php"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/phpmyadmin.html"
-  to = "https://docs.lando.dev/phpmyadmin"
+  to = "https://docs.lando.dev/plugins/phpmyadmin"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/platformsh.html"
-  to = "https://docs.lando.dev/platformsh"
+  to = "https://docs.lando.dev/plugins/platformsh"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/postgres.html"
-  to = "https://docs.lando.dev/postgres"
+  to = "https://docs.lando.dev/plugins/postgres"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/python.html"
-  to = "https://docs.lando.dev/python"
+  to = "https://docs.lando.dev/plugins/python"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/redis.html"
-  to = "https://docs.lando.dev/redis"
+  to = "https://docs.lando.dev/plugins/redis"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/ruby.html"
-  to = "https://docs.lando.dev/ruby"
+  to = "https://docs.lando.dev/plugins/ruby"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/solr.html"
-  to = "https://docs.lando.dev/solr"
+  to = "https://docs.lando.dev/plugins/solr"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/symfony.html"
-  to = "https://docs.lando.dev/symfony"
+  to = "https://docs.lando.dev/plugins/symfony"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/tomcat.html"
-  to = "https://docs.lando.dev/tomcat"
+  to = "https://docs.lando.dev/plugins/tomcat"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/varnish.html"
-  to = "https://docs.lando.dev/varnish"
+  to = "https://docs.lando.dev/plugins/varnish"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/config/wordpress.html"
-  to = "https://docs.lando.dev/wordpress"
+  to = "https://docs.lando.dev/plugins/wordpress"
   status = 301
 
 # Legacy redirects from cloudflare
@@ -414,26 +420,9 @@
 # REWRITES
 # Stitch together the various subsites
 [[redirects]]
-  from = "/acquia/*"
-  to = "https://lando-acquia.netlify.app/:splat"
-  status = 200
-[[redirects]]
-  from = "/apache/*"
-  to = "https://lando-apache.netlify.app/:splat"
-  status = 200
-[[redirects]]
-  from = "/backdrop/*"
-  to = "https://lando-backdrop.netlify.app/:splat"
-  status = 200
-[[redirects]]
   from = "/cli/*"
   to = "https://lando-cli.netlify.app/:splat"
   status = 200
-[[redirects]]
-  from = "/compose/*"
-  to = "https://lando-compose.netlify.app/:splat"
-  status = 200
-
 [[redirects]]
   from = "/config/"
   to = "/core/"
@@ -458,127 +447,318 @@
   to = "/core/v3/:splat"
   status = 301
 
+# plugin sites
+[[redirects]]
+  from = "/acquia/*"
+  to = "/plugins/acquia/:splat"
+  status = 301
+[[redirects]]
+  from = "/plugins/acquia/*"
+  to = "https://lando-acquia.netlify.app/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/apache/*"
+  to = "/plugins/apache/:splat"
+  status = 301
+[[redirects]]
+  from = "/plugins/apache/*"
+  to = "https://lando-apache.netlify.app/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/backdrop/*"
+  to = "/plugins/backdrop/:splat"
+  status = 301
+[[redirects]]
+  from = "/plugins/backdrop/*"
+  to = "https://lando-backdrop.netlify.app/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/compose/*"
+  to = "/plugins/compose/:splat"
+  status = 301
+[[redirects]]
+  from = "/plugins/compose/*"
+  to = "https://lando-compose.netlify.app/:splat"
+  status = 200
+
 [[redirects]]
   from = "/dotnet/*"
+  to = "/plugins/dotnet/:splat"
+  status = 301
+[[redirects]]
+  from = "/plugins/dotnet/*"
   to = "https://lando-dotnet.netlify.app/:splat"
   status = 200
+
 [[redirects]]
   from = "/drupal/*"
+  to = "/plugins/drupal/:splat"
+  status = 301
+[[redirects]]
+  from = "/plugins/drupal/*"
   to = "https://lando-drupal.netlify.app/:splat"
   status = 200
+
 [[redirects]]
   from = "/elasticsearch/*"
+  to = "/plugins/elasticsearch/:splat"
+  status = 301
+[[redirects]]
+  from = "/plugins/elasticsearch/*"
   to = "https://lando-elasticsearch.netlify.app/:splat"
   status = 200
+
 [[redirects]]
   from = "/go/*"
+  to = "/plugins/go/:splat"
+  status = 301
+[[redirects]]
+  from = "/plugins/go/*"
   to = "https://lando-go.netlify.app/:splat"
   status = 200
+
 [[redirects]]
   from = "/joomla/*"
+  to = "/plugins/joomla/:splat"
+  status = 301
+[[redirects]]
+  from = "/plugins/joomla/*"
   to = "https://lando-joomla.netlify.app/:splat"
   status = 200
+
 [[redirects]]
   from = "/lagoon/*"
+  to = "/plugins/lagoon/:splat"
+  status = 301
+[[redirects]]
+  from = "/plugins/lagoon/*"
   to = "https://lando-lagoon.netlify.app/:splat"
   status = 200
+
 [[redirects]]
   from = "/lamp/*"
+  to = "/plugins/lamp/:splat"
+  status = 301
+[[redirects]]
+  from = "/plugins/lamp/*"
   to = "https://lando-lamp.netlify.app/:splat"
   status = 200
+
 [[redirects]]
   from = "/laravel/*"
+  to = "/plugins/laravel/:splat"
+  status = 301
+[[redirects]]
+  from = "/plugins/laravel/*"
   to = "https://lando-laravel.netlify.app/:splat"
   status = 200
+
 [[redirects]]
   from = "/lemp/*"
+  to = "/plugins/lemp/:splat"
+  status = 301
+[[redirects]]
+  from = "/plugins/lemp/*"
   to = "https://lando-lemp.netlify.app/:splat"
   status = 200
+
 [[redirects]]
   from = "/mailhog/*"
+  to = "/plugins/mailhog/:splat"
+  status = 301
+[[redirects]]
+  from = "/plugins/mailhog/*"
   to = "https://lando-mailhog.netlify.app/:splat"
   status = 200
+
 [[redirects]]
   from = "/mariadb/*"
+  to = "/plugins/mariadb/:splat"
+  status = 301
+[[redirects]]
+  from = "/plugins/mariadb/*"
   to = "https://lando-mariadb.netlify.app/:splat"
   status = 200
+
 [[redirects]]
   from = "/mean/*"
+  to = "/plugins/mean/:splat"
+  status = 301
+[[redirects]]
+  from = "/plugins/mean/*"
   to = "https://lando-mean.netlify.app/:splat"
   status = 200
+
 [[redirects]]
   from = "/memcached/*"
+  to = "/plugins/memcached/:splat"
+  status = 301
+[[redirects]]
+  from = "/plugins/memcached/*"
   to = "https://lando-memcached.netlify.app/:splat"
   status = 200
+
 [[redirects]]
   from = "/mongo/*"
+  to = "/plugins/mongo/:splat"
+  status = 301
+[[redirects]]
+  from = "/plugins/mongo/*"
   to = "https://lando-mongo.netlify.app/:splat"
   status = 200
+
 [[redirects]]
   from = "/mssql/*"
+  to = "/plugins/mssql/:splat"
+  status = 301
+[[redirects]]
+  from = "/plugins/mssql/*"
   to = "https://lando-mssql.netlify.app/:splat"
   status = 200
+
 [[redirects]]
   from = "/mysql/*"
+  to = "/plugins/mysql/:splat"
+  status = 301
+[[redirects]]
+  from = "/plugins/mysql/*"
   to = "https://lando-mysql.netlify.app/:splat"
   status = 200
+
 [[redirects]]
   from = "/nginx/*"
+  to = "/plugins/nginx/:splat"
+  status = 301
+[[redirects]]
+  from = "/plugins/nginx/*"
   to = "https://lando-nginx.netlify.app/:splat"
   status = 200
+
 [[redirects]]
   from = "/node/*"
+  to = "/plugins/node/:splat"
+  status = 301
+[[redirects]]
+  from = "/plugins/node/*"
   to = "https://lando-node.netlify.app/:splat"
   status = 200
+
 [[redirects]]
   from = "/pantheon/*"
+  to = "/plugins/pantheon/:splat"
+  status = 301
+[[redirects]]
+  from = "/plugins/pantheon/*"
   to = "https://lando-pantheon.netlify.app/:splat"
   status = 200
+
 [[redirects]]
   from = "/php/*"
+  to = "/plugins/php/:splat"
+  status = 301
+[[redirects]]
+  from = "/plugins/php/*"
   to = "https://lando-php.netlify.app/:splat"
   status = 200
+
 [[redirects]]
   from = "/phpmyadmin/*"
+  to = "/plugins/phpmyadmin/:splat"
+  status = 301
+[[redirects]]
+  from = "/plugins/phpmyadmin/*"
   to = "https://lando-phpmyadmin.netlify.app/:splat"
   status = 200
+
 [[redirects]]
   from = "/platformsh/*"
+  to = "/plugins/platformsh/:splat"
+  status = 301
+[[redirects]]
+  from = "/plugins/platformsh/*"
   to = "https://lando-platformsh.netlify.app/:splat"
   status = 200
+
 [[redirects]]
   from = "/postgres/*"
+  to = "/plugins/postgres/:splat"
+  status = 301
+[[redirects]]
+  from = "/plugins/postgres/*"
   to = "https://lando-postgres.netlify.app/:splat"
   status = 200
+
 [[redirects]]
   from = "/python/*"
+  to = "/plugins/python/:splat"
+  status = 301
+[[redirects]]
+  from = "/plugins/python/*"
   to = "https://lando-python.netlify.app/:splat"
   status = 200
+
 [[redirects]]
   from = "/redis/*"
+  to = "/plugins/redis/:splat"
+  status = 301
+[[redirects]]
+  from = "/plugins/redis/*"
   to = "https://lando-redis.netlify.app/:splat"
   status = 200
+
 [[redirects]]
   from = "/ruby/*"
+  to = "/plugins/ruby/:splat"
+  status = 301
+[[redirects]]
+  from = "/plugins/ruby/*"
   to = "https://lando-ruby.netlify.app/:splat"
   status = 200
+
 [[redirects]]
   from = "/solr/*"
+  to = "/plugins/solr/:splat"
+  status = 301
+[[redirects]]
+  from = "/plugins/solr/*"
   to = "https://lando-solr.netlify.app/:splat"
   status = 200
+
 [[redirects]]
   from = "/symfony/*"
+  to = "/plugins/symfony/:splat"
+  status = 301
+[[redirects]]
+  from = "/plugins/symfony/*"
   to = "https://lando-symfony.netlify.app/:splat"
   status = 200
+
 [[redirects]]
   from = "/tomcat/*"
+  to = "/plugins/tomcat/:splat"
+  status = 301
+[[redirects]]
+  from = "/plugins/tomcat/*"
   to = "https://lando-tomcat.netlify.app/:splat"
   status = 200
+
 [[redirects]]
   from = "/varnish/*"
+  to = "/plugins/varnish/:splat"
+  status = 301
+[[redirects]]
+  from = "/plugins/varnish/*"
   to = "https://lando-varnish.netlify.app/:splat"
   status = 200
+
 [[redirects]]
   from = "/wordpress/*"
+  to = "/plugins/wordpress/:splat"
+  status = 301
+[[redirects]]
+  from = "/plugins/wordpress/*"
   to = "https://lando-wordpress.netlify.app/:splat"
   status = 200

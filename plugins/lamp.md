@@ -1,4 +1,3 @@
-
 ---
 title: Lamp Plugin
 description: This recipe spins up a fully-working LAMP-stack.

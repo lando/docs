@@ -1,4 +1,3 @@
-
 ---
 title: Php Plugin
 description: This service plugin provides the PHP runtime for your Lando app.

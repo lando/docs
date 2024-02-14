@@ -1,4 +1,3 @@
-
 ---
 title: Memcached Plugin
 description: This plugin provides the memcached cache service for your Lando app.

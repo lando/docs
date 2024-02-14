@@ -1,4 +1,3 @@
-
 ---
 title: Pantheon Plugin
 description: This plugin provides a way to use Lando with the Pantheon hosting service.

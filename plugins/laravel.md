@@ -1,4 +1,3 @@
-
 ---
 title: Laravel Plugin
 description: This recipe spins up a fully-working stack for running Laravel applications.

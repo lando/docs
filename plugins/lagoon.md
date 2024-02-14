@@ -1,4 +1,3 @@
-
 ---
 title: Lagoon Plugin
 description: This plugin provides a way to use Lando with Lagoon, an opensource hosting solution.

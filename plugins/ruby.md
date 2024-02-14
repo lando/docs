@@ -1,4 +1,3 @@
-
 ---
 title: Ruby Plugin
 description: This service plugin provides the Ruby runtime for your Lando app.

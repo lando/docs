@@ -1,4 +1,3 @@
-
 ---
 title: Postgres Plugin
 description: This plugin provides a Postgres database for your Lando app.

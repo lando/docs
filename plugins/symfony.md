@@ -1,4 +1,3 @@
-
 ---
 title: Symfony Plugin
 description: This recipe spins up a fully-working stack for running Symfony applications.

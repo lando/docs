@@ -1,4 +1,3 @@
-
 ---
 title: Mongo Plugin
 description: This plugin provides a MongoDB database for your Lando app.

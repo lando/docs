@@ -1,4 +1,3 @@
-
 ---
 title: Elasticsearch Plugin
 description: This plugin provides an Elasticsearch datastore for your Lando app.

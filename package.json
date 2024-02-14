@@ -17,10 +17,11 @@
   },
   "main": "index.js",
   "scripts": {
-    "build": "vitepress build .",
+    "build": "vitepress build . && npm run rename-sitemap",
     "dev": "vitepress dev .",
     "lint": "eslint . --ext .js --ext .mjs ",
-    "preview": "vitepress preview ."
+    "preview": "vitepress preview .",
+    "rename-sitemap": "node rename-sitemap.js"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.16.0",

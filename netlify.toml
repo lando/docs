@@ -425,7 +425,7 @@
   status = 200
 [[redirects]]
   from = "/install/*"
-  to = "https://lando-setup.netlify.app/:splat"
+  to = "https://setup-lando.netlify.app/:splat"
   status = 200
 [[redirects]]
   from = "/config/"

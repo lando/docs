@@ -15,6 +15,6 @@ maintainers:
 tags:
   - service
   - official
-  - tool
+  - dev tool
 ---
 

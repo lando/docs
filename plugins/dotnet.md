@@ -13,7 +13,8 @@ maintainers:
       - icon: twitter
         link: https://twitter.com/devwithlando
 tags:
-  - recipe
+  - service
+  - runtime
   - official
 ---
 

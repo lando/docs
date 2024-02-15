@@ -14,7 +14,7 @@ maintainers:
         link: https://twitter.com/devwithlando
 tags:
   - recipe
-  - hosting-integration
+  - hosting integration
   - unsupported
 ---
 

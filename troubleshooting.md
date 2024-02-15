@@ -4,15 +4,6 @@ layout: page
 title: Troubleshooting
 sidebar: false
 ---
-
-<script setup>
-import {VPLCollectionPage, VPLCollectionPageTitle, VPLCollectionItems} from '@lando/vitepress-theme-default-plus';
-import {useCollection} from '@lando/vitepress-theme-default-plus';
-
-const {pages} = useCollection('troubleshooting');
-
-</script>
-
 <VPLCollectionPage>
   <VPLCollectionPageTitle>
     <template #title>
@@ -22,5 +13,13 @@ const {pages} = useCollection('troubleshooting');
       Home helpful troubleshooting materials for Lando
     </template>
   </VPLCollectionPageTitle>
-  <VPLCollectionItems :items="pages"/>
+  <VPLCollectionPageTags v-model="tags" />
+  <VPLCollectionItems :tags="tags" :items="pages"/>
 </VPLCollectionPage>
+
+<script setup>
+import {VPLCollectionPage, VPLCollectionPageTags, VPLCollectionPageTitle, VPLCollectionItems} from '@lando/vitepress-theme-default-plus';
+import {useCollection} from '@lando/vitepress-theme-default-plus';
+
+const {pages, tags} = useCollection('troubleshooting');
+</script>

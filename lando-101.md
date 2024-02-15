@@ -4,13 +4,6 @@ layout: page
 title: Lando 101
 sidebar: false
 ---
-
-<script setup>
-import {VPLCollectionPage, VPLCollectionPageTitle, VPLCollectionItems} from '@lando/vitepress-theme-default-plus';
-import {useCollection} from '@lando/vitepress-theme-default-plus';
-const {pages} = useCollection('lando101');
-</script>
-
 <VPLCollectionPage>
   <VPLCollectionPageTitle>
     <template #title>
@@ -20,5 +13,12 @@ const {pages} = useCollection('lando101');
       Learn the basics with Lando 101
     </template>
   </VPLCollectionPageTitle>
-  <VPLCollectionItems :items="pages"/>
+  <VPLCollectionPageTags v-model="tags" />
+  <VPLCollectionItems :tags="tags" :items="pages"/>
 </VPLCollectionPage>
+
+<script setup>
+import {VPLCollectionPage, VPLCollectionPageTags, VPLCollectionPageTitle, VPLCollectionItems} from '@lando/vitepress-theme-default-plus';
+import {useCollection} from '@lando/vitepress-theme-default-plus';
+const {pages, tags} = useCollection('lando101');
+</script>

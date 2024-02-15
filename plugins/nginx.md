@@ -14,7 +14,7 @@ maintainers:
         link: https://twitter.com/devwithlando
 tags:
   - service
-  - web-server
+  - web server
   - official
 ---
 

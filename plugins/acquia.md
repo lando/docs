@@ -15,6 +15,6 @@ maintainers:
 
 tags:
   - recipe
-  - hosting-integration
-  - official
+  - hosting integration
+  # - official
 ---

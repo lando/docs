@@ -15,7 +15,7 @@ maintainers:
 
 tags:
   - service
-  - web-server
+  - web server
   - official
 ---
 

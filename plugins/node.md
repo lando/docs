@@ -3,10 +3,10 @@ title: Node Plugin
 description: This service plugin provides the NodeJS runtime for your Lando app.
 link: https://docs.lando.dev/plugins/node
 source: https://github.com/lando/node
-image: https://docs.lando.dev/node/images/nodeicon.png
+image: https://docs.lando.dev/node/images/nodejsicon.svg
 maintainers:
   - name: Team Lando
-    avatar: https://gravatar.com/avatar/c335f31e62b453f747f39a84240b3bbd
+    avatar: /images/icon.svg
     links:
       - icon: github
         link: https://github.com/lando

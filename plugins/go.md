@@ -3,10 +3,10 @@ title: Go Plugin
 description: This service plugin provides the Go runtime for your Lando app.
 link: https://docs.lando.dev/plugins/go
 source: https://github.com/lando/go
-image: https://docs.lando.dev/go/images/goicon.png
+image: https://docs.lando.dev/go/images/golangicon.png
 maintainers:
   - name: Team Lando
-    avatar: https://gravatar.com/avatar/c335f31e62b453f747f39a84240b3bbd
+    avatar: /images/icon.svg
     links:
       - icon: github
         link: https://github.com/lando

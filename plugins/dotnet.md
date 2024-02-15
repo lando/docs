@@ -6,7 +6,7 @@ source: https://github.com/lando/dotnet
 image: https://docs.lando.dev/dotnet/images/dotneticon.png
 maintainers:
   - name: Team Lando
-    avatar: https://gravatar.com/avatar/c335f31e62b453f747f39a84240b3bbd
+    avatar: /images/icon.svg
     links:
       - icon: github
         link: https://github.com/lando

@@ -1,60 +1,60 @@
 <template>
   <div>
     <div
+      v-if="pagination()"
       :key="key"
-      class="collection-articles"
+      class="plugins"
     >
-      <div
-        v-for="(page, index) in pagination()"
-        :key="page.key"
-        :class="{'collection-article': true, grower: getGrower(index)}"
-      >
-        <Plugin
-          :page="page"
-          :size="size"
-          :more="more"
-          class="collection-page-article"
-        />
+      <div class="grid-container">
+        <div class="items">
+          <div
+            v-for="plugin in pagination()"
+            :key="plugin.title"
+            class="item"
+            :class="[grid]"
+          >
+            <Plugin
+              :plugin="plugin"
+              :type="type"
+            />
+          </div>
+        </div>
       </div>
+      <VPButton
+        v-if="pages.length > amount"
+        size="medium"
+        text="load more"
+        theme="alt"
+        class="load-more-button"
+        @click="adder"
+      >
+        load more
+      </VPButton>
     </div>
-    <VPButton
-      v-if="pages.length > amount"
-      size="medium"
-      text="load more"
-      theme="alt"
-      class="load-more-button"
-      @click="adder"
-    >
-      load more
-    </VPButton>
   </div>
 </template>
 
 <script setup>
-import {defineAsyncComponent, onMounted, ref, watch} from 'vue';
+import {computed, defineAsyncComponent, onMounted, ref, watch} from 'vue';
 import {VPButton} from 'vitepress/theme';
-import {VPLCollectionItem} from '@lando/vitepress-theme-default-plus';
+import VPLPluginItem from './VPLPluginItem.vue';
 
 const Plugin = defineAsyncComponent({
-  loader: async () => VPLCollectionItem,
+  loader: async () => VPLPluginItem,
 });
 
-const {items, pager, more, size, tags} = defineProps({
+const {items, pager, type, tags} = defineProps({
   items: {
     type: Array,
     required: true,
   },
-  more: {
-    type: String,
-    default: 'readmore',
-  },
   pager: {
     type: Number,
-    default: 10,
+    default: 100,
   },
-  size: {
+  type: {
     type: String,
-    default: 'medium',
+    default: 'card',
   },
   tags: {
     type: Object,
@@ -69,10 +69,27 @@ const key = ref(0);
 // normalize data and sort
 let pages = items
   .map(item => Object.assign(item, {show: true, timestamp: item.date ? item.date : item.timestamp}))
-  .sort((a, b) => a.timestamp < b.timestamp ? 1 : -1);
+  .sort((a, b) => a.title > b.title ? 1 : -1);
 
 const adder = () => amount.value += pager;
-const getGrower = i => pagination()[i + 1] === undefined && (i + 1) % 2 !== 0;
+
+const grid = computed(() => {
+  const length = amount.value;
+  if (!length) {
+    return;
+  } else if (length === 2) {
+    return 'grid-2';
+  } else if (length === 3) {
+    return 'grid-3';
+  } else if (length % 3 === 0) {
+    return 'grid-6';
+  } else if (length > 3) {
+    return 'grid-4';
+  } else {
+    return 'grid-4';
+  }
+});
+
 const pagination = () => pages.slice(0, amount.value);
 
 const filter = () => {
@@ -95,42 +112,67 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.collection-articles {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-  .collection-article {
-    max-width: 50%;
-    display: flex;
-    flex-grow: 1;
-    padding: 6px;
-    &.grower {
-      max-width: 100%;
-    }
-  }
+.plugins {
+  position: relative;
+  padding: 0 24px;
 }
 
 .load-more-button {
-  margin: 24px 6px;
+  margin: 24px 0px;
   padding: 24px;
 }
 
-@media (max-width: 767px) {
-  .collection-articles {
-    .collection-article {
-      max-width: 100%;
-    }
+@media (min-width: 640px) {
+  .plugins {
+    padding: 0 48px;
   }
 }
 
-@media (max-width: 420px) {
-  .collection-articles {
-    .collection-article {
-      padding: 6px 0;
-    }
+@media (min-width: 960px) {
+  .VPFeatures {
+    padding: 0 64px;
   }
 }
 
+.grid-container {
+  margin: 0 auto;
+  max-width: 1152px;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -8px;
+}
+
+.item {
+  padding: 8px;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .item.grid-2,
+  .item.grid-4,
+  .item.grid-6 {
+    width: calc(100% / 2);
+  }
+}
+
+@media (min-width: 768px) {
+  .item.grid-2,
+  .item.grid-4 {
+    width: calc(100% / 2);
+  }
+
+  .item.grid-3,
+  .item.grid-6 {
+    width: calc(100% / 3);
+  }
+}
+
+@media (min-width: 960px) {
+  .item.grid-4 {
+    width: calc(100% / 4);
+  }
+}
 </style>

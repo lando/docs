@@ -75,6 +75,8 @@ const adder = () => amount.value += pager;
 
 const grid = computed(() => {
   const length = amount.value;
+  if (type === 'icon') return 'grid-icon';
+
   if (!length) {
     return;
   } else if (length === 2) {
@@ -150,10 +152,17 @@ onMounted(() => {
   width: 100%;
 }
 
+.item.grid-icon {
+    width: calc(100% / 2);
+  }
+
 @media (min-width: 640px) {
   .item.grid-2,
   .item.grid-4,
   .item.grid-6 {
+    width: calc(100% / 2);
+  }
+  .item.grid-icon {
     width: calc(100% / 2);
   }
 }
@@ -168,11 +177,19 @@ onMounted(() => {
   .item.grid-6 {
     width: calc(100% / 3);
   }
+  .item.grid-icon {
+    width: calc(100% / 3);
+  }
+
 }
 
 @media (min-width: 960px) {
   .item.grid-4 {
     width: calc(100% / 4);
   }
+  .item.grid-icon {
+    width: calc(100% / 6);
+  }
+
 }
 </style>

@@ -16,7 +16,33 @@
       v-else-if="type === 'icon'"
       :class="`box ${type}`"
     >
-      ICON
+      <div
+        v-if="typeof icon === 'object' && icon.wrap"
+        class="image"
+      >
+        <VPImage
+          :image="icon"
+          :alt="icon.alt"
+          :height="icon.height || 48"
+          :width="icon.width || 48"
+        />
+      </div>
+      <VPImage
+        v-else-if="typeof icon === 'object'"
+        :image="icon"
+        :alt="icon.alt"
+        :height="icon.height || 48"
+        :width="icon.width || 48"
+      />
+      <div
+        v-else-if="icon"
+        class="image"
+        v-html="icon"
+      />
+      <h2
+        class="title"
+        v-html="title"
+      />
     </article>
 
     <article
@@ -156,6 +182,13 @@ const icon = computed(() => {
   flex-direction: column;
   padding: 24px;
   height: 100%;
+  &.icon {
+    text-align: center;
+    gap: 12px;
+    .image {
+      margin: auto;
+    }
+  }
 }
 
 .box > :deep(.VPImage) {

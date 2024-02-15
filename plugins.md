@@ -15,7 +15,7 @@ aside: false
     </template>
   </VPLCollectionPageTitle>
   <VPLCollectionPageTags v-model="selectedTags" />
-  <VPLPluginItems :items="pages" :tags="selectedTags" type="card"/>
+  <VPLPluginItems :items="pages" :tags="selectedTags" type="icon"/>
 </VPLCollectionPage>
 
 <script setup>

@@ -36,6 +36,7 @@ export default defineConfig({
       plugins: {
         frontmatter: {
           collection: 'plugins',
+          layout: 'plugin',
         },
         icon: puzzle,
         iconLink: '/plugins',
@@ -67,6 +68,9 @@ export default defineConfig({
         iconLink: '/troubleshooting',
         patterns: ['help/**/*.md', 'troubleshooting/**/*.md'],
       },
+    },
+    layouts: {
+      plugin: './.vitepress/theme/VPLPluginLayout.vue',
     },
     sidebar: {
       '/': [

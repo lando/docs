@@ -6,7 +6,7 @@ source: https://github.com/lando/solr
 image: https://docs.lando.dev/solr/images/solricon.png
 maintainers:
   - name: Team Lando
-    avatar: https://gravatar.com/avatar/c335f31e62b453f747f39a84240b3bbd
+    avatar: /images/icon.svg
     links:
       - icon: github
         link: https://github.com/lando

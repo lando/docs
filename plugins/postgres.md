@@ -1,12 +1,13 @@
 ---
-title: Postgres Plugin
+title: PostgreSQL Plugin
 description: This plugin provides a Postgres database for your Lando app.
 link: https://docs.lando.dev/plugins/postgres
+linkText: db me
 source: https://github.com/lando/postgres
 image: https://docs.lando.dev/postgres/images/postgresicon.png
 maintainers:
   - name: Team Lando
-    avatar: https://gravatar.com/avatar/c335f31e62b453f747f39a84240b3bbd
+    avatar: /images/icon.svg
     links:
       - icon: github
         link: https://github.com/lando

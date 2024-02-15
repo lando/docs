@@ -11,11 +11,11 @@ aside: false
       Plugins
     </template>
     <template #lead>
-      Helpful tutorial-like content!
+      It's dangerous to go alone, take some of these:
     </template>
   </VPLCollectionPageTitle>
   <VPLCollectionPageTags v-model="selectedTags" />
-  <VPLPluginItems :items="pages" :tags="selectedTags"/>
+  <VPLPluginItems :items="pages" :tags="selectedTags" type="card"/>
 </VPLCollectionPage>
 
 <script setup>

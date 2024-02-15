@@ -1,12 +1,12 @@
 ---
-title: Lemp Plugin
+title: LEMP Plugin
 description: This recipe spins up a fully-working LEMP stack.
 link: https://docs.lando.dev/plugins/lemp
 source: https://github.com/lando/lemp
-image: https://docs.lando.dev/lemp/images/lempicon.png
+image: https://docs.lando.dev/lemp/images/lampicon.png
 maintainers:
   - name: Team Lando
-    avatar: https://gravatar.com/avatar/c335f31e62b453f747f39a84240b3bbd
+    avatar: /images/icon.svg
     links:
       - icon: github
         link: https://github.com/lando

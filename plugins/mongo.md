@@ -1,12 +1,12 @@
 ---
-title: Mongo Plugin
+title: MongoDB Plugin
 description: This plugin provides a MongoDB database for your Lando app.
 link: https://docs.lando.dev/plugins/mongo
 source: https://github.com/lando/mongo
 image: https://docs.lando.dev/mongo/images/mongoicon.png
 maintainers:
   - name: Team Lando
-    avatar: https://gravatar.com/avatar/c335f31e62b453f747f39a84240b3bbd
+    avatar: /images/icon.svg
     links:
       - icon: github
         link: https://github.com/lando

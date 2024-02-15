@@ -95,7 +95,7 @@ const grid = computed(() => {
 const pagination = () => pages.slice(0, amount.value);
 
 const filter = () => {
-  const tagList = Object.entries(tags).filter(pair => pair[1] === true).map(pair => pair[0]);
+  const tagList = Object.entries(tags).filter(pair => pair[1].selected === true).map(pair => pair[0]);
   if (tagList.length === 0) return items;
   return items.filter(item => Array.isArray(item.tags) && tagList.every(tag => item.tags.includes(tag)));
 };

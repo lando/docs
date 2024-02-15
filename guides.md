@@ -4,15 +4,6 @@ layout: page
 title: Guides
 sidebar: false
 ---
-
-<script setup>
-import {VPLCollectionPage, VPLCollectionPageTitle, VPLCollectionItems} from '@lando/vitepress-theme-default-plus';
-import {useCollection} from '@lando/vitepress-theme-default-plus';
-
-const {pages} = useCollection('guide');
-
-</script>
-
 <VPLCollectionPage>
   <VPLCollectionPageTitle>
     <template #title>
@@ -22,5 +13,14 @@ const {pages} = useCollection('guide');
       Some general purporse Lando tutorials and guides
     </template>
   </VPLCollectionPageTitle>
-  <VPLCollectionItems :items="pages"/>
+  <VPLCollectionPageTags v-model="tags" />
+  <VPLCollectionItems :tags="tags" :items="pages"/>
 </VPLCollectionPage>
+
+<script setup>
+import {VPLCollectionPage, VPLCollectionPageTags, VPLCollectionPageTitle, VPLCollectionItems} from '@lando/vitepress-theme-default-plus';
+import {useCollection} from '@lando/vitepress-theme-default-plus';
+
+const {pages, tags} = useCollection('guide');
+</script>
+

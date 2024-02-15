@@ -457,6 +457,14 @@
   to = "/plugins/acquia/:splat"
   status = 301
 [[redirects]]
+  from = "/plugins/acquia"
+  to = "https://lando-acquia.netlify.app"
+  status = 200
+[[redirects]]
+  from = "/plugins/acquia/"
+  to = "https://lando-acquia.netlify.app/"
+  status = 200
+[[redirects]]
   from = "/plugins/acquia/*"
   to = "https://lando-acquia.netlify.app/:splat"
   status = 200

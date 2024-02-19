@@ -4,14 +4,10 @@ description: Redirect for install instructions
 ---
 
 <script setup>
-
-import {useRouter} from 'vitepress';
 import {UAParser} from 'ua-parser-js';
 
 const parser = new UAParser();
-
 const os = parser.getOS();
-const router = useRouter();
 
 // # List of possible values for `os.name`
 // AIX, Amiga OS, Android[-x86], Arch, Bada, BeOS, BlackBerry, CentOS, Chromium OS,
@@ -28,15 +24,15 @@ switch (os.name) {
   case 'Mac OS':
   case 'iOS':
   case 'watchOS':
-    router.go('/install/macos');
+    window.location.assign('https://docs.lando.dev/install/macos');
     break;
   case 'Windows':
   case 'Windows Phone':
   case 'Windows Mobile':
-    router.go('/install/windows');
+    window.location.assign('https://docs.lando.dev/install/windows');
     break;
   default:
-    router.go('/install/linux');
+    window.location.assign('https://docs.lando.dev/install/linux');
 };
 
 </script>

@@ -20,19 +20,21 @@ const os = parser.getOS();
 // Tizen, Ubuntu, Unix, VectorLinux, Viera, watchOS, WebOS, Windows [Phone/Mobile],
 // Zenwalk, ...
 // https://docs.uaparser.js.org/v2/api/ua-parser-js/get-os.html
-switch (os.name) {
-  case 'Mac OS':
-  case 'iOS':
-  case 'watchOS':
-    window.location.assign('https://docs.lando.dev/install/macos');
-    break;
-  case 'Windows':
-  case 'Windows Phone':
-  case 'Windows Mobile':
-    window.location.assign('https://docs.lando.dev/install/windows');
-    break;
-  default:
-    window.location.assign('https://docs.lando.dev/install/linux');
-};
+if (!import.meta.env.SSR) {
+  switch (os.name) {
+    case 'Mac OS':
+    case 'iOS':
+    case 'watchOS':
+      window.location.assign('https://docs.lando.dev/install/macos');
+      break;
+    case 'Windows':
+    case 'Windows Phone':
+    case 'Windows Mobile':
+      window.location.assign('https://docs.lando.dev/install/windows');
+      break;
+    default:
+      window.location.assign('https://docs.lando.dev/install/linux');
+  };
+}
 
 </script>

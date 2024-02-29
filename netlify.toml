@@ -47,6 +47,10 @@
   from = "https://docs.devwithlando.io/*"
   to = "https://docs.lando.dev/:splat"
   status = 301
+[[redirects]]
+  from = "https://api.lando.dev/*"
+  to = "https://docs.lando.dev/:splat"
+  status = 302
 
 # Redirect legacy monorepo doc content
 [[redirects]]
@@ -169,7 +173,7 @@
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/guides/frontend.html"
-  to = "https://docs.lando.dev/node/frontend-tooling.html"
+  to = "https://docs.lando.dev/node/guides/frontend-tooling.html"
   status = 301
 [[redirects]]
   from = "https://docs.lando.dev/guides/how-to-wire-up-browsersync-and-gulp-in-my-lando-app.html"
@@ -207,7 +211,6 @@
   from = "https://docs.lando.dev/lando-101/"
   to = "https://docs.lando.dev/lando-101"
   status = 301
-
 [[redirects]]
   from = "https://docs.lando.dev/guides/phpmyadmin-themes.html"
   to = "https://docs.lando.dev/phpmyadmin/phpmyadmin-themes.html"
@@ -426,8 +429,33 @@
   status = 302
 [[redirects]]
   from = "/:plugin/connecting-database.html"
+  to = "/plugins/:plugin/guides/connecting-database.html"
+  status = 302
+[[redirects]]
+  from = "/:plugin/adding-more-tooling.html"
+  to = "/plugins/:plugin/guides/adding-more-tooling.html"
+  status = 301
+[[redirects]]
+  from = "/:plugin/syncing.html"
+  to = "/plugins/:plugin/sync.html"
+  status = 302
+[[redirects]]
+  from = "/:path1/1000"
+  to = "/:path1"
+  status = 302
+[[redirects]]
+  from = "/:path1/:path2/1000"
+  to = "/:path1/:path2"
+  status = 302
+[[redirects]]
+  from = "/:plugin/connecting-database.html"
   to = "/:plugin/guides/connecting-database.html"
   status = 302
+[[redirects]]
+  from = "/php/accessing-logs.html"
+  to = "/plugins/php/guides/accessing-logs.html"
+  status = 302
+  
 
 # REWRITES
 # Stitch together the various subsites
@@ -464,6 +492,10 @@
   status = 301
 
 # plugin sites
+[[redirects]]
+  from = "/acquia/manually-importing-databases.html"
+  to = "/plugins/acquia/guides/manually-importing-databases.html"
+  status = 301
 [[redirects]]
   from = "/acquia/*"
   to = "/plugins/acquia/:splat"
@@ -514,6 +546,10 @@
   to = "/plugins/drupal/guides/drupal-multisite.html"
   status = 302
 [[redirects]]
+  from = "/drupal/legacy-versions.html"
+  to = "/plugins/drupal/legacy/drupal-8.html"
+  status = 302
+[[redirects]]
   from = "/drupal/*"
   to = "/plugins/drupal/:splat"
   status = 301
@@ -549,6 +585,9 @@
   to = "https://lando-joomla.netlify.app/:splat"
   status = 200
 
+[[redirects]]
+  from = "/lagoon/external-access.html"
+  to = "/guides/external-access.html"
 [[redirects]]
   from = "/lagoon/*"
   to = "/plugins/lagoon/:splat"

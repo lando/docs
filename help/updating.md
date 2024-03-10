@@ -44,7 +44,7 @@ When `lando update` was in `beta` there were a few issues we had to resolve that
 
 ### Manually updating first
 
-If you are on the `v3.21.0-beta` series then it's probably best to [manually update](#1-where-is-lando-update) before running `lando update` again.
+If you are on the `v3.21.0-beta` series then it's probably best to [manually update](#_1-where-is-lando-update) before running `lando update` again.
 
 ### Permissions errors
 

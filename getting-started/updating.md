@@ -4,10 +4,12 @@ description: Get the skinny on how to easily update Lando, a local development a
 
 # Updating
 
-Updating is fairly simple.
+Updating is fairly simple, you run:
 
-1.  Shutdown Lando eg `lando poweroff` and kill any running Lando processes.
-2.  Turn off Docker.
-3.  Follow the normal installation steps with the new version.
+```sh
+lando update
+```
 
-If you run into any issues after that we recommend you check out this [troubleshooting guide](./../help/updating.md).
+If you run into any issues with running it we recommend you check out this [troubleshooting guide](./../help/updating.md).
+
+You can also read more about this command over [here](https://docs.lando.dev/cli/update.html).

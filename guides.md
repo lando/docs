@@ -10,7 +10,7 @@ sidebar: false
       Guides
     </template>
     <template #lead>
-      Some general purporse Lando tutorials and guides
+      Some general purpose Lando tutorials and guides
     </template>
   </VPLCollectionPageTitle>
   <VPLCollectionPageTags v-model="tags" />

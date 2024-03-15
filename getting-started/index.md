@@ -23,7 +23,7 @@ Note that while you _can_ run Lando in production, it is _highly_ discouraged, n
 
 *   Mimicking your production environment locally
 *   Standardizing your team's dev environments and tooling on OSX, Windows and Linux
-*   Integrating with hosting providers like [Lagoon](https://lagoon.sh), [Pantheon](https://pantheon.io) and [Acquia Cloud](https://www.acquia.com/products/acquia-cloud-platform)
+*   Integrating with hosting providers like [Lagoon](https://lagoon.sh), [Pantheon](https://pantheon.io), [Acquia Cloud](https://www.acquia.com/products/acquia-cloud-platform) and [Platform.sh](https://platform.sh/)
 *   Customizing or extending tooling, deployment options and basically any other functionality
 *   Running CI tests locally, running local tests in CI
 *   Using a single local development environment for *all* your projects

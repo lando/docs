@@ -5,24 +5,23 @@ description: System requirements to run Lando on your machine
 
 # Requirements
 
-
 ## System Requirements
 
 Lando is designed to work on a wide range of computers. Here are some basic guidelines to ensure your Lando experience is as smooth as possible.
 
 ### Operating System
 
-*   macOS 11 or later
-*   Windows 10 Home or Pro version 21H2 or higher with the [WSL 2 feature enabled](https://learn.microsoft.com/en-us/windows/wsl/install)
+*   macOS 12 or higher
+*   Windows 10 Home or Pro version 21H2 or higher with the [WSL2 feature enabled](https://learn.microsoft.com/en-us/windows/wsl/install)
 *   Linux with kernel version 4.x or higher
 
 ### Docker Engine Requirements
 
-Please also verify you meet the requirements needed to run our Docker engine backend. Note that the macOS and Windows Lando installer will install Docker for you if needed.
+Please also verify you meet the requirements needed to run our Docker engine backend. Note that the macOS and Windows Lando installer scripts will install Docker for you if needed. You can also run [`lando setup`](https://docs.lando.dev/cli/setup.html) to install needed requirements.
 
-*   Docker Engine for Linux [requirements](https://docs.docker.com/engine/install/)
-*   Docker Desktop for Mac [requirements](https://docs.docker.com/desktop/install/mac-install/#system-requirements)
-*   Docker Desktop for Windows [requirements](https://docs.docker.com/desktop/install/windows-install/#system-requirements)
+* Docker Engine for Linux [requirements](https://docs.docker.com/engine/install/)
+* Docker Desktop for Mac [requirements](https://docs.docker.com/desktop/install/mac-install/#system-requirements)
+* Docker Desktop for Windows [requirements](https://docs.docker.com/desktop/install/windows-install/#system-requirements)
 
 ## Hardware Requirements
 

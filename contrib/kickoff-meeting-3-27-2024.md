@@ -13,7 +13,7 @@ If you are interested in contributing then [go here](./index.md#getting-started)
 ## Introduction
 
 * Note that we're recording!
-* [Fill out the Google Form](https://docs.google.com/forms/d/1vdDhmHqg7lS540eCrMR4MQO6DT4nfAsl-z8JRcnnmSI)
+* [Fill out the Google Form](https://docs.google.com/forms/d/1vdDhmHqg7lS540eCrMR4MQO6DT4nfAsl-z8JRcnnmSI/viewform?edit_requested=true)
 
 ## Lando Updates
 

@@ -109,11 +109,8 @@ footer: Copyright ©2024 Kalabox Inc.
 </div>
 
 <script setup>
-const getSponsorTier = (sponsors, tier = 'patriot') => {
-  return sponsors
-    .filter(sponsor => sponsor.tier === tier)
-    .map(({name, logo, url}) => ({name, url, img: logo}));
-};
+import yaml from 'js-yaml';
+import {computed, onMounted, ref} from 'vue';
 
 import {VPButton} from 'vitepress/theme';
 import {VPHomeHero} from 'vitepress/theme';
@@ -121,17 +118,35 @@ import {VPHomeFeatures} from 'vitepress/theme';
 import {VPSponsors} from 'vitepress/theme';
 import {useData} from 'vitepress';
 
+const getSponsorTier = (sponsors, tier = 'patriot') => {
+  if (!Array.isArray(sponsors)) return [];
+  return sponsors
+    .filter(sponsor => sponsor.tier === tier)
+    .map(({name, logo, url}) => ({name, url, img: logo}));
+};
+
 const start = 1707233398000;
-const {frontmatter, theme} = useData();
-const sponsors = theme.value?.sponsors?.all ?? [];
+const sponsors = ref(undefined);
+const allies = computed(() => getSponsorTier(sponsors.value, 'ally'));
+const patriots = computed(() => getSponsorTier(sponsors.value, 'patriot'));
+const heralds = computed(() => getSponsorTier(sponsors.value, 'herald'));
+const all = computed(() => patriots.value.concat(allies.value));
 
-const allies = getSponsorTier(sponsors, 'ally');
-const patriots = getSponsorTier(sponsors, 'patriot');
-const heralds = getSponsorTier(sponsors, 'herald');
+const heraldcompute = computed(() => parseInt(heralds.value.length + (Date.now() - start) / 604800000));
 
-const all = patriots.concat(allies);
+// if data is a string/needs to be fetched then do that here
+onMounted(async () => {
+  // if data is already an array then we good
+  if (Array.isArray(sponsors.value)) return;
 
-const heraldcompute = parseInt(heralds.length + (Date.now() - start) / 604800000);
+  try {
+    const response = await fetch('https://raw.githubusercontent.com/lando/lando/main/sponsors.yaml');
+    sponsors.value = yaml.load(await response.text());
+  } catch (error) {
+    console.error(`could not fetch and parse data from ${data.value}`);
+    console.error(error);
+  }
+});
 
 </script>
 

@@ -42,7 +42,7 @@ To get started you need to do _at least_ one of the below but we recommend you j
 
 1. [Join the contributors mailing list](https://dev.us12.list-manage.com/subscribe?u=59874b4d6910fa65e724a4648&id=613837077f)
 2. [Join the #contributors channel on Slack](#slack)
-3. [Complete our contributor Google Form](https://docs.google.com/forms/d/1vdDhmHqg7lS540eCrMR4MQO6DT4nfAsl-z8JRcnnmSI/edit?usp=drive_web)
+3. [Complete our contributor Google Form](https://docs.google.com/forms/d/1vdDhmHqg7lS540eCrMR4MQO6DT4nfAsl-z8JRcnnmSI)
 4. [Come to your first contributor meeting](#meetings)
 
 ## Comms

@@ -8,12 +8,12 @@ If you are interested in contributing then [go here](./index.md#getting-started)
 ## Links
 
 * [Full Meeting Recording](https://drive.google.com/file/d/1a4953iNuJwqZICYfkjrxzG0YhIsfCr1U/view?userstoinvite=none)
-* [Meeting Transcript](https://docs.google.com/document/d/1R5GW9-gwrw_tYaCd8GDu-9EN8FLk845yeYcdglHph2s/edit#heading=h.ixj9vo7j0umf)
+* [Meeting Transcript](https://docs.google.com/document/d/1R5GW9-gwrw_tYaCd8GDu-9EN8FLk845yeYcdglHph2s)
 
 ## Introduction
 
 * Note that we're recording!
-* [Fill out the Google Form](https://docs.google.com/forms/d/1vdDhmHqg7lS540eCrMR4MQO6DT4nfAsl-z8JRcnnmSI/viewform?edit_requested=true)
+* [Fill out the Google Form](https://docs.google.com/forms/d/1vdDhmHqg7lS540eCrMR4MQO6DT4nfAsl-z8JRcnnmSI)
 
 ## Lando Updates
 

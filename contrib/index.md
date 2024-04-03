@@ -79,9 +79,14 @@ X/Twitter is our primary outreach and social channel. If you are fearless, then 
 
 We are currently meeting for three dedicated purposes: `Plugins`, `DevOps` and `Governance & Maintainership`, here are the next meetings:
 
-* **Plugins** -
-* **DevOps** -
-* **Governance & Maintainership** -
+<ul>
+  <li
+    v-for="meeting in getMeetings(meetings)"
+    :key="meeting.first"
+  >
+    <strong>{{ meeting.text }}</strong> - {{ meeting.nmPretty }}
+  </li>
+</ul>
 
 Make sure you [join the mailing list](https://dev.us12.list-manage.com/subscribe?u=59874b4d6910fa65e724a4648&id=613837077f) and/or [#contributors](#slack) channel in our Slack to get invited/access to the meetings.
 
@@ -90,3 +95,51 @@ Make sure you [join the mailing list](https://dev.us12.list-manage.com/subscribe
 * [March 27, 2024 - Kickoff Meeting](./kickoff-meeting-3-27-2024.md)
 
 We also put _all_ the raw data [over here](https://drive.google.com/drive/folders/1O9kO9or7vRRMUfb4L88K0yWTE6uZ5jwd) in Google Drive if you want to sift through things.
+
+<script setup>
+
+const now = Date.now();
+const week = 604800000;
+const delay = 7200000;
+
+// meeting start dates in UTC ms timestamps
+const meetings = [
+  {text: 'Plugins', first: 1712073600000, period: 2},
+  {text: 'DevOps', first: 1712678400000, period: 2},
+  {text: 'Governance & Maintainership'},
+];
+
+const getMeetings = (items = meetings) => {
+  return meetings
+    .map(item => {
+      item.nm = item.first ? new Date(nextMeeting(item.first, item.period)) : undefined;
+      item.nmPretty = item.nm ? prettyDate(item.nm) : 'TBD';
+      return item;
+    })
+    .sort((a, b) => {
+      if (!a.first) return 1;
+      else return b.first - a.first;
+    });
+}
+
+const nextMeeting = (first, period = 2) => {
+  // if first meeting is in the future then just return
+  if (now - first < 0) return first;
+  // otherwise give us the next meeting but give a delay of two hours
+  const multiplier = Math.ceil((((now - first) / (week * period)) - delay / (week * period)));
+  // return the next meeting
+  return first + (multiplier * period * week);
+};
+
+const prettyDate = (
+  date = new Date(),
+  {
+    weekday = 'long',
+    year = 'numeric',
+    month = 'long',
+    day = 'numeric',
+  } = {}) => {
+  return `${date.toLocaleDateString(undefined, {weekday, year, month, day})} @ ${date.toLocaleTimeString()}`;
+};
+
+</script>

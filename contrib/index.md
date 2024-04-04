@@ -156,9 +156,11 @@ const prettyDate = (
     year = 'numeric',
     month = 'long',
     day = 'numeric',
+    timeZoneName = 'short'
   } = {}) => {
-  return `${date.toLocaleDateString(undefined, {weekday, year, month, day})} @ ${date.toLocaleTimeString()}`;
+  return `${date.toLocaleDateString(undefined, {weekday, year, month, day})} @ ${date.toLocaleTimeString(undefined, {timeZoneName})}`;
 };
+
 
 </script>
 

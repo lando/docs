@@ -162,7 +162,7 @@ const prettyDate = (
 
 </script>
 
-<style scoped>
+<style>
 .VPBadge.flag {
   background-color: rgb(219, 39, 119);
   color: #fff;

@@ -4,24 +4,13 @@ description: Learn about how to get started contributing code to Lando.
 
 # Coding
 
-This section is designed for people who want to contribute `code things` to Lando. Specifically, that might mean working on some of the following:
-
-* Lando itself and its plugins
-* Lando's DevOps pipeline e.g. build, test and deploy
-* Lando's tests and testing infrastructure
-* Lando's documentation and Vuepress documentation site
-* Lando's express API
-* Lando's marketing website
-* Lando's metrics server
-* Lando's Vuepress marketing site
-* Lando's Vuepress events listing
-* Lando's Vuepress blog
+This section is designed for people who want to contribute `code things` to Lando. Specifically, that means [opening a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) against one of the many [Lando respositories](https://github.com/orgs/lando/repositories).
 
 [[toc]]
 
 ## Choosing a project
 
-Lando has a distributed model and is powered by over [50 repos](https://github.com/lando) so the first step is to find a repo you are interested in and check out the contribution guidelines there.
+Lando has a distributed model and is powered by over [80 repos](https://github.com/lando) so the first step is to find a repo you are interested in and check out the contribution guidelines there.
 
 ## Good First Issues
 
@@ -29,62 +18,34 @@ Once you are set up and ready to contribute, a good place to start is with issue
 
 If you are having issues with any of the above or need some guidance from one of our guide pros, make sure you [join our Slack org](https://www.launchpass.com/devwithlando) and check out the **#community** and/or **#contributors** channels.
 
-## Triaging issues
+## Making your first pull request
 
-Welcome intrepid Lando contributor! Thank you for joining the alliance and jumping on the front lines to triage issues!
+1. [Create a fork of the repo you are working on](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo).
+2. [Follow the GitHub flow](https://docs.github.com/en/get-started/using-github/github-flow).
+3. Make sure you complete any requested/applicable tasks in the PR template.
+4. Make sure all status checks and tests pass.
+5. Ping the `#contributors` channel in Slack for any needed [PR review](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews) or any other help you may need advancing your PR.
+6. When all checks, tests and reviews are in the green ping a `maintainer` and/or apply the <Badge type="flag">flag</Badge> label.
 
-Issue triage is incredibly important to the project. Good handling of issue reports from our users leads to folks sticking around and getting all the benefits that Lando has to offer, becoming contributors themselves, and improving the overall health and sustainability of the project.
+**If you have any trouble, need clarification, guidance, help, etc jump into the `#contributors` channel in Slack and another contributor will gladly help you out!**
 
-When a user files an issue, they're probably either filled with hope and energy about improving the project, or frustration caused by their expectations not lining up with their experience. Both of these energies are valuable when channeled correctly, and damaging when mismanaged.
+After we merge a few pull requests we may grant you `write` access to the repository which will allow you to open branches against the repo directly instead of using your fork.
 
-Behind every issue is a person taking the time to fill out the report when they could have simply remained silent. They could have left their good ideas on the shelf, thrown Lando in the trash, or needlessly struggled in silence.
+## PR Conventions
 
-With all this in mind, treat issue reporters with respect, assume good will, and ask for clarification when needed. The extra energy you put in here to show kindness and compassion can be the difference between steering the project towards growth and sustainability or stagnation and burnout.
+We are pretty [wild west](https://www.youtube.com/watch?v=_zXKtfKnfT8) on accepting PRs but here are some good conventions that we def recommend:
 
-Now that you're equipped with the laser sword of empathy and the armor of respect, this is the standard procedure you should go through to triage an issue.
+* Create branches named something like `ISSUE-NUMBER-BRIEF-DESCRIPTION` for example `35-ssh-agent-feature`
+* Create commit message named something like `#ISSUE-NUMBER: description` for example `#35: ensure socket is owned by you`
+* [Associate your issue or issues with the PR](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue)
 
-### Requirements
-
-1. A Github account
-2. [Install Lando](/install) (So you can reproduce issues)
-
-### Classify the Issue
-
-The first step in triaging an issue is to decide if the issue is a _bug report_, _feature request_, _documentation request_, or a _guide request_.
-
-Our issue templates will hopefully help to pre-categorize issues for us, but use your discretion to recategorize issues that may have come in under the wrong label. It's not uncommon for a user to assume that their issue is a bug when it is really a need to improve documentation, or even for a user to assume they've done something wrong when they've actually just discovered a bug for us!
-
-Review the issue and recategorize as necessary.
-
-### Bug Reports
-
-If the user is reporting that something isn't working as documented, or something generally appears to be broken, it should be classified as a bug report.
-
-The first thing you want to do is to check the report against our [bug reporting template](https://github.com/lando/lando/blob/main/.github/ISSUE_TEMPLATE/bug_report.md).
-
-The most important thing we need for a good bug report are reliable steps to reproduce the issue. If the user has included steps to replicate, you should first try to replicate the bug.
-
-If you do nothing else, this is the most valuable thing you can do for Lando maintainers. It can sometimes be time consuming, but making sure we can replicate a bug saves massive amounts of time for the intrepid developer who attempts to fix the bug. It helps us to write clear functional tests and spend less time fixing the bug.
-
-Once steps to reproduce have been ironed out, the issue should be tagged as `triaged`.
-
-If you can't reproduce the issue, tag it with `can not replicate` and let the user know that you are unable to replicate the issue. If you can think of additional information that might be helpful, request it in your comment. Non-reproducable issues will remain unscheduled until they are closed by a maintainer or stalebot.
-
-### Feature Requests
-
-If the user is asking for something that Lando currently doesn't do, this is a feature request. If the user wants Lando to add a new command to our API, a new service, recipe, tooling command, or support a new operating system we don't currently support, this is a feature request.
-
-Refer to the [feature request template](https://github.com/lando/lando/blob/main/.github/ISSUE_TEMPLATE/feature_request.md) to see what kind of data we want from the user. If their report is missing one of these areas, it might be helpful to ask them questions about the areas that need clarification.
-
-New feature requests will be regularly reviewed by the maintainers and scheduled, iceboxed, or closed as appropriate, as long as the request is something you can understand, it can be reviewed by a maintainer at a later date. If it seems unclear, it would be helpful to ask clarifying questions from the requester so that the issue is fully fleshed out when a maintainer is able to review it.
-
-### Documentation Requests
-
-Documentation requests should be tagged with `documentation` and checked against the [documentation issue template](https://github.com/lando/lando/blob/main/.github/ISSUE_TEMPLATE/documentation.md).
-
-If a reference page isn't included, try to find the right page in the documentation that addresses the topic at hand and add a link to the page in the issue. If there is no suitable page, a new one will need to be created.
+GitHub is able to do some magic with the above and provide better context around commits, issues, PRs and projects.
 
 ## Writing Plugins
+
+::: danger PROBABLY BEST TO WAIT
+We are in the process of documenting the Lando 4 API so if you want to write a **new** plugin we _highly recommend_ waiting for that. We've kept these docs mostly as a courtesy for older Lando 3 Plugin creators.
+:::
 
 Lando has an advanced plugin system that allows developers to add and extend Lando's core functionality. A few examples of things you can do with plugins are shown below:
 

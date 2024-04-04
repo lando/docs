@@ -19,3 +19,5 @@
 - [ ] I've [requested a review](https://help.github.com/en/articles/requesting-a-pull-request-review) with relevant people
 
 If you have any issues or need help please join the `#contributors` channel in the [Lando slack](https://www.launchpass.com/devwithlando) and someone will gladly help you out!
+
+You can also check out the [coder guide](https://docs.lando.dev/contrib/coder.html).

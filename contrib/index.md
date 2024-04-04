@@ -38,16 +38,17 @@ Help us run both the actual project and maintain the repos
 
 ## Getting Started
 
-To get started you need to do _at least_ one of the below but we recommend you just do them all:
+To get started you need to do _at least_ one of the below but we **HIGHLY RECOMMEND** you just do them all:
 
 1. [Join the contributors mailing list](https://dev.us12.list-manage.com/subscribe?u=59874b4d6910fa65e724a4648&id=613837077f)
 2. [Join the #contributors channel on Slack](#slack)
 3. [Complete our contributor Google Form](https://docs.google.com/forms/d/1vdDhmHqg7lS540eCrMR4MQO6DT4nfAsl-z8JRcnnmSI)
-4. [Come to your first contributor meeting](#meetings)
+4. [Create, flag and/or assign some issues you are interested in](#choosing-an-issue)
+5. [Come to your first contributor meeting](#meetings)
 
 ## Comms
 
-These are
+These are the channels we usually use for communication.
 
 ### GitHub
 
@@ -75,13 +76,35 @@ Join some channels and say hi!
 
 X/Twitter is our primary outreach and social channel. If you are fearless, then [follow us](https://twitter.com/devwithlando) and get involved in the conversation!
 
+## Choosing an Issue
+
+If you don't already have a GitHub issue or two in mind you can go through them in a few different ways:
+
+* [By maintainer projects](https://github.com/orgs/lando/projects)
+* [By individual repo](https://github.com/orgs/lando/repositories)
+* [By all issues in the org](https://github.com/issues?q=is%3Aopen+is%3Aissue+org%3Alando)
+
+If you don't see one you can also [create your own](https://github.com/lando/lando/issues/new/choose). However once you have an issue or two in mind you will want to do possibly both of the below:
+
+* **Label the issue with <Badge type="flag">flag</Badge>** - This will add it into the relevant contributor project board so a maintainer knows to discuss it in their next meeting.
+* **Assign the issue to yourself** - If it's an issue you want to take on then [assign it](https://docs.github.com/en/issues/tracking-your-work-with-issues/assigning-issues-and-pull-requests-to-other-github-users) to yourself.
+
+If you cannot label or assign an issue then we probably need to invite you to collaborate. To do that jump in the `#contributors` channel in Slack, post your issue and indicate you want to self-assign it and a maintainer will send you an invite.
+
+Note that permissions are given on a per-repo basis so you'll need to do this once for every repo you want to work on.
+
 ## Meetings
 
 We are currently meeting for three dedicated purposes: `Plugins`, `DevOps` and `Governance & Maintainership`, here are the next meetings:
 
-* **Plugins** -
-* **DevOps** -
-* **Governance & Maintainership** -
+<ul>
+  <li
+    v-for="meeting in getMeetings(meetings)"
+    :key="meeting.first"
+  >
+    <strong>{{ meeting.text }}</strong> - {{ meeting.nmPretty }}
+  </li>
+</ul>
 
 Make sure you [join the mailing list](https://dev.us12.list-manage.com/subscribe?u=59874b4d6910fa65e724a4648&id=613837077f) and/or [#contributors](#slack) channel in our Slack to get invited/access to the meetings.
 
@@ -90,3 +113,64 @@ Make sure you [join the mailing list](https://dev.us12.list-manage.com/subscribe
 * [March 27, 2024 - Kickoff Meeting](./kickoff-meeting-3-27-2024.md)
 
 We also put _all_ the raw data [over here](https://drive.google.com/drive/folders/1O9kO9or7vRRMUfb4L88K0yWTE6uZ5jwd) in Google Drive if you want to sift through things.
+
+<script setup>
+
+const now = Date.now();
+const week = 604800000;
+const delay = 7200000;
+
+// meeting start dates in UTC ms timestamps
+const meetings = [
+  {text: 'Plugins', first: 1712073600000, period: 2},
+  {text: 'DevOps', first: 1712678400000, period: 2},
+  {text: 'Governance & Maintainership'},
+];
+
+const getMeetings = (items = meetings) => {
+  return meetings
+    .map(item => {
+      item.nm = item.first ? new Date(nextMeeting(item.first, item.period)) : undefined;
+      item.nmPretty = item.nm ? prettyDate(item.nm) : 'TBD';
+      return item;
+    })
+    .sort((a, b) => {
+      if (!a.first) return 1;
+      else return b.first - a.first;
+    });
+}
+
+const nextMeeting = (first, period = 2) => {
+  // if first meeting is in the future then just return
+  if (now - first < 0) return first;
+  // otherwise give us the next meeting but give a delay of two hours
+  const multiplier = Math.ceil((((now - first) / (week * period)) - delay / (week * period)));
+  // return the next meeting
+  return first + (multiplier * period * week);
+};
+
+const prettyDate = (
+  date = new Date(),
+  {
+    weekday = 'long',
+    year = 'numeric',
+    month = 'long',
+    day = 'numeric',
+  } = {}) => {
+  return `${date.toLocaleDateString(undefined, {weekday, year, month, day})} @ ${date.toLocaleTimeString()}`;
+};
+
+</script>
+
+<style>
+.VPBadge.flag {
+  background-color: rgb(219, 39, 119);
+  color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(208, 215, 222, 0.7);
+  font-family: -apple-system, "system-ui", "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 12px;
+  font-weight: 800;
+}
+</style>

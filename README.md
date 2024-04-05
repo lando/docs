@@ -26,12 +26,9 @@ We try to log all changes big and small in both [THE CHANGELOG](https://github.c
 * Requires [Node 18+](https://nodejs.org/dist/latest-v18.x/)
 
 ```bash
+# Clone repo
 git clone https://github.com/lando/docs.git && cd docs
-```
 
-### Using Node/Yarn
-
-```bash
 # Install deps
 npm install
 

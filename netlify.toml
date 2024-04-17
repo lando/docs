@@ -52,6 +52,12 @@
   to = "https://docs.lando.dev/:splat"
   status = 302
 
+# Lando 4 redirects
+[[redirects]]
+  from = "https://docs.lando.dev/core/v3/lando-service.html"
+  to = "https://docs.lando.dev/core/v3/services/lando.html"
+  status = 301
+
 # Redirect legacy monorepo doc content
 [[redirects]]
   from = "https://docs.lando.dev/basics/usage.html"

@@ -139,6 +139,10 @@
   from = "https://docs.lando.dev/basics/*"
   to = "https://docs.lando.dev/getting-started/:splat"
   status = 301
+[[redirects]]
+  from = "https://docs.lando.dev/guides/setup-lando-on-windows-with-wsl-2.html"
+  to = "https://docs.lando.dev/install/windows.html"
+  status = 302
 
 [[redirects]]
   from = "https://docs.lando.dev/contrib/contributing.html"

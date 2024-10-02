@@ -210,13 +210,13 @@ module.exports = lando => ({
 
 More details about each key are listed as follows:
 
-**command** - This is required and follows the [same syntax](https://yargs.js.org/docs/#api-reference-commandcmd-desc-builder-handler) as in [yargs](http://yargs.js.org/)
+**command** - This is required and follows the same syntax as the `command` in [yargs](https://yargs.js.org/docs/)
 
 **describe** - Just a basic string to describe your command
 
 **level** - This corresponds to the needed Lando bootstrap level. Generally, it's fine to omit this but it's *safest* to set it to `app` if you are unsure about what to do.
 
-**options** - Options follows the [same interface](https://yargs.js.org/docs/#api-reference-optionskey-opt) as in [yargs](http://yargs.js.org/) with one exception: `interactive`. `interactive` follows the [inquirer interface](https://github.com/SBoudrias/Inquirer.js) and does include the [autocomplete plugin](https://github.com/mokkabonna/inquirer-autocomplete-prompt). Lando also adds a `weight` property to `interface` so you can control the order with which interactive questions are asked.
+**options** - Options follows the syntax as `options` as in [yargs](https://yargs.js.org/docs) with one exception: `interactive`. `interactive` follows the [inquirer interface](https://github.com/SBoudrias/Inquirer.js) and does include the [autocomplete plugin](https://github.com/mokkabonna/inquirer-autocomplete-prompt). Lando also adds a `weight` property to `interface` so you can control the order with which interactive questions are asked.
 
 **run** - This is the function that will run when the task is invoked. Note that you have access to both `options` and `lando` here.
 

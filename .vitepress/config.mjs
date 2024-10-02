@@ -16,6 +16,9 @@ export default defineConfig({
     editLink: {
       pattern: 'https://github.com/lando/docs/edit/main/:path',
     },
+    multiVersionBuild: {
+      satisfies: '>=4.1.0',
+    },
     collections: {
       guide: {
         frontmatter: {

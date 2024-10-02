@@ -17,9 +17,10 @@
   },
   "main": "index.js",
   "scripts": {
-    "build": "vitepress build . && npm run rename-sitemap",
-    "dev": "vitepress dev .",
+    "build": "LANDO_MVB_VERSION=$(git describe --tags --always --abbrev=1 --match=\"v[0-9].*\") vitepress build . && npm run rename-sitemap",
+    "dev": "LANDO_MVB_VERSION=$(git describe --tags --always --abbrev=1 --match=\"v[0-9].*\") vitepress dev .",
     "lint": "eslint . --ext .js --ext .mjs ",
+    "mvb": "npx mvb .",
     "preview": "vitepress preview .",
     "rename-sitemap": "node rename-sitemap.js"
   },
@@ -31,7 +32,7 @@
     "eslint-config-google": "^0.9.1",
     "eslint-plugin-vue": "^8.0.3",
     "js-yaml": "^4.1.0",
-    "vitepress": "^1.0.0-rc.42",
+    "vitepress": "^1.3.4",
     "vue": "^3.4.21"
   }
 }

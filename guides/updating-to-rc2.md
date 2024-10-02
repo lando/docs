@@ -356,7 +356,7 @@ run:
   - if [ ! -z $LANDO_MOUNT ]; then do-stuff; fi
 ```
 
-Check out [this example](https://github.com/lando/core/tree/main/examples/services) which is tested on every build for some examples of new build step syntax.
+Check out [theses examples](https://github.com/lando/core/tree/main/examples) which are tested on every build for some examples of new build step syntax.
 
 ## Global Environment Variables
 

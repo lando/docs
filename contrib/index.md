@@ -82,12 +82,12 @@ If you don't already have a GitHub issue or two in mind you can go through them 
 
 * [By maintainer projects](https://github.com/orgs/lando/projects)
 * [By individual repo](https://github.com/orgs/lando/repositories)
-* [By all issues in the org](https://github.com/issues?q=is%3Aopen+is%3Aissue+org%3Alando)
+* [By all issues in the org](https://github.com/issues?q=is:open+is:issue+org:lando)
 
 If you don't see one you can also [create your own](https://github.com/lando/lando/issues/new/choose). However once you have an issue or two in mind you will want to do possibly both of the below:
 
 * **Label the issue with <Badge type="flag">flag</Badge>** - This will add it into the relevant contributor project board so a maintainer knows to discuss it in their next meeting.
-* **Assign the issue to yourself** - If it's an issue you want to take on then [assign it](https://docs.github.com/en/issues/tracking-your-work-with-issues/assigning-issues-and-pull-requests-to-other-github-users) to yourself.
+* **Assign the issue to yourself** - If it's an issue you want to take on then [assign it](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/assigning-issues-and-pull-requests-to-other-github-users) to yourself.
 
 If you cannot label or assign an issue then we probably need to invite you to collaborate. To do that jump in the `#contributors` channel in Slack, post your issue and indicate you want to self-assign it and a maintainer will send you an invite.
 

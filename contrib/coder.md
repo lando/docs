@@ -37,7 +37,7 @@ We are pretty [wild west](https://www.youtube.com/watch?v=_zXKtfKnfT8) on accept
 
 * Create branches named something like `ISSUE-NUMBER-BRIEF-DESCRIPTION` for example `35-ssh-agent-feature`
 * Create commit message named something like `#ISSUE-NUMBER: description` for example `#35: ensure socket is owned by you`
-* [Associate your issue or issues with the PR](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue)
+* [Associate your issue or issues with the PR](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue)
 
 GitHub is able to do some magic with the above and provide better context around commits, issues, PRs and projects.
 

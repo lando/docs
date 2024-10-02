@@ -13,7 +13,7 @@ However, it's best to just search for the repo you are looking for in the main [
 
 ## Issues, Questions and Support
 
-If you have a question or would like some community support we recommend you [join us on Slack](https://launchpass.com/devwithlando). Note that this is the Slack community for [Lando](https://lando.dev) but we are more than happy to help with this module as well!
+If you have a question or would like some community support we recommend you [join us on Slack](https://www.launchpass.com/devwithlando). Note that this is the Slack community for [Lando](https://lando.dev) but we are more than happy to help with this module as well!
 
 If you'd like to report a bug or submit a feature request then please [use the issue queue](https://github.com/lando/docs/issues/new/choose) in this repo.
 

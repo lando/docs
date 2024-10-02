@@ -3,6 +3,28 @@
   publish = ".vitepress/dist"
   command = "npm run build"
 
+[context.deploy-preview]
+  command = "npm run build"
+
+# https://github.com/munter/netlify-plugin-checklinks#readme
+[[context.deploy-preview.plugins]]
+  package = "netlify-plugin-checklinks"
+  [context.deploy-preview.plugins.inputs]
+    todoPatterns = [
+      "load",
+      "CHANGELOG.html",
+      "x.com",
+      "twitter.com",
+      "yargs.js.org/docs",
+      "https://github.com/issues",
+      "https://support.patreon.com",
+      "docs.google.com/document",
+      "docs.google.com/forms",
+      "/v/"
+    ]
+    skipPatterns = [ ".rss", ".gif", ".jpg" ]
+    checkExternal = true
+
 # Sets our asset optimization
 [build.processing.css]
   bundle = true
@@ -27,14 +49,6 @@
   package = "@netlify/plugin-lighthouse"
   [plugins.inputs.audits]
     output_path = "reports/lighthouse.html"
-
-# https://github.com/munter/netlify-plugin-checklinks#readme
-[[plugins]]
-  package = "netlify-plugin-checklinks"
-  [plugins.inputs]
-    todoPatterns = [ "load", "CHANGELOG.html", "x.com", "twitter.com", "302", "https://github.com/issues?q=" ]
-    skipPatterns = [ ".rss", ".gif", ".jpg" , "https://apps.microsoft.com", "https://github.com/lando/docs/edit", "https://yargs.js.org/docs", "https://support.patreon.com" ]
-    checkExternal = true
 
 # REDIRECTS
 # NOTE THAT REDIRECTS ARE EXECUTED FIRST COME FIRST SERVE

@@ -15,7 +15,7 @@
           >
             <Plugin
               :plugin="plugin"
-              :type="type"
+              :type="props.type"
             />
           </div>
         </div>
@@ -43,7 +43,7 @@ const Plugin = defineAsyncComponent({
   loader: async () => VPLPluginItem,
 });
 
-const {items, pager, type, tags} = defineProps({
+const props = defineProps({
   items: {
     type: Array,
     required: true,
@@ -63,19 +63,19 @@ const {items, pager, type, tags} = defineProps({
 });
 
 // Hardcoded pager value for now
-const amount = ref(pager);
+const amount = ref(props.pager);
 const key = ref(0);
 
 // normalize data and sort
-let pages = items
+let pages = props.items
   .map(item => Object.assign(item, {show: true, timestamp: item.date ? item.date : item.timestamp}))
   .sort((a, b) => a.title > b.title ? 1 : -1);
 
-const adder = () => amount.value += pager;
+const adder = () => amount.value += props.pager;
 
 const grid = computed(() => {
   const length = amount.value;
-  if (type === 'icon') return 'grid-icon';
+  if (props.type === 'icon') return 'grid-icon';
 
   if (!length) {
     return;
@@ -95,13 +95,13 @@ const grid = computed(() => {
 const pagination = () => pages.slice(0, amount.value);
 
 const filter = () => {
-  const tagList = Object.entries(tags).filter(pair => pair[1].selected === true).map(pair => pair[0]);
-  if (tagList.length === 0) return items;
-  return items.filter(item => Array.isArray(item.tags) && tagList.every(tag => item.tags.includes(tag)));
+  const tagList = Object.entries(props.tags).filter(pair => pair[1].selected === true).map(pair => pair[0]);
+  if (tagList.length === 0) return props.items;
+  return props.items.filter(item => Array.isArray(item.tags) && tagList.every(tag => item.tags.includes(tag)));
 };
 
 // recompute filter when tags change
-watch(tags, () => {
+watch(props.tags, () => {
   pages = filter();
   key.value++;
 });

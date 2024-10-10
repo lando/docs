@@ -83,7 +83,7 @@ Follow these steps:
 
 It's important to wipe out all exisitng Lando containers (hence the uninstall) and make sure to add your cert **BEFORE running any Lando commands** to ensure that your cert is populated into the containers.
 
-#### Adding Certs for PHP cURL Requests
+## Adding Certs for PHP cURL Requests
 If you make external requests with the PHP process in your app, you will also need to include the cert in your appserver's `php.ini` file:
 
 ```
@@ -101,7 +101,7 @@ curl.cainfo='/app/yourcert.crt'
 openssl.cafile='/app/yourcert.crt'
 ```
 
-#### Adding Certs to a NodeJS Service
+## Adding Certs to a NodeJS Service
 If you have a Node server in your Lando environment, you'll need to concatenate your certificates into a single .pem file and add this to your Node configuration:
 
 ```
@@ -129,7 +129,7 @@ https-proxy=http://host.docker.internal:9000
 cafile=/app/yourcert.crt
 ```
 
-#### Adding Certs for Native cURL
+## Adding Certs for Native cURL
 If you use cURL outside of the cURL PHP extension, you'll need to provide the cert (and possibly the proxy location). Add the following build step to your `.lando.yml`:
 
 ```
@@ -166,7 +166,7 @@ environment:
 	HTTPS_PROXY: "http://host.docker.internal:9000"
 ```
 
-#### Define Proxy Location for `apt-get`
+## Define Proxy Location for `apt-get`
 
 If you use `apt-get` to install packages within a container, you will probably need to define the proxy location for it as well. To do so, modify your project's `.lando.yml` to add the following `build-as-root` command:
 

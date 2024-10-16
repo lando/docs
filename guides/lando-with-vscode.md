@@ -110,15 +110,14 @@ tooling:
     description: Enable Xdebug.
     user: root
     cmd:
-      - docker-php-ext-enable xdebug && kill -USR2 $(pgrep -o php-fpm) > /dev/null || /etc/init.d/apache2 reload
+      - docker-php-ext-enable xdebug && kill -USR2 $(pgrep -o php-fpm) 2>/dev/null || /etc/init.d/apache2 reload
       - tput setaf 2 && echo "Xdebug On" && tput sgr 0 && echo
-
   xdebug-off:
     service: appserver
     description: Disable Xdebug.
     user: root
     cmd:
-      - rm /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && kill -USR2 $(pgrep -o php-fpm) > /dev/null || /etc/init.d/apache2 reload
+      - rm /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && kill -USR2 $(pgrep -o php-fpm) 2>/dev/null || /etc/init.d/apache2 reload
       - tput setaf 1 && echo "Xdebug Off" && tput sgr 0 && echo
 ```
 

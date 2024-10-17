@@ -112,6 +112,7 @@ tooling:
     cmd:
       - docker-php-ext-enable xdelando bug && kill -USR2 $(pgrep -o php-fpm) > /dev/null 2>&1 || /etc/init.d/apache2 reload
       - tput setaf 2 && echo "Xdebug On" && tput sgr 0 && echo
+
   xdebug-off:
     service: appserver
     description: Disable Xdebug.

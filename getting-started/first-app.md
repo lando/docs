@@ -40,22 +40,22 @@ lando
 lando destroy -y
 ```
 
-## Vanilla Drupal 9
+## Vanilla Drupal 11
 
 You can also pull in code from an external archive (or git repo/GitHub) to seed a new project.
 
 ```bash
 # Create a new directory for this example and enter it
-mkdir drupal9 && cd drupal9
+mkdir drupal11 && cd drupal11
 
 # Initialize a new lando drupal using vanilla Drupal 9
 lando init \
   --source remote \
   --remote-url https://www.drupal.org/download-latest/tar.gz \
   --remote-options="--strip-components 1" \
-  --recipe drupal9 \
+  --recipe drupal11 \
   --webroot . \
-  --name hello-drupal9
+  --name hello-drupal11
 
 # Start the site
 lando start
@@ -64,12 +64,12 @@ lando start
 lando composer require drush/drush
 
 # Install drupal
-lando drush site:install --db-url=mysql://drupal9:drupal9@database/drupal9 -y
+lando drush site:install --db-url=mysql://drupal11:drupal11@database/drupal11 -y
 
-# Check out your new site! https://hello-drupal9.lndo.site
+# Check out your new site! https://hello-drupal11.lndo.site
 
 # Log in as admin with Drush
-lando drush uli -l https://hello-drupal9.lndo.site
+lando drush uli -l https://hello-drupal11.lndo.site
 
 # Destroy it
 lando destroy -y

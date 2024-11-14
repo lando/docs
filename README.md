@@ -1,3 +1,8 @@
+> [!IMPORTANT]
+> As of Lando [v3.23.0](https://github.com/lando/core/releases/tag/v3.23.0) the docs are now part of [@lando/core](https://github.com/lando/core/tree/main/docs) and this repo is now archived eg longer actively maintained, used, looked at, etc.
+>
+> Please visit [@lando/core](https://github.com/lando/core) for anything docs related.
+
 # Lando Docs
 
 This repo contains the [documentation site](https://docs.lando.dev) for [Lando](https://lando.dev). That said Lando is comprised of various constituent projects that are all combined together. So while this _is_ the main site you should think about it more as the "glue" that combines various subsites together into a cohesive docs expereince. Said more plainly. if you are looking to update the docs on say the Lagoon recipe then you should do so in the [Lagoon repo](https://github.com/lando/lagoon/tree/main/docs).
